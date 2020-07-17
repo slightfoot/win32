@@ -76,6 +76,8 @@
       <li><a href="../win32/COR_FIELD_OFFSET-class.html">COR_FIELD_OFFSET</a></li>
       <li><a href="../win32/CorOpenFlags-class.html">CorOpenFlags</a></li>
       <li><a href="../win32/CREATESTRUCT-class.html">CREATESTRUCT</a></li>
+      <li><a href="../win32/CREDENTIAL-class.html">CREDENTIAL</a></li>
+      <li><a href="../win32/CREDENTIAL_ATTRIBUTE-class.html">CREDENTIAL_ATTRIBUTE</a></li>
       <li><a href="../win32/DayOfWeek-class.html">DayOfWeek</a></li>
       <li><a href="../win32/DESKTOP_SLIDESHOW_DIRECTION-class.html">DESKTOP_SLIDESHOW_DIRECTION</a></li>
       <li><a href="../win32/DESKTOP_SLIDESHOW_OPTIONS-class.html">DESKTOP_SLIDESHOW_OPTIONS</a></li>
@@ -158,6 +160,7 @@
       <li><a href="../win32/PickerLocationId-class.html">PickerLocationId</a></li>
       <li><a href="../win32/PickerViewMode-class.html">PickerViewMode</a></li>
       <li><a href="../win32/POINT-class.html">POINT</a></li>
+      <li><a href="../win32/POWER_INFORMATION_LEVEL-class.html">POWER_INFORMATION_LEVEL</a></li>
       <li><a href="../win32/PROC_THREAD_ATTRIBUTE_NUM-class.html">PROC_THREAD_ATTRIBUTE_NUM</a></li>
       <li><a href="../win32/PROCESS_INFORMATION-class.html">PROCESS_INFORMATION</a></li>
       <li><a href="../win32/PROPERTYKEY-class.html">PROPERTYKEY</a></li>
@@ -175,7 +178,9 @@
       <li><a href="../win32/SOLE_AUTHENTICATION_SERVICE-class.html">SOLE_AUTHENTICATION_SERVICE</a></li>
       <li><a href="../win32/STARTUPINFO-class.html">STARTUPINFO</a></li>
       <li><a href="../win32/STARTUPINFOEX-class.html">STARTUPINFOEX</a></li>
+      <li><a href="../win32/SYSTEM_BATTERY_STATE-class.html">SYSTEM_BATTERY_STATE</a></li>
       <li><a href="../win32/SYSTEM_INFO-class.html">SYSTEM_INFO</a></li>
+      <li><a href="../win32/SYSTEM_POWER_STATUS-class.html">SYSTEM_POWER_STATUS</a></li>
       <li><a href="../win32/TASKDIALOG_COMMON_BUTTON_FLAGS-class.html">TASKDIALOG_COMMON_BUTTON_FLAGS</a></li>
       <li><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></li>
       <li><a href="../win32/VARIANT_POINTER-class.html">VARIANT_POINTER</a></li>
@@ -185,6 +190,8 @@
       <li><a href="../win32/WNDCLASS-class.html">WNDCLASS</a></li>
     
       <li class="section-title"><a href="../win32/win32-library.html#extension">Extensions</a></li>
+      <li><a href="../win32/HexConversion.html">HexConversion</a></li>
+      <li><a href="../win32/Uint8ListBlobConversion.html">Uint8ListBlobConversion</a></li>
       <li><a href="../win32/Utf16Conversion.html">Utf16Conversion</a></li>
     
     
@@ -192,6 +199,7 @@
       <li><a href="../win32/FALSE-constant.html">FALSE</a></li>
       <li><a href="../win32/MAX_PATH-constant.html">MAX_PATH</a></li>
       <li><a href="../win32/NULL-constant.html">NULL</a></li>
+      <li><a href="../win32/STATUS_SUCCESS-constant.html">STATUS_SUCCESS</a></li>
       <li><a href="../win32/TRUE-constant.html">TRUE</a></li>
     
       <li class="section-title"><a href="../win32/win32-library.html#properties">Properties</a></li>
@@ -209,6 +217,7 @@
       <li><a href="../win32/BluetoothIsConnectable.html">BluetoothIsConnectable</a></li>
       <li><a href="../win32/BluetoothIsDiscoverable.html">BluetoothIsDiscoverable</a></li>
       <li><a href="../win32/BluetoothUpdateDeviceRecord.html">BluetoothUpdateDeviceRecord</a></li>
+      <li><a href="../win32/CallNtPowerInformation.html">CallNtPowerInformation</a></li>
       <li><a href="../win32/ChooseColor.html">ChooseColor</a></li>
       <li><a href="../win32/ChooseFont.html">ChooseFont</a></li>
       <li><a href="../win32/CloseHandle.html">CloseHandle</a></li>
@@ -230,6 +239,10 @@
       <li><a href="../win32/CreatePseudoConsole.html">CreatePseudoConsole</a></li>
       <li><a href="../win32/CreateSolidBrush.html">CreateSolidBrush</a></li>
       <li><a href="../win32/CreateWindowEx.html">CreateWindowEx</a></li>
+      <li><a href="../win32/CredDelete.html">CredDelete</a></li>
+      <li><a href="../win32/CredFree.html">CredFree</a></li>
+      <li><a href="../win32/CredRead.html">CredRead</a></li>
+      <li><a href="../win32/CredWrite.html">CredWrite</a></li>
       <li><a href="../win32/DeactivateActCtx.html">DeactivateActCtx</a></li>
       <li><a href="../win32/DefWindowProc.html">DefWindowProc</a></li>
       <li><a href="../win32/DeleteObject.html">DeleteObject</a></li>
@@ -293,6 +306,7 @@
       <li><a href="../win32/GetStdHandle.html">GetStdHandle</a></li>
       <li><a href="../win32/GetStockObject.html">GetStockObject</a></li>
       <li><a href="../win32/GetSystemInfo.html">GetSystemInfo</a></li>
+      <li><a href="../win32/GetSystemPowerStatus.html">GetSystemPowerStatus</a></li>
       <li><a href="../win32/GetTempPath.html">GetTempPath</a></li>
       <li><a href="../win32/GetTextMetrics.html">GetTextMetrics</a></li>
       <li><a href="../win32/GetVersionEx.html">GetVersionEx</a></li>
@@ -401,7 +415,6 @@
       <li><a href="../win32/GetRValue.html">GetRValue</a></li>
       <li><a href="../win32/HIBYTE.html">HIBYTE</a></li>
       <li><a href="../win32/HIWORD.html">HIWORD</a></li>
-      <li><a href="../win32/HRESULT.html">HRESULT</a></li>
       <li><a href="../win32/HRESULT_FROM_WIN32.html">HRESULT_FROM_WIN32</a></li>
       <li><a href="../win32/isWindowsRuntimeAvailable.html">isWindowsRuntimeAvailable</a></li>
       <li><a href="../win32/LOBYTE.html">LOBYTE</a></li>
@@ -427,7 +440,7 @@
   </div><!--/.sidebar-offcanvas-left-->
 
   <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
-      <div><h1><span class="kind-top-level-property">GetMonitorRedGreenOrBlueDrive</span> top-level property      <span class="category dxva2 cp-13 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+      <div><h1><span class="kind-top-level-property">GetMonitorRedGreenOrBlueDrive</span> top-level property      <span class="category dxva2 cp-12 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
 </h1></div>
 
         <section class="multi-line-signature">
@@ -456,7 +469,7 @@
 <footer>
   <span class="no-break">
     win32
-      1.6.7
+      1.6.9
   </span>
 
 </footer>

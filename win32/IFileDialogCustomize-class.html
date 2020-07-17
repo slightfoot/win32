@@ -76,6 +76,8 @@
       <li><a href="../win32/COR_FIELD_OFFSET-class.html">COR_FIELD_OFFSET</a></li>
       <li><a href="../win32/CorOpenFlags-class.html">CorOpenFlags</a></li>
       <li><a href="../win32/CREATESTRUCT-class.html">CREATESTRUCT</a></li>
+      <li><a href="../win32/CREDENTIAL-class.html">CREDENTIAL</a></li>
+      <li><a href="../win32/CREDENTIAL_ATTRIBUTE-class.html">CREDENTIAL_ATTRIBUTE</a></li>
       <li><a href="../win32/DayOfWeek-class.html">DayOfWeek</a></li>
       <li><a href="../win32/DESKTOP_SLIDESHOW_DIRECTION-class.html">DESKTOP_SLIDESHOW_DIRECTION</a></li>
       <li><a href="../win32/DESKTOP_SLIDESHOW_OPTIONS-class.html">DESKTOP_SLIDESHOW_OPTIONS</a></li>
@@ -158,6 +160,7 @@
       <li><a href="../win32/PickerLocationId-class.html">PickerLocationId</a></li>
       <li><a href="../win32/PickerViewMode-class.html">PickerViewMode</a></li>
       <li><a href="../win32/POINT-class.html">POINT</a></li>
+      <li><a href="../win32/POWER_INFORMATION_LEVEL-class.html">POWER_INFORMATION_LEVEL</a></li>
       <li><a href="../win32/PROC_THREAD_ATTRIBUTE_NUM-class.html">PROC_THREAD_ATTRIBUTE_NUM</a></li>
       <li><a href="../win32/PROCESS_INFORMATION-class.html">PROCESS_INFORMATION</a></li>
       <li><a href="../win32/PROPERTYKEY-class.html">PROPERTYKEY</a></li>
@@ -175,7 +178,9 @@
       <li><a href="../win32/SOLE_AUTHENTICATION_SERVICE-class.html">SOLE_AUTHENTICATION_SERVICE</a></li>
       <li><a href="../win32/STARTUPINFO-class.html">STARTUPINFO</a></li>
       <li><a href="../win32/STARTUPINFOEX-class.html">STARTUPINFOEX</a></li>
+      <li><a href="../win32/SYSTEM_BATTERY_STATE-class.html">SYSTEM_BATTERY_STATE</a></li>
       <li><a href="../win32/SYSTEM_INFO-class.html">SYSTEM_INFO</a></li>
+      <li><a href="../win32/SYSTEM_POWER_STATUS-class.html">SYSTEM_POWER_STATUS</a></li>
       <li><a href="../win32/TASKDIALOG_COMMON_BUTTON_FLAGS-class.html">TASKDIALOG_COMMON_BUTTON_FLAGS</a></li>
       <li><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></li>
       <li><a href="../win32/VARIANT_POINTER-class.html">VARIANT_POINTER</a></li>
@@ -185,6 +190,8 @@
       <li><a href="../win32/WNDCLASS-class.html">WNDCLASS</a></li>
     
       <li class="section-title"><a href="../win32/win32-library.html#extension">Extensions</a></li>
+      <li><a href="../win32/HexConversion.html">HexConversion</a></li>
+      <li><a href="../win32/Uint8ListBlobConversion.html">Uint8ListBlobConversion</a></li>
       <li><a href="../win32/Utf16Conversion.html">Utf16Conversion</a></li>
     
     
@@ -192,6 +199,7 @@
       <li><a href="../win32/FALSE-constant.html">FALSE</a></li>
       <li><a href="../win32/MAX_PATH-constant.html">MAX_PATH</a></li>
       <li><a href="../win32/NULL-constant.html">NULL</a></li>
+      <li><a href="../win32/STATUS_SUCCESS-constant.html">STATUS_SUCCESS</a></li>
       <li><a href="../win32/TRUE-constant.html">TRUE</a></li>
     
       <li class="section-title"><a href="../win32/win32-library.html#properties">Properties</a></li>
@@ -209,6 +217,7 @@
       <li><a href="../win32/BluetoothIsConnectable.html">BluetoothIsConnectable</a></li>
       <li><a href="../win32/BluetoothIsDiscoverable.html">BluetoothIsDiscoverable</a></li>
       <li><a href="../win32/BluetoothUpdateDeviceRecord.html">BluetoothUpdateDeviceRecord</a></li>
+      <li><a href="../win32/CallNtPowerInformation.html">CallNtPowerInformation</a></li>
       <li><a href="../win32/ChooseColor.html">ChooseColor</a></li>
       <li><a href="../win32/ChooseFont.html">ChooseFont</a></li>
       <li><a href="../win32/CloseHandle.html">CloseHandle</a></li>
@@ -230,6 +239,10 @@
       <li><a href="../win32/CreatePseudoConsole.html">CreatePseudoConsole</a></li>
       <li><a href="../win32/CreateSolidBrush.html">CreateSolidBrush</a></li>
       <li><a href="../win32/CreateWindowEx.html">CreateWindowEx</a></li>
+      <li><a href="../win32/CredDelete.html">CredDelete</a></li>
+      <li><a href="../win32/CredFree.html">CredFree</a></li>
+      <li><a href="../win32/CredRead.html">CredRead</a></li>
+      <li><a href="../win32/CredWrite.html">CredWrite</a></li>
       <li><a href="../win32/DeactivateActCtx.html">DeactivateActCtx</a></li>
       <li><a href="../win32/DefWindowProc.html">DefWindowProc</a></li>
       <li><a href="../win32/DeleteObject.html">DeleteObject</a></li>
@@ -293,6 +306,7 @@
       <li><a href="../win32/GetStdHandle.html">GetStdHandle</a></li>
       <li><a href="../win32/GetStockObject.html">GetStockObject</a></li>
       <li><a href="../win32/GetSystemInfo.html">GetSystemInfo</a></li>
+      <li><a href="../win32/GetSystemPowerStatus.html">GetSystemPowerStatus</a></li>
       <li><a href="../win32/GetTempPath.html">GetTempPath</a></li>
       <li><a href="../win32/GetTextMetrics.html">GetTextMetrics</a></li>
       <li><a href="../win32/GetVersionEx.html">GetVersionEx</a></li>
@@ -401,7 +415,6 @@
       <li><a href="../win32/GetRValue.html">GetRValue</a></li>
       <li><a href="../win32/HIBYTE.html">HIBYTE</a></li>
       <li><a href="../win32/HIWORD.html">HIWORD</a></li>
-      <li><a href="../win32/HRESULT.html">HRESULT</a></li>
       <li><a href="../win32/HRESULT_FROM_WIN32.html">HRESULT_FROM_WIN32</a></li>
       <li><a href="../win32/isWindowsRuntimeAvailable.html">isWindowsRuntimeAvailable</a></li>
       <li><a href="../win32/LOBYTE.html">LOBYTE</a></li>
@@ -427,8 +440,8 @@
   </div>
 
   <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
-      <div><h1><span class="kind-class">IFileDialogCustomize</span> class      <span class="category com cp-9 linked" title="This is part of the com Topic."><a href="../topics/com-topic.html">com</a></span>
-    <span class="category interface cp-15" title="This is part of the Interface Topic.">Interface</span>
+      <div><h1><span class="kind-class">IFileDialogCustomize</span> class      <span class="category com cp-13 linked" title="This is part of the com Topic."><a href="../topics/com-topic.html">com</a></span>
+    <span class="category interface cp-16" title="This is part of the Interface Topic.">Interface</span>
 </h1></div>
 
     
@@ -436,7 +449,7 @@
       <dl class="dl-horizontal">
         <dt>Inheritance</dt>
         <dd><ul class="gt-separated dark clazz-relationships">
-          <li><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object-class.html">Object</a></li>
+          <li><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object-class.html">Object</a></li>
           <li><a href="../win32/IUnknown-class.html">IUnknown</a></li>
           <li>IFileDialogCustomize</li>
         </ul></dd>
@@ -453,7 +466,7 @@
 
       <dl class="constructor-summary-list">
         <dt id="IFileDialogCustomize" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/IFileDialogCustomize.html">IFileDialogCustomize</a></span><span class="signature">(<span class="parameter" id="-param-ptr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ptr</span></span><wbr>)</span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/IFileDialogCustomize.html">IFileDialogCustomize</a></span><span class="signature">(<span class="parameter" id="-param-ptr"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ptr</span></span><wbr>)</span>
         </dt>
         <dd>
            
@@ -466,24 +479,24 @@
 
       <dl class="properties">
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="name"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/hashCode.html">[...]</a>
                   <div class="features">read-only, inherited</div>
 </dd>
         <dt id="ptr" class="property">
           <span class="name"><a href="../win32/IFileDialogCustomize/ptr.html">ptr</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span>         
         </dt>
         <dd>
            
                   <div class="features">read / write, override</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Type-class.html">Type</a></span>         
+          <span class="name"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Type-class.html">Type</a></span>         
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object. 
@@ -496,8 +509,8 @@
       <h2>Methods</h2>
       <dl class="callables">
         <dt id="AddCheckButton" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/AddCheckButton.html">AddCheckButton</a></span><span class="signature">(<wbr><span class="parameter" id="AddCheckButton-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddCheckButton-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span>, </span><wbr><span class="parameter" id="AddCheckButton-param-bChecked"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">bChecked</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/AddCheckButton.html">AddCheckButton</a></span><span class="signature">(<wbr><span class="parameter" id="AddCheckButton-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddCheckButton-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span>, </span><wbr><span class="parameter" id="AddCheckButton-param-bChecked"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">bChecked</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -505,8 +518,8 @@
                   
 </dd>
         <dt id="AddComboBox" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/AddComboBox.html">AddComboBox</a></span><span class="signature">(<wbr><span class="parameter" id="AddComboBox-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/AddComboBox.html">AddComboBox</a></span><span class="signature">(<wbr><span class="parameter" id="AddComboBox-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -514,8 +527,8 @@
                   
 </dd>
         <dt id="AddControlItem" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/AddControlItem.html">AddControlItem</a></span><span class="signature">(<wbr><span class="parameter" id="AddControlItem-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddControlItem-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span>, </span><wbr><span class="parameter" id="AddControlItem-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/AddControlItem.html">AddControlItem</a></span><span class="signature">(<wbr><span class="parameter" id="AddControlItem-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddControlItem-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span>, </span><wbr><span class="parameter" id="AddControlItem-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -523,8 +536,8 @@
                   
 </dd>
         <dt id="AddEditBox" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/AddEditBox.html">AddEditBox</a></span><span class="signature">(<wbr><span class="parameter" id="AddEditBox-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddEditBox-param-pszText"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszText</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/AddEditBox.html">AddEditBox</a></span><span class="signature">(<wbr><span class="parameter" id="AddEditBox-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddEditBox-param-pszText"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszText</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -532,8 +545,8 @@
                   
 </dd>
         <dt id="AddMenu" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/AddMenu.html">AddMenu</a></span><span class="signature">(<wbr><span class="parameter" id="AddMenu-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddMenu-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/AddMenu.html">AddMenu</a></span><span class="signature">(<wbr><span class="parameter" id="AddMenu-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddMenu-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -541,8 +554,8 @@
                   
 </dd>
         <dt id="AddPushButton" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/AddPushButton.html">AddPushButton</a></span><span class="signature">(<wbr><span class="parameter" id="AddPushButton-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddPushButton-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/AddPushButton.html">AddPushButton</a></span><span class="signature">(<wbr><span class="parameter" id="AddPushButton-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddPushButton-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -550,8 +563,8 @@
                   
 </dd>
         <dt id="AddRadioButtonList" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/AddRadioButtonList.html">AddRadioButtonList</a></span><span class="signature">(<wbr><span class="parameter" id="AddRadioButtonList-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/AddRadioButtonList.html">AddRadioButtonList</a></span><span class="signature">(<wbr><span class="parameter" id="AddRadioButtonList-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -560,7 +573,7 @@
 </dd>
         <dt id="AddRef" class="callable inherited">
           <span class="name"><a href="../win32/IUnknown/AddRef.html">AddRef</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -568,8 +581,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="AddSeparator" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/AddSeparator.html">AddSeparator</a></span><span class="signature">(<wbr><span class="parameter" id="AddSeparator-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/AddSeparator.html">AddSeparator</a></span><span class="signature">(<wbr><span class="parameter" id="AddSeparator-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -577,8 +590,8 @@
                   
 </dd>
         <dt id="AddText" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/AddText.html">AddText</a></span><span class="signature">(<wbr><span class="parameter" id="AddText-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddText-param-pszText"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszText</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/AddText.html">AddText</a></span><span class="signature">(<wbr><span class="parameter" id="AddText-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="AddText-param-pszText"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszText</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -586,8 +599,8 @@
                   
 </dd>
         <dt id="EnableOpenDropDown" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/EnableOpenDropDown.html">EnableOpenDropDown</a></span><span class="signature">(<wbr><span class="parameter" id="EnableOpenDropDown-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/EnableOpenDropDown.html">EnableOpenDropDown</a></span><span class="signature">(<wbr><span class="parameter" id="EnableOpenDropDown-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -596,7 +609,7 @@
 </dd>
         <dt id="EndVisualGroup" class="callable">
           <span class="name"><a href="../win32/IFileDialogCustomize/EndVisualGroup.html">EndVisualGroup</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -604,8 +617,8 @@
                   
 </dd>
         <dt id="GetCheckButtonState" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/GetCheckButtonState.html">GetCheckButtonState</a></span><span class="signature">(<wbr><span class="parameter" id="GetCheckButtonState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="GetCheckButtonState-param-pbChecked"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pbChecked</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/GetCheckButtonState.html">GetCheckButtonState</a></span><span class="signature">(<wbr><span class="parameter" id="GetCheckButtonState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="GetCheckButtonState-param-pbChecked"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pbChecked</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -613,8 +626,8 @@
                   
 </dd>
         <dt id="GetControlItemState" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/GetControlItemState.html">GetControlItemState</a></span><span class="signature">(<wbr><span class="parameter" id="GetControlItemState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="GetControlItemState-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span>, </span><wbr><span class="parameter" id="GetControlItemState-param-pdwState"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pdwState</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/GetControlItemState.html">GetControlItemState</a></span><span class="signature">(<wbr><span class="parameter" id="GetControlItemState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="GetControlItemState-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span>, </span><wbr><span class="parameter" id="GetControlItemState-param-pdwState"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pdwState</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -622,8 +635,8 @@
                   
 </dd>
         <dt id="GetControlState" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/GetControlState.html">GetControlState</a></span><span class="signature">(<wbr><span class="parameter" id="GetControlState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="GetControlState-param-pdwState"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pdwState</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/GetControlState.html">GetControlState</a></span><span class="signature">(<wbr><span class="parameter" id="GetControlState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="GetControlState-param-pdwState"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pdwState</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -631,8 +644,8 @@
                   
 </dd>
         <dt id="GetEditBoxText" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/GetEditBoxText.html">GetEditBoxText</a></span><span class="signature">(<wbr><span class="parameter" id="GetEditBoxText-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="GetEditBoxText-param-ppszText"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppszText</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/GetEditBoxText.html">GetEditBoxText</a></span><span class="signature">(<wbr><span class="parameter" id="GetEditBoxText-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="GetEditBoxText-param-ppszText"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppszText</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -640,8 +653,8 @@
                   
 </dd>
         <dt id="GetSelectedControlItem" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/GetSelectedControlItem.html">GetSelectedControlItem</a></span><span class="signature">(<wbr><span class="parameter" id="GetSelectedControlItem-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="GetSelectedControlItem-param-pdwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwIDItem</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/GetSelectedControlItem.html">GetSelectedControlItem</a></span><span class="signature">(<wbr><span class="parameter" id="GetSelectedControlItem-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="GetSelectedControlItem-param-pdwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwIDItem</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -649,8 +662,8 @@
                   
 </dd>
         <dt id="MakeProminent" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/MakeProminent.html">MakeProminent</a></span><span class="signature">(<wbr><span class="parameter" id="MakeProminent-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/MakeProminent.html">MakeProminent</a></span><span class="signature">(<wbr><span class="parameter" id="MakeProminent-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -658,17 +671,17 @@
                   
 </dd>
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span><wbr>)
+          <span class="name"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span><wbr>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
                   </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/noSuchMethod.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
         <dt id="QueryInterface" class="callable inherited">
-          <span class="name"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></span><span class="signature">(<wbr><span class="parameter" id="QueryInterface-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><wbr><span class="parameter" id="QueryInterface-param-ppvObject"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppvObject</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></span><span class="signature">(<wbr><span class="parameter" id="QueryInterface-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><wbr><span class="parameter" id="QueryInterface-param-ppvObject"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppvObject</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -677,7 +690,7 @@
 </dd>
         <dt id="Release" class="callable inherited">
           <span class="name"><a href="../win32/IUnknown/Release.html">Release</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -685,8 +698,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="RemoveAllControlItems" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/RemoveAllControlItems.html">RemoveAllControlItems</a></span><span class="signature">(<wbr><span class="parameter" id="RemoveAllControlItems-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/RemoveAllControlItems.html">RemoveAllControlItems</a></span><span class="signature">(<wbr><span class="parameter" id="RemoveAllControlItems-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -694,8 +707,8 @@
                   
 </dd>
         <dt id="RemoveControlItem" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/RemoveControlItem.html">RemoveControlItem</a></span><span class="signature">(<wbr><span class="parameter" id="RemoveControlItem-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="RemoveControlItem-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/RemoveControlItem.html">RemoveControlItem</a></span><span class="signature">(<wbr><span class="parameter" id="RemoveControlItem-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="RemoveControlItem-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -703,8 +716,8 @@
                   
 </dd>
         <dt id="SetCheckButtonState" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/SetCheckButtonState.html">SetCheckButtonState</a></span><span class="signature">(<wbr><span class="parameter" id="SetCheckButtonState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetCheckButtonState-param-bChecked"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">bChecked</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/SetCheckButtonState.html">SetCheckButtonState</a></span><span class="signature">(<wbr><span class="parameter" id="SetCheckButtonState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetCheckButtonState-param-bChecked"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">bChecked</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -712,8 +725,8 @@
                   
 </dd>
         <dt id="SetControlItemState" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/SetControlItemState.html">SetControlItemState</a></span><span class="signature">(<wbr><span class="parameter" id="SetControlItemState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetControlItemState-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span>, </span><wbr><span class="parameter" id="SetControlItemState-param-dwState"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwState</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/SetControlItemState.html">SetControlItemState</a></span><span class="signature">(<wbr><span class="parameter" id="SetControlItemState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetControlItemState-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span>, </span><wbr><span class="parameter" id="SetControlItemState-param-dwState"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwState</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -721,8 +734,8 @@
                   
 </dd>
         <dt id="SetControlItemText" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/SetControlItemText.html">SetControlItemText</a></span><span class="signature">(<wbr><span class="parameter" id="SetControlItemText-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetControlItemText-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span>, </span><wbr><span class="parameter" id="SetControlItemText-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/SetControlItemText.html">SetControlItemText</a></span><span class="signature">(<wbr><span class="parameter" id="SetControlItemText-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetControlItemText-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span>, </span><wbr><span class="parameter" id="SetControlItemText-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -730,8 +743,8 @@
                   
 </dd>
         <dt id="SetControlLabel" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/SetControlLabel.html">SetControlLabel</a></span><span class="signature">(<wbr><span class="parameter" id="SetControlLabel-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetControlLabel-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/SetControlLabel.html">SetControlLabel</a></span><span class="signature">(<wbr><span class="parameter" id="SetControlLabel-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetControlLabel-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -739,8 +752,8 @@
                   
 </dd>
         <dt id="SetControlState" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/SetControlState.html">SetControlState</a></span><span class="signature">(<wbr><span class="parameter" id="SetControlState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetControlState-param-dwState"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwState</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/SetControlState.html">SetControlState</a></span><span class="signature">(<wbr><span class="parameter" id="SetControlState-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetControlState-param-dwState"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwState</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -748,8 +761,8 @@
                   
 </dd>
         <dt id="SetEditBoxText" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/SetEditBoxText.html">SetEditBoxText</a></span><span class="signature">(<wbr><span class="parameter" id="SetEditBoxText-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetEditBoxText-param-pszText"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszText</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/SetEditBoxText.html">SetEditBoxText</a></span><span class="signature">(<wbr><span class="parameter" id="SetEditBoxText-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetEditBoxText-param-pszText"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszText</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -757,8 +770,8 @@
                   
 </dd>
         <dt id="SetSelectedControlItem" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/SetSelectedControlItem.html">SetSelectedControlItem</a></span><span class="signature">(<wbr><span class="parameter" id="SetSelectedControlItem-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetSelectedControlItem-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/SetSelectedControlItem.html">SetSelectedControlItem</a></span><span class="signature">(<wbr><span class="parameter" id="SetSelectedControlItem-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="SetSelectedControlItem-param-dwIDItem"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDItem</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -766,8 +779,8 @@
                   
 </dd>
         <dt id="StartVisualGroup" class="callable">
-          <span class="name"><a href="../win32/IFileDialogCustomize/StartVisualGroup.html">StartVisualGroup</a></span><span class="signature">(<wbr><span class="parameter" id="StartVisualGroup-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="StartVisualGroup-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IFileDialogCustomize/StartVisualGroup.html">StartVisualGroup</a></span><span class="signature">(<wbr><span class="parameter" id="StartVisualGroup-param-dwIDCtl"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwIDCtl</span>, </span><wbr><span class="parameter" id="StartVisualGroup-param-pszLabel"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszLabel</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -775,8 +788,8 @@
                   
 </dd>
         <dt id="toString" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/String-class.html">String</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -790,12 +803,12 @@
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/bool-class.html">bool</a></span>
           </span>
                   </dt>
         <dd class="inherited">
-          The equality operator. <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/operator_equals.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
       </dl>
@@ -815,9 +828,9 @@
       <li class="section-title">
         <a href="../win32/IFileDialogCustomize-class.html#instance-properties">Properties</a>
       </li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/hashCode.html">hashCode</a></li>
       <li><a href="../win32/IFileDialogCustomize/ptr.html">ptr</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="../win32/IFileDialogCustomize-class.html#instance-methods">Methods</a></li>
       <li><a href="../win32/IFileDialogCustomize/AddCheckButton.html">AddCheckButton</a></li>
@@ -838,7 +851,7 @@
       <li><a href="../win32/IFileDialogCustomize/GetEditBoxText.html">GetEditBoxText</a></li>
       <li><a href="../win32/IFileDialogCustomize/GetSelectedControlItem.html">GetSelectedControlItem</a></li>
       <li><a href="../win32/IFileDialogCustomize/MakeProminent.html">MakeProminent</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
       <li class="inherited"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></li>
       <li class="inherited"><a href="../win32/IUnknown/Release.html">Release</a></li>
       <li><a href="../win32/IFileDialogCustomize/RemoveAllControlItems.html">RemoveAllControlItems</a></li>
@@ -851,10 +864,10 @@
       <li><a href="../win32/IFileDialogCustomize/SetEditBoxText.html">SetEditBoxText</a></li>
       <li><a href="../win32/IFileDialogCustomize/SetSelectedControlItem.html">SetSelectedControlItem</a></li>
       <li><a href="../win32/IFileDialogCustomize/StartVisualGroup.html">StartVisualGroup</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/toString.html">toString</a></li>
     
       <li class="section-title inherited"><a href="../win32/IFileDialogCustomize-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/operator_equals.html">operator ==</a></li>
     
     
     
@@ -867,7 +880,7 @@
 <footer>
   <span class="no-break">
     win32
-      1.6.7
+      1.6.9
   </span>
 
 </footer>

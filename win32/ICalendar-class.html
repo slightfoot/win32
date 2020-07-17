@@ -76,6 +76,8 @@
       <li><a href="../win32/COR_FIELD_OFFSET-class.html">COR_FIELD_OFFSET</a></li>
       <li><a href="../win32/CorOpenFlags-class.html">CorOpenFlags</a></li>
       <li><a href="../win32/CREATESTRUCT-class.html">CREATESTRUCT</a></li>
+      <li><a href="../win32/CREDENTIAL-class.html">CREDENTIAL</a></li>
+      <li><a href="../win32/CREDENTIAL_ATTRIBUTE-class.html">CREDENTIAL_ATTRIBUTE</a></li>
       <li><a href="../win32/DayOfWeek-class.html">DayOfWeek</a></li>
       <li><a href="../win32/DESKTOP_SLIDESHOW_DIRECTION-class.html">DESKTOP_SLIDESHOW_DIRECTION</a></li>
       <li><a href="../win32/DESKTOP_SLIDESHOW_OPTIONS-class.html">DESKTOP_SLIDESHOW_OPTIONS</a></li>
@@ -158,6 +160,7 @@
       <li><a href="../win32/PickerLocationId-class.html">PickerLocationId</a></li>
       <li><a href="../win32/PickerViewMode-class.html">PickerViewMode</a></li>
       <li><a href="../win32/POINT-class.html">POINT</a></li>
+      <li><a href="../win32/POWER_INFORMATION_LEVEL-class.html">POWER_INFORMATION_LEVEL</a></li>
       <li><a href="../win32/PROC_THREAD_ATTRIBUTE_NUM-class.html">PROC_THREAD_ATTRIBUTE_NUM</a></li>
       <li><a href="../win32/PROCESS_INFORMATION-class.html">PROCESS_INFORMATION</a></li>
       <li><a href="../win32/PROPERTYKEY-class.html">PROPERTYKEY</a></li>
@@ -175,7 +178,9 @@
       <li><a href="../win32/SOLE_AUTHENTICATION_SERVICE-class.html">SOLE_AUTHENTICATION_SERVICE</a></li>
       <li><a href="../win32/STARTUPINFO-class.html">STARTUPINFO</a></li>
       <li><a href="../win32/STARTUPINFOEX-class.html">STARTUPINFOEX</a></li>
+      <li><a href="../win32/SYSTEM_BATTERY_STATE-class.html">SYSTEM_BATTERY_STATE</a></li>
       <li><a href="../win32/SYSTEM_INFO-class.html">SYSTEM_INFO</a></li>
+      <li><a href="../win32/SYSTEM_POWER_STATUS-class.html">SYSTEM_POWER_STATUS</a></li>
       <li><a href="../win32/TASKDIALOG_COMMON_BUTTON_FLAGS-class.html">TASKDIALOG_COMMON_BUTTON_FLAGS</a></li>
       <li><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></li>
       <li><a href="../win32/VARIANT_POINTER-class.html">VARIANT_POINTER</a></li>
@@ -185,6 +190,8 @@
       <li><a href="../win32/WNDCLASS-class.html">WNDCLASS</a></li>
     
       <li class="section-title"><a href="../win32/win32-library.html#extension">Extensions</a></li>
+      <li><a href="../win32/HexConversion.html">HexConversion</a></li>
+      <li><a href="../win32/Uint8ListBlobConversion.html">Uint8ListBlobConversion</a></li>
       <li><a href="../win32/Utf16Conversion.html">Utf16Conversion</a></li>
     
     
@@ -192,6 +199,7 @@
       <li><a href="../win32/FALSE-constant.html">FALSE</a></li>
       <li><a href="../win32/MAX_PATH-constant.html">MAX_PATH</a></li>
       <li><a href="../win32/NULL-constant.html">NULL</a></li>
+      <li><a href="../win32/STATUS_SUCCESS-constant.html">STATUS_SUCCESS</a></li>
       <li><a href="../win32/TRUE-constant.html">TRUE</a></li>
     
       <li class="section-title"><a href="../win32/win32-library.html#properties">Properties</a></li>
@@ -209,6 +217,7 @@
       <li><a href="../win32/BluetoothIsConnectable.html">BluetoothIsConnectable</a></li>
       <li><a href="../win32/BluetoothIsDiscoverable.html">BluetoothIsDiscoverable</a></li>
       <li><a href="../win32/BluetoothUpdateDeviceRecord.html">BluetoothUpdateDeviceRecord</a></li>
+      <li><a href="../win32/CallNtPowerInformation.html">CallNtPowerInformation</a></li>
       <li><a href="../win32/ChooseColor.html">ChooseColor</a></li>
       <li><a href="../win32/ChooseFont.html">ChooseFont</a></li>
       <li><a href="../win32/CloseHandle.html">CloseHandle</a></li>
@@ -230,6 +239,10 @@
       <li><a href="../win32/CreatePseudoConsole.html">CreatePseudoConsole</a></li>
       <li><a href="../win32/CreateSolidBrush.html">CreateSolidBrush</a></li>
       <li><a href="../win32/CreateWindowEx.html">CreateWindowEx</a></li>
+      <li><a href="../win32/CredDelete.html">CredDelete</a></li>
+      <li><a href="../win32/CredFree.html">CredFree</a></li>
+      <li><a href="../win32/CredRead.html">CredRead</a></li>
+      <li><a href="../win32/CredWrite.html">CredWrite</a></li>
       <li><a href="../win32/DeactivateActCtx.html">DeactivateActCtx</a></li>
       <li><a href="../win32/DefWindowProc.html">DefWindowProc</a></li>
       <li><a href="../win32/DeleteObject.html">DeleteObject</a></li>
@@ -293,6 +306,7 @@
       <li><a href="../win32/GetStdHandle.html">GetStdHandle</a></li>
       <li><a href="../win32/GetStockObject.html">GetStockObject</a></li>
       <li><a href="../win32/GetSystemInfo.html">GetSystemInfo</a></li>
+      <li><a href="../win32/GetSystemPowerStatus.html">GetSystemPowerStatus</a></li>
       <li><a href="../win32/GetTempPath.html">GetTempPath</a></li>
       <li><a href="../win32/GetTextMetrics.html">GetTextMetrics</a></li>
       <li><a href="../win32/GetVersionEx.html">GetVersionEx</a></li>
@@ -401,7 +415,6 @@
       <li><a href="../win32/GetRValue.html">GetRValue</a></li>
       <li><a href="../win32/HIBYTE.html">HIBYTE</a></li>
       <li><a href="../win32/HIWORD.html">HIWORD</a></li>
-      <li><a href="../win32/HRESULT.html">HRESULT</a></li>
       <li><a href="../win32/HRESULT_FROM_WIN32.html">HRESULT_FROM_WIN32</a></li>
       <li><a href="../win32/isWindowsRuntimeAvailable.html">isWindowsRuntimeAvailable</a></li>
       <li><a href="../win32/LOBYTE.html">LOBYTE</a></li>
@@ -427,8 +440,8 @@
   </div>
 
   <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
-      <div><h1><span class="kind-class">ICalendar</span> class      <span class="category winrt cp-10 linked" title="This is part of the winrt Topic."><a href="../topics/winrt-topic.html">winrt</a></span>
-    <span class="category interface cp-15" title="This is part of the Interface Topic.">Interface</span>
+      <div><h1><span class="kind-class">ICalendar</span> class      <span class="category winrt cp-14 linked" title="This is part of the winrt Topic."><a href="../topics/winrt-topic.html">winrt</a></span>
+    <span class="category interface cp-16" title="This is part of the Interface Topic.">Interface</span>
 </h1></div>
 
     
@@ -436,7 +449,7 @@
       <dl class="dl-horizontal">
         <dt>Inheritance</dt>
         <dd><ul class="gt-separated dark clazz-relationships">
-          <li><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object-class.html">Object</a></li>
+          <li><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object-class.html">Object</a></li>
           <li><a href="../win32/IUnknown-class.html">IUnknown</a></li>
           <li><a href="../win32/IInspectable-class.html">IInspectable</a></li>
           <li>ICalendar</li>
@@ -454,7 +467,7 @@
 
       <dl class="constructor-summary-list">
         <dt id="ICalendar" class="callable">
-          <span class="name"><a href="../win32/ICalendar/ICalendar.html">ICalendar</a></span><span class="signature">(<span class="parameter" id="-param-ptr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ptr</span></span><wbr>)</span>
+          <span class="name"><a href="../win32/ICalendar/ICalendar.html">ICalendar</a></span><span class="signature">(<span class="parameter" id="-param-ptr"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ptr</span></span><wbr>)</span>
         </dt>
         <dd>
            
@@ -468,7 +481,7 @@
       <dl class="properties">
         <dt id="Day" class="property">
           <span class="name"><a href="../win32/ICalendar/Day.html">Day</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -476,7 +489,7 @@
 </dd>
         <dt id="DayOfWeek" class="property">
           <span class="name"><a href="../win32/ICalendar/DayOfWeek.html">DayOfWeek</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -484,7 +497,7 @@
 </dd>
         <dt id="Era" class="property">
           <span class="name"><a href="../win32/ICalendar/Era.html">Era</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -492,7 +505,7 @@
 </dd>
         <dt id="FirstDayInThisMonth" class="property">
           <span class="name"><a href="../win32/ICalendar/FirstDayInThisMonth.html">FirstDayInThisMonth</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -500,7 +513,7 @@
 </dd>
         <dt id="FirstEra" class="property">
           <span class="name"><a href="../win32/ICalendar/FirstEra.html">FirstEra</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -508,7 +521,7 @@
 </dd>
         <dt id="FirstHourInThisPeriod" class="property">
           <span class="name"><a href="../win32/ICalendar/FirstHourInThisPeriod.html">FirstHourInThisPeriod</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -516,7 +529,7 @@
 </dd>
         <dt id="FirstMinuteInThisHour" class="property">
           <span class="name"><a href="../win32/ICalendar/FirstMinuteInThisHour.html">FirstMinuteInThisHour</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -524,7 +537,7 @@
 </dd>
         <dt id="FirstMonthInThisYear" class="property">
           <span class="name"><a href="../win32/ICalendar/FirstMonthInThisYear.html">FirstMonthInThisYear</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -532,7 +545,7 @@
 </dd>
         <dt id="FirstPeriodInThisDay" class="property">
           <span class="name"><a href="../win32/ICalendar/FirstPeriodInThisDay.html">FirstPeriodInThisDay</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -540,7 +553,7 @@
 </dd>
         <dt id="FirstSecondInThisMinute" class="property">
           <span class="name"><a href="../win32/ICalendar/FirstSecondInThisMinute.html">FirstSecondInThisMinute</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -548,23 +561,23 @@
 </dd>
         <dt id="FirstYearInThisEra" class="property">
           <span class="name"><a href="../win32/ICalendar/FirstYearInThisEra.html">FirstYearInThisEra</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
                   <div class="features">read-only</div>
 </dd>
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="name"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/hashCode.html">[...]</a>
                   <div class="features">read-only, inherited</div>
 </dd>
         <dt id="Hour" class="property">
           <span class="name"><a href="../win32/ICalendar/Hour.html">Hour</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -572,7 +585,7 @@
 </dd>
         <dt id="IsDaylightSavingTime" class="property">
           <span class="name"><a href="../win32/ICalendar/IsDaylightSavingTime.html">IsDaylightSavingTime</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -580,7 +593,7 @@
 </dd>
         <dt id="Languages" class="property">
           <span class="name"><a href="../win32/ICalendar/Languages.html">Languages</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -588,7 +601,7 @@
 </dd>
         <dt id="LastDayInThisMonth" class="property">
           <span class="name"><a href="../win32/ICalendar/LastDayInThisMonth.html">LastDayInThisMonth</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -596,7 +609,7 @@
 </dd>
         <dt id="LastEra" class="property">
           <span class="name"><a href="../win32/ICalendar/LastEra.html">LastEra</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -604,7 +617,7 @@
 </dd>
         <dt id="LastHourInThisPeriod" class="property">
           <span class="name"><a href="../win32/ICalendar/LastHourInThisPeriod.html">LastHourInThisPeriod</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -612,7 +625,7 @@
 </dd>
         <dt id="LastMinuteInThisHour" class="property">
           <span class="name"><a href="../win32/ICalendar/LastMinuteInThisHour.html">LastMinuteInThisHour</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -620,7 +633,7 @@
 </dd>
         <dt id="LastMonthInThisYear" class="property">
           <span class="name"><a href="../win32/ICalendar/LastMonthInThisYear.html">LastMonthInThisYear</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -628,7 +641,7 @@
 </dd>
         <dt id="LastPeriodInThisDay" class="property">
           <span class="name"><a href="../win32/ICalendar/LastPeriodInThisDay.html">LastPeriodInThisDay</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -636,7 +649,7 @@
 </dd>
         <dt id="LastSecondInThisMinute" class="property">
           <span class="name"><a href="../win32/ICalendar/LastSecondInThisMinute.html">LastSecondInThisMinute</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -644,7 +657,7 @@
 </dd>
         <dt id="LastYearInThisEra" class="property">
           <span class="name"><a href="../win32/ICalendar/LastYearInThisEra.html">LastYearInThisEra</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -652,7 +665,7 @@
 </dd>
         <dt id="Minute" class="property">
           <span class="name"><a href="../win32/ICalendar/Minute.html">Minute</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -660,7 +673,7 @@
 </dd>
         <dt id="Month" class="property">
           <span class="name"><a href="../win32/ICalendar/Month.html">Month</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -668,7 +681,7 @@
 </dd>
         <dt id="Nanosecond" class="property">
           <span class="name"><a href="../win32/ICalendar/Nanosecond.html">Nanosecond</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -676,7 +689,7 @@
 </dd>
         <dt id="NumberOfDaysInThisMonth" class="property">
           <span class="name"><a href="../win32/ICalendar/NumberOfDaysInThisMonth.html">NumberOfDaysInThisMonth</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -684,7 +697,7 @@
 </dd>
         <dt id="NumberOfEras" class="property">
           <span class="name"><a href="../win32/ICalendar/NumberOfEras.html">NumberOfEras</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -692,7 +705,7 @@
 </dd>
         <dt id="NumberOfHoursInThisPeriod" class="property">
           <span class="name"><a href="../win32/ICalendar/NumberOfHoursInThisPeriod.html">NumberOfHoursInThisPeriod</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -700,7 +713,7 @@
 </dd>
         <dt id="NumberOfMinutesInThisHour" class="property">
           <span class="name"><a href="../win32/ICalendar/NumberOfMinutesInThisHour.html">NumberOfMinutesInThisHour</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -708,7 +721,7 @@
 </dd>
         <dt id="NumberOfMonthsInThisYear" class="property">
           <span class="name"><a href="../win32/ICalendar/NumberOfMonthsInThisYear.html">NumberOfMonthsInThisYear</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -716,7 +729,7 @@
 </dd>
         <dt id="NumberOfPeriodsInThisDay" class="property">
           <span class="name"><a href="../win32/ICalendar/NumberOfPeriodsInThisDay.html">NumberOfPeriodsInThisDay</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -724,7 +737,7 @@
 </dd>
         <dt id="NumberOfSecondsInThisMinute" class="property">
           <span class="name"><a href="../win32/ICalendar/NumberOfSecondsInThisMinute.html">NumberOfSecondsInThisMinute</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -732,7 +745,7 @@
 </dd>
         <dt id="NumberOfYearsInThisEra" class="property">
           <span class="name"><a href="../win32/ICalendar/NumberOfYearsInThisEra.html">NumberOfYearsInThisEra</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -740,7 +753,7 @@
 </dd>
         <dt id="NumeralSystem" class="property">
           <span class="name"><a href="../win32/ICalendar/NumeralSystem.html">NumeralSystem</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -748,7 +761,7 @@
 </dd>
         <dt id="Period" class="property">
           <span class="name"><a href="../win32/ICalendar/Period.html">Period</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -756,7 +769,7 @@
 </dd>
         <dt id="ptr" class="property">
           <span class="name"><a href="../win32/ICalendar/ptr.html">ptr</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span>         
         </dt>
         <dd>
            
@@ -764,15 +777,15 @@
 </dd>
         <dt id="ResolvedLanguage" class="property">
           <span class="name"><a href="../win32/ICalendar/ResolvedLanguage.html">ResolvedLanguage</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
                   <div class="features">read-only</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Type-class.html">Type</a></span>         
+          <span class="name"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Type-class.html">Type</a></span>         
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object. 
@@ -780,7 +793,7 @@
 </dd>
         <dt id="Second" class="property">
           <span class="name"><a href="../win32/ICalendar/Second.html">Second</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -788,7 +801,7 @@
 </dd>
         <dt id="Year" class="property">
           <span class="name"><a href="../win32/ICalendar/Year.html">Year</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -801,8 +814,8 @@
       <h2>Methods</h2>
       <dl class="callables">
         <dt id="AddDays" class="callable">
-          <span class="name"><a href="../win32/ICalendar/AddDays.html">AddDays</a></span><span class="signature">(<wbr><span class="parameter" id="AddDays-param-days"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">days</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/AddDays.html">AddDays</a></span><span class="signature">(<wbr><span class="parameter" id="AddDays-param-days"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">days</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -810,8 +823,8 @@
                   
 </dd>
         <dt id="AddEras" class="callable">
-          <span class="name"><a href="../win32/ICalendar/AddEras.html">AddEras</a></span><span class="signature">(<wbr><span class="parameter" id="AddEras-param-eras"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">eras</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/AddEras.html">AddEras</a></span><span class="signature">(<wbr><span class="parameter" id="AddEras-param-eras"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">eras</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -819,8 +832,8 @@
                   
 </dd>
         <dt id="AddHours" class="callable">
-          <span class="name"><a href="../win32/ICalendar/AddHours.html">AddHours</a></span><span class="signature">(<wbr><span class="parameter" id="AddHours-param-hours"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hours</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/AddHours.html">AddHours</a></span><span class="signature">(<wbr><span class="parameter" id="AddHours-param-hours"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">hours</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -828,8 +841,8 @@
                   
 </dd>
         <dt id="AddMinutes" class="callable">
-          <span class="name"><a href="../win32/ICalendar/AddMinutes.html">AddMinutes</a></span><span class="signature">(<wbr><span class="parameter" id="AddMinutes-param-minutes"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">minutes</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/AddMinutes.html">AddMinutes</a></span><span class="signature">(<wbr><span class="parameter" id="AddMinutes-param-minutes"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">minutes</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -837,8 +850,8 @@
                   
 </dd>
         <dt id="AddMonths" class="callable">
-          <span class="name"><a href="../win32/ICalendar/AddMonths.html">AddMonths</a></span><span class="signature">(<wbr><span class="parameter" id="AddMonths-param-months"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">months</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/AddMonths.html">AddMonths</a></span><span class="signature">(<wbr><span class="parameter" id="AddMonths-param-months"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">months</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -846,8 +859,8 @@
                   
 </dd>
         <dt id="AddNanoseconds" class="callable">
-          <span class="name"><a href="../win32/ICalendar/AddNanoseconds.html">AddNanoseconds</a></span><span class="signature">(<wbr><span class="parameter" id="AddNanoseconds-param-nanoseconds"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nanoseconds</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/AddNanoseconds.html">AddNanoseconds</a></span><span class="signature">(<wbr><span class="parameter" id="AddNanoseconds-param-nanoseconds"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">nanoseconds</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -855,8 +868,8 @@
                   
 </dd>
         <dt id="AddPeriods" class="callable">
-          <span class="name"><a href="../win32/ICalendar/AddPeriods.html">AddPeriods</a></span><span class="signature">(<wbr><span class="parameter" id="AddPeriods-param-periods"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">periods</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/AddPeriods.html">AddPeriods</a></span><span class="signature">(<wbr><span class="parameter" id="AddPeriods-param-periods"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">periods</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -865,7 +878,7 @@
 </dd>
         <dt id="AddRef" class="callable inherited">
           <span class="name"><a href="../win32/IUnknown/AddRef.html">AddRef</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -873,8 +886,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="AddSeconds" class="callable">
-          <span class="name"><a href="../win32/ICalendar/AddSeconds.html">AddSeconds</a></span><span class="signature">(<wbr><span class="parameter" id="AddSeconds-param-seconds"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">seconds</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/AddSeconds.html">AddSeconds</a></span><span class="signature">(<wbr><span class="parameter" id="AddSeconds-param-seconds"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">seconds</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -882,8 +895,8 @@
                   
 </dd>
         <dt id="AddWeeks" class="callable">
-          <span class="name"><a href="../win32/ICalendar/AddWeeks.html">AddWeeks</a></span><span class="signature">(<wbr><span class="parameter" id="AddWeeks-param-weeks"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">weeks</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/AddWeeks.html">AddWeeks</a></span><span class="signature">(<wbr><span class="parameter" id="AddWeeks-param-weeks"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">weeks</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -891,8 +904,8 @@
                   
 </dd>
         <dt id="AddYears" class="callable">
-          <span class="name"><a href="../win32/ICalendar/AddYears.html">AddYears</a></span><span class="signature">(<wbr><span class="parameter" id="AddYears-param-years"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">years</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/AddYears.html">AddYears</a></span><span class="signature">(<wbr><span class="parameter" id="AddYears-param-years"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">years</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -900,8 +913,8 @@
                   
 </dd>
         <dt id="ChangeCalendarSystem" class="callable">
-          <span class="name"><a href="../win32/ICalendar/ChangeCalendarSystem.html">ChangeCalendarSystem</a></span><span class="signature">(<wbr><span class="parameter" id="ChangeCalendarSystem-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/ChangeCalendarSystem.html">ChangeCalendarSystem</a></span><span class="signature">(<wbr><span class="parameter" id="ChangeCalendarSystem-param-value"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -909,8 +922,8 @@
                   
 </dd>
         <dt id="ChangeClock" class="callable">
-          <span class="name"><a href="../win32/ICalendar/ChangeClock.html">ChangeClock</a></span><span class="signature">(<wbr><span class="parameter" id="ChangeClock-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/ChangeClock.html">ChangeClock</a></span><span class="signature">(<wbr><span class="parameter" id="ChangeClock-param-value"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -918,8 +931,8 @@
                   
 </dd>
         <dt id="Clone" class="callable">
-          <span class="name"><a href="../win32/ICalendar/Clone.html">Clone</a></span><span class="signature">(<wbr><span class="parameter" id="Clone-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/Clone.html">Clone</a></span><span class="signature">(<wbr><span class="parameter" id="Clone-param-value"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -927,8 +940,8 @@
                   
 </dd>
         <dt id="Compare" class="callable">
-          <span class="name"><a href="../win32/ICalendar/Compare.html">Compare</a></span><span class="signature">(<wbr><span class="parameter" id="Compare-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">other</span>, </span><wbr><span class="parameter" id="Compare-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/Compare.html">Compare</a></span><span class="signature">(<wbr><span class="parameter" id="Compare-param-other"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">other</span>, </span><wbr><span class="parameter" id="Compare-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -936,8 +949,8 @@
                   
 </dd>
         <dt id="CompareDateTime" class="callable">
-          <span class="name"><a href="../win32/ICalendar/CompareDateTime.html">CompareDateTime</a></span><span class="signature">(<wbr><span class="parameter" id="CompareDateTime-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">other</span>, </span><wbr><span class="parameter" id="CompareDateTime-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/CompareDateTime.html">CompareDateTime</a></span><span class="signature">(<wbr><span class="parameter" id="CompareDateTime-param-other"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">other</span>, </span><wbr><span class="parameter" id="CompareDateTime-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -945,8 +958,8 @@
                   
 </dd>
         <dt id="CopyTo" class="callable">
-          <span class="name"><a href="../win32/ICalendar/CopyTo.html">CopyTo</a></span><span class="signature">(<wbr><span class="parameter" id="CopyTo-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">other</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/CopyTo.html">CopyTo</a></span><span class="signature">(<wbr><span class="parameter" id="CopyTo-param-other"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">other</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -954,8 +967,8 @@
                   
 </dd>
         <dt id="DayAsPaddedString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/DayAsPaddedString.html">DayAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="DayAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="DayAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/DayAsPaddedString.html">DayAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="DayAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="DayAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -963,8 +976,8 @@
                   
 </dd>
         <dt id="DayAsString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/DayAsString.html">DayAsString</a></span><span class="signature">(<wbr><span class="parameter" id="DayAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/DayAsString.html">DayAsString</a></span><span class="signature">(<wbr><span class="parameter" id="DayAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -972,8 +985,8 @@
                   
 </dd>
         <dt id="DayOfWeekAsFullSoloString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/DayOfWeekAsFullSoloString.html">DayOfWeekAsFullSoloString</a></span><span class="signature">(<wbr><span class="parameter" id="DayOfWeekAsFullSoloString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/DayOfWeekAsFullSoloString.html">DayOfWeekAsFullSoloString</a></span><span class="signature">(<wbr><span class="parameter" id="DayOfWeekAsFullSoloString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -981,8 +994,8 @@
                   
 </dd>
         <dt id="DayOfWeekAsFullString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/DayOfWeekAsFullString.html">DayOfWeekAsFullString</a></span><span class="signature">(<wbr><span class="parameter" id="DayOfWeekAsFullString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/DayOfWeekAsFullString.html">DayOfWeekAsFullString</a></span><span class="signature">(<wbr><span class="parameter" id="DayOfWeekAsFullString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -990,8 +1003,8 @@
                   
 </dd>
         <dt id="DayOfWeekAsSoloString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/DayOfWeekAsSoloString.html">DayOfWeekAsSoloString</a></span><span class="signature">(<wbr><span class="parameter" id="DayOfWeekAsSoloString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="DayOfWeekAsSoloString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/DayOfWeekAsSoloString.html">DayOfWeekAsSoloString</a></span><span class="signature">(<wbr><span class="parameter" id="DayOfWeekAsSoloString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="DayOfWeekAsSoloString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -999,8 +1012,8 @@
                   
 </dd>
         <dt id="DayOfWeekAsString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/DayOfWeekAsString.html">DayOfWeekAsString</a></span><span class="signature">(<wbr><span class="parameter" id="DayOfWeekAsString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="DayOfWeekAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/DayOfWeekAsString.html">DayOfWeekAsString</a></span><span class="signature">(<wbr><span class="parameter" id="DayOfWeekAsString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="DayOfWeekAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1008,8 +1021,8 @@
                   
 </dd>
         <dt id="EraAsFullString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/EraAsFullString.html">EraAsFullString</a></span><span class="signature">(<wbr><span class="parameter" id="EraAsFullString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/EraAsFullString.html">EraAsFullString</a></span><span class="signature">(<wbr><span class="parameter" id="EraAsFullString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1017,8 +1030,8 @@
                   
 </dd>
         <dt id="EraAsString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/EraAsString.html">EraAsString</a></span><span class="signature">(<wbr><span class="parameter" id="EraAsString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="EraAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/EraAsString.html">EraAsString</a></span><span class="signature">(<wbr><span class="parameter" id="EraAsString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="EraAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1026,8 +1039,8 @@
                   
 </dd>
         <dt id="GetCalendarSystem" class="callable">
-          <span class="name"><a href="../win32/ICalendar/GetCalendarSystem.html">GetCalendarSystem</a></span><span class="signature">(<wbr><span class="parameter" id="GetCalendarSystem-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/GetCalendarSystem.html">GetCalendarSystem</a></span><span class="signature">(<wbr><span class="parameter" id="GetCalendarSystem-param-value"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1035,8 +1048,8 @@
                   
 </dd>
         <dt id="GetClock" class="callable">
-          <span class="name"><a href="../win32/ICalendar/GetClock.html">GetClock</a></span><span class="signature">(<wbr><span class="parameter" id="GetClock-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/GetClock.html">GetClock</a></span><span class="signature">(<wbr><span class="parameter" id="GetClock-param-value"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1044,8 +1057,8 @@
                   
 </dd>
         <dt id="GetDateTime" class="callable">
-          <span class="name"><a href="../win32/ICalendar/GetDateTime.html">GetDateTime</a></span><span class="signature">(<wbr><span class="parameter" id="GetDateTime-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Int64-class.html">Int64</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/GetDateTime.html">GetDateTime</a></span><span class="signature">(<wbr><span class="parameter" id="GetDateTime-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Int64-class.html">Int64</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1053,8 +1066,8 @@
                   
 </dd>
         <dt id="GetIids" class="callable inherited">
-          <span class="name"><a href="../win32/IInspectable/GetIids.html">GetIids</a></span><span class="signature">(<wbr><span class="parameter" id="GetIids-param-iidCount"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">iidCount</span>, </span><wbr><span class="parameter" id="GetIids-param-iids"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">iids</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IInspectable/GetIids.html">GetIids</a></span><span class="signature">(<wbr><span class="parameter" id="GetIids-param-iidCount"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">iidCount</span>, </span><wbr><span class="parameter" id="GetIids-param-iids"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">iids</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1062,8 +1075,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="GetRuntimeClassName" class="callable inherited">
-          <span class="name"><a href="../win32/IInspectable/GetRuntimeClassName.html">GetRuntimeClassName</a></span><span class="signature">(<wbr><span class="parameter" id="GetRuntimeClassName-param-className"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">className</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IInspectable/GetRuntimeClassName.html">GetRuntimeClassName</a></span><span class="signature">(<wbr><span class="parameter" id="GetRuntimeClassName-param-className"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">className</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1071,8 +1084,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="GetTrustLevel" class="callable inherited">
-          <span class="name"><a href="../win32/IInspectable/GetTrustLevel.html">GetTrustLevel</a></span><span class="signature">(<wbr><span class="parameter" id="GetTrustLevel-param-trustLevel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">trustLevel</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IInspectable/GetTrustLevel.html">GetTrustLevel</a></span><span class="signature">(<wbr><span class="parameter" id="GetTrustLevel-param-trustLevel"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">trustLevel</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1080,8 +1093,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="HourAsPaddedString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/HourAsPaddedString.html">HourAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="HourAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="HourAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/HourAsPaddedString.html">HourAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="HourAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="HourAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1089,8 +1102,8 @@
                   
 </dd>
         <dt id="HourAsString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/HourAsString.html">HourAsString</a></span><span class="signature">(<wbr><span class="parameter" id="HourAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/HourAsString.html">HourAsString</a></span><span class="signature">(<wbr><span class="parameter" id="HourAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1098,8 +1111,8 @@
                   
 </dd>
         <dt id="MinuteAsPaddedString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/MinuteAsPaddedString.html">MinuteAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="MinuteAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="MinuteAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/MinuteAsPaddedString.html">MinuteAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="MinuteAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="MinuteAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1107,8 +1120,8 @@
                   
 </dd>
         <dt id="MinuteAsString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/MinuteAsString.html">MinuteAsString</a></span><span class="signature">(<wbr><span class="parameter" id="MinuteAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/MinuteAsString.html">MinuteAsString</a></span><span class="signature">(<wbr><span class="parameter" id="MinuteAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1116,8 +1129,8 @@
                   
 </dd>
         <dt id="MonthAsFullSoloString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/MonthAsFullSoloString.html">MonthAsFullSoloString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsFullSoloString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/MonthAsFullSoloString.html">MonthAsFullSoloString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsFullSoloString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1125,8 +1138,8 @@
                   
 </dd>
         <dt id="MonthAsFullString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/MonthAsFullString.html">MonthAsFullString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsFullString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/MonthAsFullString.html">MonthAsFullString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsFullString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1134,8 +1147,8 @@
                   
 </dd>
         <dt id="MonthAsNumericString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/MonthAsNumericString.html">MonthAsNumericString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsNumericString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/MonthAsNumericString.html">MonthAsNumericString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsNumericString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1143,8 +1156,8 @@
                   
 </dd>
         <dt id="MonthAsPaddedNumericString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/MonthAsPaddedNumericString.html">MonthAsPaddedNumericString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsPaddedNumericString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="MonthAsPaddedNumericString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/MonthAsPaddedNumericString.html">MonthAsPaddedNumericString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsPaddedNumericString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="MonthAsPaddedNumericString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1152,8 +1165,8 @@
                   
 </dd>
         <dt id="MonthAsSoloString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/MonthAsSoloString.html">MonthAsSoloString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsSoloString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="MonthAsSoloString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/MonthAsSoloString.html">MonthAsSoloString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsSoloString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="MonthAsSoloString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1161,8 +1174,8 @@
                   
 </dd>
         <dt id="MonthAsString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/MonthAsString.html">MonthAsString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="MonthAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/MonthAsString.html">MonthAsString</a></span><span class="signature">(<wbr><span class="parameter" id="MonthAsString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="MonthAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1170,8 +1183,8 @@
                   
 </dd>
         <dt id="NanosecondAsPaddedString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/NanosecondAsPaddedString.html">NanosecondAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="NanosecondAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="NanosecondAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/NanosecondAsPaddedString.html">NanosecondAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="NanosecondAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="NanosecondAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1179,8 +1192,8 @@
                   
 </dd>
         <dt id="NanosecondAsString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/NanosecondAsString.html">NanosecondAsString</a></span><span class="signature">(<wbr><span class="parameter" id="NanosecondAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/NanosecondAsString.html">NanosecondAsString</a></span><span class="signature">(<wbr><span class="parameter" id="NanosecondAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1188,17 +1201,17 @@
                   
 </dd>
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span><wbr>)
+          <span class="name"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span><wbr>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
                   </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/noSuchMethod.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
         <dt id="PeriodAsFullString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/PeriodAsFullString.html">PeriodAsFullString</a></span><span class="signature">(<wbr><span class="parameter" id="PeriodAsFullString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/PeriodAsFullString.html">PeriodAsFullString</a></span><span class="signature">(<wbr><span class="parameter" id="PeriodAsFullString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1206,8 +1219,8 @@
                   
 </dd>
         <dt id="PeriodAsString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/PeriodAsString.html">PeriodAsString</a></span><span class="signature">(<wbr><span class="parameter" id="PeriodAsString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="PeriodAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/PeriodAsString.html">PeriodAsString</a></span><span class="signature">(<wbr><span class="parameter" id="PeriodAsString-param-idealLength"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">idealLength</span>, </span><wbr><span class="parameter" id="PeriodAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1215,8 +1228,8 @@
                   
 </dd>
         <dt id="QueryInterface" class="callable inherited">
-          <span class="name"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></span><span class="signature">(<wbr><span class="parameter" id="QueryInterface-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><wbr><span class="parameter" id="QueryInterface-param-ppvObject"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppvObject</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></span><span class="signature">(<wbr><span class="parameter" id="QueryInterface-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><wbr><span class="parameter" id="QueryInterface-param-ppvObject"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppvObject</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1225,7 +1238,7 @@
 </dd>
         <dt id="Release" class="callable inherited">
           <span class="name"><a href="../win32/IUnknown/Release.html">Release</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1233,8 +1246,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="SecondAsPaddedString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/SecondAsPaddedString.html">SecondAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="SecondAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="SecondAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/SecondAsPaddedString.html">SecondAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="SecondAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="SecondAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1242,8 +1255,8 @@
                   
 </dd>
         <dt id="SecondAsString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/SecondAsString.html">SecondAsString</a></span><span class="signature">(<wbr><span class="parameter" id="SecondAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/SecondAsString.html">SecondAsString</a></span><span class="signature">(<wbr><span class="parameter" id="SecondAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1251,8 +1264,8 @@
                   
 </dd>
         <dt id="SetDateTime" class="callable">
-          <span class="name"><a href="../win32/ICalendar/SetDateTime.html">SetDateTime</a></span><span class="signature">(<wbr><span class="parameter" id="SetDateTime-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/SetDateTime.html">SetDateTime</a></span><span class="signature">(<wbr><span class="parameter" id="SetDateTime-param-value"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1261,7 +1274,7 @@
 </dd>
         <dt id="SetToMax" class="callable">
           <span class="name"><a href="../win32/ICalendar/SetToMax.html">SetToMax</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1270,7 +1283,7 @@
 </dd>
         <dt id="SetToMin" class="callable">
           <span class="name"><a href="../win32/ICalendar/SetToMin.html">SetToMin</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1279,7 +1292,7 @@
 </dd>
         <dt id="SetToNow" class="callable">
           <span class="name"><a href="../win32/ICalendar/SetToNow.html">SetToNow</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1287,8 +1300,8 @@
                   
 </dd>
         <dt id="toString" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/String-class.html">String</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1296,8 +1309,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="YearAsPaddedString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/YearAsPaddedString.html">YearAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="YearAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="YearAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/YearAsPaddedString.html">YearAsPaddedString</a></span><span class="signature">(<wbr><span class="parameter" id="YearAsPaddedString-param-minDigits"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">minDigits</span>, </span><wbr><span class="parameter" id="YearAsPaddedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1305,8 +1318,8 @@
                   
 </dd>
         <dt id="YearAsString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/YearAsString.html">YearAsString</a></span><span class="signature">(<wbr><span class="parameter" id="YearAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/YearAsString.html">YearAsString</a></span><span class="signature">(<wbr><span class="parameter" id="YearAsString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1314,8 +1327,8 @@
                   
 </dd>
         <dt id="YearAsTruncatedString" class="callable">
-          <span class="name"><a href="../win32/ICalendar/YearAsTruncatedString.html">YearAsTruncatedString</a></span><span class="signature">(<wbr><span class="parameter" id="YearAsTruncatedString-param-remainingDigits"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">remainingDigits</span>, </span><wbr><span class="parameter" id="YearAsTruncatedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/ICalendar/YearAsTruncatedString.html">YearAsTruncatedString</a></span><span class="signature">(<wbr><span class="parameter" id="YearAsTruncatedString-param-remainingDigits"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span> <span class="parameter-name">remainingDigits</span>, </span><wbr><span class="parameter" id="YearAsTruncatedString-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1329,12 +1342,12 @@
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/bool-class.html">bool</a></span>
           </span>
                   </dt>
         <dd class="inherited">
-          The equality operator. <a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/operator_equals.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
       </dl>
@@ -1365,7 +1378,7 @@
       <li><a href="../win32/ICalendar/FirstPeriodInThisDay.html">FirstPeriodInThisDay</a></li>
       <li><a href="../win32/ICalendar/FirstSecondInThisMinute.html">FirstSecondInThisMinute</a></li>
       <li><a href="../win32/ICalendar/FirstYearInThisEra.html">FirstYearInThisEra</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/hashCode.html">hashCode</a></li>
       <li><a href="../win32/ICalendar/Hour.html">Hour</a></li>
       <li><a href="../win32/ICalendar/IsDaylightSavingTime.html">IsDaylightSavingTime</a></li>
       <li><a href="../win32/ICalendar/Languages.html">Languages</a></li>
@@ -1392,7 +1405,7 @@
       <li><a href="../win32/ICalendar/Period.html">Period</a></li>
       <li><a href="../win32/ICalendar/ptr.html">ptr</a></li>
       <li><a href="../win32/ICalendar/ResolvedLanguage.html">ResolvedLanguage</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/runtimeType.html">runtimeType</a></li>
       <li><a href="../win32/ICalendar/Second.html">Second</a></li>
       <li><a href="../win32/ICalendar/Year.html">Year</a></li>
     
@@ -1440,7 +1453,7 @@
       <li><a href="../win32/ICalendar/MonthAsString.html">MonthAsString</a></li>
       <li><a href="../win32/ICalendar/NanosecondAsPaddedString.html">NanosecondAsPaddedString</a></li>
       <li><a href="../win32/ICalendar/NanosecondAsString.html">NanosecondAsString</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
       <li><a href="../win32/ICalendar/PeriodAsFullString.html">PeriodAsFullString</a></li>
       <li><a href="../win32/ICalendar/PeriodAsString.html">PeriodAsString</a></li>
       <li class="inherited"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></li>
@@ -1451,13 +1464,13 @@
       <li><a href="../win32/ICalendar/SetToMax.html">SetToMax</a></li>
       <li><a href="../win32/ICalendar/SetToMin.html">SetToMin</a></li>
       <li><a href="../win32/ICalendar/SetToNow.html">SetToNow</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/toString.html">toString</a></li>
       <li><a href="../win32/ICalendar/YearAsPaddedString.html">YearAsPaddedString</a></li>
       <li><a href="../win32/ICalendar/YearAsString.html">YearAsString</a></li>
       <li><a href="../win32/ICalendar/YearAsTruncatedString.html">YearAsTruncatedString</a></li>
     
       <li class="section-title inherited"><a href="../win32/ICalendar-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.9.0-13.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/edge/2.9.0-edge.89fe12b12aab50d0db1f9e30190afb32c754a900/dart-core/Object/operator_equals.html">operator ==</a></li>
     
     
     
@@ -1470,7 +1483,7 @@
 <footer>
   <span class="no-break">
     win32
-      1.6.7
+      1.6.9
   </span>
 
 </footer>
