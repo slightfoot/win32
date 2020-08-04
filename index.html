@@ -83,29 +83,50 @@ Other plugins may build on these primitives to provide a friendly API for Dart a
 Flutter developers. A good example of that is
 <a href="https://pub.dev/packages/filepicker_windows">filepicker_windows</a>, which offers a
 common item dialog suitable for incorporation into an existing Flutter app.</p>
-<h2 id="requirements">Requirements</h2>
-<p>This package assumes the <a href="https://dart.dev/get-dart">Dart 32-bit or 64-bit compiler</a>,
-running on Windows.</p>
+<h2 id="what-does-this-package-do">What does this package do</h2>
+<p>This package lets you write apps that use the Windows API directly from Dart, by
+wrapping common Win32, COM and Windows Runtime APIs using Dart FFI.</p>
+<p>You could use it to call a Win32 API like
+<a href="https://docs.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesexw">EnumFontFamiliesEx</a>
+to enumerate all locally-installed fonts:
+<img src="https://github.com/timsneath/win32/blob/master/doc/images/fonts.png?raw=true" alt="Fonts screenshot"></p>
+<p>or access system information that is not exposed directly by the Dart framework libraries:
+<img src="https://github.com/timsneath/win32/blob/master/doc/images/power.png?raw=true" alt="System information screenshot"></p>
+<p>You could use it to build a Windows app with Flutter that relies on Win32 APIs:
+<img src="https://github.com/timsneath/win32/blob/master/doc/images/disk_explorer.png?raw=true" alt="Disk explorer screenshot"></p>
+<p>You could even use it to build a traditional Win32 app, written purely in Dart, that could have come straight out of a classic Charles Petzold book on programming Windows apps:
+<img src="https://github.com/timsneath/win32/blob/master/doc/images/notepad.png?raw=true" alt="Dart notepad screenshot"></p>
+<p>or even, perhaps, a fully-fledged game using GDI:
+<img src="https://github.com/timsneath/win32/blob/master/doc/images/tetris.png?raw=true" alt="Dart Tetris for Win32 screenshot"></p>
+<p>You might even build a package that depends upon it, like <a href="https://pub.dev/packages/dart_console">dart_console</a>, which enables advanced console manipulation:
+<img src="https://github.com/timsneath/win32/blob/master/doc/images/console.png?raw=true" alt="Dart console ANSI color demo screenshot"></p>
+<p>or <a href="https://pub.dev/packages/filepicker_windows">filepicker_windows</a>, which provides a modern Windows file picker for Flutter:
+<img src="https://github.com/timsneath/win32/blob/master/doc/images/filepicker.png?raw=true" alt="Windows file picker screenshot"></p>
 <h2 id="usage">Usage</h2>
-<p>A simple Petzoldian Hello World example can be found in the <code>example</code>
-subdirectory. This example demonstrates creating a Win32 window and responding
-to common messages such as <code>WM_PAINT</code> through a <code>WindowProc</code> callback function.</p>
+<p>Many more samples can be found in the <code>example\</code> subdirectory, along with a test
+suite in the <code>test\</code> subdirectory that shows other API calls.</p>
+<p>A good starting point is <code>hello.dart</code>. This example demonstrates creating a
+Win32 window and responding to common messages such as <code>WM_PAINT</code> through a
+<code>WindowProc</code> callback function.</p>
 <p>To run it, type:</p>
 <pre class="language-cmd"><code class="language-cmd">dart example\hello.dart
 </code></pre>
 <p>This should display a window with a text message.</p>
 <p>This can be compiled into a standalone Win32 executable by running:</p>
-<pre class="language-cmd"><code class="language-cmd">dart2native example\hello.dart -o example\bin\hello.exe
+<pre class="language-cmd"><code class="language-cmd">dart compile exe example\hello.dart -o example\bin\hello.exe
 </code></pre>
 <h2 id="samples">Samples</h2>
 <h3 id="dart-samples">Dart samples</h3>
 <p>The package includes a number of examples in the <code>example</code> subdirectory. These
 examples use the Win32 API for all UI display and do not require Flutter.</p>
-<table><thead><tr><th>Example</th><th>Description</th></tr></thead><tbody><tr><td><code>hello.dart</code></td><td>Basic Petzoldian "hello world" Win32 app</td></tr><tr><td><code>paint.dart</code></td><td>Demonstrates simple GDI drawing and min/max window sizing</td></tr><tr><td><code>scroll.dart</code></td><td>Example of horizontal and vertical scrolling text window</td></tr><tr><td><code>console.dart</code></td><td>Shows usage of console APIs</td></tr><tr><td><code>msgbox.dart</code></td><td>Demonstrates a MessageBox from the console</td></tr><tr><td><code>calendar.dart</code></td><td>Gets information about the calendar from a WinRT API</td></tr><tr><td><code>sendinput.dart</code></td><td>Sends keyboard and mouse input to another window</td></tr><tr><td><code>knownfolder.dart</code></td><td>Retrieves known folders from the current user profile</td></tr><tr><td><code>window.dart</code></td><td>Enumerates open windows and basic window manipulation</td></tr><tr><td><code>monitor.dart</code></td><td>Uses DDC and monitor-config API to get monitor caps</td></tr><tr><td><code>wallpaper.dart</code></td><td>Shows what wallpaper and background color are set</td></tr><tr><td><code>guid.dart</code></td><td>Creates a globally unique identifier (GUID)</td></tr><tr><td><code>devices.dart</code></td><td>Uses volume management APIs to list all disk devices</td></tr><tr><td><code>modules.dart</code></td><td>Enumerates all loaded modules on the current system</td></tr><tr><td><code>snake.dart</code></td><td>Snake game using various GDI features</td></tr><tr><td><code>dialogshow.dart</code></td><td>Creates a common item dialog (file picker) using COM</td></tr><tr><td><code>wmi.dart</code></td><td>Using WMI from COM to retrieve device/OS information</td></tr><tr><td><code>sysinfo.dart</code></td><td>Examples of getting device information from native C APIs</td></tr><tr><td><code>winmd.dart</code></td><td>Interrogate Windows Runtime types</td></tr><tr><td><code>credentials.dart</code></td><td>Adds a credential to the store and retrieves it</td></tr><tr><td><code>dynamic_load.dart</code></td><td>Demonstrate loading a DLL and calling it at runtime</td></tr><tr><td><code>tetris\main.dart</code></td><td>Port of an open-source Tetris game to Dart</td></tr><tr><td><code>notepad\notepad.dart</code></td><td>Lightweight replica of the Windows notepad applet</td></tr></tbody></table>
+<table><thead><tr><th>Example</th><th>Description</th></tr></thead><tbody><tr><td><code>hello.dart</code></td><td>Basic Petzoldian "hello world" Win32 app</td></tr><tr><td><code>paint.dart</code></td><td>Demonstrates simple GDI drawing and min/max window sizing</td></tr><tr><td><code>scroll.dart</code></td><td>Example of horizontal and vertical scrolling text window</td></tr><tr><td><code>console.dart</code></td><td>Shows usage of console APIs</td></tr><tr><td><code>msgbox.dart</code></td><td>Demonstrates a MessageBox from the console</td></tr><tr><td><code>calendar.dart</code></td><td>Gets information about the calendar from a WinRT API</td></tr><tr><td><code>sendinput.dart</code></td><td>Sends keyboard and mouse input to another window</td></tr><tr><td><code>knownfolder.dart</code></td><td>Retrieves known folders from the current user profile</td></tr><tr><td><code>window.dart</code></td><td>Enumerates open windows and basic window manipulation</td></tr><tr><td><code>monitor.dart</code></td><td>Uses DDC and monitor-config API to get monitor caps</td></tr><tr><td><code>wallpaper.dart</code></td><td>Shows what wallpaper and background color are set</td></tr><tr><td><code>guid.dart</code></td><td>Creates a globally unique identifier (GUID)</td></tr><tr><td><code>devices.dart</code></td><td>Uses volume management APIs to list all disk devices</td></tr><tr><td><code>modules.dart</code></td><td>Enumerates all loaded modules on the current system</td></tr><tr><td><code>snake.dart</code></td><td>Snake game using various GDI features</td></tr><tr><td><code>dialogshow.dart</code></td><td>Creates a common item dialog (file picker) using COM</td></tr><tr><td><code>wmi.dart</code></td><td>Using WMI from COM to retrieve device/OS information</td></tr><tr><td><code>sysinfo.dart</code></td><td>Examples of getting device information from native C APIs</td></tr><tr><td><code>manifest\</code></td><td>Demonstrates the use of app manifests for compiled apps</td></tr><tr><td><code>winmd.dart</code></td><td>Interrogate Windows Runtime types</td></tr><tr><td><code>credentials.dart</code></td><td>Adds a credential to the store and retrieves it</td></tr><tr><td><code>dynamic_load.dart</code></td><td>Demonstrate loading a DLL and calling it at runtime</td></tr><tr><td><code>tetris\main.dart</code></td><td>Port of an open-source Tetris game to Dart</td></tr><tr><td><code>notepad\notepad.dart</code></td><td>Lightweight replica of the Windows notepad applet</td></tr></tbody></table>
 <h3 id="flutter-samples">Flutter samples</h3>
 <p>The <code>explorer\</code> subdirectory contains an example of a simple Flutter app that
 uses the volume management Win32 APIs to find the disk drives connected to your
 computer and their volume IDs and attached paths.</p>
+<h2 id="requirements">Requirements</h2>
+<p>This package assumes the <a href="https://dart.dev/get-dart">Dart 32-bit or 64-bit compiler</a>,
+running on Windows.</p>
 <h2 id="features-and-bugs">Features and bugs</h2>
 <p>Let me know what APIs you're interested in seeing. I'm not planning to project
 the entire Windows API, but I'm particularly interested in examples that either

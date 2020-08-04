@@ -129,14 +129,14 @@
     <section class="multi-line-signature">
       <span class="returntype"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
             <span class="name ">GetSize</span>
-(<wbr><ol class="parameter-list"><li><span class="parameter" id="GetSize-param-value"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span></li>
+(<wbr><ol class="parameter-list"><li><span class="parameter" id="GetSize-param-value"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span></li>
 </ol>)
       
     </section>
     
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
-      <pre class="language-dart"><code class="language-dart">int GetSize(Pointer&lt;IntPtr&gt; value) =&gt;
+      <pre class="language-dart"><code class="language-dart">int GetSize(Pointer&lt;Uint32&gt; value) =&gt;
     Pointer&lt;NativeFunction&lt;_GetSize_Native&gt;&gt;.fromAddress(
             ptr.ref.vtable.elementAt(24).value)
         .asFunction&lt;_GetSize_Dart&gt;()(ptr.ref.lpVtbl, value);</code></pre>

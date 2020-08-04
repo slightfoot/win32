@@ -138,7 +138,7 @@
                         <section class="summary source-code" id="source">
           <h2><span>Implementation</span></h2>
           <pre class="language-dart"><code class="language-dart">int get Type {
-  final retValuePtr = allocate&lt;IntPtr&gt;();
+  final retValuePtr = allocate&lt;Int32&gt;();
 
   final hr = Pointer&lt;NativeFunction&lt;_get_Type_Native&gt;&gt;.fromAddress(
           ptr.ref.vtable.elementAt(6).value)
