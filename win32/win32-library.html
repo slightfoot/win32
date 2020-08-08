@@ -93,7 +93,7 @@ more idiomatic for a Dart consumer.</p>
 units. (Some older Windows APIs also offer an ANSI, or 8-bit representation,
 but we use the wide versions, which are suffixed with a capital 'W' (e.g.
 <code>FormatMessageW</code>).</p>
-<p>You can use the <a href="../win32/TEXT.html">TEXT</a> function to convert a Dart string into a
+<p>You can use the <a href="../win32/TEXT-constant.html">TEXT</a> function to convert a Dart string into a
 <code>Pointer&lt;Utf16&gt;</code>, which can be passed to any Windows API expecting a string,
 for example:</p>
 <pre class="language-dart"><code>  ShellExecute(0, TEXT('open'), TEXT('notepad.exe'), nullptr, nullptr, SW_SHOW);
@@ -371,6 +371,13 @@ this class.
         </dt>
         <dd>
           DISPPARAMS 
+        </dd>
+        <dt id="DLLVERSIONINFO">
+          <span class="name "><a href="../win32/DLLVERSIONINFO-class.html">DLLVERSIONINFO</a></span>             <span class="category struct cp-17" title="This is part of the Struct Topic.">Struct</span>
+        
+        </dt>
+        <dd>
+          DLLVERSIONINFO 
         </dd>
         <dt id="ENUMLOGFONTEX">
           <span class="name "><a href="../win32/ENUMLOGFONTEX-class.html">ENUMLOGFONTEX</a></span>         
@@ -654,6 +661,13 @@ this class.
         </dt>
         <dd>
            
+        </dd>
+        <dt id="INITCOMMONCONTROLSEX">
+          <span class="name "><a href="../win32/INITCOMMONCONTROLSEX-class.html">INITCOMMONCONTROLSEX</a></span>             <span class="category struct cp-17" title="This is part of the Struct Topic.">Struct</span>
+        
+        </dt>
+        <dd>
+          INITCOMMONCONTROLSEX 
         </dd>
         <dt id="IPropertyValue">
           <span class="name "><a href="../win32/IPropertyValue-class.html">IPropertyValue</a></span>             <span class="category winrt cp-14 linked" title="This is part of the winrt Topic."><a href="../topics/winrt-topic.html">winrt</a></span>
@@ -1096,12 +1110,26 @@ this class.
         <dd>
           SYSTEM_POWER_STATUS 
         </dd>
+        <dt id="TASKDIALOG_BUTTON">
+          <span class="name "><a href="../win32/TASKDIALOG_BUTTON-class.html">TASKDIALOG_BUTTON</a></span>             <span class="category struct cp-17" title="This is part of the Struct Topic.">Struct</span>
+        
+        </dt>
+        <dd>
+          TASKDIALOG_BUTTON 
+        </dd>
         <dt id="TASKDIALOG_COMMON_BUTTON_FLAGS">
           <span class="name "><a href="../win32/TASKDIALOG_COMMON_BUTTON_FLAGS-class.html">TASKDIALOG_COMMON_BUTTON_FLAGS</a></span>             <span class="category enum cp-15" title="This is part of the Enum Topic.">Enum</span>
         
         </dt>
         <dd>
            
+        </dd>
+        <dt id="TASKDIALOGCONFIG">
+          <span class="name "><a href="../win32/TASKDIALOGCONFIG-class.html">TASKDIALOGCONFIG</a></span>             <span class="category struct cp-17" title="This is part of the Struct Topic.">Struct</span>
+        
+        </dt>
+        <dd>
+          TASKDIALOGCONFIG 
         </dd>
         <dt id="TEXTMETRIC">
           <span class="name "><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></span>             <span class="category struct cp-17" title="This is part of the Struct Topic.">Struct</span>
@@ -1183,7 +1211,7 @@ this class.
       <dl class="properties">
         <dt id="FALSE" class="constant">
           <span class="name "><a href="../win32/FALSE-constant.html">FALSE</a></span>
-          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
                   </dt>
         <dd>
           Boolean false value returned from the Win32 API 
@@ -1194,7 +1222,7 @@ this class.
         </dd>
         <dt id="MAX_PATH" class="constant">
           <span class="name "><a href="../win32/MAX_PATH-constant.html">MAX_PATH</a></span>
-          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
                   </dt>
         <dd>
            
@@ -1205,7 +1233,7 @@ this class.
         </dd>
         <dt id="NULL" class="constant">
           <span class="name "><a href="../win32/NULL-constant.html">NULL</a></span>
-          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
                   </dt>
         <dd>
           A zero value; used to represent an empty bitmask. 
@@ -1216,7 +1244,7 @@ this class.
         </dd>
         <dt id="STATUS_SUCCESS" class="constant">
           <span class="name "><a href="../win32/STATUS_SUCCESS-constant.html">STATUS_SUCCESS</a></span>
-          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
                   </dt>
         <dd>
           Success status 
@@ -1225,9 +1253,20 @@ this class.
             <span class="signature"><code>0</code></span>
           </div>
         </dd>
+        <dt id="TEXT" class="constant">
+          <span class="name "><a href="../win32/TEXT-constant.html">TEXT</a></span>
+          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span> Function<span class="signature">(<span class="parameter" id="param-s"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/String-class.html">String</a></span> <span class="parameter-name">s</span></span><wbr>)</span></span>
+                  </dt>
+        <dd>
+           
+                  
+  <div>
+            <span class="signature"><code>Utf16.toUtf16</code></span>
+          </div>
+        </dd>
         <dt id="TRUE" class="constant">
           <span class="name "><a href="../win32/TRUE-constant.html">TRUE</a></span>
-          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8594; const <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
                   </dt>
         <dd>
           Boolean true value returned from the Win32 API 
@@ -1252,6 +1291,15 @@ this class.
           {@category kernel32} 
                   <div class="features">final</div>
 </dd>
+        <dt id="AllocConsole" class="property">
+          <span class="name"><a href="../win32/AllocConsole.html">AllocConsole</a></span>
+          <span class="signature">&#8594; allocConsoleDart</span>             <span class="category kernel32 cp-0 linked" title="This is part of the kernel32 Topic."><a href="../topics/kernel32-topic.html">kernel32</a></span>
+        
+        </dt>
+        <dd>
+          {@category kernel32} 
+                  <div class="features">final</div>
+</dd>
         <dt id="AppendMenu" class="property">
           <span class="name"><a href="../win32/AppendMenu.html">AppendMenu</a></span>
           <span class="signature">&#8594; appendMenuDart</span>             <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
@@ -1259,6 +1307,15 @@ this class.
         </dt>
         <dd>
           {@category user32} 
+                  <div class="features">final</div>
+</dd>
+        <dt id="AttachConsole" class="property">
+          <span class="name"><a href="../win32/AttachConsole.html">AttachConsole</a></span>
+          <span class="signature">&#8594; attachConsoleDart</span>             <span class="category kernel32 cp-0 linked" title="This is part of the kernel32 Topic."><a href="../topics/kernel32-topic.html">kernel32</a></span>
+        
+        </dt>
+        <dd>
+          {@category kernel32} 
                   <div class="features">final</div>
 </dd>
         <dt id="Beep" class="property">
@@ -1684,6 +1741,15 @@ this class.
           {@category user32} 
                   <div class="features">final</div>
 </dd>
+        <dt id="DrawStatusText" class="property">
+          <span class="name"><a href="../win32/DrawStatusText.html">DrawStatusText</a></span>
+          <span class="signature">&#8594; drawStatusTextDart</span>             <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
+        
+        </dt>
+        <dd>
+          {@category comctl32} 
+                  <div class="features">final</div>
+</dd>
         <dt id="DrawText" class="property">
           <span class="name"><a href="../win32/DrawText.html">DrawText</a></span>
           <span class="signature">&#8594; drawTextDart</span>             <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
@@ -1750,6 +1816,15 @@ this class.
         <dt id="EnumProcessModules" class="property">
           <span class="name"><a href="../win32/EnumProcessModules.html">EnumProcessModules</a></span>
           <span class="signature">&#8594; enumProcessModulesDart</span>             <span class="category psapi cp-8 linked" title="This is part of the psapi Topic."><a href="../topics/psapi-topic.html">psapi</a></span>
+        
+        </dt>
+        <dd>
+          {@category psapi} 
+                  <div class="features">final</div>
+</dd>
+        <dt id="EnumProcessModulesEx" class="property">
+          <span class="name"><a href="../win32/EnumProcessModulesEx.html">EnumProcessModulesEx</a></span>
+          <span class="signature">&#8594; enumProcessModulesExDart</span>             <span class="category psapi cp-8 linked" title="This is part of the psapi Topic."><a href="../topics/psapi-topic.html">psapi</a></span>
         
         </dt>
         <dd>
@@ -1867,6 +1942,15 @@ this class.
         <dt id="FormatMessage" class="property">
           <span class="name"><a href="../win32/FormatMessage.html">FormatMessage</a></span>
           <span class="signature">&#8594; formatMessageDart</span>             <span class="category kernel32 cp-0 linked" title="This is part of the kernel32 Topic."><a href="../topics/kernel32-topic.html">kernel32</a></span>
+        
+        </dt>
+        <dd>
+          {@category kernel32} 
+                  <div class="features">final</div>
+</dd>
+        <dt id="FreeConsole" class="property">
+          <span class="name"><a href="../win32/FreeConsole.html">FreeConsole</a></span>
+          <span class="signature">&#8594; freeConsoleDart</span>             <span class="category kernel32 cp-0 linked" title="This is part of the kernel32 Topic."><a href="../topics/kernel32-topic.html">kernel32</a></span>
         
         </dt>
         <dd>
@@ -2305,6 +2389,15 @@ this class.
           {@category ole32} 
                   <div class="features">final</div>
 </dd>
+        <dt id="InitCommonControlsEx" class="property">
+          <span class="name"><a href="../win32/InitCommonControlsEx.html">InitCommonControlsEx</a></span>
+          <span class="signature">&#8594; initCommonControlsExDart</span>             <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
+        
+        </dt>
+        <dd>
+          {@category comctl32} 
+                  <div class="features">final</div>
+</dd>
         <dt id="InitializeProcThreadAttributeList" class="property">
           <span class="name"><a href="../win32/InitializeProcThreadAttributeList.html">InitializeProcThreadAttributeList</a></span>
           <span class="signature">&#8594; initializeProcThreadAttributeListDart</span>             <span class="category kernel32 cp-0 linked" title="This is part of the kernel32 Topic."><a href="../topics/kernel32-topic.html">kernel32</a></span>
@@ -2330,6 +2423,15 @@ this class.
         </dt>
         <dd>
           {@category user32} 
+                  <div class="features">final</div>
+</dd>
+        <dt id="IsDebuggerPresent" class="property">
+          <span class="name"><a href="../win32/IsDebuggerPresent.html">IsDebuggerPresent</a></span>
+          <span class="signature">&#8594; isDebuggerPresentDart</span>             <span class="category kernel32 cp-0 linked" title="This is part of the kernel32 Topic."><a href="../topics/kernel32-topic.html">kernel32</a></span>
+        
+        </dt>
+        <dd>
+          {@category kernel32} 
                   <div class="features">final</div>
 </dd>
         <dt id="IsDialogMessage" class="property">
@@ -2422,6 +2524,15 @@ this class.
           {@category winrt} 
                   <div class="features">final</div>
 </dd>
+        <dt id="MonitorFromPoint" class="property">
+          <span class="name"><a href="../win32/MonitorFromPoint.html">MonitorFromPoint</a></span>
+          <span class="signature">&#8594; monitorFromPointDart</span>             <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+        
+        </dt>
+        <dd>
+          {@category user32} 
+                  <div class="features">final</div>
+</dd>
         <dt id="MonitorFromWindow" class="property">
           <span class="name"><a href="../win32/MonitorFromWindow.html">MonitorFromWindow</a></span>
           <span class="signature">&#8594; monitorFromWindowDart</span>             <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
@@ -2443,6 +2554,15 @@ this class.
         <dt id="MoveWindow" class="property">
           <span class="name"><a href="../win32/MoveWindow.html">MoveWindow</a></span>
           <span class="signature">&#8594; moveWindowDart</span>             <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+        
+        </dt>
+        <dd>
+          {@category user32} 
+                  <div class="features">final</div>
+</dd>
+        <dt id="MsgWaitForMultipleObjects" class="property">
+          <span class="name"><a href="../win32/MsgWaitForMultipleObjects.html">MsgWaitForMultipleObjects</a></span>
+          <span class="signature">&#8594; msgWaitForMultipleObjectsDart</span>             <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
         
         </dt>
         <dd>
@@ -2479,6 +2599,24 @@ this class.
         <dt id="QueryDosDevice" class="property">
           <span class="name"><a href="../win32/QueryDosDevice.html">QueryDosDevice</a></span>
           <span class="signature">&#8594; queryDosDeviceDart</span>             <span class="category kernel32 cp-0 linked" title="This is part of the kernel32 Topic."><a href="../topics/kernel32-topic.html">kernel32</a></span>
+        
+        </dt>
+        <dd>
+          {@category kernel32} 
+                  <div class="features">final</div>
+</dd>
+        <dt id="QueryPerformanceCounter" class="property">
+          <span class="name"><a href="../win32/QueryPerformanceCounter.html">QueryPerformanceCounter</a></span>
+          <span class="signature">&#8594; queryPerformanceCounterDart</span>             <span class="category kernel32 cp-0 linked" title="This is part of the kernel32 Topic."><a href="../topics/kernel32-topic.html">kernel32</a></span>
+        
+        </dt>
+        <dd>
+          {@category kernel32} 
+                  <div class="features">final</div>
+</dd>
+        <dt id="QueryPerformanceFrequency" class="property">
+          <span class="name"><a href="../win32/QueryPerformanceFrequency.html">QueryPerformanceFrequency</a></span>
+          <span class="signature">&#8594; queryPerformanceFrequencyDart</span>             <span class="category kernel32 cp-0 linked" title="This is part of the kernel32 Topic."><a href="../topics/kernel32-topic.html">kernel32</a></span>
         
         </dt>
         <dd>
@@ -2604,7 +2742,7 @@ this class.
 </dd>
         <dt id="rometadata" class="property">
           <span class="name"><a href="../win32/rometadata.html">rometadata</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/DynamicLibrary-class.html">DynamicLibrary</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/DynamicLibrary-class.html">DynamicLibrary</a></span>         
         </dt>
         <dd>
            
@@ -2817,6 +2955,15 @@ this class.
           {@category dxva2} 
                   <div class="features">final</div>
 </dd>
+        <dt id="SetParent" class="property">
+          <span class="name"><a href="../win32/SetParent.html">SetParent</a></span>
+          <span class="signature">&#8594; setParentDart</span>             <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+        
+        </dt>
+        <dd>
+          {@category user32} 
+                  <div class="features">final</div>
+</dd>
         <dt id="SetScrollInfo" class="property">
           <span class="name"><a href="../win32/SetScrollInfo.html">SetScrollInfo</a></span>
           <span class="signature">&#8594; setScrollInfoDart</span>             <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
@@ -2869,6 +3016,15 @@ this class.
         </dt>
         <dd>
           {@category gdi32} 
+                  <div class="features">final</div>
+</dd>
+        <dt id="SetWindowLongPtr" class="property">
+          <span class="name"><a href="../win32/SetWindowLongPtr.html">SetWindowLongPtr</a></span>
+          <span class="signature">&#8594; setWindowLongPtrDart</span>             <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+        
+        </dt>
+        <dd>
+          {@category user32} 
                   <div class="features">final</div>
 </dd>
         <dt id="SetWindowText" class="property">
@@ -2988,6 +3144,15 @@ this class.
           {@category gdi32} 
                   <div class="features">final</div>
 </dd>
+        <dt id="SystemParametersInfo" class="property">
+          <span class="name"><a href="../win32/SystemParametersInfo.html">SystemParametersInfo</a></span>
+          <span class="signature">&#8594; systemParametersInfoDart</span>             <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+        
+        </dt>
+        <dd>
+          {@category user32} 
+                  <div class="features">final</div>
+</dd>
         <dt id="TaskDialog" class="property">
           <span class="name"><a href="../win32/TaskDialog.html">TaskDialog</a></span>
           <span class="signature">&#8594; taskDialogDart</span>             <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
@@ -2997,12 +3162,13 @@ this class.
           {@category comctl32} 
                   <div class="features">final</div>
 </dd>
-        <dt id="TEXT" class="property">
-          <span class="name"><a href="../win32/TEXT.html">TEXT</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span> Function<span class="signature">(<span class="parameter" id="param-s"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/String-class.html">String</a></span> <span class="parameter-name">s</span></span><wbr>)</span></span>         
+        <dt id="TaskDialogIndirect" class="property">
+          <span class="name"><a href="../win32/TaskDialogIndirect.html">TaskDialogIndirect</a></span>
+          <span class="signature">&#8594; taskDialogIndirectDart</span>             <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
+        
         </dt>
         <dd>
-           
+          {@category comctl32} 
                   <div class="features">final</div>
 </dd>
         <dt id="TextOut" class="property">
@@ -3139,8 +3305,8 @@ this class.
 
       <dl class="callables">
         <dt id="convertFromHString" class="callable">
-          <span class="name"><a href="../win32/convertFromHString.html">convertFromHString</a></span><span class="signature">(<wbr><span class="parameter" id="convertFromHString-param-hstring"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">hstring</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="../win32/convertFromHString.html">convertFromHString</a></span><span class="signature">(<wbr><span class="parameter" id="convertFromHString-param-hstring"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">hstring</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/String-class.html">String</a></span>
           </span>
                       <span class="category winrt cp-14 linked" title="This is part of the winrt Topic."><a href="../topics/winrt-topic.html">winrt</a></span>
           </dt>
@@ -3149,8 +3315,8 @@ this class.
                   
 </dd>
         <dt id="convertToANSIString" class="callable">
-          <span class="name"><a href="../win32/convertToANSIString.html">convertToANSIString</a></span><span class="signature">(<wbr><span class="parameter" id="convertToANSIString-param-str"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/String-class.html">String</a></span> <span class="parameter-name">str</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span>
+          <span class="name"><a href="../win32/convertToANSIString.html">convertToANSIString</a></span><span class="signature">(<wbr><span class="parameter" id="convertToANSIString-param-str"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/String-class.html">String</a></span> <span class="parameter-name">str</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span>
           </span>
                   </dt>
         <dd>
@@ -3158,8 +3324,8 @@ this class.
                   
 </dd>
         <dt id="convertToCLSID" class="callable">
-          <span class="name"><a href="../win32/convertToCLSID.html">convertToCLSID</a></span><span class="signature">(<wbr><span class="parameter" id="convertToCLSID-param-strCLSID"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/String-class.html">String</a></span> <span class="parameter-name">strCLSID</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span>
+          <span class="name"><a href="../win32/convertToCLSID.html">convertToCLSID</a></span><span class="signature">(<wbr><span class="parameter" id="convertToCLSID-param-strCLSID"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/String-class.html">String</a></span> <span class="parameter-name">strCLSID</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span>
           </span>
                       <span class="category com cp-13 linked" title="This is part of the com Topic."><a href="../topics/com-topic.html">com</a></span>
           </dt>
@@ -3168,8 +3334,8 @@ this class.
                   
 </dd>
         <dt id="convertToHString" class="callable">
-          <span class="name"><a href="../win32/convertToHString.html">convertToHString</a></span><span class="signature">(<wbr><span class="parameter" id="convertToHString-param-string"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/String-class.html">String</a></span> <span class="parameter-name">string</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span>
+          <span class="name"><a href="../win32/convertToHString.html">convertToHString</a></span><span class="signature">(<wbr><span class="parameter" id="convertToHString-param-string"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/String-class.html">String</a></span> <span class="parameter-name">string</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span>
           </span>
                       <span class="category winrt cp-14 linked" title="This is part of the winrt Topic."><a href="../topics/winrt-topic.html">winrt</a></span>
           </dt>
@@ -3179,8 +3345,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="convertToIID" class="callable">
-          <span class="name"><a href="../win32/convertToIID.html">convertToIID</a></span><span class="signature">(<wbr><span class="parameter" id="convertToIID-param-strIID"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/String-class.html">String</a></span> <span class="parameter-name">strIID</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span>
+          <span class="name"><a href="../win32/convertToIID.html">convertToIID</a></span><span class="signature">(<wbr><span class="parameter" id="convertToIID-param-strIID"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/String-class.html">String</a></span> <span class="parameter-name">strIID</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span>
           </span>
                       <span class="category com cp-13 linked" title="This is part of the com Topic."><a href="../topics/com-topic.html">com</a></span>
           </dt>
@@ -3189,8 +3355,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="CreateObject" class="callable">
-          <span class="name"><a href="../win32/CreateObject.html">CreateObject</a></span><span class="signature">(<wbr><span class="parameter" id="CreateObject-param-className"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/String-class.html">String</a></span> <span class="parameter-name">className</span>, </span><wbr><span class="parameter" id="CreateObject-param-iid"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/String-class.html">String</a></span> <span class="parameter-name">iid</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span>
+          <span class="name"><a href="../win32/CreateObject.html">CreateObject</a></span><span class="signature">(<wbr><span class="parameter" id="CreateObject-param-className"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/String-class.html">String</a></span> <span class="parameter-name">className</span>, </span><wbr><span class="parameter" id="CreateObject-param-iid"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/String-class.html">String</a></span> <span class="parameter-name">iid</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span>
           </span>
                       <span class="category winrt cp-14 linked" title="This is part of the winrt Topic."><a href="../topics/winrt-topic.html">winrt</a></span>
           </dt>
@@ -3198,9 +3364,19 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
           Creates a WinRT object. <a href="../win32/CreateObject.html">[...]</a>
                   
 </dd>
+        <dt id="CreateWindow" class="callable">
+          <span class="name"><a href="../win32/CreateWindow.html">CreateWindow</a></span><span class="signature">(<wbr><span class="parameter" id="CreateWindow-param-lpClassName"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpClassName</span>, </span><wbr><span class="parameter" id="CreateWindow-param-lpWindowName"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpWindowName</span>, </span><wbr><span class="parameter" id="CreateWindow-param-dwStyle"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwStyle</span>, </span><wbr><span class="parameter" id="CreateWindow-param-X"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">X</span>, </span><wbr><span class="parameter" id="CreateWindow-param-Y"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">Y</span>, </span><wbr><span class="parameter" id="CreateWindow-param-nWidth"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">nWidth</span>, </span><wbr><span class="parameter" id="CreateWindow-param-nHeight"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">nHeight</span>, </span><wbr><span class="parameter" id="CreateWindow-param-hWndParent"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndParent</span>, </span><wbr><span class="parameter" id="CreateWindow-param-hMenu"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMenu</span>, </span><wbr><span class="parameter" id="CreateWindow-param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><wbr><span class="parameter" id="CreateWindow-param-lpParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Void-class.html">Void</a></span>&gt;</span></span> <span class="parameter-name">lpParam</span></span><wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+                      <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+          </dt>
+        <dd>
+           
+                  
+</dd>
         <dt id="FAILED" class="callable">
-          <span class="name"><a href="../win32/FAILED.html">FAILED</a></span><span class="signature">(<wbr><span class="parameter" id="FAILED-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="../win32/FAILED.html">FAILED</a></span><span class="signature">(<wbr><span class="parameter" id="FAILED-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/bool-class.html">bool</a></span>
           </span>
                   </dt>
         <dd>
@@ -3208,8 +3384,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="GetBValue" class="callable">
-          <span class="name"><a href="../win32/GetBValue.html">GetBValue</a></span><span class="signature">(<wbr><span class="parameter" id="GetBValue-param-rgb"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">rgb</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/GetBValue.html">GetBValue</a></span><span class="signature">(<wbr><span class="parameter" id="GetBValue-param-rgb"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">rgb</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -3217,8 +3393,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="GetGValue" class="callable">
-          <span class="name"><a href="../win32/GetGValue.html">GetGValue</a></span><span class="signature">(<wbr><span class="parameter" id="GetGValue-param-rgb"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">rgb</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/GetGValue.html">GetGValue</a></span><span class="signature">(<wbr><span class="parameter" id="GetGValue-param-rgb"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">rgb</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -3226,8 +3402,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="GetRValue" class="callable">
-          <span class="name"><a href="../win32/GetRValue.html">GetRValue</a></span><span class="signature">(<wbr><span class="parameter" id="GetRValue-param-rgb"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">rgb</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/GetRValue.html">GetRValue</a></span><span class="signature">(<wbr><span class="parameter" id="GetRValue-param-rgb"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">rgb</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -3235,8 +3411,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="HIBYTE" class="callable">
-          <span class="name"><a href="../win32/HIBYTE.html">HIBYTE</a></span><span class="signature">(<wbr><span class="parameter" id="HIBYTE-param-w"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">w</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/HIBYTE.html">HIBYTE</a></span><span class="signature">(<wbr><span class="parameter" id="HIBYTE-param-w"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">w</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -3244,8 +3420,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="HIWORD" class="callable">
-          <span class="name"><a href="../win32/HIWORD.html">HIWORD</a></span><span class="signature">(<wbr><span class="parameter" id="HIWORD-param-l"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">l</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/HIWORD.html">HIWORD</a></span><span class="signature">(<wbr><span class="parameter" id="HIWORD-param-l"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">l</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -3253,8 +3429,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="HRESULT_FROM_WIN32" class="callable">
-          <span class="name"><a href="../win32/HRESULT_FROM_WIN32.html">HRESULT_FROM_WIN32</a></span><span class="signature">(<wbr><span class="parameter" id="HRESULT_FROM_WIN32-param-x"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/HRESULT_FROM_WIN32.html">HRESULT_FROM_WIN32</a></span><span class="signature">(<wbr><span class="parameter" id="HRESULT_FROM_WIN32-param-x"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -3263,7 +3439,7 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
 </dd>
         <dt id="isWindowsRuntimeAvailable" class="callable">
           <span class="name"><a href="../win32/isWindowsRuntimeAvailable.html">isWindowsRuntimeAvailable</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/bool-class.html">bool</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/bool-class.html">bool</a></span>
           </span>
                   </dt>
         <dd>
@@ -3271,8 +3447,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="LOBYTE" class="callable">
-          <span class="name"><a href="../win32/LOBYTE.html">LOBYTE</a></span><span class="signature">(<wbr><span class="parameter" id="LOBYTE-param-w"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">w</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/LOBYTE.html">LOBYTE</a></span><span class="signature">(<wbr><span class="parameter" id="LOBYTE-param-w"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">w</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -3280,8 +3456,26 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="LOWORD" class="callable">
-          <span class="name"><a href="../win32/LOWORD.html">LOWORD</a></span><span class="signature">(<wbr><span class="parameter" id="LOWORD-param-l"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">l</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/LOWORD.html">LOWORD</a></span><span class="signature">(<wbr><span class="parameter" id="LOWORD-param-l"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">l</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
+          </span>
+                  </dt>
+        <dd>
+           
+                  
+</dd>
+        <dt id="MAKELONG" class="callable">
+          <span class="name"><a href="../win32/MAKELONG.html">MAKELONG</a></span><span class="signature">(<wbr><span class="parameter" id="MAKELONG-param-a"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">a</span>, </span><wbr><span class="parameter" id="MAKELONG-param-b"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">b</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
+          </span>
+                  </dt>
+        <dd>
+           
+                  
+</dd>
+        <dt id="MAKEWORD" class="callable">
+          <span class="name"><a href="../win32/MAKEWORD.html">MAKEWORD</a></span><span class="signature">(<wbr><span class="parameter" id="MAKEWORD-param-a"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">a</span>, </span><wbr><span class="parameter" id="MAKEWORD-param-b"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">b</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -3289,8 +3483,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="RGB" class="callable">
-          <span class="name"><a href="../win32/RGB.html">RGB</a></span><span class="signature">(<wbr><span class="parameter" id="RGB-param-r"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">r</span>, </span><wbr><span class="parameter" id="RGB-param-g"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">g</span>, </span><wbr><span class="parameter" id="RGB-param-b"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">b</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/RGB.html">RGB</a></span><span class="signature">(<wbr><span class="parameter" id="RGB-param-r"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">r</span>, </span><wbr><span class="parameter" id="RGB-param-g"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">g</span>, </span><wbr><span class="parameter" id="RGB-param-b"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">b</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -3298,8 +3492,8 @@ returning a pointer to the <code>HSTRING</code>. <a href="../win32/convertToHStr
                   
 </dd>
         <dt id="SUCCEEDED" class="callable">
-          <span class="name"><a href="../win32/SUCCEEDED.html">SUCCEEDED</a></span><span class="signature">(<wbr><span class="parameter" id="SUCCEEDED-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/int-class.html">int</a></span> <span class="parameter-name">result</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="../win32/SUCCEEDED.html">SUCCEEDED</a></span><span class="signature">(<wbr><span class="parameter" id="SUCCEEDED-param-result"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/int-class.html">int</a></span> <span class="parameter-name">result</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-core/bool-class.html">bool</a></span>
           </span>
                   </dt>
         <dd>
@@ -3336,8 +3530,8 @@ concurrency model.
 
       <dl class="callables">
         <dt id="EnumFontFamExProc" class="callable">
-          <span class="name"><a href="../win32/EnumFontFamExProc.html">EnumFontFamExProc</a></span><span class="signature">(<wbr><span class="parameter" id="EnumFontFamExProc-param-lpelfe"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/LOGFONT-class.html">LOGFONT</a></span>&gt;</span></span> <span class="parameter-name">lpelfe</span>, </span><wbr><span class="parameter" id="EnumFontFamExProc-param-lpntme"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></span>&gt;</span></span> <span class="parameter-name">lpntme</span>, </span><wbr><span class="parameter" id="EnumFontFamExProc-param-FontType"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Uint32-class.html">Uint32</a></span> <span class="parameter-name">FontType</span>, </span><wbr><span class="parameter" id="EnumFontFamExProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Int32-class.html">Int32</a></span>
+          <span class="name"><a href="../win32/EnumFontFamExProc.html">EnumFontFamExProc</a></span><span class="signature">(<wbr><span class="parameter" id="EnumFontFamExProc-param-lpelfe"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/LOGFONT-class.html">LOGFONT</a></span>&gt;</span></span> <span class="parameter-name">lpelfe</span>, </span><wbr><span class="parameter" id="EnumFontFamExProc-param-lpntme"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></span>&gt;</span></span> <span class="parameter-name">lpntme</span>, </span><wbr><span class="parameter" id="EnumFontFamExProc-param-FontType"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Uint32-class.html">Uint32</a></span> <span class="parameter-name">FontType</span>, </span><wbr><span class="parameter" id="EnumFontFamExProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Int32-class.html">Int32</a></span>
           </span>
                   </dt>
         <dd>
@@ -3345,8 +3539,8 @@ concurrency model.
                   
 </dd>
         <dt id="EnumResNameProc" class="callable">
-          <span class="name"><a href="../win32/EnumResNameProc.html">EnumResNameProc</a></span><span class="signature">(<wbr><span class="parameter" id="EnumResNameProc-param-hModule"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hModule</span>, </span><wbr><span class="parameter" id="EnumResNameProc-param-lpType"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpType</span>, </span><wbr><span class="parameter" id="EnumResNameProc-param-lpName"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpName</span>, </span><wbr><span class="parameter" id="EnumResNameProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Int32-class.html">Int32</a></span>
+          <span class="name"><a href="../win32/EnumResNameProc.html">EnumResNameProc</a></span><span class="signature">(<wbr><span class="parameter" id="EnumResNameProc-param-hModule"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hModule</span>, </span><wbr><span class="parameter" id="EnumResNameProc-param-lpType"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpType</span>, </span><wbr><span class="parameter" id="EnumResNameProc-param-lpName"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpName</span>, </span><wbr><span class="parameter" id="EnumResNameProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Int32-class.html">Int32</a></span>
           </span>
                   </dt>
         <dd>
@@ -3354,8 +3548,8 @@ concurrency model.
                   
 </dd>
         <dt id="EnumResTypeProc" class="callable">
-          <span class="name"><a href="../win32/EnumResTypeProc.html">EnumResTypeProc</a></span><span class="signature">(<wbr><span class="parameter" id="EnumResTypeProc-param-hModule"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hModule</span>, </span><wbr><span class="parameter" id="EnumResTypeProc-param-lpszType"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpszType</span>, </span><wbr><span class="parameter" id="EnumResTypeProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Int32-class.html">Int32</a></span>
+          <span class="name"><a href="../win32/EnumResTypeProc.html">EnumResTypeProc</a></span><span class="signature">(<wbr><span class="parameter" id="EnumResTypeProc-param-hModule"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hModule</span>, </span><wbr><span class="parameter" id="EnumResTypeProc-param-lpszType"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpszType</span>, </span><wbr><span class="parameter" id="EnumResTypeProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Int32-class.html">Int32</a></span>
           </span>
                   </dt>
         <dd>
@@ -3363,8 +3557,8 @@ concurrency model.
                   
 </dd>
         <dt id="EnumWindowsProc" class="callable">
-          <span class="name"><a href="../win32/EnumWindowsProc.html">EnumWindowsProc</a></span><span class="signature">(<wbr><span class="parameter" id="EnumWindowsProc-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hwnd</span>, </span><wbr><span class="parameter" id="EnumWindowsProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Int32-class.html">Int32</a></span>
+          <span class="name"><a href="../win32/EnumWindowsProc.html">EnumWindowsProc</a></span><span class="signature">(<wbr><span class="parameter" id="EnumWindowsProc-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hwnd</span>, </span><wbr><span class="parameter" id="EnumWindowsProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Int32-class.html">Int32</a></span>
           </span>
                   </dt>
         <dd>
@@ -3372,8 +3566,8 @@ concurrency model.
                   
 </dd>
         <dt id="LPFRHookProc" class="callable">
-          <span class="name"><a href="../win32/LPFRHookProc.html">LPFRHookProc</a></span><span class="signature">(<wbr><span class="parameter" id="LPFRHookProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span>, </span><wbr><span class="parameter" id="LPFRHookProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Int32-class.html">Int32</a></span>, </span><wbr><span class="parameter" id="LPFRHookProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span>, </span><wbr><span class="parameter" id="LPFRHookProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span>
+          <span class="name"><a href="../win32/LPFRHookProc.html">LPFRHookProc</a></span><span class="signature">(<wbr><span class="parameter" id="LPFRHookProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span>, </span><wbr><span class="parameter" id="LPFRHookProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Int32-class.html">Int32</a></span>, </span><wbr><span class="parameter" id="LPFRHookProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span>, </span><wbr><span class="parameter" id="LPFRHookProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span>
           </span>
                   </dt>
         <dd>
@@ -3381,8 +3575,8 @@ concurrency model.
                   
 </dd>
         <dt id="MonitorEnumProc" class="callable">
-          <span class="name"><a href="../win32/MonitorEnumProc.html">MonitorEnumProc</a></span><span class="signature">(<wbr><span class="parameter" id="MonitorEnumProc-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hMonitor</span>, </span><wbr><span class="parameter" id="MonitorEnumProc-param-hDC"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hDC</span>, </span><wbr><span class="parameter" id="MonitorEnumProc-param-lpRect"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">lpRect</span>, </span><wbr><span class="parameter" id="MonitorEnumProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Int32-class.html">Int32</a></span>
+          <span class="name"><a href="../win32/MonitorEnumProc.html">MonitorEnumProc</a></span><span class="signature">(<wbr><span class="parameter" id="MonitorEnumProc-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hMonitor</span>, </span><wbr><span class="parameter" id="MonitorEnumProc-param-hDC"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hDC</span>, </span><wbr><span class="parameter" id="MonitorEnumProc-param-lpRect"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">lpRect</span>, </span><wbr><span class="parameter" id="MonitorEnumProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Int32-class.html">Int32</a></span>
           </span>
                   </dt>
         <dd>
@@ -3390,8 +3584,8 @@ concurrency model.
                   
 </dd>
         <dt id="TimerProc" class="callable">
-          <span class="name"><a href="../win32/TimerProc.html">TimerProc</a></span><span class="signature">(<wbr><span class="parameter" id="TimerProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span>, </span><wbr><span class="parameter" id="TimerProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Uint32-class.html">Uint32</a></span>, </span><wbr><span class="parameter" id="TimerProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span>, </span><wbr><span class="parameter" id="TimerProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Int32-class.html">Int32</a></span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Void-class.html">Void</a></span>
+          <span class="name"><a href="../win32/TimerProc.html">TimerProc</a></span><span class="signature">(<wbr><span class="parameter" id="TimerProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span>, </span><wbr><span class="parameter" id="TimerProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Uint32-class.html">Uint32</a></span>, </span><wbr><span class="parameter" id="TimerProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span>, </span><wbr><span class="parameter" id="TimerProc-param-"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Int32-class.html">Int32</a></span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Void-class.html">Void</a></span>
           </span>
                   </dt>
         <dd>
@@ -3399,8 +3593,8 @@ concurrency model.
                   
 </dd>
         <dt id="WindowProc" class="callable">
-          <span class="name"><a href="../win32/WindowProc.html">WindowProc</a></span><span class="signature">(<wbr><span class="parameter" id="WindowProc-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hwnd</span>, </span><wbr><span class="parameter" id="WindowProc-param-uMsg"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/Int32-class.html">Int32</a></span> <span class="parameter-name">uMsg</span>, </span><wbr><span class="parameter" id="WindowProc-param-wParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">wParam</span>, </span><wbr><span class="parameter" id="WindowProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.365525432a70e4456a9a79a14baaa7874f7ff8a9/dart-ffi/IntPtr-class.html">IntPtr</a></span>
+          <span class="name"><a href="../win32/WindowProc.html">WindowProc</a></span><span class="signature">(<wbr><span class="parameter" id="WindowProc-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">hwnd</span>, </span><wbr><span class="parameter" id="WindowProc-param-uMsg"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/Int32-class.html">Int32</a></span> <span class="parameter-name">uMsg</span>, </span><wbr><span class="parameter" id="WindowProc-param-wParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">wParam</span>, </span><wbr><span class="parameter" id="WindowProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span> <span class="parameter-name">lParam</span></span><wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/edge/2.10.0-edge.fcafd43f2cf7e2981441c47b25cff6b0c73ec610/dart-ffi/IntPtr-class.html">IntPtr</a></span>
           </span>
                   </dt>
         <dd>
@@ -3469,6 +3663,7 @@ concurrency model.
       <li><a href="../win32/DESKTOP_WALLPAPER_POSITION-class.html">DESKTOP_WALLPAPER_POSITION</a></li>
       <li><a href="../win32/DesktopWallpaper-class.html">DesktopWallpaper</a></li>
       <li><a href="../win32/DISPPARAMS-class.html">DISPPARAMS</a></li>
+      <li><a href="../win32/DLLVERSIONINFO-class.html">DLLVERSIONINFO</a></li>
       <li><a href="../win32/ENUMLOGFONTEX-class.html">ENUMLOGFONTEX</a></li>
       <li><a href="../win32/EOLE_AUTHENTICATION_CAPABILITIES-class.html">EOLE_AUTHENTICATION_CAPABILITIES</a></li>
       <li><a href="../win32/EXCEPINFO-class.html">EXCEPINFO</a></li>
@@ -3506,6 +3701,7 @@ concurrency model.
       <li><a href="../win32/INetwork-class.html">INetwork</a></li>
       <li><a href="../win32/INetworkConnection-class.html">INetworkConnection</a></li>
       <li><a href="../win32/INetworkListManager-class.html">INetworkListManager</a></li>
+      <li><a href="../win32/INITCOMMONCONTROLSEX-class.html">INITCOMMONCONTROLSEX</a></li>
       <li><a href="../win32/IPropertyValue-class.html">IPropertyValue</a></li>
       <li><a href="../win32/IShellItem-class.html">IShellItem</a></li>
       <li><a href="../win32/IShellItem2-class.html">IShellItem2</a></li>
@@ -3568,7 +3764,9 @@ concurrency model.
       <li><a href="../win32/SYSTEM_BATTERY_STATE-class.html">SYSTEM_BATTERY_STATE</a></li>
       <li><a href="../win32/SYSTEM_INFO-class.html">SYSTEM_INFO</a></li>
       <li><a href="../win32/SYSTEM_POWER_STATUS-class.html">SYSTEM_POWER_STATUS</a></li>
+      <li><a href="../win32/TASKDIALOG_BUTTON-class.html">TASKDIALOG_BUTTON</a></li>
       <li><a href="../win32/TASKDIALOG_COMMON_BUTTON_FLAGS-class.html">TASKDIALOG_COMMON_BUTTON_FLAGS</a></li>
+      <li><a href="../win32/TASKDIALOGCONFIG-class.html">TASKDIALOGCONFIG</a></li>
       <li><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></li>
       <li><a href="../win32/VARIANT_POINTER-class.html">VARIANT_POINTER</a></li>
       <li><a href="../win32/WBEM_GENERIC_FLAG_TYPE-class.html">WBEM_GENERIC_FLAG_TYPE</a></li>
@@ -3587,11 +3785,14 @@ concurrency model.
       <li><a href="../win32/MAX_PATH-constant.html">MAX_PATH</a></li>
       <li><a href="../win32/NULL-constant.html">NULL</a></li>
       <li><a href="../win32/STATUS_SUCCESS-constant.html">STATUS_SUCCESS</a></li>
+      <li><a href="../win32/TEXT-constant.html">TEXT</a></li>
       <li><a href="../win32/TRUE-constant.html">TRUE</a></li>
     
       <li class="section-title"><a href="../win32/win32-library.html#properties">Properties</a></li>
       <li><a href="../win32/ActivateActCtx.html">ActivateActCtx</a></li>
+      <li><a href="../win32/AllocConsole.html">AllocConsole</a></li>
       <li><a href="../win32/AppendMenu.html">AppendMenu</a></li>
+      <li><a href="../win32/AttachConsole.html">AttachConsole</a></li>
       <li><a href="../win32/Beep.html">Beep</a></li>
       <li><a href="../win32/BeginPaint.html">BeginPaint</a></li>
       <li><a href="../win32/BeginUpdateResource.html">BeginUpdateResource</a></li>
@@ -3639,6 +3840,7 @@ concurrency model.
       <li><a href="../win32/DestroyPhysicalMonitors.html">DestroyPhysicalMonitors</a></li>
       <li><a href="../win32/DestroyWindow.html">DestroyWindow</a></li>
       <li><a href="../win32/DispatchMessage.html">DispatchMessage</a></li>
+      <li><a href="../win32/DrawStatusText.html">DrawStatusText</a></li>
       <li><a href="../win32/DrawText.html">DrawText</a></li>
       <li><a href="../win32/EnableMenuItem.html">EnableMenuItem</a></li>
       <li><a href="../win32/EndPaint.html">EndPaint</a></li>
@@ -3647,6 +3849,7 @@ concurrency model.
       <li><a href="../win32/EnumFontFamiliesEx.html">EnumFontFamiliesEx</a></li>
       <li><a href="../win32/EnumProcesses.html">EnumProcesses</a></li>
       <li><a href="../win32/EnumProcessModules.html">EnumProcessModules</a></li>
+      <li><a href="../win32/EnumProcessModulesEx.html">EnumProcessModulesEx</a></li>
       <li><a href="../win32/EnumResourceNames.html">EnumResourceNames</a></li>
       <li><a href="../win32/EnumResourceTypes.html">EnumResourceTypes</a></li>
       <li><a href="../win32/EnumWindows.html">EnumWindows</a></li>
@@ -3660,6 +3863,7 @@ concurrency model.
       <li><a href="../win32/FindVolumeClose.html">FindVolumeClose</a></li>
       <li><a href="../win32/FindWindowEx.html">FindWindowEx</a></li>
       <li><a href="../win32/FormatMessage.html">FormatMessage</a></li>
+      <li><a href="../win32/FreeConsole.html">FreeConsole</a></li>
       <li><a href="../win32/FreeLibrary.html">FreeLibrary</a></li>
       <li><a href="../win32/GetClientRect.html">GetClientRect</a></li>
       <li><a href="../win32/GetComputerNameEx.html">GetComputerNameEx</a></li>
@@ -3708,9 +3912,11 @@ concurrency model.
       <li><a href="../win32/HeapAlloc.html">HeapAlloc</a></li>
       <li><a href="../win32/HeapFree.html">HeapFree</a></li>
       <li><a href="../win32/IIDFromString.html">IIDFromString</a></li>
+      <li><a href="../win32/InitCommonControlsEx.html">InitCommonControlsEx</a></li>
       <li><a href="../win32/InitializeProcThreadAttributeList.html">InitializeProcThreadAttributeList</a></li>
       <li><a href="../win32/InvalidateRect.html">InvalidateRect</a></li>
       <li><a href="../win32/IsClipboardFormatAvailable.html">IsClipboardFormatAvailable</a></li>
+      <li><a href="../win32/IsDebuggerPresent.html">IsDebuggerPresent</a></li>
       <li><a href="../win32/IsDialogMessage.html">IsDialogMessage</a></li>
       <li><a href="../win32/IsWindowVisible.html">IsWindowVisible</a></li>
       <li><a href="../win32/KillTimer.html">KillTimer</a></li>
@@ -3721,13 +3927,17 @@ concurrency model.
       <li><a href="../win32/LockWorkStation.html">LockWorkStation</a></li>
       <li><a href="../win32/MessageBox.html">MessageBox</a></li>
       <li><a href="../win32/MetaDataGetDispenser.html">MetaDataGetDispenser</a></li>
+      <li><a href="../win32/MonitorFromPoint.html">MonitorFromPoint</a></li>
       <li><a href="../win32/MonitorFromWindow.html">MonitorFromWindow</a></li>
       <li><a href="../win32/MoveToEx.html">MoveToEx</a></li>
       <li><a href="../win32/MoveWindow.html">MoveWindow</a></li>
+      <li><a href="../win32/MsgWaitForMultipleObjects.html">MsgWaitForMultipleObjects</a></li>
       <li><a href="../win32/OpenProcess.html">OpenProcess</a></li>
       <li><a href="../win32/PeekMessage.html">PeekMessage</a></li>
       <li><a href="../win32/PostQuitMessage.html">PostQuitMessage</a></li>
       <li><a href="../win32/QueryDosDevice.html">QueryDosDevice</a></li>
+      <li><a href="../win32/QueryPerformanceCounter.html">QueryPerformanceCounter</a></li>
+      <li><a href="../win32/QueryPerformanceFrequency.html">QueryPerformanceFrequency</a></li>
       <li><a href="../win32/ReadFile.html">ReadFile</a></li>
       <li><a href="../win32/ReadProcessMemory.html">ReadProcessMemory</a></li>
       <li><a href="../win32/RegCloseKey.html">RegCloseKey</a></li>
@@ -3765,12 +3975,14 @@ concurrency model.
       <li><a href="../win32/SetMonitorDisplayAreaSize.html">SetMonitorDisplayAreaSize</a></li>
       <li><a href="../win32/SetMonitorRedGreenOrBlueDrive.html">SetMonitorRedGreenOrBlueDrive</a></li>
       <li><a href="../win32/SetMonitorRedGreenOrBlueGain.html">SetMonitorRedGreenOrBlueGain</a></li>
+      <li><a href="../win32/SetParent.html">SetParent</a></li>
       <li><a href="../win32/SetScrollInfo.html">SetScrollInfo</a></li>
       <li><a href="../win32/SetTextColor.html">SetTextColor</a></li>
       <li><a href="../win32/SetTimer.html">SetTimer</a></li>
       <li><a href="../win32/SetViewportExtEx.html">SetViewportExtEx</a></li>
       <li><a href="../win32/SetViewportOrgEx.html">SetViewportOrgEx</a></li>
       <li><a href="../win32/SetWindowExtEx.html">SetWindowExtEx</a></li>
+      <li><a href="../win32/SetWindowLongPtr.html">SetWindowLongPtr</a></li>
       <li><a href="../win32/SetWindowText.html">SetWindowText</a></li>
       <li><a href="../win32/ShellAbout.html">ShellAbout</a></li>
       <li><a href="../win32/ShellExecute.html">ShellExecute</a></li>
@@ -3784,8 +3996,9 @@ concurrency model.
       <li><a href="../win32/SHQueryRecycleBin.html">SHQueryRecycleBin</a></li>
       <li><a href="../win32/Sleep.html">Sleep</a></li>
       <li><a href="../win32/StretchDIBits.html">StretchDIBits</a></li>
+      <li><a href="../win32/SystemParametersInfo.html">SystemParametersInfo</a></li>
       <li><a href="../win32/TaskDialog.html">TaskDialog</a></li>
-      <li><a href="../win32/TEXT.html">TEXT</a></li>
+      <li><a href="../win32/TaskDialogIndirect.html">TaskDialogIndirect</a></li>
       <li><a href="../win32/TextOut.html">TextOut</a></li>
       <li><a href="../win32/TranslateAccelerator.html">TranslateAccelerator</a></li>
       <li><a href="../win32/TranslateMessage.html">TranslateMessage</a></li>
@@ -3808,6 +4021,7 @@ concurrency model.
       <li><a href="../win32/convertToHString.html">convertToHString</a></li>
       <li><a href="../win32/convertToIID.html">convertToIID</a></li>
       <li><a href="../win32/CreateObject.html">CreateObject</a></li>
+      <li><a href="../win32/CreateWindow.html">CreateWindow</a></li>
       <li><a href="../win32/FAILED.html">FAILED</a></li>
       <li><a href="../win32/GetBValue.html">GetBValue</a></li>
       <li><a href="../win32/GetGValue.html">GetGValue</a></li>
@@ -3818,6 +4032,8 @@ concurrency model.
       <li><a href="../win32/isWindowsRuntimeAvailable.html">isWindowsRuntimeAvailable</a></li>
       <li><a href="../win32/LOBYTE.html">LOBYTE</a></li>
       <li><a href="../win32/LOWORD.html">LOWORD</a></li>
+      <li><a href="../win32/MAKELONG.html">MAKELONG</a></li>
+      <li><a href="../win32/MAKEWORD.html">MAKEWORD</a></li>
       <li><a href="../win32/RGB.html">RGB</a></li>
       <li><a href="../win32/SUCCEEDED.html">SUCCEEDED</a></li>
       <li><a href="../win32/winrtInitialize.html">winrtInitialize</a></li>
@@ -3845,7 +4061,7 @@ concurrency model.
 <footer>
   <span class="no-break">
     win32
-      1.6.9
+      1.6.10
   </span>
 
 </footer>
