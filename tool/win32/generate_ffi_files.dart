@@ -12,7 +12,8 @@ void generateFfiFiles() {
   final libraries = prototypes.values.map((e) => e.dllLibrary).toSet().toList();
 
   for (final library in libraries) {
-    final writer = File('lib/src/$library.dart').openSync(mode: FileMode.write);
+    final filePath = 'lib/src/$library.dart';
+    final writer = File(filePath).openSync(mode: FileMode.write);
     writer.writeStringSync('''
 // Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -54,6 +55,7 @@ final ${proto.neutralApiName} = _$library.lookupFunction<\n
     }
 
     writer.closeSync();
+    Process.runSync('dartfmt', ['-w', filePath], runInShell: true);
   }
 }
 

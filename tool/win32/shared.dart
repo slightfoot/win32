@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:charcode/charcode.dart';
 
 final prototypes = <String, TypeDef>{};
 
@@ -26,7 +27,7 @@ void loadCsv(String filename) {
     var prototype = fields[3];
     var idx = 4;
     // keep consuming until we have a quoted string
-    while (prototype.allMatches('"').length == 1) {
+    while (prototype.codeUnits.where((el) => el == $quote).length == 1) {
       // ignore: use_string_buffers
       prototype += ', ${fields[idx++]}';
     }
