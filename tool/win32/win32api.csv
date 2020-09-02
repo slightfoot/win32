@@ -1,6 +1,7 @@
 ApiName, NeutralApiName, DllLibrary, WindowsPrototype, ReturnNative, ReturnDart, ParamCount, Param1Native, Param1Dart
 ActivateActCtx, ActivateActCtx, kernel32, "BOOL ActivateActCtx(\n  HANDLE    hActCtx,\n  ULONG_PTR *lpCookie\n);", Int32, int, 2, hActCtx, IntPtr, int, lpCookie, Pointer<IntPtr>, Pointer<IntPtr>
 AllocConsole, AllocConsole, kernel32, "BOOL WINAPI AllocConsole(void);", Int32, int, 0
+AnimateWindow, AnimateWindow, user32, "BOOL AnimateWindow(\n  HWND  hWnd\n  DWORD dwTime,\n  DWORD dwFlags\n);", Int32, int, 3, hWnd, IntPtr, int, dwTime, Uint32, int, dwFlags, Uint32, int
 AppendMenuW, AppendMenu, user32, "BOOL AppendMenuW(\n  HMENU    hMenu,\n  UINT     uFlags,\n  UINT_PTR uIDNewItem,\n  LPCWSTR  lpNewItem\n);", Int32, int, 4, hMenu, IntPtr, int, uFlags, Uint32, int, uIDNewItem, IntPtr, int, lpNewItem, Pointer<Utf16>, Pointer<Utf16>
 AttachConsole, AttachConsole, kernel32, "BOOL WINAPI AttachConsole(\n  _In_ DWORD dwProcessId\n);", Int32, int, 1, dwProcessId, Uint32, int
 Beep, Beep, kernel32, "BOOL Beep(\n  DWORD dwFreq,\n  DWORD dwDuration\n);", Int32, int, 2, dwFreq, Uint32, int, dwDuration, Uint32, int
@@ -207,6 +208,8 @@ SetWindowExtEx, SetWindowExtEx, gdi32, "BOOL SetWindowExtEx(\n  HDC    hdc,\n  i
 SetWindowLongPtrW, SetWindowLongPtr, user32, "LONG_PTR SetWindowLongPtrW(\n  HWND     hWnd,\n  int      nIndex,\n  LONG_PTR dwNewLong\n);", IntPtr, int, 3, hWnd, IntPtr, int, nIndex, Int32, int, dwNewLong, IntPtr, int
 SetWindowPos, SetWindowPos, user32, "BOOL SetWindowPos(\n  HWND hWnd,\n  HWND hWndInsertAfter,\n  int  X,\n  int  Y,\n  int  cx,\n  int  cy,\n  UINT uFlags,\n);", Int32, int, 7, hWnd, IntPtr, int, hWndInsertAfter, IntPtr, int, X, Int32, int, Y, Int32, int, cx, Int32, int, cy, Int32, int, uFlags, Uint32, int
 SetWindowTextW, SetWindowText, user32, "BOOL SetWindowTextW(\n  HWND    hWnd,\n  LPCWSTR lpString\n);", Int32, int, 2, hWnd, IntPtr, int, lpString, Pointer<Utf16>, Pointer<Utf16>
+SetForegroundWindow, SetForegroundWindow, user32, "BOOL SetForegroundWindow(\n  HWND    hWnd\n);", Int32, int, 1, hWnd, IntPtr, int
+Shell_NotifyIconW, Shell_NotifyIcon, shell32, "BOOL Shell_NotifyIconW(\n  DWORD  dwMessage,\n  PNOTIFYICONDATAW lpData\n);", Int32, int, 2, dwMessage, Int32, int, lpData, Pointer<NOTIFYICONDATA>, Pointer<NOTIFYICONDATA>
 ShellAboutW, ShellAbout, shell32, "INT ShellAboutW(\n  HWND    hWnd,\n  LPCWSTR szApp,\n  LPCWSTR szOtherStuff,\n  HICON   hIcon\n);", Int32, int, 4, hWnd, IntPtr, int, szApp, Pointer<Utf16>, Pointer<Utf16>, szOtherStuff, Pointer<Utf16>, Pointer<Utf16>, hIcon, IntPtr, int
 ShellExecuteW, ShellExecute, shell32, "HINSTANCE ShellExecuteW(\n  HWND    hwnd,\n  LPCWSTR lpOperation,\n  LPCWSTR lpFile,\n  LPCWSTR lpParameters,\n  LPCWSTR lpDirectory,\n  INT     nShowCmd\n);", IntPtr, int, 6, hwnd, IntPtr, int, lpOperation, Pointer<Utf16>, Pointer<Utf16>, lpFile, Pointer<Utf16>, Pointer<Utf16>, lpParameters, Pointer<Utf16>, Pointer<Utf16>, lpDirectory, Pointer<Utf16>, Pointer<Utf16>, nShowCmd, Int32, int
 ShellExecuteExW, ShellExecuteEx, shell32, "BOOL ShellExecuteExW(\n  SHELLEXECUTEINFOW *pExecInfo\n);", Int32, int, 1, pExecuteInfo, Pointer<SHELLEXECUTEINFO>, Pointer<SHELLEXECUTEINFO>

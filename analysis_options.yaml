@@ -17,7 +17,7 @@ linter:
     avoid_private_typedef_functions: false
 
     # win32 parity requires SCREAMING_CAPS constants
-    constant_identifier_names: false  
+    constant_identifier_names: false
 
     # deliberately name generated files after their COM equivalents
     file_names: false
@@ -39,5 +39,4 @@ linter:
     prefer_expression_function_bodies: true
     prefer_interpolation_to_compose_strings: true
     prefer_relative_imports: true
-    unnecessary_lambdas: true
     unnecessary_lambdas: true

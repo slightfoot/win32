@@ -9,7 +9,25 @@ import 'dart:ffi';
 
 import 'package:ffi/ffi.dart';
 
+extension Utf16Struct on Struct {
+  Pointer<Utf16> utf16At(int byteOffset) =>
+      Pointer<Utf16>.fromAddress(addressOf.address + byteOffset);
+}
+
 extension Utf16Conversion on Pointer<Utf16> {
+  void packString(int maxLength, String string) {
+    final data = cast<Uint16>().asTypedList(maxLength);
+    final source = string.codeUnits;
+    var stringLength = source.length;
+    if (stringLength >= maxLength) {
+      stringLength = maxLength - 1;
+    }
+    for (var i = 0; i < stringLength; i++) {
+      data[i] = source[i];
+    }
+    data[stringLength] = 0;
+  }
+
   String unpackString(int maxLength) {
     final pathData = cast<Uint16>().asTypedList(maxLength);
 

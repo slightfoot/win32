@@ -677,6 +677,88 @@ const WS_VISIBLE = 0x10000000;
 /// @nodoc
 const WS_VSCROLL = 0x00200000;
 
+
+// Extended Window Styles constants
+
+/// @nodoc
+const WS_EX_DLGMODALFRAME     = 0x00000001;
+
+/// @nodoc
+const WS_EX_NOPARENTNOTIFY    = 0x00000004;
+
+/// @nodoc
+const WS_EX_TOPMOST           = 0x00000008;
+
+/// @nodoc
+const WS_EX_ACCEPTFILES       = 0x00000010;
+
+/// @nodoc
+const WS_EX_TRANSPARENT       = 0x00000020;
+
+/// @nodoc
+const WS_EX_MDICHILD          = 0x00000040;
+
+/// @nodoc
+const WS_EX_TOOLWINDOW        = 0x00000080;
+
+/// @nodoc
+const WS_EX_WINDOWEDGE        = 0x00000100;
+
+/// @nodoc
+const WS_EX_CLIENTEDGE        = 0x00000200;
+
+/// @nodoc
+const WS_EX_CONTEXTHELP       = 0x00000400;
+
+/// @nodoc
+const WS_EX_RIGHT             = 0x00001000;
+
+/// @nodoc
+const WS_EX_LEFT              = 0x00000000;
+
+/// @nodoc
+const WS_EX_RTLREADING        = 0x00002000;
+
+/// @nodoc
+const WS_EX_LTRREADING        = 0x00000000;
+
+/// @nodoc
+const WS_EX_LEFTSCROLLBAR     = 0x00004000;
+
+/// @nodoc
+const WS_EX_RIGHTSCROLLBAR    = 0x00000000;
+
+/// @nodoc
+const WS_EX_CONTROLPARENT     = 0x00010000;
+
+/// @nodoc
+const WS_EX_STATICEDGE        = 0x00020000;
+
+/// @nodoc
+const WS_EX_APPWINDOW         = 0x00040000;
+
+/// @nodoc
+const WS_EX_OVERLAPPEDWINDOW  = (WS_EX_WINDOWEDGE | WS_EX_CLIENTEDGE);
+
+/// @nodoc
+const WS_EX_PALETTEWINDOW     = (WS_EX_WINDOWEDGE | WS_EX_TOOLWINDOW | WS_EX_TOPMOST);
+
+/// @nodoc
+const WS_EX_LAYERED           = 0x00080000;
+
+/// @nodoc
+const WS_EX_NOINHERITLAYOUT   = 0x00100000; // Disable inheritence of mirroring by children
+
+/// @nodoc
+const WS_EX_LAYOUTRTL         = 0x00400000; // Right to left mirroring
+
+/// @nodoc
+const WS_EX_COMPOSITED        = 0x02000000;
+
+/// @nodoc
+const WS_EX_NOACTIVATE        = 0x08000000;
+
+
 // WindowMessage constants
 
 /// @nodoc
@@ -1173,6 +1255,10 @@ const WM_PALETTECHANGED = 0x0311;
 
 /// @nodoc
 const WM_HOTKEY = 0x0312;
+
+/// Private Window Messages at 0x400
+/// NOTE: All Message Numbers below 0x0400 are RESERVED.
+const WM_USER = 0x0400;
 
 // Queue status flags
 /// @nodoc
@@ -6391,3 +6477,73 @@ const TIME_BYTES = 0x0004; // current byte offset
 const TIME_SMPTE = 0x0008; // SMPTE time
 const TIME_MIDI = 0x0010; // MIDI time
 const TIME_TICKS = 0x0020; // Ticks within MIDI stream
+
+/// @nodoc
+const NOTIFYICON_VERSION = 3;
+
+/// @nodoc
+const NOTIFYICON_VERSION_4 = 4;
+
+/// NotifyIcon Message
+/// Used with [Shell_NotifyIcon] dwMessage parameter.
+/// {@category Enum}
+class NIM {
+  static const int NIM_ADD = 0x00000000;
+  static const int NIM_MODIFY = 0x00000001;
+  static const int NIM_DELETE = 0x00000002;
+  static const int NIM_SETFOCUS = 0x00000003;
+  static const int NIM_SETVERSION = 0x00000004;
+}
+
+/// NotifyIcon Flags
+/// See [NOTIFYICONDATA.uFlags]
+/// {@category Enum}
+class NIF {
+  static const int NIF_MESSAGE = 0x00000001;
+  static const int NIF_ICON = 0x00000002;
+  static const int NIF_TIP = 0x00000004;
+  static const int NIF_STATE = 0x00000008;
+  static const int NIF_INFO = 0x00000010;
+  static const int NIF_GUID = 0x00000020;
+  static const int NIF_REALTIME = 0x00000040;
+  static const int NIF_SHOWTIP = 0x00000080;
+}
+
+/// NotifyIcon State Flags
+/// See [NOTIFYICONDATA.dwState] and [NOTIFYICONDATA.dwStateMask]
+/// {@category Enum}
+class NIS {
+  static const int NIS_HIDDEN = 0x00000001;
+  static const int NIS_SHAREDICON = 0x00000002;
+}
+
+/// NotifyIcon Notification Messages
+/// Sent back as window message to [NOTIFYICONDATA.hWnd] with
+/// uMsg set to [NOTIFYICONDATA.uCallbackMessage] and LOWORD(lParam)
+/// set to one of these values.
+/// {@category Enum}
+class NIN {
+  static const int NIN_SELECT = WM_USER + 0;
+  static const int NIN_KEYSELECT = WM_USER + 1;
+  static const int NIN_BALLOONSHOW = WM_USER + 2;
+  static const int NIN_BALLOONHIDE = WM_USER + 3;
+  static const int NIN_BALLOONTIMEOUT = WM_USER + 4;
+  static const int NIN_BALLOONUSERCLICK = WM_USER + 5;
+  static const int NIN_POPUPOPEN = WM_USER + 6;
+  static const int NIN_POPUPCLOSE = WM_USER + 7;
+}
+
+/// NotifyIcon Info Tip Flags
+/// See [NOTIFYICONDATA.dwInfoFlags]
+/// {@category Enum}
+class NIIF {
+  static const int NIIF_NONE = 0x00000000;
+  static const int NIIF_INFO = 0x00000001;
+  static const int NIIF_WARNING = 0x00000002;
+  static const int NIIF_ERROR = 0x00000003;
+  static const int NIIF_USER = 0x00000004;
+  static const int NIIF_ICON_MASK = 0x0000000F;
+  static const int NIIF_NOSOUND = 0x00000010;
+  static const int NIIF_LARGE_ICON = 0x00000020;
+  static const int NIIF_RESPECT_QUIET_TIME = 0x00000080;
+}
