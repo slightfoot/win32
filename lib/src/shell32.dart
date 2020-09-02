@@ -30,6 +30,17 @@ final FindExecutable = _shell32.lookupFunction<
     int Function(Pointer<Utf16> lpFile, Pointer<Utf16> lpDirectory,
         Pointer<Utf16> lpResult)>('FindExecutableW');
 
+// BOOL Shell_NotifyIconW(
+//   DWORD  dwMessage,
+//   PNOTIFYICONDATAW lpData
+// );
+
+/// {@category shell32}
+final Shell_NotifyIcon = _shell32.lookupFunction<
+    Int32 Function(Int32 dwMessage, Pointer<NOTIFYICONDATA> lpData),
+    int Function(
+        int dwMessage, Pointer<NOTIFYICONDATA> lpData)>('Shell_NotifyIconW');
+
 // INT ShellAboutW(
 //   HWND    hWnd,
 //   LPCWSTR szApp,

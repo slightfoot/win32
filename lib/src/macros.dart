@@ -49,3 +49,8 @@ bool FAILED(int result) => result < 0;
 int HRESULT_FROM_WIN32(int x) =>
     (x <= 0 ? x : (x & 0x0000FFFF | (FACILITY_WIN32 << 16) | 0x80000000))
         .toSigned(32);
+
+
+int GET_X_LPARAM(int lp) => LOWORD(lp).toSigned(16);
+
+int GET_Y_LPARAM(int lp) => HIWORD(lp).toSigned(16);

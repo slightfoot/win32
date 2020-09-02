@@ -1174,6 +1174,10 @@ const WM_PALETTECHANGED = 0x0311;
 /// @nodoc
 const WM_HOTKEY = 0x0312;
 
+/// Private Window Messages at 0x400
+/// NOTE: All Message Numbers below 0x0400 are RESERVED.
+const WM_USER = 0x0400;
+
 // Queue status flags
 /// @nodoc
 const QS_KEY = 0x0001;
@@ -6391,3 +6395,73 @@ const TIME_BYTES = 0x0004; // current byte offset
 const TIME_SMPTE = 0x0008; // SMPTE time
 const TIME_MIDI = 0x0010; // MIDI time
 const TIME_TICKS = 0x0020; // Ticks within MIDI stream
+
+/// @nodoc
+const NOTIFYICON_VERSION = 3;
+
+/// @nodoc
+const NOTIFYICON_VERSION_4 = 4;
+
+/// NotifyIcon Message
+/// Used with [Shell_NotifyIcon] dwMessage parameter.
+/// {@category Enum}
+class NIM {
+  static const int NIM_ADD = 0x00000000;
+  static const int NIM_MODIFY = 0x00000001;
+  static const int NIM_DELETE = 0x00000002;
+  static const int NIM_SETFOCUS = 0x00000003;
+  static const int NIM_SETVERSION = 0x00000004;
+}
+
+/// NotifyIcon Flags
+/// See [NOTIFYICONDATA.uFlags]
+/// {@category Enum}
+class NIF {
+  static const int NIF_MESSAGE = 0x00000001;
+  static const int NIF_ICON = 0x00000002;
+  static const int NIF_TIP = 0x00000004;
+  static const int NIF_STATE = 0x00000008;
+  static const int NIF_INFO = 0x00000010;
+  static const int NIF_GUID = 0x00000020;
+  static const int NIF_REALTIME = 0x00000040;
+  static const int NIF_SHOWTIP = 0x00000080;
+}
+
+/// NotifyIcon State Flags
+/// See [NOTIFYICONDATA.dwState] and [NOTIFYICONDATA.dwStateMask]
+/// {@category Enum}
+class NIS {
+  static const int NIS_HIDDEN = 0x00000001;
+  static const int NIS_SHAREDICON = 0x00000002;
+}
+
+/// NotifyIcon Notification Messages
+/// Sent back as window message to [NOTIFYICONDATA.hWnd] with
+/// uMsg set to [NOTIFYICONDATA.uCallbackMessage] and LOWORD(lParam)
+/// set to one of these values.
+/// {@category Enum}
+class NIN {
+  static const int NIN_SELECT = WM_USER + 0;
+  static const int NIN_KEYSELECT = WM_USER + 1;
+  static const int NIN_BALLOONSHOW = WM_USER + 2;
+  static const int NIN_BALLOONHIDE = WM_USER + 3;
+  static const int NIN_BALLOONTIMEOUT = WM_USER + 4;
+  static const int NIN_BALLOONUSERCLICK = WM_USER + 5;
+  static const int NIN_POPUPOPEN = WM_USER + 6;
+  static const int NIN_POPUPCLOSE = WM_USER + 7;
+}
+
+/// NotifyIcon Info Tip Flags
+/// See [NOTIFYICONDATA.dwInfoFlags]
+/// {@category Enum}
+class NIIF {
+  static const int NIIF_NONE = 0x00000000;
+  static const int NIIF_INFO = 0x00000001;
+  static const int NIIF_WARNING = 0x00000002;
+  static const int NIIF_ERROR = 0x00000003;
+  static const int NIIF_USER = 0x00000004;
+  static const int NIIF_ICON_MASK = 0x0000000F;
+  static const int NIIF_NOSOUND = 0x00000010;
+  static const int NIIF_LARGE_ICON = 0x00000020;
+  static const int NIIF_RESPECT_QUIET_TIME = 0x00000080;
+}

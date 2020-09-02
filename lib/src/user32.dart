@@ -17,6 +17,17 @@ import 'structs.dart';
 
 final _user32 = DynamicLibrary.open('user32.dll');
 
+// BOOL AnimateWindow(
+//   HWND  hWnd
+//   DWORD dwTime,
+//   DWORD dwFlags
+// );
+
+/// {@category user32}
+final AnimateWindow = _user32.lookupFunction<
+    Int32 Function(IntPtr hWnd, Uint32 dwTime, Uint32 dwFlags),
+    int Function(int hWnd, int dwTime, int dwFlags)>('AnimateWindow');
+
 // BOOL AppendMenuW(
 //   HMENU    hMenu,
 //   UINT     uFlags,
@@ -672,6 +683,15 @@ final SetWindowPos = _user32.lookupFunction<
 final SetWindowText = _user32.lookupFunction<
     Int32 Function(IntPtr hWnd, Pointer<Utf16> lpString),
     int Function(int hWnd, Pointer<Utf16> lpString)>('SetWindowTextW');
+
+// BOOL SetForegroundWindow(
+//   HWND    hWnd
+// );
+
+/// {@category user32}
+final SetForegroundWindow =
+    _user32.lookupFunction<Int32 Function(IntPtr hWnd), int Function(int hWnd)>(
+        'SetForegroundWindow');
 
 // BOOL ShowWindow(
 //   HWND hWnd,

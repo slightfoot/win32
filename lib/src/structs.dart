@@ -1594,6 +1594,582 @@ class SCROLLINFO extends Struct {
     ..nTrackPos = 0;
 }
 
+// typedef struct _NOTIFYICONDATAW {
+//     DWORD cbSize;
+//     HWND hWnd;
+//     UINT uID;
+//     UINT uFlags;
+//     UINT uCallbackMessage;
+//     HICON hIcon;
+// #if (NTDDI_VERSION < NTDDI_WIN2K)
+//     WCHAR  szTip[64];
+// #endif
+// #if (NTDDI_VERSION >= NTDDI_WIN2K)
+//     WCHAR  szTip[128];
+//     DWORD dwState;
+//     DWORD dwStateMask;
+//     WCHAR  szInfo[256];
+//     union {
+//         UINT  uTimeout;
+//         UINT  uVersion;  // used with NIM_SETVERSION, values 0, 3 and 4
+//     } DUMMYUNIONNAME;
+//     WCHAR  szInfoTitle[64];
+//     DWORD dwInfoFlags;
+// #endif
+// #if (NTDDI_VERSION >= NTDDI_WINXP)
+//     GUID guidItem;
+// #endif
+// #if (NTDDI_VERSION >= NTDDI_VISTA)
+//     HICON hBalloonIcon;
+// #endif
+// } NOTIFYICONDATAW, *PNOTIFYICONDATAW;
+
+class NOTIFYICONDATA extends Struct {
+  @Int32()
+  int cbSize;
+
+  @IntPtr()
+  int hWnd;
+
+  @Uint32()
+  int uID;
+
+  @Uint32()
+  int uFlags;
+
+  @Uint32()
+  int uCallbackMessage;
+
+  @IntPtr()
+  int hIcon;
+
+  // WCHAR szTip[128]
+  // Need to use @Uint32() here, both because of the lack of fixed-size
+  // arrays, and because @Int64() doesn't line up with word boundaries
+  @Uint32()
+  int szTip0;
+  @Uint32()
+  int szTip1;
+  @Uint32()
+  int szTip2;
+  @Uint32()
+  int szTip3;
+  @Uint32()
+  int szTip4;
+  @Uint32()
+  int szTip5;
+  @Uint32()
+  int szTip6;
+  @Uint32()
+  int szTip7;
+  @Uint32()
+  int szTip8;
+  @Uint32()
+  int szTip9;
+  @Uint32()
+  int szTip10;
+  @Uint32()
+  int szTip11;
+  @Uint32()
+  int szTip12;
+  @Uint32()
+  int szTip13;
+  @Uint32()
+  int szTip14;
+  @Uint32()
+  int szTip15;
+  @Uint32()
+  int szTip16;
+  @Uint32()
+  int szTip17;
+  @Uint32()
+  int szTip18;
+  @Uint32()
+  int szTip19;
+  @Uint32()
+  int szTip20;
+  @Uint32()
+  int szTip21;
+  @Uint32()
+  int szTip22;
+  @Uint32()
+  int szTip23;
+  @Uint32()
+  int szTip24;
+  @Uint32()
+  int szTip25;
+  @Uint32()
+  int szTip26;
+  @Uint32()
+  int szTip27;
+  @Uint32()
+  int szTip28;
+  @Uint32()
+  int szTip29;
+  @Uint32()
+  int szTip30;
+  @Uint32()
+  int szTip31;
+  @Uint32()
+  int szTip32;
+  @Uint32()
+  int szTip33;
+  @Uint32()
+  int szTip34;
+  @Uint32()
+  int szTip35;
+  @Uint32()
+  int szTip36;
+  @Uint32()
+  int szTip37;
+  @Uint32()
+  int szTip38;
+  @Uint32()
+  int szTip39;
+  @Uint32()
+  int szTip40;
+  @Uint32()
+  int szTip41;
+  @Uint32()
+  int szTip42;
+  @Uint32()
+  int szTip43;
+  @Uint32()
+  int szTip44;
+  @Uint32()
+  int szTip45;
+  @Uint32()
+  int szTip46;
+  @Uint32()
+  int szTip47;
+  @Uint32()
+  int szTip48;
+  @Uint32()
+  int szTip49;
+  @Uint32()
+  int szTip50;
+  @Uint32()
+  int szTip51;
+  @Uint32()
+  int szTip52;
+  @Uint32()
+  int szTip53;
+  @Uint32()
+  int szTip54;
+  @Uint32()
+  int szTip55;
+  @Uint32()
+  int szTip56;
+  @Uint32()
+  int szTip57;
+  @Uint32()
+  int szTip58;
+  @Uint32()
+  int szTip59;
+  @Uint32()
+  int szTip60;
+  @Uint32()
+  int szTip61;
+  @Uint32()
+  int szTip62;
+  @Uint32()
+  int szTip63;
+
+  set tip(String value) => utf16At(40).packString(128, value);
+
+  String get tip => utf16At(40).unpackString(128);
+
+  @Uint32()
+  int dwState;
+
+  @Uint32()
+  int dwStateMask;
+
+  // WCHAR szInfo[256]
+  // Need to use @Uint32() here, both because of the lack of fixed-size
+  // arrays, and because @Int64() doesn't line up with word boundaries
+  @Uint32()
+  int szInfo0;
+  @Uint32()
+  int szInfo1;
+  @Uint32()
+  int szInfo2;
+  @Uint32()
+  int szInfo3;
+  @Uint32()
+  int szInfo4;
+  @Uint32()
+  int szInfo5;
+  @Uint32()
+  int szInfo6;
+  @Uint32()
+  int szInfo7;
+  @Uint32()
+  int szInfo8;
+  @Uint32()
+  int szInfo9;
+  @Uint32()
+  int szInfo10;
+  @Uint32()
+  int szInfo11;
+  @Uint32()
+  int szInfo12;
+  @Uint32()
+  int szInfo13;
+  @Uint32()
+  int szInfo14;
+  @Uint32()
+  int szInfo15;
+  @Uint32()
+  int szInfo16;
+  @Uint32()
+  int szInfo17;
+  @Uint32()
+  int szInfo18;
+  @Uint32()
+  int szInfo19;
+  @Uint32()
+  int szInfo20;
+  @Uint32()
+  int szInfo21;
+  @Uint32()
+  int szInfo22;
+  @Uint32()
+  int szInfo23;
+  @Uint32()
+  int szInfo24;
+  @Uint32()
+  int szInfo25;
+  @Uint32()
+  int szInfo26;
+  @Uint32()
+  int szInfo27;
+  @Uint32()
+  int szInfo28;
+  @Uint32()
+  int szInfo29;
+  @Uint32()
+  int szInfo30;
+  @Uint32()
+  int szInfo31;
+  @Uint32()
+  int szInfo32;
+  @Uint32()
+  int szInfo33;
+  @Uint32()
+  int szInfo34;
+  @Uint32()
+  int szInfo35;
+  @Uint32()
+  int szInfo36;
+  @Uint32()
+  int szInfo37;
+  @Uint32()
+  int szInfo38;
+  @Uint32()
+  int szInfo39;
+  @Uint32()
+  int szInfo40;
+  @Uint32()
+  int szInfo41;
+  @Uint32()
+  int szInfo42;
+  @Uint32()
+  int szInfo43;
+  @Uint32()
+  int szInfo44;
+  @Uint32()
+  int szInfo45;
+  @Uint32()
+  int szInfo46;
+  @Uint32()
+  int szInfo47;
+  @Uint32()
+  int szInfo48;
+  @Uint32()
+  int szInfo49;
+  @Uint32()
+  int szInfo50;
+  @Uint32()
+  int szInfo51;
+  @Uint32()
+  int szInfo52;
+  @Uint32()
+  int szInfo53;
+  @Uint32()
+  int szInfo54;
+  @Uint32()
+  int szInfo55;
+  @Uint32()
+  int szInfo56;
+  @Uint32()
+  int szInfo57;
+  @Uint32()
+  int szInfo58;
+  @Uint32()
+  int szInfo59;
+  @Uint32()
+  int szInfo60;
+  @Uint32()
+  int szInfo61;
+  @Uint32()
+  int szInfo62;
+  @Uint32()
+  int szInfo63;
+  @Uint32()
+  int szInfo64;
+  @Uint32()
+  int szInfo65;
+  @Uint32()
+  int szInfo66;
+  @Uint32()
+  int szInfo67;
+  @Uint32()
+  int szInfo68;
+  @Uint32()
+  int szInfo69;
+  @Uint32()
+  int szInfo70;
+  @Uint32()
+  int szInfo71;
+  @Uint32()
+  int szInfo72;
+  @Uint32()
+  int szInfo73;
+  @Uint32()
+  int szInfo74;
+  @Uint32()
+  int szInfo75;
+  @Uint32()
+  int szInfo76;
+  @Uint32()
+  int szInfo77;
+  @Uint32()
+  int szInfo78;
+  @Uint32()
+  int szInfo79;
+  @Uint32()
+  int szInfo80;
+  @Uint32()
+  int szInfo81;
+  @Uint32()
+  int szInfo82;
+  @Uint32()
+  int szInfo83;
+  @Uint32()
+  int szInfo84;
+  @Uint32()
+  int szInfo85;
+  @Uint32()
+  int szInfo86;
+  @Uint32()
+  int szInfo87;
+  @Uint32()
+  int szInfo88;
+  @Uint32()
+  int szInfo89;
+  @Uint32()
+  int szInfo90;
+  @Uint32()
+  int szInfo91;
+  @Uint32()
+  int szInfo92;
+  @Uint32()
+  int szInfo93;
+  @Uint32()
+  int szInfo94;
+  @Uint32()
+  int szInfo95;
+  @Uint32()
+  int szInfo96;
+  @Uint32()
+  int szInfo97;
+  @Uint32()
+  int szInfo98;
+  @Uint32()
+  int szInfo99;
+  @Uint32()
+  int szInfo100;
+  @Uint32()
+  int szInfo101;
+  @Uint32()
+  int szInfo102;
+  @Uint32()
+  int szInfo103;
+  @Uint32()
+  int szInfo104;
+  @Uint32()
+  int szInfo105;
+  @Uint32()
+  int szInfo106;
+  @Uint32()
+  int szInfo107;
+  @Uint32()
+  int szInfo108;
+  @Uint32()
+  int szInfo109;
+  @Uint32()
+  int szInfo110;
+  @Uint32()
+  int szInfo111;
+  @Uint32()
+  int szInfo112;
+  @Uint32()
+  int szInfo113;
+  @Uint32()
+  int szInfo114;
+  @Uint32()
+  int szInfo115;
+  @Uint32()
+  int szInfo116;
+  @Uint32()
+  int szInfo117;
+  @Uint32()
+  int szInfo118;
+  @Uint32()
+  int szInfo119;
+  @Uint32()
+  int szInfo120;
+  @Uint32()
+  int szInfo121;
+  @Uint32()
+  int szInfo122;
+  @Uint32()
+  int szInfo123;
+  @Uint32()
+  int szInfo124;
+  @Uint32()
+  int szInfo125;
+  @Uint32()
+  int szInfo126;
+  @Uint32()
+  int szInfo127;
+
+  set info(String value) => utf16At(304).packString(256, value);
+
+  String get info => utf16At(304).unpackString(256);
+
+  // Union of uVersion and uTimeout
+  @Uint32()
+  int uVersion;
+
+  // WCHAR szInfoTitle[64]
+  // Need to use @Uint32() here, both because of the lack of fixed-size
+  // arrays, and because @Int64() doesn't line up with word boundaries
+  @Uint32()
+  int szInfoTitle0;
+  @Uint32()
+  int szInfoTitle1;
+  @Uint32()
+  int szInfoTitle2;
+  @Uint32()
+  int szInfoTitle3;
+  @Uint32()
+  int szInfoTitle4;
+  @Uint32()
+  int szInfoTitle5;
+  @Uint32()
+  int szInfoTitle6;
+  @Uint32()
+  int szInfoTitle7;
+  @Uint32()
+  int szInfoTitle8;
+  @Uint32()
+  int szInfoTitle9;
+  @Uint32()
+  int szInfoTitle10;
+  @Uint32()
+  int szInfoTitle11;
+  @Uint32()
+  int szInfoTitle12;
+  @Uint32()
+  int szInfoTitle13;
+  @Uint32()
+  int szInfoTitle14;
+  @Uint32()
+  int szInfoTitle15;
+  @Uint32()
+  int szInfoTitle16;
+  @Uint32()
+  int szInfoTitle17;
+  @Uint32()
+  int szInfoTitle18;
+  @Uint32()
+  int szInfoTitle19;
+  @Uint32()
+  int szInfoTitle20;
+  @Uint32()
+  int szInfoTitle21;
+  @Uint32()
+  int szInfoTitle22;
+  @Uint32()
+  int szInfoTitle23;
+  @Uint32()
+  int szInfoTitle24;
+  @Uint32()
+  int szInfoTitle25;
+  @Uint32()
+  int szInfoTitle26;
+  @Uint32()
+  int szInfoTitle27;
+  @Uint32()
+  int szInfoTitle28;
+  @Uint32()
+  int szInfoTitle29;
+  @Uint32()
+  int szInfoTitle30;
+  @Uint32()
+  int szInfoTitle31;
+
+  set infoTitle(String value) => utf16At(820).packString(64, value);
+
+  String get infoTitle => utf16At(820).unpackString(64);
+
+  @Uint32()
+  int dwInfoFlags;
+
+  @Uint32()
+  int guidItemData1;
+  @Uint16()
+  int guidItemData2;
+  @Uint16()
+  int guidItemData3;
+  @Uint64()
+  int guidItemData4;
+
+  set guidItem(GUID value) {
+    guidItemData1 = value.Data1;
+    guidItemData2 = value.Data2;
+    guidItemData3 = value.Data3;
+    guidItemData4 = value.Data4;
+  }
+
+  GUID get guidItem => Pointer<GUID>.fromAddress(addressOf.address + 952).ref;
+
+  @IntPtr()
+  int hBalloonIcon;
+
+  factory NOTIFYICONDATA.allocate() => allocate<NOTIFYICONDATA>().ref
+    ..cbSize = sizeOf<NOTIFYICONDATA>()
+    ..hWnd = 0
+    ..uID = 0
+    ..uFlags = 0
+    ..uCallbackMessage = 0
+    ..hIcon = 0
+    ..tip = ''
+    ..dwState = 0
+    ..dwStateMask = 0
+    ..info = ''
+    ..uVersion = 0
+    ..infoTitle = ''
+    ..dwInfoFlags = 0
+    ..guidItemData1 = 0
+    ..guidItemData2 = 0
+    ..guidItemData3 = 0
+    ..guidItemData4 = 0
+    ..hBalloonIcon = 0;
+}
+
 // typedef struct _SHELLEXECUTEINFOW {
 //   DWORD     cbSize;
 //   ULONG     fMask;
@@ -2739,8 +3315,7 @@ class WAVEOUTCAPS extends Struct {
 
   String get driverVersion => '${HIBYTE(vDriverVersion)}.${LOBYTE(vDriverVersion)}';
 
-  String get name =>
-      addressOf.cast<Uint8>().elementAt(8).cast<Utf16>().unpackString(32);
+  String get name => utf16At(8).unpackString(32);
 
   factory WAVEOUTCAPS.allocate() => allocate<WAVEOUTCAPS>().ref
     ..wMid = 0
