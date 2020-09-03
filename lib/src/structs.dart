@@ -3107,7 +3107,7 @@ class BLUETOOTH_DEVICE_INFO extends Struct {
   int stLastUsedTime;
 
   String get szName =>
-      addressOf.cast<Uint8>().elementAt(60).cast<Utf16>().unpackString(BLUETOOTH_MAX_NAME_SIZE);
+      addressOf.cast<Uint8>().elementAt(64).cast<Utf16>().unpackString(BLUETOOTH_MAX_NAME_SIZE);
 
   factory BLUETOOTH_DEVICE_INFO.allocate() =>
       allocate<Uint8>(count: 560).cast<BLUETOOTH_DEVICE_INFO>().ref

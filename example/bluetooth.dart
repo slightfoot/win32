@@ -10,18 +10,26 @@ import 'dart:ffi';
 import 'package:ffi/ffi.dart';
 import 'package:win32/win32.dart';
 
-String toHex(int value32) =>
-    '0x${value32.toUnsigned(32).toRadixString(16).padLeft(8, '0')}';
+String toHex(int value32) => '0x${value32.toUnsigned(32).toRadixString(16).padLeft(8, '0')}';
 
 void findBluetoothDevices(int btRadioHandle) {
   final params = BLUETOOTH_DEVICE_SEARCH_PARAMS.allocate();
   final info = BLUETOOTH_DEVICE_INFO.allocate();
 
-  final firstDeviceHandle =
-      BluetoothFindFirstDevice(params.addressOf, info.addressOf);
+  params.hRadio = btRadioHandle;
+  params.fReturnAuthenticated = 1;
+  params.fReturnRemembered = 1;
+  params.fReturnUnknown = 1;
+  params.fReturnConnected = 1;
 
+  final firstDeviceHandle = BluetoothFindFirstDevice(params.addressOf, info.addressOf);
   if (firstDeviceHandle != NULL) {
-    print(info.szName);
+    do {
+      print(
+          '${info.szName}: class{${info.ulClassofDevice.toHexString(32)}} connected{${info.fConnected}}');
+      // TODO: BluetoothEnumerateInstalledServices
+      // TODO: control with BluetoothSetServiceState
+    } while (BluetoothFindNextDevice(firstDeviceHandle, info.addressOf) != 0);
     BluetoothFindDeviceClose(firstDeviceHandle);
   } else {
     print('No devices found.');
@@ -35,14 +43,13 @@ void main() {
   final params = BLUETOOTH_FIND_RADIO_PARAMS.allocate();
   final btRadioHandlePtr = allocate<IntPtr>();
 
-  final btFindRadioHandle =
-      BluetoothFindFirstRadio(params.addressOf, btRadioHandlePtr);
-
+  final btFindRadioHandle = BluetoothFindFirstRadio(params.addressOf, btRadioHandlePtr);
   if (btFindRadioHandle != NULL) {
-    print('Handle: ${toHex(btRadioHandlePtr.value)}');
-
-    findBluetoothDevices(btRadioHandlePtr.value);
-    BluetoothFindRadioClose(btRadioHandlePtr.value);
+    do {
+      print('Handle: ${toHex(btRadioHandlePtr.value)}');
+      findBluetoothDevices(btRadioHandlePtr.value);
+    } while (BluetoothFindNextRadio(btFindRadioHandle, btRadioHandlePtr) != 0);
+    BluetoothFindRadioClose(btFindRadioHandle);
   } else {
     print('No Bluetooth radios found.');
   }

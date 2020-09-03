@@ -56,7 +56,7 @@ final BluetoothFindDeviceClose = _bthprops.lookupFunction<
 
 /// {@category bthprops}
 final BluetoothFindFirstDevice = _bthprops.lookupFunction<
-    Int32 Function(Pointer<BLUETOOTH_DEVICE_SEARCH_PARAMS> pbtsp,
+    IntPtr Function(Pointer<BLUETOOTH_DEVICE_SEARCH_PARAMS> pbtsp,
         Pointer<BLUETOOTH_DEVICE_INFO> pbtdi),
     int Function(Pointer<BLUETOOTH_DEVICE_SEARCH_PARAMS> pbtsp,
         Pointer<BLUETOOTH_DEVICE_INFO> pbtdi)>('BluetoothFindFirstDevice');
