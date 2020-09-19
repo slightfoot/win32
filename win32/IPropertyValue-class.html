@@ -326,6 +326,7 @@
       <li><a href="../win32/GetMonitorRedGreenOrBlueDrive.html">GetMonitorRedGreenOrBlueDrive</a></li>
       <li><a href="../win32/GetMonitorRedGreenOrBlueGain.html">GetMonitorRedGreenOrBlueGain</a></li>
       <li><a href="../win32/GetMonitorTechnologyType.html">GetMonitorTechnologyType</a></li>
+      <li><a href="../win32/GetNativeSystemInfo.html">GetNativeSystemInfo</a></li>
       <li><a href="../win32/GetNumberOfPhysicalMonitorsFromHMONITOR.html">GetNumberOfPhysicalMonitorsFromHMONITOR</a></li>
       <li><a href="../win32/GetObject.html">GetObject</a></li>
       <li><a href="../win32/GetOpenFileName.html">GetOpenFileName</a></li>
@@ -367,6 +368,7 @@
       <li><a href="../win32/LineTo.html">LineTo</a></li>
       <li><a href="../win32/LoadCursor.html">LoadCursor</a></li>
       <li><a href="../win32/LoadIcon.html">LoadIcon</a></li>
+      <li><a href="../win32/LoadImage.html">LoadImage</a></li>
       <li><a href="../win32/LoadLibrary.html">LoadLibrary</a></li>
       <li><a href="../win32/LockWorkStation.html">LockWorkStation</a></li>
       <li><a href="../win32/MessageBox.html">MessageBox</a></li>
@@ -426,6 +428,7 @@
       <li><a href="../win32/SetProcessDPIAware.html">SetProcessDPIAware</a></li>
       <li><a href="../win32/SetProcessDpiAwareness.html">SetProcessDpiAwareness</a></li>
       <li><a href="../win32/SetScrollInfo.html">SetScrollInfo</a></li>
+      <li><a href="../win32/SetStdHandle.html">SetStdHandle</a></li>
       <li><a href="../win32/SetTextColor.html">SetTextColor</a></li>
       <li><a href="../win32/SetTimer.html">SetTimer</a></li>
       <li><a href="../win32/SetViewportExtEx.html">SetViewportExtEx</a></li>
@@ -523,7 +526,7 @@
       <dl class="dl-horizontal">
         <dt>Inheritance</dt>
         <dd><ul class="gt-separated dark clazz-relationships">
-          <li><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object-class.html">Object</a></li>
+          <li><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object-class.html">Object</a></li>
           <li><a href="../win32/IUnknown-class.html">IUnknown</a></li>
           <li><a href="../win32/IInspectable-class.html">IInspectable</a></li>
           <li>IPropertyValue</li>
@@ -541,7 +544,7 @@
 
       <dl class="constructor-summary-list">
         <dt id="IPropertyValue" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/IPropertyValue.html">IPropertyValue</a></span><span class="signature">(<span class="parameter" id="-param-ptr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ptr</span></span>)</span>
+          <span class="name"><a href="../win32/IPropertyValue/IPropertyValue.html">IPropertyValue</a></span><span class="signature">(<span class="parameter" id="-param-ptr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ptr</span></span>)</span>
         </dt>
         <dd>
            
@@ -554,16 +557,16 @@
 
       <dl class="properties">
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">[...]</a>
                   <div class="features">read-only, inherited</div>
 </dd>
         <dt id="IsNumericScalar" class="property">
           <span class="name"><a href="../win32/IPropertyValue/IsNumericScalar.html">IsNumericScalar</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -571,15 +574,15 @@
 </dd>
         <dt id="ptr" class="property inherited">
           <span class="name"><a href="../win32/IUnknown/ptr.html">ptr</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span>         
         </dt>
         <dd class="inherited">
            
                   <div class="features">read / write, inherited</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Type-class.html">Type</a></span>         
+          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Type-class.html">Type</a></span>         
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object. 
@@ -587,7 +590,7 @@
 </dd>
         <dt id="Type" class="property">
           <span class="name"><a href="../win32/IPropertyValue/Type.html">Type</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
@@ -601,7 +604,7 @@
       <dl class="callables">
         <dt id="AddRef" class="callable inherited">
           <span class="name"><a href="../win32/IUnknown/AddRef.html">AddRef</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -609,8 +612,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="GetBoolean" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetBoolean.html">GetBoolean</a></span><span class="signature">(<wbr><span class="parameter" id="GetBoolean-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetBoolean.html">GetBoolean</a></span><span class="signature">(<wbr><span class="parameter" id="GetBoolean-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -618,8 +621,8 @@
                   
 </dd>
         <dt id="GetBooleanArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetBooleanArray.html">GetBooleanArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetBooleanArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetBooleanArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetBooleanArray.html">GetBooleanArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetBooleanArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetBooleanArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -627,8 +630,8 @@
                   
 </dd>
         <dt id="GetChar16" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetChar16.html">GetChar16</a></span><span class="signature">(<wbr><span class="parameter" id="GetChar16-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetChar16.html">GetChar16</a></span><span class="signature">(<wbr><span class="parameter" id="GetChar16-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -636,8 +639,8 @@
                   
 </dd>
         <dt id="GetChar16Array" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetChar16Array.html">GetChar16Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetChar16Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetChar16Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetChar16Array.html">GetChar16Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetChar16Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetChar16Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -645,8 +648,8 @@
                   
 </dd>
         <dt id="GetDateTime" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetDateTime.html">GetDateTime</a></span><span class="signature">(<wbr><span class="parameter" id="GetDateTime-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetDateTime.html">GetDateTime</a></span><span class="signature">(<wbr><span class="parameter" id="GetDateTime-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -654,8 +657,8 @@
                   
 </dd>
         <dt id="GetDateTimeArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetDateTimeArray.html">GetDateTimeArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetDateTimeArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetDateTimeArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetDateTimeArray.html">GetDateTimeArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetDateTimeArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetDateTimeArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -663,8 +666,8 @@
                   
 </dd>
         <dt id="GetDouble" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetDouble.html">GetDouble</a></span><span class="signature">(<wbr><span class="parameter" id="GetDouble-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Double-class.html">Double</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetDouble.html">GetDouble</a></span><span class="signature">(<wbr><span class="parameter" id="GetDouble-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Double-class.html">Double</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -672,8 +675,8 @@
                   
 </dd>
         <dt id="GetDoubleArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetDoubleArray.html">GetDoubleArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetDoubleArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetDoubleArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetDoubleArray.html">GetDoubleArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetDoubleArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetDoubleArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -681,8 +684,8 @@
                   
 </dd>
         <dt id="GetGuid" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetGuid.html">GetGuid</a></span><span class="signature">(<wbr><span class="parameter" id="GetGuid-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetGuid.html">GetGuid</a></span><span class="signature">(<wbr><span class="parameter" id="GetGuid-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -690,8 +693,8 @@
                   
 </dd>
         <dt id="GetGuidArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetGuidArray.html">GetGuidArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetGuidArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetGuidArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetGuidArray.html">GetGuidArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetGuidArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetGuidArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -699,8 +702,8 @@
                   
 </dd>
         <dt id="GetIids" class="callable inherited">
-          <span class="name"><a href="../win32/IInspectable/GetIids.html">GetIids</a></span><span class="signature">(<wbr><span class="parameter" id="GetIids-param-iidCount"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">iidCount</span>, </span><span class="parameter" id="GetIids-param-iids"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">iids</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IInspectable/GetIids.html">GetIids</a></span><span class="signature">(<wbr><span class="parameter" id="GetIids-param-iidCount"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">iidCount</span>, </span><span class="parameter" id="GetIids-param-iids"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">iids</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -708,8 +711,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="GetInspectableArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetInspectableArray.html">GetInspectableArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetInspectableArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetInspectableArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetInspectableArray.html">GetInspectableArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetInspectableArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetInspectableArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -717,8 +720,8 @@
                   
 </dd>
         <dt id="GetInt16" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetInt16.html">GetInt16</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt16-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Int16-class.html">Int16</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetInt16.html">GetInt16</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt16-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Int16-class.html">Int16</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -726,8 +729,8 @@
                   
 </dd>
         <dt id="GetInt16Array" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetInt16Array.html">GetInt16Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt16Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetInt16Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetInt16Array.html">GetInt16Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt16Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetInt16Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -735,8 +738,8 @@
                   
 </dd>
         <dt id="GetInt32" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetInt32.html">GetInt32</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt32-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetInt32.html">GetInt32</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt32-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -744,8 +747,8 @@
                   
 </dd>
         <dt id="GetInt32Array" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetInt32Array.html">GetInt32Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt32Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetInt32Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetInt32Array.html">GetInt32Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt32Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetInt32Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -753,8 +756,8 @@
                   
 </dd>
         <dt id="GetInt64" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetInt64.html">GetInt64</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt64-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Int64-class.html">Int64</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetInt64.html">GetInt64</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt64-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Int64-class.html">Int64</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -762,8 +765,8 @@
                   
 </dd>
         <dt id="GetInt64Array" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetInt64Array.html">GetInt64Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt64Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetInt64Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetInt64Array.html">GetInt64Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetInt64Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetInt64Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -771,8 +774,8 @@
                   
 </dd>
         <dt id="GetPoint" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetPoint.html">GetPoint</a></span><span class="signature">(<wbr><span class="parameter" id="GetPoint-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetPoint.html">GetPoint</a></span><span class="signature">(<wbr><span class="parameter" id="GetPoint-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -780,8 +783,8 @@
                   
 </dd>
         <dt id="GetPointArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetPointArray.html">GetPointArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetPointArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetPointArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetPointArray.html">GetPointArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetPointArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetPointArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -789,8 +792,8 @@
                   
 </dd>
         <dt id="GetRect" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetRect.html">GetRect</a></span><span class="signature">(<wbr><span class="parameter" id="GetRect-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetRect.html">GetRect</a></span><span class="signature">(<wbr><span class="parameter" id="GetRect-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -798,8 +801,8 @@
                   
 </dd>
         <dt id="GetRectArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetRectArray.html">GetRectArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetRectArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetRectArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetRectArray.html">GetRectArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetRectArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetRectArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -807,8 +810,8 @@
                   
 </dd>
         <dt id="GetRuntimeClassName" class="callable inherited">
-          <span class="name"><a href="../win32/IInspectable/GetRuntimeClassName.html">GetRuntimeClassName</a></span><span class="signature">(<wbr><span class="parameter" id="GetRuntimeClassName-param-className"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">className</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IInspectable/GetRuntimeClassName.html">GetRuntimeClassName</a></span><span class="signature">(<wbr><span class="parameter" id="GetRuntimeClassName-param-className"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">className</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -816,8 +819,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="GetSingle" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetSingle.html">GetSingle</a></span><span class="signature">(<wbr><span class="parameter" id="GetSingle-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Float-class.html">Float</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetSingle.html">GetSingle</a></span><span class="signature">(<wbr><span class="parameter" id="GetSingle-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Float-class.html">Float</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -825,8 +828,8 @@
                   
 </dd>
         <dt id="GetSingleArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetSingleArray.html">GetSingleArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetSingleArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetSingleArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetSingleArray.html">GetSingleArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetSingleArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetSingleArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -834,8 +837,8 @@
                   
 </dd>
         <dt id="GetSize" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetSize.html">GetSize</a></span><span class="signature">(<wbr><span class="parameter" id="GetSize-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetSize.html">GetSize</a></span><span class="signature">(<wbr><span class="parameter" id="GetSize-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -843,8 +846,8 @@
                   
 </dd>
         <dt id="GetSizeArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetSizeArray.html">GetSizeArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetSizeArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetSizeArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetSizeArray.html">GetSizeArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetSizeArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetSizeArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -852,8 +855,8 @@
                   
 </dd>
         <dt id="GetString" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetString.html">GetString</a></span><span class="signature">(<wbr><span class="parameter" id="GetString-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetString.html">GetString</a></span><span class="signature">(<wbr><span class="parameter" id="GetString-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -861,8 +864,8 @@
                   
 </dd>
         <dt id="GetStringArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetStringArray.html">GetStringArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetStringArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetStringArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetStringArray.html">GetStringArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetStringArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetStringArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -870,8 +873,8 @@
                   
 </dd>
         <dt id="GetTimeSpan" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetTimeSpan.html">GetTimeSpan</a></span><span class="signature">(<wbr><span class="parameter" id="GetTimeSpan-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetTimeSpan.html">GetTimeSpan</a></span><span class="signature">(<wbr><span class="parameter" id="GetTimeSpan-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -879,8 +882,8 @@
                   
 </dd>
         <dt id="GetTimeSpanArray" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetTimeSpanArray.html">GetTimeSpanArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetTimeSpanArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetTimeSpanArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetTimeSpanArray.html">GetTimeSpanArray</a></span><span class="signature">(<wbr><span class="parameter" id="GetTimeSpanArray-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetTimeSpanArray-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -888,8 +891,8 @@
                   
 </dd>
         <dt id="GetTrustLevel" class="callable inherited">
-          <span class="name"><a href="../win32/IInspectable/GetTrustLevel.html">GetTrustLevel</a></span><span class="signature">(<wbr><span class="parameter" id="GetTrustLevel-param-trustLevel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">trustLevel</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IInspectable/GetTrustLevel.html">GetTrustLevel</a></span><span class="signature">(<wbr><span class="parameter" id="GetTrustLevel-param-trustLevel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">trustLevel</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -897,8 +900,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="GetUInt8" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetUInt8.html">GetUInt8</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt8-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetUInt8.html">GetUInt8</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt8-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -906,8 +909,8 @@
                   
 </dd>
         <dt id="GetUInt8Array" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetUInt8Array.html">GetUInt8Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt8Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetUInt8Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetUInt8Array.html">GetUInt8Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt8Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetUInt8Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -915,8 +918,8 @@
                   
 </dd>
         <dt id="GetUInt16" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetUInt16.html">GetUInt16</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt16-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint16-class.html">Uint16</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetUInt16.html">GetUInt16</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt16-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint16-class.html">Uint16</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -924,8 +927,8 @@
                   
 </dd>
         <dt id="GetUInt16Array" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetUInt16Array.html">GetUInt16Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt16Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetUInt16Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetUInt16Array.html">GetUInt16Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt16Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetUInt16Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -933,8 +936,8 @@
                   
 </dd>
         <dt id="GetUInt32" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetUInt32.html">GetUInt32</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt32-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetUInt32.html">GetUInt32</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt32-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -942,8 +945,8 @@
                   
 </dd>
         <dt id="GetUInt32Array" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetUInt32Array.html">GetUInt32Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt32Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetUInt32Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetUInt32Array.html">GetUInt32Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt32Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetUInt32Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -951,8 +954,8 @@
                   
 </dd>
         <dt id="GetUInt64" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetUInt64.html">GetUInt64</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt64-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint64-class.html">Uint64</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetUInt64.html">GetUInt64</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt64-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint64-class.html">Uint64</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -960,8 +963,8 @@
                   
 </dd>
         <dt id="GetUInt64Array" class="callable">
-          <span class="name"><a href="../win32/IPropertyValue/GetUInt64Array.html">GetUInt64Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt64Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetUInt64Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IPropertyValue/GetUInt64Array.html">GetUInt64Array</a></span><span class="signature">(<wbr><span class="parameter" id="GetUInt64Array-param-__valueSize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">__valueSize</span>, </span><span class="parameter" id="GetUInt64Array-param-value"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -969,17 +972,17 @@
                   
 </dd>
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
                   </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
         <dt id="QueryInterface" class="callable inherited">
-          <span class="name"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></span><span class="signature">(<wbr><span class="parameter" id="QueryInterface-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="QueryInterface-param-ppvObject"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppvObject</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></span><span class="signature">(<wbr><span class="parameter" id="QueryInterface-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="QueryInterface-param-ppvObject"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppvObject</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -988,7 +991,7 @@
 </dd>
         <dt id="Release" class="callable inherited">
           <span class="name"><a href="../win32/IUnknown/Release.html">Release</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -996,8 +999,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="toString" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/String-class.html">String</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1011,12 +1014,12 @@
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/bool-class.html">bool</a></span>
           </span>
                   </dt>
         <dd class="inherited">
-          The equality operator. <a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
       </dl>
@@ -1036,10 +1039,10 @@
       <li class="section-title">
         <a href="../win32/IPropertyValue-class.html#instance-properties">Properties</a>
       </li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
       <li><a href="../win32/IPropertyValue/IsNumericScalar.html">IsNumericScalar</a></li>
       <li class="inherited"><a href="../win32/IUnknown/ptr.html">ptr</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
       <li><a href="../win32/IPropertyValue/Type.html">Type</a></li>
     
       <li class="section-title"><a href="../win32/IPropertyValue-class.html#instance-methods">Methods</a></li>
@@ -1084,13 +1087,13 @@
       <li><a href="../win32/IPropertyValue/GetUInt32Array.html">GetUInt32Array</a></li>
       <li><a href="../win32/IPropertyValue/GetUInt64.html">GetUInt64</a></li>
       <li><a href="../win32/IPropertyValue/GetUInt64Array.html">GetUInt64Array</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
       <li class="inherited"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></li>
       <li class="inherited"><a href="../win32/IUnknown/Release.html">Release</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/toString.html">toString</a></li>
     
       <li class="section-title inherited"><a href="../win32/IPropertyValue-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
     
     
     

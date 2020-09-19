@@ -326,6 +326,7 @@
       <li><a href="../win32/GetMonitorRedGreenOrBlueDrive.html">GetMonitorRedGreenOrBlueDrive</a></li>
       <li><a href="../win32/GetMonitorRedGreenOrBlueGain.html">GetMonitorRedGreenOrBlueGain</a></li>
       <li><a href="../win32/GetMonitorTechnologyType.html">GetMonitorTechnologyType</a></li>
+      <li><a href="../win32/GetNativeSystemInfo.html">GetNativeSystemInfo</a></li>
       <li><a href="../win32/GetNumberOfPhysicalMonitorsFromHMONITOR.html">GetNumberOfPhysicalMonitorsFromHMONITOR</a></li>
       <li><a href="../win32/GetObject.html">GetObject</a></li>
       <li><a href="../win32/GetOpenFileName.html">GetOpenFileName</a></li>
@@ -367,6 +368,7 @@
       <li><a href="../win32/LineTo.html">LineTo</a></li>
       <li><a href="../win32/LoadCursor.html">LoadCursor</a></li>
       <li><a href="../win32/LoadIcon.html">LoadIcon</a></li>
+      <li><a href="../win32/LoadImage.html">LoadImage</a></li>
       <li><a href="../win32/LoadLibrary.html">LoadLibrary</a></li>
       <li><a href="../win32/LockWorkStation.html">LockWorkStation</a></li>
       <li><a href="../win32/MessageBox.html">MessageBox</a></li>
@@ -426,6 +428,7 @@
       <li><a href="../win32/SetProcessDPIAware.html">SetProcessDPIAware</a></li>
       <li><a href="../win32/SetProcessDpiAwareness.html">SetProcessDpiAwareness</a></li>
       <li><a href="../win32/SetScrollInfo.html">SetScrollInfo</a></li>
+      <li><a href="../win32/SetStdHandle.html">SetStdHandle</a></li>
       <li><a href="../win32/SetTextColor.html">SetTextColor</a></li>
       <li><a href="../win32/SetTimer.html">SetTimer</a></li>
       <li><a href="../win32/SetViewportExtEx.html">SetViewportExtEx</a></li>
@@ -518,12 +521,21 @@
 </h1></div>
 
         <section class="multi-line-signature">
-          <span class="returntype"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="param-dtDriveType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dtDriveType</span>, </span><span class="parameter" id="param-pdwMinimumDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumDrive</span>, </span><span class="parameter" id="param-pdwCurrentDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentDrive</span>, </span><span class="parameter" id="param-pdwMaximumDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-124.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumDrive</span></span>)</span></span>
+          <span class="returntype"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="param-dtDriveType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dtDriveType</span>, </span><span class="parameter" id="param-pdwMinimumDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumDrive</span>, </span><span class="parameter" id="param-pdwCurrentDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentDrive</span>, </span><span class="parameter" id="param-pdwMaximumDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumDrive</span></span>)</span></span>
           <span class="name ">GetMonitorRedGreenOrBlueDrive</span>
           <div class="features">final</div>
         </section>
         <section class="desc markdown">
-          <p>{@category dxva2}</p>
+          <p>Retrieves a monitor's red, green, or blue drive value.</p>
+<pre class="language-c"><code class="language-c">_BOOL GetMonitorRedGreenOrBlueDrive(
+  HANDLE        hMonitor,
+  MC_DRIVE_TYPE dtDriveType,
+  LPDWORD       pdwMinimumDrive,
+  LPDWORD       pdwCurrentDrive,
+  LPDWORD       pdwMaximumDrive
+);
+</code></pre>
+<p>{@category dxva2}</p>
         </section>
                 <section class="summary source-code" id="source">
           <h2><span>Implementation</span></h2>
