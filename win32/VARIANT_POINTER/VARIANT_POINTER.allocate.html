@@ -93,7 +93,7 @@
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
       <pre class="language-dart"><code class="language-dart">factory VARIANT_POINTER.allocate() =&gt; allocate&lt;VARIANT_POINTER&gt;().ref
-  ..vt = 0
+  ..vt = VARENUM.VT_PTR
   ..wReserved1 = 0
   ..wReserved2 = 0
   ..wReserved3 = 0
@@ -110,7 +110,7 @@
 <footer>
   <span class="no-break">
     win32
-      1.7.2
+      1.7.3
   </span>
 
 </footer>

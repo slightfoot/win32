@@ -123,6 +123,27 @@ the top-level parent window associated with the child window is
 activated. <a href="../win32/BringWindowToTop.html">[...]</a>
                           <div class="features">final</div>
 </dd>
+            <dt id="ClipCursor" class="property">
+              <span class="name"><a href="../win32/ClipCursor.html">ClipCursor</a></span>
+              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-lpRect"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/RECT-class.html">RECT</a></span>&gt;</span></span> <span class="parameter-name">lpRect</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+            
+            </dt>
+            <dd>
+              Confines the cursor to a rectangular area on the screen. If a
+subsequent cursor position (set by the SetCursorPos function or the
+mouse) lies outside the rectangle, the system automatically adjusts the
+position to keep the cursor inside the rectangular area. <a href="../win32/ClipCursor.html">[...]</a>
+                          <div class="features">final</div>
+</dd>
+            <dt id="CopyIcon" class="property">
+              <span class="name"><a href="../win32/CopyIcon.html">CopyIcon</a></span>
+              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hIcon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hIcon</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+            
+            </dt>
+            <dd>
+              Copies the specified icon from another module to the current module. <a href="../win32/CopyIcon.html">[...]</a>
+                          <div class="features">final</div>
+</dd>
             <dt id="CreateAcceleratorTable" class="property">
               <span class="name"><a href="../win32/CreateAcceleratorTable.html">CreateAcceleratorTable</a></span>
               <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-paccel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">paccel</span>, </span><span class="parameter" id="param-cAccel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cAccel</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
@@ -167,6 +188,15 @@ ensures that every message is processed. DefWindowProc is called with
 the same parameters received by the window procedure. <a href="../win32/DefWindowProc.html">[...]</a>
                           <div class="features">final</div>
 </dd>
+            <dt id="DestroyIcon" class="property">
+              <span class="name"><a href="../win32/DestroyIcon.html">DestroyIcon</a></span>
+              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hIcon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hIcon</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+            
+            </dt>
+            <dd>
+              Destroys an icon and frees any memory the icon occupied. <a href="../win32/DestroyIcon.html">[...]</a>
+                          <div class="features">final</div>
+</dd>
             <dt id="DestroyWindow" class="property">
               <span class="name"><a href="../win32/DestroyWindow.html">DestroyWindow</a></span>
               <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
@@ -189,6 +219,15 @@ the top of the viewer chain). <a href="../win32/DestroyWindow.html">[...]</a>
             <dd>
               Dispatches a message to a window procedure. It is typically used to
 dispatch a message retrieved by the GetMessage function. <a href="../win32/DispatchMessage.html">[...]</a>
+                          <div class="features">final</div>
+</dd>
+            <dt id="DrawIcon" class="property">
+              <span class="name"><a href="../win32/DrawIcon.html">DrawIcon</a></span>
+              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hDC"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDC</span>, </span><span class="parameter" id="param-X"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">X</span>, </span><span class="parameter" id="param-Y"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Y</span>, </span><span class="parameter" id="param-hIcon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hIcon</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+            
+            </dt>
+            <dd>
+              Draws an icon or cursor into the specified device context. <a href="../win32/DrawIcon.html">[...]</a>
                           <div class="features">final</div>
 </dd>
             <dt id="DrawText" class="property">
@@ -283,6 +322,24 @@ coordinates specify the upper-left and lower-right corners of the
 client area. Because client coordinates are relative to the upper-left
 corner of a window's client area, the coordinates of the upper-left
 corner are (0,0). <a href="../win32/GetClientRect.html">[...]</a>
+                          <div class="features">final</div>
+</dd>
+            <dt id="GetCursor" class="property">
+              <span class="name"><a href="../win32/GetCursor.html">GetCursor</a></span>
+              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">()</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+            
+            </dt>
+            <dd>
+              Retrieves a handle to the current cursor. <a href="../win32/GetCursor.html">[...]</a>
+                          <div class="features">final</div>
+</dd>
+            <dt id="GetCursorPos" class="property">
+              <span class="name"><a href="../win32/GetCursorPos.html">GetCursorPos</a></span>
+              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-lpPoint"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/POINT-class.html">POINT</a></span>&gt;</span></span> <span class="parameter-name">lpPoint</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+            
+            </dt>
+            <dd>
+              Retrieves the position of the mouse cursor, in screen coordinates. <a href="../win32/GetCursorPos.html">[...]</a>
                           <div class="features">final</div>
 </dd>
             <dt id="GetDC" class="property">
@@ -390,6 +447,16 @@ system display screen. <a href="../win32/GetSysColor.html">[...]</a>
 useful for avoiding compatibility issues that arise from sharing
 DPI-sensitive information between multiple system-aware processes with
 different system DPI values. <a href="../win32/GetSystemDpiForProcess.html">[...]</a>
+                          <div class="features">final</div>
+</dd>
+            <dt id="GetSystemMenu" class="property">
+              <span class="name"><a href="../win32/GetSystemMenu.html">GetSystemMenu</a></span>
+              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="param-bRevert"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">bRevert</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+            
+            </dt>
+            <dd>
+              Enables the application to access the window menu (also known as the
+system menu or the control menu) for copying and modifying. <a href="../win32/GetSystemMenu.html">[...]</a>
                           <div class="features">final</div>
 </dd>
             <dt id="GetSystemMetrics" class="property">
@@ -677,6 +744,24 @@ not return until the window procedure has processed the message. <a href="../win
 attached to the calling thread's message queue. <a href="../win32/SetFocus.html">[...]</a>
                           <div class="features">final</div>
 </dd>
+            <dt id="SetMenuInfo" class="property">
+              <span class="name"><a href="../win32/SetMenuInfo.html">SetMenuInfo</a></span>
+              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hMenu"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMenu</span>, </span><span class="parameter" id="param-lpMenuInfo"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/MENUINFO-class.html">MENUINFO</a></span>&gt;</span></span> <span class="parameter-name">lpMenuInfo</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+            
+            </dt>
+            <dd>
+              Sets information for a specified menu. <a href="../win32/SetMenuInfo.html">[...]</a>
+                          <div class="features">final</div>
+</dd>
+            <dt id="SetMenuItemInfo" class="property">
+              <span class="name"><a href="../win32/SetMenuItemInfo.html">SetMenuItemInfo</a></span>
+              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hmenu"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hmenu</span>, </span><span class="parameter" id="param-item"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">item</span>, </span><span class="parameter" id="param-fByPositon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">fByPositon</span>, </span><span class="parameter" id="param-lpmii"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/MENUITEMINFO-class.html">MENUITEMINFO</a></span>&gt;</span></span> <span class="parameter-name">lpmii</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+            
+            </dt>
+            <dd>
+              Changes information about a menu item. <a href="../win32/SetMenuItemInfo.html">[...]</a>
+                          <div class="features">final</div>
+</dd>
             <dt id="SetParent" class="property">
               <span class="name"><a href="../win32/SetParent.html">SetParent</a></span>
               <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hWndChild"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndChild</span>, </span><span class="parameter" id="param-hWndNewParent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndNewParent</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
@@ -748,6 +833,15 @@ and is the first window in the Z order. <a href="../win32/SetWindowPos.html">[..
 If the specified window is a control, the text of the control is
 changed. However, SetWindowText cannot change the text of a control in
 another application. <a href="../win32/SetWindowText.html">[...]</a>
+                          <div class="features">final</div>
+</dd>
+            <dt id="ShowCursor" class="property">
+              <span class="name"><a href="../win32/ShowCursor.html">ShowCursor</a></span>
+              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-bShow"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">bShow</span></span>)</span></span>                 <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+            
+            </dt>
+            <dd>
+              Displays or hides the cursor. <a href="../win32/ShowCursor.html">[...]</a>
                           <div class="features">final</div>
 </dd>
             <dt id="ShowWindow" class="property">
@@ -855,12 +949,16 @@ point. <a href="../win32/WindowFromPhysicalPoint.html">[...]</a>
       <li><a href="../win32/AppendMenu.html">AppendMenu</a></li>
       <li><a href="../win32/BeginPaint.html">BeginPaint</a></li>
       <li><a href="../win32/BringWindowToTop.html">BringWindowToTop</a></li>
+      <li><a href="../win32/ClipCursor.html">ClipCursor</a></li>
+      <li><a href="../win32/CopyIcon.html">CopyIcon</a></li>
       <li><a href="../win32/CreateAcceleratorTable.html">CreateAcceleratorTable</a></li>
       <li><a href="../win32/CreateMenu.html">CreateMenu</a></li>
       <li><a href="../win32/CreateWindowEx.html">CreateWindowEx</a></li>
       <li><a href="../win32/DefWindowProc.html">DefWindowProc</a></li>
+      <li><a href="../win32/DestroyIcon.html">DestroyIcon</a></li>
       <li><a href="../win32/DestroyWindow.html">DestroyWindow</a></li>
       <li><a href="../win32/DispatchMessage.html">DispatchMessage</a></li>
+      <li><a href="../win32/DrawIcon.html">DrawIcon</a></li>
       <li><a href="../win32/DrawText.html">DrawText</a></li>
       <li><a href="../win32/EnableMenuItem.html">EnableMenuItem</a></li>
       <li><a href="../win32/EndPaint.html">EndPaint</a></li>
@@ -869,6 +967,8 @@ point. <a href="../win32/WindowFromPhysicalPoint.html">[...]</a>
       <li><a href="../win32/FillRect.html">FillRect</a></li>
       <li><a href="../win32/FindWindowEx.html">FindWindowEx</a></li>
       <li><a href="../win32/GetClientRect.html">GetClientRect</a></li>
+      <li><a href="../win32/GetCursor.html">GetCursor</a></li>
+      <li><a href="../win32/GetCursorPos.html">GetCursorPos</a></li>
       <li><a href="../win32/GetDC.html">GetDC</a></li>
       <li><a href="../win32/GetDpiForSystem.html">GetDpiForSystem</a></li>
       <li><a href="../win32/GetForegroundWindow.html">GetForegroundWindow</a></li>
@@ -879,6 +979,7 @@ point. <a href="../win32/WindowFromPhysicalPoint.html">[...]</a>
       <li><a href="../win32/GetShellWindow.html">GetShellWindow</a></li>
       <li><a href="../win32/GetSysColor.html">GetSysColor</a></li>
       <li><a href="../win32/GetSystemDpiForProcess.html">GetSystemDpiForProcess</a></li>
+      <li><a href="../win32/GetSystemMenu.html">GetSystemMenu</a></li>
       <li><a href="../win32/GetSystemMetrics.html">GetSystemMetrics</a></li>
       <li><a href="../win32/GetWindow.html">GetWindow</a></li>
       <li><a href="../win32/GetWindowText.html">GetWindowText</a></li>
@@ -906,6 +1007,8 @@ point. <a href="../win32/WindowFromPhysicalPoint.html">[...]</a>
       <li><a href="../win32/SendInput.html">SendInput</a></li>
       <li><a href="../win32/SendMessage.html">SendMessage</a></li>
       <li><a href="../win32/SetFocus.html">SetFocus</a></li>
+      <li><a href="../win32/SetMenuInfo.html">SetMenuInfo</a></li>
+      <li><a href="../win32/SetMenuItemInfo.html">SetMenuItemInfo</a></li>
       <li><a href="../win32/SetParent.html">SetParent</a></li>
       <li><a href="../win32/SetProcessDPIAware.html">SetProcessDPIAware</a></li>
       <li><a href="../win32/SetScrollInfo.html">SetScrollInfo</a></li>
@@ -913,6 +1016,7 @@ point. <a href="../win32/WindowFromPhysicalPoint.html">[...]</a>
       <li><a href="../win32/SetWindowLongPtr.html">SetWindowLongPtr</a></li>
       <li><a href="../win32/SetWindowPos.html">SetWindowPos</a></li>
       <li><a href="../win32/SetWindowText.html">SetWindowText</a></li>
+      <li><a href="../win32/ShowCursor.html">ShowCursor</a></li>
       <li><a href="../win32/ShowWindow.html">ShowWindow</a></li>
       <li><a href="../win32/ShowWindowAsync.html">ShowWindowAsync</a></li>
       <li><a href="../win32/SystemParametersInfo.html">SystemParametersInfo</a></li>
@@ -932,7 +1036,7 @@ point. <a href="../win32/WindowFromPhysicalPoint.html">[...]</a>
 <footer>
   <span class="no-break">
     win32
-      1.7.2
+      1.7.3
   </span>
 
 </footer>
