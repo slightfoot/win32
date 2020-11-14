@@ -194,7 +194,7 @@
       <li><a href="../win32/TASKDIALOGCONFIG-class.html">TASKDIALOGCONFIG</a></li>
       <li><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></li>
       <li><a href="../win32/VARENUM-class.html">VARENUM</a></li>
-      <li><a href="../win32/VARIANT_POINTER-class.html">VARIANT_POINTER</a></li>
+      <li><a href="../win32/VARIANT-class.html">VARIANT</a></li>
       <li><a href="../win32/VS_FIXEDFILEINFO-class.html">VS_FIXEDFILEINFO</a></li>
       <li><a href="../win32/WBEM_GENERIC_FLAG_TYPE-class.html">WBEM_GENERIC_FLAG_TYPE</a></li>
       <li><a href="../win32/WBEM_TIMEOUT_TYPE-class.html">WBEM_TIMEOUT_TYPE</a></li>
@@ -953,6 +953,7 @@
       <li><a href="../win32/SetConsoleMode.html">SetConsoleMode</a></li>
       <li><a href="../win32/SetConsoleTextAttribute.html">SetConsoleTextAttribute</a></li>
       <li><a href="../win32/SetConsoleWindowInfo.html">SetConsoleWindowInfo</a></li>
+      <li><a href="../win32/SetCursorPos.html">SetCursorPos</a></li>
       <li><a href="../win32/SetFocus.html">SetFocus</a></li>
       <li><a href="../win32/SetMapMode.html">SetMapMode</a></li>
       <li><a href="../win32/SetMenuInfo.html">SetMenuInfo</a></li>
@@ -977,6 +978,7 @@
       <li><a href="../win32/SetWindowLongPtr.html">SetWindowLongPtr</a></li>
       <li><a href="../win32/SetWindowPos.html">SetWindowPos</a></li>
       <li><a href="../win32/SetWindowText.html">SetWindowText</a></li>
+      <li><a href="../win32/SHCreateItemFromParsingName.html">SHCreateItemFromParsingName</a></li>
       <li><a href="../win32/ShellAbout.html">ShellAbout</a></li>
       <li><a href="../win32/ShellExecute.html">ShellExecute</a></li>
       <li><a href="../win32/ShellExecuteEx.html">ShellExecuteEx</a></li>
@@ -991,6 +993,10 @@
       <li><a href="../win32/SHQueryRecycleBin.html">SHQueryRecycleBin</a></li>
       <li><a href="../win32/Sleep.html">Sleep</a></li>
       <li><a href="../win32/StretchDIBits.html">StretchDIBits</a></li>
+      <li><a href="../win32/SysAllocString.html">SysAllocString</a></li>
+      <li><a href="../win32/SysFreeString.html">SysFreeString</a></li>
+      <li><a href="../win32/SysStringByteLen.html">SysStringByteLen</a></li>
+      <li><a href="../win32/SysStringLen.html">SysStringLen</a></li>
       <li><a href="../win32/SystemParametersInfo.html">SystemParametersInfo</a></li>
       <li><a href="../win32/TaskDialog.html">TaskDialog</a></li>
       <li><a href="../win32/TaskDialogIndirect.html">TaskDialogIndirect</a></li>
@@ -1001,6 +1007,7 @@
       <li><a href="../win32/UpdateResource.html">UpdateResource</a></li>
       <li><a href="../win32/UpdateWindow.html">UpdateWindow</a></li>
       <li><a href="../win32/VariantClear.html">VariantClear</a></li>
+      <li><a href="../win32/VariantInit.html">VariantInit</a></li>
       <li><a href="../win32/VerFindFile.html">VerFindFile</a></li>
       <li><a href="../win32/VerInstallFile.html">VerInstallFile</a></li>
       <li><a href="../win32/VerLanguageName.html">VerLanguageName</a></li>
@@ -1084,16 +1091,16 @@
 
       <dl class="properties">
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/hashCode.html">[...]</a>
                   <div class="features">read-only, inherited</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Type-class.html">Type</a></span>         
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Type-class.html">Type</a></span>         
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object. 
@@ -1106,17 +1113,17 @@
       <h2>Methods</h2>
       <dl class="callables">
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
                   </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
         <dt id="toString" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/String-class.html">String</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1130,12 +1137,12 @@
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/bool-class.html">bool</a></span>
           </span>
                   </dt>
         <dd class="inherited">
-          The equality operator. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/operator_equals.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
       </dl>
@@ -1149,7 +1156,7 @@
       <dl class="properties">
         <dt id="Canceled" class="constant">
           <span class="name "><a href="../win32/AsyncStatus/Canceled-constant.html">Canceled</a></span>
-          <span class="signature">&#8594; const <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8594; const <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
                   </dt>
         <dd>
            
@@ -1160,7 +1167,7 @@
         </dd>
         <dt id="Completed" class="constant">
           <span class="name "><a href="../win32/AsyncStatus/Completed-constant.html">Completed</a></span>
-          <span class="signature">&#8594; const <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8594; const <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
                   </dt>
         <dd>
            
@@ -1171,7 +1178,7 @@
         </dd>
         <dt id="Error" class="constant">
           <span class="name "><a href="../win32/AsyncStatus/Error-constant.html">Error</a></span>
-          <span class="signature">&#8594; const <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8594; const <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
                   </dt>
         <dd>
            
@@ -1182,7 +1189,7 @@
         </dd>
         <dt id="Started" class="constant">
           <span class="name "><a href="../win32/AsyncStatus/Started-constant.html">Started</a></span>
-          <span class="signature">&#8594; const <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="signature">&#8594; const <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
                   </dt>
         <dd>
            
@@ -1205,15 +1212,15 @@
       <li class="section-title inherited">
         <a href="../win32/AsyncStatus-class.html#instance-properties">Properties</a>
       </li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title inherited"><a href="../win32/AsyncStatus-class.html#instance-methods">Methods</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/toString.html">toString</a></li>
     
       <li class="section-title inherited"><a href="../win32/AsyncStatus-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
     
     
     
@@ -1231,7 +1238,7 @@
 <footer>
   <span class="no-break">
     win32
-      1.7.3
+      1.7.4
   </span>
 
 </footer>

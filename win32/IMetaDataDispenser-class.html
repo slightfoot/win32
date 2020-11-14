@@ -194,7 +194,7 @@
       <li><a href="../win32/TASKDIALOGCONFIG-class.html">TASKDIALOGCONFIG</a></li>
       <li><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></li>
       <li><a href="../win32/VARENUM-class.html">VARENUM</a></li>
-      <li><a href="../win32/VARIANT_POINTER-class.html">VARIANT_POINTER</a></li>
+      <li><a href="../win32/VARIANT-class.html">VARIANT</a></li>
       <li><a href="../win32/VS_FIXEDFILEINFO-class.html">VS_FIXEDFILEINFO</a></li>
       <li><a href="../win32/WBEM_GENERIC_FLAG_TYPE-class.html">WBEM_GENERIC_FLAG_TYPE</a></li>
       <li><a href="../win32/WBEM_TIMEOUT_TYPE-class.html">WBEM_TIMEOUT_TYPE</a></li>
@@ -953,6 +953,7 @@
       <li><a href="../win32/SetConsoleMode.html">SetConsoleMode</a></li>
       <li><a href="../win32/SetConsoleTextAttribute.html">SetConsoleTextAttribute</a></li>
       <li><a href="../win32/SetConsoleWindowInfo.html">SetConsoleWindowInfo</a></li>
+      <li><a href="../win32/SetCursorPos.html">SetCursorPos</a></li>
       <li><a href="../win32/SetFocus.html">SetFocus</a></li>
       <li><a href="../win32/SetMapMode.html">SetMapMode</a></li>
       <li><a href="../win32/SetMenuInfo.html">SetMenuInfo</a></li>
@@ -977,6 +978,7 @@
       <li><a href="../win32/SetWindowLongPtr.html">SetWindowLongPtr</a></li>
       <li><a href="../win32/SetWindowPos.html">SetWindowPos</a></li>
       <li><a href="../win32/SetWindowText.html">SetWindowText</a></li>
+      <li><a href="../win32/SHCreateItemFromParsingName.html">SHCreateItemFromParsingName</a></li>
       <li><a href="../win32/ShellAbout.html">ShellAbout</a></li>
       <li><a href="../win32/ShellExecute.html">ShellExecute</a></li>
       <li><a href="../win32/ShellExecuteEx.html">ShellExecuteEx</a></li>
@@ -991,6 +993,10 @@
       <li><a href="../win32/SHQueryRecycleBin.html">SHQueryRecycleBin</a></li>
       <li><a href="../win32/Sleep.html">Sleep</a></li>
       <li><a href="../win32/StretchDIBits.html">StretchDIBits</a></li>
+      <li><a href="../win32/SysAllocString.html">SysAllocString</a></li>
+      <li><a href="../win32/SysFreeString.html">SysFreeString</a></li>
+      <li><a href="../win32/SysStringByteLen.html">SysStringByteLen</a></li>
+      <li><a href="../win32/SysStringLen.html">SysStringLen</a></li>
       <li><a href="../win32/SystemParametersInfo.html">SystemParametersInfo</a></li>
       <li><a href="../win32/TaskDialog.html">TaskDialog</a></li>
       <li><a href="../win32/TaskDialogIndirect.html">TaskDialogIndirect</a></li>
@@ -1001,6 +1007,7 @@
       <li><a href="../win32/UpdateResource.html">UpdateResource</a></li>
       <li><a href="../win32/UpdateWindow.html">UpdateWindow</a></li>
       <li><a href="../win32/VariantClear.html">VariantClear</a></li>
+      <li><a href="../win32/VariantInit.html">VariantInit</a></li>
       <li><a href="../win32/VerFindFile.html">VerFindFile</a></li>
       <li><a href="../win32/VerInstallFile.html">VerInstallFile</a></li>
       <li><a href="../win32/VerLanguageName.html">VerLanguageName</a></li>
@@ -1067,7 +1074,7 @@
       <dl class="dl-horizontal">
         <dt>Inheritance</dt>
         <dd><ul class="gt-separated dark clazz-relationships">
-          <li><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object-class.html">Object</a></li>
+          <li><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object-class.html">Object</a></li>
           <li><a href="../win32/IUnknown-class.html">IUnknown</a></li>
           <li>IMetaDataDispenser</li>
         </ul></dd>
@@ -1088,7 +1095,7 @@
 
       <dl class="constructor-summary-list">
         <dt id="IMetaDataDispenser" class="callable">
-          <span class="name"><a href="../win32/IMetaDataDispenser/IMetaDataDispenser.html">IMetaDataDispenser</a></span><span class="signature">(<span class="parameter" id="-param-ptr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ptr</span></span>)</span>
+          <span class="name"><a href="../win32/IMetaDataDispenser/IMetaDataDispenser.html">IMetaDataDispenser</a></span><span class="signature">(<span class="parameter" id="-param-ptr"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ptr</span></span>)</span>
         </dt>
         <dd>
            
@@ -1101,24 +1108,24 @@
 
       <dl class="properties">
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/hashCode.html">[...]</a>
                   <div class="features">read-only, inherited</div>
 </dd>
         <dt id="ptr" class="property inherited">
           <span class="name"><a href="../win32/IUnknown/ptr.html">ptr</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span>         
         </dt>
         <dd class="inherited">
            
                   <div class="features">read / write, inherited</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Type-class.html">Type</a></span>         
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Type-class.html">Type</a></span>         
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object. 
@@ -1132,7 +1139,7 @@
       <dl class="callables">
         <dt id="AddRef" class="callable inherited">
           <span class="name"><a href="../win32/IUnknown/AddRef.html">AddRef</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1140,8 +1147,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="DefineScope" class="callable">
-          <span class="name"><a href="../win32/IMetaDataDispenser/DefineScope.html">DefineScope</a></span><span class="signature">(<wbr><span class="parameter" id="DefineScope-param-rclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rclsid</span>, </span><span class="parameter" id="DefineScope-param-dwCreateFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwCreateFlags</span>, </span><span class="parameter" id="DefineScope-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="DefineScope-param-ppIUnk"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppIUnk</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IMetaDataDispenser/DefineScope.html">DefineScope</a></span><span class="signature">(<wbr><span class="parameter" id="DefineScope-param-rclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rclsid</span>, </span><span class="parameter" id="DefineScope-param-dwCreateFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwCreateFlags</span>, </span><span class="parameter" id="DefineScope-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="DefineScope-param-ppIUnk"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppIUnk</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1149,17 +1156,17 @@
                   
 </dd>
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
                   </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
         <dt id="OpenScope" class="callable">
-          <span class="name"><a href="../win32/IMetaDataDispenser/OpenScope.html">OpenScope</a></span><span class="signature">(<wbr><span class="parameter" id="OpenScope-param-szScope"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">szScope</span>, </span><span class="parameter" id="OpenScope-param-dwOpenFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwOpenFlags</span>, </span><span class="parameter" id="OpenScope-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="OpenScope-param-ppIUnk"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppIUnk</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IMetaDataDispenser/OpenScope.html">OpenScope</a></span><span class="signature">(<wbr><span class="parameter" id="OpenScope-param-szScope"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">szScope</span>, </span><span class="parameter" id="OpenScope-param-dwOpenFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwOpenFlags</span>, </span><span class="parameter" id="OpenScope-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="OpenScope-param-ppIUnk"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppIUnk</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1167,8 +1174,8 @@
                   
 </dd>
         <dt id="OpenScopeOnMemory" class="callable">
-          <span class="name"><a href="../win32/IMetaDataDispenser/OpenScopeOnMemory.html">OpenScopeOnMemory</a></span><span class="signature">(<wbr><span class="parameter" id="OpenScopeOnMemory-param-pData"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">pData</span>, </span><span class="parameter" id="OpenScopeOnMemory-param-cbData"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cbData</span>, </span><span class="parameter" id="OpenScopeOnMemory-param-dwOpenFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwOpenFlags</span>, </span><span class="parameter" id="OpenScopeOnMemory-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="OpenScopeOnMemory-param-ppIUnk"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppIUnk</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IMetaDataDispenser/OpenScopeOnMemory.html">OpenScopeOnMemory</a></span><span class="signature">(<wbr><span class="parameter" id="OpenScopeOnMemory-param-pData"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">pData</span>, </span><span class="parameter" id="OpenScopeOnMemory-param-cbData"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cbData</span>, </span><span class="parameter" id="OpenScopeOnMemory-param-dwOpenFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwOpenFlags</span>, </span><span class="parameter" id="OpenScopeOnMemory-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="OpenScopeOnMemory-param-ppIUnk"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppIUnk</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd>
@@ -1176,8 +1183,8 @@
                   
 </dd>
         <dt id="QueryInterface" class="callable inherited">
-          <span class="name"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></span><span class="signature">(<wbr><span class="parameter" id="QueryInterface-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="QueryInterface-param-ppvObject"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppvObject</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
+          <span class="name"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></span><span class="signature">(<wbr><span class="parameter" id="QueryInterface-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="QueryInterface-param-ppvObject"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppvObject</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1186,7 +1193,7 @@
 </dd>
         <dt id="Release" class="callable inherited">
           <span class="name"><a href="../win32/IUnknown/Release.html">Release</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1194,8 +1201,8 @@
                   <div class="features">inherited</div>
 </dd>
         <dt id="toString" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/String-class.html">String</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1209,12 +1216,12 @@
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/bool-class.html">bool</a></span>
           </span>
                   </dt>
         <dd class="inherited">
-          The equality operator. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/operator_equals.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
       </dl>
@@ -1234,22 +1241,22 @@
       <li class="section-title inherited">
         <a href="../win32/IMetaDataDispenser-class.html#instance-properties">Properties</a>
       </li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
       <li class="inherited"><a href="../win32/IUnknown/ptr.html">ptr</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
     
       <li class="section-title"><a href="../win32/IMetaDataDispenser-class.html#instance-methods">Methods</a></li>
       <li class="inherited"><a href="../win32/IUnknown/AddRef.html">AddRef</a></li>
       <li><a href="../win32/IMetaDataDispenser/DefineScope.html">DefineScope</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
       <li><a href="../win32/IMetaDataDispenser/OpenScope.html">OpenScope</a></li>
       <li><a href="../win32/IMetaDataDispenser/OpenScopeOnMemory.html">OpenScopeOnMemory</a></li>
       <li class="inherited"><a href="../win32/IUnknown/QueryInterface.html">QueryInterface</a></li>
       <li class="inherited"><a href="../win32/IUnknown/Release.html">Release</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/toString.html">toString</a></li>
     
       <li class="section-title inherited"><a href="../win32/IMetaDataDispenser-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
     
     
     
@@ -1262,7 +1269,7 @@
 <footer>
   <span class="no-break">
     win32
-      1.7.3
+      1.7.4
   </span>
 
 </footer>

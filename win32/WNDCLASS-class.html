@@ -194,7 +194,7 @@
       <li><a href="../win32/TASKDIALOGCONFIG-class.html">TASKDIALOGCONFIG</a></li>
       <li><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></li>
       <li><a href="../win32/VARENUM-class.html">VARENUM</a></li>
-      <li><a href="../win32/VARIANT_POINTER-class.html">VARIANT_POINTER</a></li>
+      <li><a href="../win32/VARIANT-class.html">VARIANT</a></li>
       <li><a href="../win32/VS_FIXEDFILEINFO-class.html">VS_FIXEDFILEINFO</a></li>
       <li><a href="../win32/WBEM_GENERIC_FLAG_TYPE-class.html">WBEM_GENERIC_FLAG_TYPE</a></li>
       <li><a href="../win32/WBEM_TIMEOUT_TYPE-class.html">WBEM_TIMEOUT_TYPE</a></li>
@@ -953,6 +953,7 @@
       <li><a href="../win32/SetConsoleMode.html">SetConsoleMode</a></li>
       <li><a href="../win32/SetConsoleTextAttribute.html">SetConsoleTextAttribute</a></li>
       <li><a href="../win32/SetConsoleWindowInfo.html">SetConsoleWindowInfo</a></li>
+      <li><a href="../win32/SetCursorPos.html">SetCursorPos</a></li>
       <li><a href="../win32/SetFocus.html">SetFocus</a></li>
       <li><a href="../win32/SetMapMode.html">SetMapMode</a></li>
       <li><a href="../win32/SetMenuInfo.html">SetMenuInfo</a></li>
@@ -977,6 +978,7 @@
       <li><a href="../win32/SetWindowLongPtr.html">SetWindowLongPtr</a></li>
       <li><a href="../win32/SetWindowPos.html">SetWindowPos</a></li>
       <li><a href="../win32/SetWindowText.html">SetWindowText</a></li>
+      <li><a href="../win32/SHCreateItemFromParsingName.html">SHCreateItemFromParsingName</a></li>
       <li><a href="../win32/ShellAbout.html">ShellAbout</a></li>
       <li><a href="../win32/ShellExecute.html">ShellExecute</a></li>
       <li><a href="../win32/ShellExecuteEx.html">ShellExecuteEx</a></li>
@@ -991,6 +993,10 @@
       <li><a href="../win32/SHQueryRecycleBin.html">SHQueryRecycleBin</a></li>
       <li><a href="../win32/Sleep.html">Sleep</a></li>
       <li><a href="../win32/StretchDIBits.html">StretchDIBits</a></li>
+      <li><a href="../win32/SysAllocString.html">SysAllocString</a></li>
+      <li><a href="../win32/SysFreeString.html">SysFreeString</a></li>
+      <li><a href="../win32/SysStringByteLen.html">SysStringByteLen</a></li>
+      <li><a href="../win32/SysStringLen.html">SysStringLen</a></li>
       <li><a href="../win32/SystemParametersInfo.html">SystemParametersInfo</a></li>
       <li><a href="../win32/TaskDialog.html">TaskDialog</a></li>
       <li><a href="../win32/TaskDialogIndirect.html">TaskDialogIndirect</a></li>
@@ -1001,6 +1007,7 @@
       <li><a href="../win32/UpdateResource.html">UpdateResource</a></li>
       <li><a href="../win32/UpdateWindow.html">UpdateWindow</a></li>
       <li><a href="../win32/VariantClear.html">VariantClear</a></li>
+      <li><a href="../win32/VariantInit.html">VariantInit</a></li>
       <li><a href="../win32/VerFindFile.html">VerFindFile</a></li>
       <li><a href="../win32/VerInstallFile.html">VerInstallFile</a></li>
       <li><a href="../win32/VerLanguageName.html">VerLanguageName</a></li>
@@ -1070,9 +1077,9 @@ RegisterClass function.</p>
       <dl class="dl-horizontal">
         <dt>Inheritance</dt>
         <dd><ul class="gt-separated dark clazz-relationships">
-          <li><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object-class.html">Object</a></li>
-          <li><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/NativeType-class.html">NativeType</a></li>
-          <li><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Struct-class.html">Struct</a></li>
+          <li><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object-class.html">Object</a></li>
+          <li><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/NativeType-class.html">NativeType</a></li>
+          <li><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Struct-class.html">Struct</a></li>
           <li>WNDCLASS</li>
         </ul></dd>
 
@@ -1103,63 +1110,63 @@ RegisterClass function.</p>
       <dl class="properties">
         <dt id="cbClsExtra" class="property">
           <span class="name"><a href="../win32/WNDCLASS/cbClsExtra.html">cbClsExtra</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Int32-class.html">Int32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a>(), read / write</div>
 </dd>
         <dt id="cbWndExtra" class="property">
           <span class="name"><a href="../win32/WNDCLASS/cbWndExtra.html">cbWndExtra</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Int32-class.html">Int32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a>(), read / write</div>
 </dd>
         <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd class="inherited">
-          The hash code for this object. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">[...]</a>
+          The hash code for this object. <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/hashCode.html">[...]</a>
                   <div class="features">read-only, inherited</div>
 </dd>
         <dt id="hbrBackground" class="property">
           <span class="name"><a href="../win32/WNDCLASS/hbrBackground.html">hbrBackground</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
 </dd>
         <dt id="hCursor" class="property">
           <span class="name"><a href="../win32/WNDCLASS/hCursor.html">hCursor</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
 </dd>
         <dt id="hIcon" class="property">
           <span class="name"><a href="../win32/WNDCLASS/hIcon.html">hIcon</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
 </dd>
         <dt id="hInstance" class="property">
           <span class="name"><a href="../win32/WNDCLASS/hInstance.html">hInstance</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a>(), read / write</div>
 </dd>
         <dt id="lpfnWndProc" class="property">
           <span class="name"><a href="../win32/WNDCLASS/lpfnWndProc.html">lpfnWndProc</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/NativeFunction-class.html">NativeFunction</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Function-class.html">Function</a></span>&gt;</span></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/NativeFunction-class.html">NativeFunction</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Function-class.html">Function</a></span>&gt;</span></span>&gt;</span></span>         
         </dt>
         <dd>
            
@@ -1167,7 +1174,7 @@ RegisterClass function.</p>
 </dd>
         <dt id="lpszClassName" class="property">
           <span class="name"><a href="../win32/WNDCLASS/lpszClassName.html">lpszClassName</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>         
         </dt>
         <dd>
            
@@ -1175,15 +1182,15 @@ RegisterClass function.</p>
 </dd>
         <dt id="lpszMenuName" class="property">
           <span class="name"><a href="../win32/WNDCLASS/lpszMenuName.html">lpszMenuName</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>         
         </dt>
         <dd>
            
                   <div class="features">read / write</div>
 </dd>
         <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Type-class.html">Type</a></span>         
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Type-class.html">Type</a></span>         
         </dt>
         <dd class="inherited">
           A representation of the runtime type of the object. 
@@ -1191,11 +1198,11 @@ RegisterClass function.</p>
 </dd>
         <dt id="style" class="property">
           <span class="name"><a href="../win32/WNDCLASS/style.html">style</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
+          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>         
         </dt>
         <dd>
            
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
+                  <div class="features">@<a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a>(), read / write</div>
 </dd>
       </dl>
     </section>
@@ -1204,17 +1211,17 @@ RegisterClass function.</p>
       <h2>Methods</h2>
       <dl class="callables">
         <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
             <span class="returntype parameter">&#8594; dynamic</span>
           </span>
                   </dt>
         <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
+          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
         <dt id="toString" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/String-class.html">String</a></span>
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/String-class.html">String</a></span>
           </span>
                   </dt>
         <dd class="inherited">
@@ -1228,12 +1235,12 @@ RegisterClass function.</p>
       <h2>Operators</h2>
       <dl class="callables">
         <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/bool-class.html">bool</a></span>
+          <span class="name"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/bool-class.html">bool</a></span>
           </span>
                   </dt>
         <dd class="inherited">
-          The equality operator. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">[...]</a>
+          The equality operator. <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/operator_equals.html">[...]</a>
                   <div class="features">inherited</div>
 </dd>
       </dl>
@@ -1255,7 +1262,7 @@ RegisterClass function.</p>
       </li>
       <li><a href="../win32/WNDCLASS/cbClsExtra.html">cbClsExtra</a></li>
       <li><a href="../win32/WNDCLASS/cbWndExtra.html">cbWndExtra</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
       <li><a href="../win32/WNDCLASS/hbrBackground.html">hbrBackground</a></li>
       <li><a href="../win32/WNDCLASS/hCursor.html">hCursor</a></li>
       <li><a href="../win32/WNDCLASS/hIcon.html">hIcon</a></li>
@@ -1263,15 +1270,15 @@ RegisterClass function.</p>
       <li><a href="../win32/WNDCLASS/lpfnWndProc.html">lpfnWndProc</a></li>
       <li><a href="../win32/WNDCLASS/lpszClassName.html">lpszClassName</a></li>
       <li><a href="../win32/WNDCLASS/lpszMenuName.html">lpszMenuName</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
       <li><a href="../win32/WNDCLASS/style.html">style</a></li>
     
       <li class="section-title inherited"><a href="../win32/WNDCLASS-class.html#instance-methods">Methods</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/toString.html">toString</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/toString.html">toString</a></li>
     
       <li class="section-title inherited"><a href="../win32/WNDCLASS-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
+      <li class="inherited"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
     
     
     
@@ -1284,7 +1291,7 @@ RegisterClass function.</p>
 <footer>
   <span class="no-break">
     win32
-      1.7.3
+      1.7.4
   </span>
 
 </footer>

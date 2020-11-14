@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the VARIANT_POINTER class from the win32 library, for the Dart programming language.">
-  <title>VARIANT_POINTER class - win32 library - Dart API</title>
+  <meta name="description" content="API docs for the SysFreeString property from the win32 library, for the Dart programming language.">
+  <title>SysFreeString property - win32 library - Dart API</title>
 
   
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
@@ -26,9 +26,9 @@
   <ol class="breadcrumbs gt-separated dark hidden-xs">
     <li><a href="../index.html">win32</a></li>
     <li><a href="../win32/win32-library.html">win32</a></li>
-    <li class="self-crumb">VARIANT_POINTER class</li>
+    <li class="self-crumb">SysFreeString property</li>
   </ol>
-  <div class="self-name">VARIANT_POINTER</div>
+  <div class="self-name">SysFreeString</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -46,7 +46,7 @@
     <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
       <li><a href="../index.html">win32</a></li>
       <li><a href="../win32/win32-library.html">win32</a></li>
-      <li class="self-crumb">VARIANT_POINTER class</li>
+      <li class="self-crumb">SysFreeString property</li>
     </ol>
     
     <h5>win32 library</h5>
@@ -194,7 +194,7 @@
       <li><a href="../win32/TASKDIALOGCONFIG-class.html">TASKDIALOGCONFIG</a></li>
       <li><a href="../win32/TEXTMETRIC-class.html">TEXTMETRIC</a></li>
       <li><a href="../win32/VARENUM-class.html">VARENUM</a></li>
-      <li><a href="../win32/VARIANT_POINTER-class.html">VARIANT_POINTER</a></li>
+      <li><a href="../win32/VARIANT-class.html">VARIANT</a></li>
       <li><a href="../win32/VS_FIXEDFILEINFO-class.html">VS_FIXEDFILEINFO</a></li>
       <li><a href="../win32/WBEM_GENERIC_FLAG_TYPE-class.html">WBEM_GENERIC_FLAG_TYPE</a></li>
       <li><a href="../win32/WBEM_TIMEOUT_TYPE-class.html">WBEM_TIMEOUT_TYPE</a></li>
@@ -953,6 +953,7 @@
       <li><a href="../win32/SetConsoleMode.html">SetConsoleMode</a></li>
       <li><a href="../win32/SetConsoleTextAttribute.html">SetConsoleTextAttribute</a></li>
       <li><a href="../win32/SetConsoleWindowInfo.html">SetConsoleWindowInfo</a></li>
+      <li><a href="../win32/SetCursorPos.html">SetCursorPos</a></li>
       <li><a href="../win32/SetFocus.html">SetFocus</a></li>
       <li><a href="../win32/SetMapMode.html">SetMapMode</a></li>
       <li><a href="../win32/SetMenuInfo.html">SetMenuInfo</a></li>
@@ -977,6 +978,7 @@
       <li><a href="../win32/SetWindowLongPtr.html">SetWindowLongPtr</a></li>
       <li><a href="../win32/SetWindowPos.html">SetWindowPos</a></li>
       <li><a href="../win32/SetWindowText.html">SetWindowText</a></li>
+      <li><a href="../win32/SHCreateItemFromParsingName.html">SHCreateItemFromParsingName</a></li>
       <li><a href="../win32/ShellAbout.html">ShellAbout</a></li>
       <li><a href="../win32/ShellExecute.html">ShellExecute</a></li>
       <li><a href="../win32/ShellExecuteEx.html">ShellExecuteEx</a></li>
@@ -991,6 +993,10 @@
       <li><a href="../win32/SHQueryRecycleBin.html">SHQueryRecycleBin</a></li>
       <li><a href="../win32/Sleep.html">Sleep</a></li>
       <li><a href="../win32/StretchDIBits.html">StretchDIBits</a></li>
+      <li><a href="../win32/SysAllocString.html">SysAllocString</a></li>
+      <li><a href="../win32/SysFreeString.html">SysFreeString</a></li>
+      <li><a href="../win32/SysStringByteLen.html">SysStringByteLen</a></li>
+      <li><a href="../win32/SysStringLen.html">SysStringLen</a></li>
       <li><a href="../win32/SystemParametersInfo.html">SystemParametersInfo</a></li>
       <li><a href="../win32/TaskDialog.html">TaskDialog</a></li>
       <li><a href="../win32/TaskDialogIndirect.html">TaskDialogIndirect</a></li>
@@ -1001,6 +1007,7 @@
       <li><a href="../win32/UpdateResource.html">UpdateResource</a></li>
       <li><a href="../win32/UpdateWindow.html">UpdateWindow</a></li>
       <li><a href="../win32/VariantClear.html">VariantClear</a></li>
+      <li><a href="../win32/VariantInit.html">VariantInit</a></li>
       <li><a href="../win32/VerFindFile.html">VerFindFile</a></li>
       <li><a href="../win32/VerInstallFile.html">VerInstallFile</a></li>
       <li><a href="../win32/VerLanguageName.html">VerLanguageName</a></li>
@@ -1055,185 +1062,38 @@
       <li><a href="../win32/COMException-class.html">COMException</a></li>
       <li><a href="../win32/WindowsException-class.html">WindowsException</a></li>
     </ol>
-  </div>
+  </div><!--/.sidebar-offcanvas-left-->
 
   <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
-      <div><h1><span class="kind-class">VARIANT_POINTER</span> class      <span class="category struct cp-19" title="This is part of the Struct Topic.">Struct</span>
+      <div><h1><span class="kind-top-level-property">SysFreeString</span> top-level property      <span class="category oleaut32 cp-5 linked" title="This is part of the oleaut32 Topic."><a href="../topics/oleaut32-topic.html">oleaut32</a></span>
 </h1></div>
 
-    <section class="desc markdown">
-      <p>The VARIANT type is used in Win32 to represent a dynamic type. It is
-represented as a struct containing a union of the types that could be
-stored. This is a specialization of that class for VARIANTs that contain
-pointers.</p>
-    </section>
-    
-    <section>
-      <dl class="dl-horizontal">
-        <dt>Inheritance</dt>
-        <dd><ul class="gt-separated dark clazz-relationships">
-          <li><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object-class.html">Object</a></li>
-          <li><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/NativeType-class.html">NativeType</a></li>
-          <li><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Struct-class.html">Struct</a></li>
-          <li>VARIANT_POINTER</li>
-        </ul></dd>
-
-
-
-
-
-      </dl>
-    </section>
-
-    <section class="summary offset-anchor" id="constructors">
-      <h2>Constructors</h2>
-
-      <dl class="constructor-summary-list">
-        <dt id="VARIANT_POINTER.allocate" class="callable">
-          <span class="name"><a href="../win32/VARIANT_POINTER/VARIANT_POINTER.allocate.html">VARIANT_POINTER.allocate</a></span><span class="signature">()</span>
-        </dt>
-        <dd>
-           
-          <div class="constructor-modifier features">factory</div>
-        </dd>
-      </dl>
-    </section>
-
-    <section class="summary offset-anchor" id="instance-properties">
-      <h2>Properties</h2>
-
-      <dl class="properties">
-        <dt id="hashCode" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">hashCode</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
-        </dt>
-        <dd class="inherited">
-          The hash code for this object. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">[...]</a>
-                  <div class="features">read-only, inherited</div>
-</dd>
-        <dt id="ptr" class="property">
-          <span class="name"><a href="../win32/VARIANT_POINTER/ptr.html">ptr</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span>         
-        </dt>
-        <dd>
-           
-                  <div class="features">read / write</div>
-</dd>
-        <dt id="runtimeType" class="property inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></span>
-          <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Type-class.html">Type</a></span>         
-        </dt>
-        <dd class="inherited">
-          A representation of the runtime type of the object. 
-                  <div class="features">read-only, inherited</div>
-</dd>
-        <dt id="vt" class="property">
-          <span class="name"><a href="../win32/VARIANT_POINTER/vt.html">vt</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
-        </dt>
-        <dd>
-           
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Int16-class.html">Int16</a>(), read / write</div>
-</dd>
-        <dt id="wReserved1" class="property">
-          <span class="name"><a href="../win32/VARIANT_POINTER/wReserved1.html">wReserved1</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
-        </dt>
-        <dd>
-           
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Int16-class.html">Int16</a>(), read / write</div>
-</dd>
-        <dt id="wReserved2" class="property">
-          <span class="name"><a href="../win32/VARIANT_POINTER/wReserved2.html">wReserved2</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
-        </dt>
-        <dd>
-           
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Int16-class.html">Int16</a>(), read / write</div>
-</dd>
-        <dt id="wReserved3" class="property">
-          <span class="name"><a href="../win32/VARIANT_POINTER/wReserved3.html">wReserved3</a></span>
-          <span class="signature">&#8596; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/int-class.html">int</a></span>         
-        </dt>
-        <dd>
-           
-                  <div class="features">@<a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-ffi/Int16-class.html">Int16</a>(), read / write</div>
-</dd>
-      </dl>
-    </section>
-
-    <section class="summary offset-anchor inherited" id="instance-methods">
-      <h2>Methods</h2>
-      <dl class="callables">
-        <dt id="noSuchMethod" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
-            <span class="returntype parameter">&#8594; dynamic</span>
-          </span>
-                  </dt>
-        <dd class="inherited">
-          Invoked when a non-existent method or property is accessed. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">[...]</a>
-                  <div class="features">inherited</div>
-</dd>
-        <dt id="toString" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/String-class.html">String</a></span>
-          </span>
-                  </dt>
-        <dd class="inherited">
-          Returns a string representation of this object. 
-                  <div class="features">inherited</div>
-</dd>
-      </dl>
-    </section>
-
-    <section class="summary offset-anchor inherited" id="operators">
-      <h2>Operators</h2>
-      <dl class="callables">
-        <dt id="operator ==" class="callable inherited">
-          <span class="name"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
-            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/bool-class.html">bool</a></span>
-          </span>
-                  </dt>
-        <dd class="inherited">
-          The equality operator. <a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">[...]</a>
-                  <div class="features">inherited</div>
-</dd>
-      </dl>
-    </section>
-
-
+        <section class="multi-line-signature">
+          <span class="returntype">void Function<span class="signature">(<span class="parameter" id="param-bstrString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">bstrString</span></span>)</span></span>
+          <span class="name ">SysFreeString</span>
+          <div class="features">final</div>
+        </section>
+        <section class="desc markdown">
+          <p>Deallocates a string allocated previously by SysAllocString,
+SysAllocStringByteLen, SysReAllocString, SysAllocStringLen, or
+SysReAllocStringLen.</p>
+<pre class="language-c"><code class="language-c">void SysFreeString(
+  BSTR bstrString
+);
+</code></pre>
+<p>{@category oleaut32}</p>
+        </section>
+                <section class="summary source-code" id="source">
+          <h2><span>Implementation</span></h2>
+          <pre class="language-dart"><code class="language-dart">final SysFreeString = _oleaut32.lookupFunction&lt;
+    Void Function(Pointer bstrString),
+    void Function(Pointer bstrString)&gt;(&#39;SysFreeString&#39;)</code></pre>
+        </section>
 
 
   </div> <!-- /.main-content -->
 
   <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
-    <ol>
-    
-      <li class="section-title"><a href="../win32/VARIANT_POINTER-class.html#constructors">Constructors</a></li>
-      <li><a href="../win32/VARIANT_POINTER/VARIANT_POINTER.allocate.html">allocate</a></li>
-    
-      <li class="section-title">
-        <a href="../win32/VARIANT_POINTER-class.html#instance-properties">Properties</a>
-      </li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/hashCode.html">hashCode</a></li>
-      <li><a href="../win32/VARIANT_POINTER/ptr.html">ptr</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/runtimeType.html">runtimeType</a></li>
-      <li><a href="../win32/VARIANT_POINTER/vt.html">vt</a></li>
-      <li><a href="../win32/VARIANT_POINTER/wReserved1.html">wReserved1</a></li>
-      <li><a href="../win32/VARIANT_POINTER/wReserved2.html">wReserved2</a></li>
-      <li><a href="../win32/VARIANT_POINTER/wReserved3.html">wReserved3</a></li>
-    
-      <li class="section-title inherited"><a href="../win32/VARIANT_POINTER-class.html#instance-methods">Methods</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/toString.html">toString</a></li>
-    
-      <li class="section-title inherited"><a href="../win32/VARIANT_POINTER-class.html#operators">Operators</a></li>
-      <li class="inherited"><a href="https://api.dart.dev/dev/2.10.0-136.0.dev/dart-core/Object/operator_equals.html">operator ==</a></li>
-    
-    
-    
-    
-    </ol>
   </div><!--/.sidebar-offcanvas-->
 
 </main>
@@ -1241,7 +1101,7 @@ pointers.</p>
 <footer>
   <span class="no-break">
     win32
-      1.7.3
+      1.7.4
   </span>
 
 </footer>
