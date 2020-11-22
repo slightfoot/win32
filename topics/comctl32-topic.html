@@ -87,60 +87,64 @@ collects user input.</p>
 
 
 
-      <section class="summary offset-anchor" id="properties">
-        <h2>Properties</h2>
 
-        <dl class="properties">
-            <dt id="DrawStatusText" class="property">
-              <span class="name"><a href="../win32/DrawStatusText.html">DrawStatusText</a></span>
-              <span class="signature">&#8594; void Function<span class="signature">(<span class="parameter" id="param-hdc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hdc</span>, </span><span class="parameter" id="param-lprc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/RECT-class.html">RECT</a></span>&gt;</span></span> <span class="parameter-name">lprc</span>, </span><span class="parameter" id="param-pszText"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszText</span>, </span><span class="parameter" id="param-uFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">uFlags</span></span>)</span></span>                 <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
-            
-            </dt>
+      <section class="summary offset-anchor" id="functions">
+        <h2>Functions</h2>
+
+        <dl class="callables">
+            <dt id="DrawStatusText" class="callable">
+              <span class="name"><a href="../win32/DrawStatusText.html">DrawStatusText</a></span><span class="signature">(<wbr><span class="parameter" id="DrawStatusText-param-hdc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hdc</span>, </span><span class="parameter" id="DrawStatusText-param-lprc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/RECT-class.html">RECT</a></span>&gt;</span></span> <span class="parameter-name">lprc</span>, </span><span class="parameter" id="DrawStatusText-param-pszText"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszText</span>, </span><span class="parameter" id="DrawStatusText-param-uFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">uFlags</span></span>)
+                <span class="returntype parameter">&#8594; void</span>
+              </span>
+                              <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
+              </dt>
             <dd>
               The DrawStatusText function draws the specified text in the style of a
 status window with borders. <a href="../win32/DrawStatusText.html">[...]</a>
-                          <div class="features">final</div>
+                          
 </dd>
-            <dt id="InitCommonControlsEx" class="property">
-              <span class="name"><a href="../win32/InitCommonControlsEx.html">InitCommonControlsEx</a></span>
-              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-picce"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/INITCOMMONCONTROLSEX-class.html">INITCOMMONCONTROLSEX</a></span>&gt;</span></span> <span class="parameter-name">picce</span></span>)</span></span>                 <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
-            
-            </dt>
+            <dt id="InitCommonControlsEx" class="callable">
+              <span class="name"><a href="../win32/InitCommonControlsEx.html">InitCommonControlsEx</a></span><span class="signature">(<wbr><span class="parameter" id="InitCommonControlsEx-param-picce"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/INITCOMMONCONTROLSEX-class.html">INITCOMMONCONTROLSEX</a></span>&gt;</span></span> <span class="parameter-name">picce</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
+              </dt>
             <dd>
               Ensures that the common control DLL (Comctl32.dll) is loaded, and
 registers specific common control classes from the DLL. An application
 must call this function before creating a common control. <a href="../win32/InitCommonControlsEx.html">[...]</a>
-                          <div class="features">final</div>
+                          
 </dd>
-            <dt id="TaskDialog" class="property">
-              <span class="name"><a href="../win32/TaskDialog.html">TaskDialog</a></span>
-              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-hwndOwner"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwndOwner</span>, </span><span class="parameter" id="param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><span class="parameter" id="param-pszWindowTitle"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszWindowTitle</span>, </span><span class="parameter" id="param-pszMainInstruction"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszMainInstruction</span>, </span><span class="parameter" id="param-pszContent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszContent</span>, </span><span class="parameter" id="param-dwCommonButtons"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwCommonButtons</span>, </span><span class="parameter" id="param-pszIcon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszIcon</span>, </span><span class="parameter" id="param-pnButton"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pnButton</span></span>)</span></span>                 <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
-            
-            </dt>
+            <dt id="TaskDialog" class="callable">
+              <span class="name"><a href="../win32/TaskDialog.html">TaskDialog</a></span><span class="signature">(<wbr><span class="parameter" id="TaskDialog-param-hwndOwner"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwndOwner</span>, </span><span class="parameter" id="TaskDialog-param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><span class="parameter" id="TaskDialog-param-pszWindowTitle"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszWindowTitle</span>, </span><span class="parameter" id="TaskDialog-param-pszMainInstruction"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszMainInstruction</span>, </span><span class="parameter" id="TaskDialog-param-pszContent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszContent</span>, </span><span class="parameter" id="TaskDialog-param-dwCommonButtons"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwCommonButtons</span>, </span><span class="parameter" id="TaskDialog-param-pszIcon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszIcon</span>, </span><span class="parameter" id="TaskDialog-param-pnButton"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pnButton</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
+              </dt>
             <dd>
               The TaskDialog function creates, displays, and operates a task dialog.
 The task dialog contains application-defined message text and title,
 icons, and any combination of predefined push buttons. This function
 does not support the registration of a callback function to receive
 notifications. <a href="../win32/TaskDialog.html">[...]</a>
-                          <div class="features">final</div>
+                          
 </dd>
-            <dt id="TaskDialogIndirect" class="property">
-              <span class="name"><a href="../win32/TaskDialogIndirect.html">TaskDialogIndirect</a></span>
-              <span class="signature">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a> Function<span class="signature">(<span class="parameter" id="param-pTaskConfig"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/TASKDIALOGCONFIG-class.html">TASKDIALOGCONFIG</a></span>&gt;</span></span> <span class="parameter-name">pTaskConfig</span>, </span><span class="parameter" id="param-pnButton"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pnButton</span>, </span><span class="parameter" id="param-pnRadioButton"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pnRadioButton</span>, </span><span class="parameter" id="param-pfVerificationFlagChecked"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pfVerificationFlagChecked</span></span>)</span></span>                 <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
-            
-            </dt>
+            <dt id="TaskDialogIndirect" class="callable">
+              <span class="name"><a href="../win32/TaskDialogIndirect.html">TaskDialogIndirect</a></span><span class="signature">(<wbr><span class="parameter" id="TaskDialogIndirect-param-pTaskConfig"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/TASKDIALOGCONFIG-class.html">TASKDIALOGCONFIG</a></span>&gt;</span></span> <span class="parameter-name">pTaskConfig</span>, </span><span class="parameter" id="TaskDialogIndirect-param-pnButton"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pnButton</span>, </span><span class="parameter" id="TaskDialogIndirect-param-pnRadioButton"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pnRadioButton</span>, </span><span class="parameter" id="TaskDialogIndirect-param-pfVerificationFlagChecked"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pfVerificationFlagChecked</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category comctl32 cp-6 linked" title="This is part of the comctl32 Topic."><a href="../topics/comctl32-topic.html">comctl32</a></span>
+              </dt>
             <dd>
               The TaskDialogIndirect function creates, displays, and operates a task
 dialog. The task dialog contains application-defined icons, messages,
 title, verification check box, command links, push buttons, and radio
 buttons. This function can register a callback function to receive
 notification messages. <a href="../win32/TaskDialogIndirect.html">[...]</a>
-                          <div class="features">final</div>
+                          
 </dd>
         </dl>
       </section>
-
 
 
 
@@ -153,12 +157,12 @@ notification messages. <a href="../win32/TaskDialogIndirect.html">[...]</a>
     
     
     
-      <li class="section-title"><a href="../topics/comctl32-topic.html#properties">Properties</a></li>
+    
+      <li class="section-title"><a href="../topics/comctl32-topic.html#functions">Functions</a></li>
       <li><a href="../win32/DrawStatusText.html">DrawStatusText</a></li>
       <li><a href="../win32/InitCommonControlsEx.html">InitCommonControlsEx</a></li>
       <li><a href="../win32/TaskDialog.html">TaskDialog</a></li>
       <li><a href="../win32/TaskDialogIndirect.html">TaskDialogIndirect</a></li>
-    
     
     
     
@@ -169,7 +173,7 @@ notification messages. <a href="../win32/TaskDialogIndirect.html">[...]</a>
 <footer>
   <span class="no-break">
     win32
-      2.0.0-nullsafety.0
+      2.0.0-nullsafety.1
   </span>
 
 </footer>
