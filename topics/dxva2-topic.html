@@ -93,21 +93,19 @@ transform (iDCT) to the GPU.</p>
         <h2>Functions</h2>
 
         <dl class="callables">
-            <dt id="DestroyPhysicalMonitor" class="callable">
-              <span class="name"><a href="../win32/DestroyPhysicalMonitor.html">DestroyPhysicalMonitor</a></span><span class="signature">(<wbr><span class="parameter" id="DestroyPhysicalMonitor-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+            <dt id="GetMonitorRedGreenOrBlueDrive" class="callable">
+              <span class="name"><a href="../win32/GetMonitorRedGreenOrBlueDrive.html">GetMonitorRedGreenOrBlueDrive</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorRedGreenOrBlueDrive-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueDrive-param-dtDriveType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dtDriveType</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueDrive-param-pdwMinimumDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumDrive</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueDrive-param-pdwCurrentDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentDrive</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueDrive-param-pdwMaximumDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumDrive</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
               </dt>
             <dd>
-              Closes a handle to a physical monitor. Call this function to close a
-monitor handle obtained from the GetPhysicalMonitorsFromHMONITOR or
-GetPhysicalMonitorsFromIDirect3DDevice9 function. <a href="../win32/DestroyPhysicalMonitor.html">[...]</a>
+              Retrieves a monitor's red, green, or blue drive value. <a href="../win32/GetMonitorRedGreenOrBlueDrive.html">[...]</a>
                           
 </dd>
             <dt id="DestroyPhysicalMonitors" class="callable">
-              <span class="name"><a href="../win32/DestroyPhysicalMonitors.html">DestroyPhysicalMonitors</a></span><span class="signature">(<wbr><span class="parameter" id="DestroyPhysicalMonitors-param-dwPhysicalMonitorArraySize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwPhysicalMonitorArraySize</span>, </span><span class="parameter" id="DestroyPhysicalMonitors-param-pPhysicalMonitorArray"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pPhysicalMonitorArray</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/DestroyPhysicalMonitors.html">DestroyPhysicalMonitors</a></span><span class="signature">(<wbr><span class="parameter" id="DestroyPhysicalMonitors-param-dwPhysicalMonitorArraySize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwPhysicalMonitorArraySize</span>, </span><span class="parameter" id="DestroyPhysicalMonitors-param-pPhysicalMonitorArray"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pPhysicalMonitorArray</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
               </dt>
@@ -118,169 +116,9 @@ GetPhysicalMonitorsFromHMONITOR or
 GetPhysicalMonitorsFromIDirect3DDevice9 function. <a href="../win32/DestroyPhysicalMonitors.html">[...]</a>
                           
 </dd>
-            <dt id="GetMonitorBrightness" class="callable">
-              <span class="name"><a href="../win32/GetMonitorBrightness.html">GetMonitorBrightness</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorBrightness-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorBrightness-param-pdwMinimumBrightness"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumBrightness</span>, </span><span class="parameter" id="GetMonitorBrightness-param-pdwCurrentBrightness"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentBrightness</span>, </span><span class="parameter" id="GetMonitorBrightness-param-pdwMaximumBrightness"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumBrightness</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves a monitor's minimum, maximum, and current brightness
-settings. <a href="../win32/GetMonitorBrightness.html">[...]</a>
-                          
-</dd>
-            <dt id="GetMonitorCapabilities" class="callable">
-              <span class="name"><a href="../win32/GetMonitorCapabilities.html">GetMonitorCapabilities</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorCapabilities-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorCapabilities-param-pdwMonitorCapabilities"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMonitorCapabilities</span>, </span><span class="parameter" id="GetMonitorCapabilities-param-pdwSupportedColorTemperatures"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwSupportedColorTemperatures</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves the configuration capabilities of a monitor. Call this
-function to find out which high-level monitor configuration functions
-are supported by the monitor. <a href="../win32/GetMonitorCapabilities.html">[...]</a>
-                          
-</dd>
-            <dt id="GetMonitorColorTemperature" class="callable">
-              <span class="name"><a href="../win32/GetMonitorColorTemperature.html">GetMonitorColorTemperature</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorColorTemperature-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorColorTemperature-param-pctCurrentColorTemperature"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pctCurrentColorTemperature</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves a monitor's current color temperature. <a href="../win32/GetMonitorColorTemperature.html">[...]</a>
-                          
-</dd>
-            <dt id="GetMonitorContrast" class="callable">
-              <span class="name"><a href="../win32/GetMonitorContrast.html">GetMonitorContrast</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorContrast-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorContrast-param-pdwMinimumContrast"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumContrast</span>, </span><span class="parameter" id="GetMonitorContrast-param-pdwCurrentContrast"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentContrast</span>, </span><span class="parameter" id="GetMonitorContrast-param-pdwMaximumContrast"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumContrast</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves a monitor's minimum, maximum, and current contrast settings. <a href="../win32/GetMonitorContrast.html">[...]</a>
-                          
-</dd>
-            <dt id="GetMonitorDisplayAreaPosition" class="callable">
-              <span class="name"><a href="../win32/GetMonitorDisplayAreaPosition.html">GetMonitorDisplayAreaPosition</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorDisplayAreaPosition-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorDisplayAreaPosition-param-ptPositionType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">ptPositionType</span>, </span><span class="parameter" id="GetMonitorDisplayAreaPosition-param-pdwMinimumPosition"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumPosition</span>, </span><span class="parameter" id="GetMonitorDisplayAreaPosition-param-pdwCurrentPosition"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentPosition</span>, </span><span class="parameter" id="GetMonitorDisplayAreaPosition-param-pdwMaximumPosition"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumPosition</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves a monitor's minimum, maximum, and current horizontal or
-vertical position. <a href="../win32/GetMonitorDisplayAreaPosition.html">[...]</a>
-                          
-</dd>
-            <dt id="GetMonitorDisplayAreaSize" class="callable">
-              <span class="name"><a href="../win32/GetMonitorDisplayAreaSize.html">GetMonitorDisplayAreaSize</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorDisplayAreaSize-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorDisplayAreaSize-param-stSizeType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">stSizeType</span>, </span><span class="parameter" id="GetMonitorDisplayAreaSize-param-pdwMinimumWidthOrHeight"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumWidthOrHeight</span>, </span><span class="parameter" id="GetMonitorDisplayAreaSize-param-pdwCurrentWidthOrHeight"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentWidthOrHeight</span>, </span><span class="parameter" id="GetMonitorDisplayAreaSize-param-pdwMaximumWidthOrHeight"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumWidthOrHeight</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves a monitor's minimum, maximum, and current width or height. <a href="../win32/GetMonitorDisplayAreaSize.html">[...]</a>
-                          
-</dd>
-            <dt id="GetMonitorRedGreenOrBlueDrive" class="callable">
-              <span class="name"><a href="../win32/GetMonitorRedGreenOrBlueDrive.html">GetMonitorRedGreenOrBlueDrive</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorRedGreenOrBlueDrive-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueDrive-param-dtDriveType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dtDriveType</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueDrive-param-pdwMinimumDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumDrive</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueDrive-param-pdwCurrentDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentDrive</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueDrive-param-pdwMaximumDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumDrive</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves a monitor's red, green, or blue drive value. <a href="../win32/GetMonitorRedGreenOrBlueDrive.html">[...]</a>
-                          
-</dd>
-            <dt id="GetMonitorRedGreenOrBlueGain" class="callable">
-              <span class="name"><a href="../win32/GetMonitorRedGreenOrBlueGain.html">GetMonitorRedGreenOrBlueGain</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorRedGreenOrBlueGain-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueGain-param-gtGainType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">gtGainType</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueGain-param-pdwMinimumGain"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumGain</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueGain-param-pdwCurrentGain"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentGain</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueGain-param-pdwMaximumGain"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumGain</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves a monitor's red, green, or blue gain value. <a href="../win32/GetMonitorRedGreenOrBlueGain.html">[...]</a>
-                          
-</dd>
-            <dt id="GetMonitorTechnologyType" class="callable">
-              <span class="name"><a href="../win32/GetMonitorTechnologyType.html">GetMonitorTechnologyType</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorTechnologyType-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorTechnologyType-param-pdtyDisplayTechnologyType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pdtyDisplayTechnologyType</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves the type of technology used by a monitor. <a href="../win32/GetMonitorTechnologyType.html">[...]</a>
-                          
-</dd>
-            <dt id="GetNumberOfPhysicalMonitorsFromHMONITOR" class="callable">
-              <span class="name"><a href="../win32/GetNumberOfPhysicalMonitorsFromHMONITOR.html">GetNumberOfPhysicalMonitorsFromHMONITOR</a></span><span class="signature">(<wbr><span class="parameter" id="GetNumberOfPhysicalMonitorsFromHMONITOR-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetNumberOfPhysicalMonitorsFromHMONITOR-param-pdwNumberOfPhysicalMonitors"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwNumberOfPhysicalMonitors</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves the number of physical monitors associated with an HMONITOR
-monitor handle. Call this function before calling
-GetPhysicalMonitorsFromHMONITOR. <a href="../win32/GetNumberOfPhysicalMonitorsFromHMONITOR.html">[...]</a>
-                          
-</dd>
-            <dt id="GetPhysicalMonitorsFromHMONITOR" class="callable">
-              <span class="name"><a href="../win32/GetPhysicalMonitorsFromHMONITOR.html">GetPhysicalMonitorsFromHMONITOR</a></span><span class="signature">(<wbr><span class="parameter" id="GetPhysicalMonitorsFromHMONITOR-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetPhysicalMonitorsFromHMONITOR-param-dwPhysicalMonitorArraySize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwPhysicalMonitorArraySize</span>, </span><span class="parameter" id="GetPhysicalMonitorsFromHMONITOR-param-pPhysicalMonitorArray"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pPhysicalMonitorArray</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Retrieves the physical monitors associated with an HMONITOR monitor
-handle. <a href="../win32/GetPhysicalMonitorsFromHMONITOR.html">[...]</a>
-                          
-</dd>
-            <dt id="SaveCurrentMonitorSettings" class="callable">
-              <span class="name"><a href="../win32/SaveCurrentMonitorSettings.html">SaveCurrentMonitorSettings</a></span><span class="signature">(<wbr><span class="parameter" id="SaveCurrentMonitorSettings-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Saves the current monitor settings to the display's nonvolatile
-storage. <a href="../win32/SaveCurrentMonitorSettings.html">[...]</a>
-                          
-</dd>
-            <dt id="SetMonitorBrightness" class="callable">
-              <span class="name"><a href="../win32/SetMonitorBrightness.html">SetMonitorBrightness</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorBrightness-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorBrightness-param-dwNewBrightness"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewBrightness</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Sets a monitor's brightness value. Increasing the brightness value
-makes the display on the monitor brighter, and decreasing it makes the
-display dimmer. <a href="../win32/SetMonitorBrightness.html">[...]</a>
-                          
-</dd>
-            <dt id="SetMonitorColorTemperature" class="callable">
-              <span class="name"><a href="../win32/SetMonitorColorTemperature.html">SetMonitorColorTemperature</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorColorTemperature-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorColorTemperature-param-ctCurrentColorTemperature"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">ctCurrentColorTemperature</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Sets a monitor's color temperature. <a href="../win32/SetMonitorColorTemperature.html">[...]</a>
-                          
-</dd>
-            <dt id="SetMonitorContrast" class="callable">
-              <span class="name"><a href="../win32/SetMonitorContrast.html">SetMonitorContrast</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorContrast-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorContrast-param-dwNewContrast"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewContrast</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
-              </dt>
-            <dd>
-              Sets a monitor's contrast value. <a href="../win32/SetMonitorContrast.html">[...]</a>
-                          
-</dd>
             <dt id="SetMonitorDisplayAreaPosition" class="callable">
-              <span class="name"><a href="../win32/SetMonitorDisplayAreaPosition.html">SetMonitorDisplayAreaPosition</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorDisplayAreaPosition-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorDisplayAreaPosition-param-ptPositionType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">ptPositionType</span>, </span><span class="parameter" id="SetMonitorDisplayAreaPosition-param-dwNewPosition"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewPosition</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/SetMonitorDisplayAreaPosition.html">SetMonitorDisplayAreaPosition</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorDisplayAreaPosition-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorDisplayAreaPosition-param-ptPositionType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">ptPositionType</span>, </span><span class="parameter" id="SetMonitorDisplayAreaPosition-param-dwNewPosition"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewPosition</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
               </dt>
@@ -293,19 +131,19 @@ toward the top of the screen; decreasing it moves the display area
 toward the bottom. <a href="../win32/SetMonitorDisplayAreaPosition.html">[...]</a>
                           
 </dd>
-            <dt id="SetMonitorDisplayAreaSize" class="callable">
-              <span class="name"><a href="../win32/SetMonitorDisplayAreaSize.html">SetMonitorDisplayAreaSize</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorDisplayAreaSize-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorDisplayAreaSize-param-stSizeType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">stSizeType</span>, </span><span class="parameter" id="SetMonitorDisplayAreaSize-param-dwNewDisplayAreaWidthOrHeight"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewDisplayAreaWidthOrHeight</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+            <dt id="GetMonitorDisplayAreaSize" class="callable">
+              <span class="name"><a href="../win32/GetMonitorDisplayAreaSize.html">GetMonitorDisplayAreaSize</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorDisplayAreaSize-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorDisplayAreaSize-param-stSizeType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">stSizeType</span>, </span><span class="parameter" id="GetMonitorDisplayAreaSize-param-pdwMinimumWidthOrHeight"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumWidthOrHeight</span>, </span><span class="parameter" id="GetMonitorDisplayAreaSize-param-pdwCurrentWidthOrHeight"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentWidthOrHeight</span>, </span><span class="parameter" id="GetMonitorDisplayAreaSize-param-pdwMaximumWidthOrHeight"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumWidthOrHeight</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
               </dt>
             <dd>
-              Sets the width or height of a monitor's display area. <a href="../win32/SetMonitorDisplayAreaSize.html">[...]</a>
+              Retrieves a monitor's minimum, maximum, and current width or height. <a href="../win32/GetMonitorDisplayAreaSize.html">[...]</a>
                           
 </dd>
             <dt id="SetMonitorRedGreenOrBlueDrive" class="callable">
-              <span class="name"><a href="../win32/SetMonitorRedGreenOrBlueDrive.html">SetMonitorRedGreenOrBlueDrive</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorRedGreenOrBlueDrive-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorRedGreenOrBlueDrive-param-dtDriveType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dtDriveType</span>, </span><span class="parameter" id="SetMonitorRedGreenOrBlueDrive-param-dwNewDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewDrive</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/SetMonitorRedGreenOrBlueDrive.html">SetMonitorRedGreenOrBlueDrive</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorRedGreenOrBlueDrive-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorRedGreenOrBlueDrive-param-dtDriveType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dtDriveType</span>, </span><span class="parameter" id="SetMonitorRedGreenOrBlueDrive-param-dwNewDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewDrive</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
               </dt>
@@ -313,14 +151,176 @@ toward the bottom. <a href="../win32/SetMonitorDisplayAreaPosition.html">[...]</
               Sets a monitor's red, green, or blue drive value. <a href="../win32/SetMonitorRedGreenOrBlueDrive.html">[...]</a>
                           
 </dd>
+            <dt id="GetMonitorRedGreenOrBlueGain" class="callable">
+              <span class="name"><a href="../win32/GetMonitorRedGreenOrBlueGain.html">GetMonitorRedGreenOrBlueGain</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorRedGreenOrBlueGain-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueGain-param-gtGainType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">gtGainType</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueGain-param-pdwMinimumGain"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumGain</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueGain-param-pdwCurrentGain"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentGain</span>, </span><span class="parameter" id="GetMonitorRedGreenOrBlueGain-param-pdwMaximumGain"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumGain</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Retrieves a monitor's red, green, or blue gain value. <a href="../win32/GetMonitorRedGreenOrBlueGain.html">[...]</a>
+                          
+</dd>
+            <dt id="SetMonitorColorTemperature" class="callable">
+              <span class="name"><a href="../win32/SetMonitorColorTemperature.html">SetMonitorColorTemperature</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorColorTemperature-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorColorTemperature-param-ctCurrentColorTemperature"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">ctCurrentColorTemperature</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Sets a monitor's color temperature. <a href="../win32/SetMonitorColorTemperature.html">[...]</a>
+                          
+</dd>
+            <dt id="DestroyPhysicalMonitor" class="callable">
+              <span class="name"><a href="../win32/DestroyPhysicalMonitor.html">DestroyPhysicalMonitor</a></span><span class="signature">(<wbr><span class="parameter" id="DestroyPhysicalMonitor-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Closes a handle to a physical monitor. Call this function to close a
+monitor handle obtained from the GetPhysicalMonitorsFromHMONITOR or
+GetPhysicalMonitorsFromIDirect3DDevice9 function. <a href="../win32/DestroyPhysicalMonitor.html">[...]</a>
+                          
+</dd>
+            <dt id="SaveCurrentMonitorSettings" class="callable">
+              <span class="name"><a href="../win32/SaveCurrentMonitorSettings.html">SaveCurrentMonitorSettings</a></span><span class="signature">(<wbr><span class="parameter" id="SaveCurrentMonitorSettings-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Saves the current monitor settings to the display's nonvolatile
+storage. <a href="../win32/SaveCurrentMonitorSettings.html">[...]</a>
+                          
+</dd>
             <dt id="SetMonitorRedGreenOrBlueGain" class="callable">
-              <span class="name"><a href="../win32/SetMonitorRedGreenOrBlueGain.html">SetMonitorRedGreenOrBlueGain</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorRedGreenOrBlueGain-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorRedGreenOrBlueGain-param-gtGainType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">gtGainType</span>, </span><span class="parameter" id="SetMonitorRedGreenOrBlueGain-param-dwNewGain"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewGain</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/SetMonitorRedGreenOrBlueGain.html">SetMonitorRedGreenOrBlueGain</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorRedGreenOrBlueGain-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorRedGreenOrBlueGain-param-gtGainType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">gtGainType</span>, </span><span class="parameter" id="SetMonitorRedGreenOrBlueGain-param-dwNewGain"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewGain</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
               </dt>
             <dd>
               Sets a monitor's red, green, or blue gain value. <a href="../win32/SetMonitorRedGreenOrBlueGain.html">[...]</a>
+                          
+</dd>
+            <dt id="GetPhysicalMonitorsFromHMONITOR" class="callable">
+              <span class="name"><a href="../win32/GetPhysicalMonitorsFromHMONITOR.html">GetPhysicalMonitorsFromHMONITOR</a></span><span class="signature">(<wbr><span class="parameter" id="GetPhysicalMonitorsFromHMONITOR-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetPhysicalMonitorsFromHMONITOR-param-dwPhysicalMonitorArraySize"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwPhysicalMonitorArraySize</span>, </span><span class="parameter" id="GetPhysicalMonitorsFromHMONITOR-param-pPhysicalMonitorArray"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pPhysicalMonitorArray</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Retrieves the physical monitors associated with an HMONITOR monitor
+handle. <a href="../win32/GetPhysicalMonitorsFromHMONITOR.html">[...]</a>
+                          
+</dd>
+            <dt id="GetMonitorCapabilities" class="callable">
+              <span class="name"><a href="../win32/GetMonitorCapabilities.html">GetMonitorCapabilities</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorCapabilities-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorCapabilities-param-pdwMonitorCapabilities"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMonitorCapabilities</span>, </span><span class="parameter" id="GetMonitorCapabilities-param-pdwSupportedColorTemperatures"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwSupportedColorTemperatures</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Retrieves the configuration capabilities of a monitor. Call this
+function to find out which high-level monitor configuration functions
+are supported by the monitor. <a href="../win32/GetMonitorCapabilities.html">[...]</a>
+                          
+</dd>
+            <dt id="GetMonitorContrast" class="callable">
+              <span class="name"><a href="../win32/GetMonitorContrast.html">GetMonitorContrast</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorContrast-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorContrast-param-pdwMinimumContrast"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumContrast</span>, </span><span class="parameter" id="GetMonitorContrast-param-pdwCurrentContrast"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentContrast</span>, </span><span class="parameter" id="GetMonitorContrast-param-pdwMaximumContrast"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumContrast</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Retrieves a monitor's minimum, maximum, and current contrast settings. <a href="../win32/GetMonitorContrast.html">[...]</a>
+                          
+</dd>
+            <dt id="GetMonitorBrightness" class="callable">
+              <span class="name"><a href="../win32/GetMonitorBrightness.html">GetMonitorBrightness</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorBrightness-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorBrightness-param-pdwMinimumBrightness"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumBrightness</span>, </span><span class="parameter" id="GetMonitorBrightness-param-pdwCurrentBrightness"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentBrightness</span>, </span><span class="parameter" id="GetMonitorBrightness-param-pdwMaximumBrightness"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumBrightness</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Retrieves a monitor's minimum, maximum, and current brightness
+settings. <a href="../win32/GetMonitorBrightness.html">[...]</a>
+                          
+</dd>
+            <dt id="SetMonitorBrightness" class="callable">
+              <span class="name"><a href="../win32/SetMonitorBrightness.html">SetMonitorBrightness</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorBrightness-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorBrightness-param-dwNewBrightness"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewBrightness</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Sets a monitor's brightness value. Increasing the brightness value
+makes the display on the monitor brighter, and decreasing it makes the
+display dimmer. <a href="../win32/SetMonitorBrightness.html">[...]</a>
+                          
+</dd>
+            <dt id="GetMonitorTechnologyType" class="callable">
+              <span class="name"><a href="../win32/GetMonitorTechnologyType.html">GetMonitorTechnologyType</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorTechnologyType-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorTechnologyType-param-pdtyDisplayTechnologyType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pdtyDisplayTechnologyType</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Retrieves the type of technology used by a monitor. <a href="../win32/GetMonitorTechnologyType.html">[...]</a>
+                          
+</dd>
+            <dt id="GetNumberOfPhysicalMonitorsFromHMONITOR" class="callable">
+              <span class="name"><a href="../win32/GetNumberOfPhysicalMonitorsFromHMONITOR.html">GetNumberOfPhysicalMonitorsFromHMONITOR</a></span><span class="signature">(<wbr><span class="parameter" id="GetNumberOfPhysicalMonitorsFromHMONITOR-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetNumberOfPhysicalMonitorsFromHMONITOR-param-pdwNumberOfPhysicalMonitors"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwNumberOfPhysicalMonitors</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Retrieves the number of physical monitors associated with an HMONITOR
+monitor handle. Call this function before calling
+GetPhysicalMonitorsFromHMONITOR. <a href="../win32/GetNumberOfPhysicalMonitorsFromHMONITOR.html">[...]</a>
+                          
+</dd>
+            <dt id="SetMonitorContrast" class="callable">
+              <span class="name"><a href="../win32/SetMonitorContrast.html">SetMonitorContrast</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorContrast-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorContrast-param-dwNewContrast"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewContrast</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Sets a monitor's contrast value. <a href="../win32/SetMonitorContrast.html">[...]</a>
+                          
+</dd>
+            <dt id="GetMonitorColorTemperature" class="callable">
+              <span class="name"><a href="../win32/GetMonitorColorTemperature.html">GetMonitorColorTemperature</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorColorTemperature-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorColorTemperature-param-pctCurrentColorTemperature"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Int32-class.html">Int32</a></span>&gt;</span></span> <span class="parameter-name">pctCurrentColorTemperature</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Retrieves a monitor's current color temperature. <a href="../win32/GetMonitorColorTemperature.html">[...]</a>
+                          
+</dd>
+            <dt id="SetMonitorDisplayAreaSize" class="callable">
+              <span class="name"><a href="../win32/SetMonitorDisplayAreaSize.html">SetMonitorDisplayAreaSize</a></span><span class="signature">(<wbr><span class="parameter" id="SetMonitorDisplayAreaSize-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="SetMonitorDisplayAreaSize-param-stSizeType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">stSizeType</span>, </span><span class="parameter" id="SetMonitorDisplayAreaSize-param-dwNewDisplayAreaWidthOrHeight"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwNewDisplayAreaWidthOrHeight</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Sets the width or height of a monitor's display area. <a href="../win32/SetMonitorDisplayAreaSize.html">[...]</a>
+                          
+</dd>
+            <dt id="GetMonitorDisplayAreaPosition" class="callable">
+              <span class="name"><a href="../win32/GetMonitorDisplayAreaPosition.html">GetMonitorDisplayAreaPosition</a></span><span class="signature">(<wbr><span class="parameter" id="GetMonitorDisplayAreaPosition-param-hMonitor"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMonitor</span>, </span><span class="parameter" id="GetMonitorDisplayAreaPosition-param-ptPositionType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">ptPositionType</span>, </span><span class="parameter" id="GetMonitorDisplayAreaPosition-param-pdwMinimumPosition"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMinimumPosition</span>, </span><span class="parameter" id="GetMonitorDisplayAreaPosition-param-pdwCurrentPosition"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwCurrentPosition</span>, </span><span class="parameter" id="GetMonitorDisplayAreaPosition-param-pdwMaximumPosition"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMaximumPosition</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category dxva2 cp-14 linked" title="This is part of the dxva2 Topic."><a href="../topics/dxva2-topic.html">dxva2</a></span>
+              </dt>
+            <dd>
+              Retrieves a monitor's minimum, maximum, and current horizontal or
+vertical position. <a href="../win32/GetMonitorDisplayAreaPosition.html">[...]</a>
                           
 </dd>
         </dl>
@@ -339,27 +339,27 @@ toward the bottom. <a href="../win32/SetMonitorDisplayAreaPosition.html">[...]</
     
     
       <li class="section-title"><a href="../topics/dxva2-topic.html#functions">Functions</a></li>
-      <li><a href="../win32/DestroyPhysicalMonitor.html">DestroyPhysicalMonitor</a></li>
-      <li><a href="../win32/DestroyPhysicalMonitors.html">DestroyPhysicalMonitors</a></li>
-      <li><a href="../win32/GetMonitorBrightness.html">GetMonitorBrightness</a></li>
-      <li><a href="../win32/GetMonitorCapabilities.html">GetMonitorCapabilities</a></li>
-      <li><a href="../win32/GetMonitorColorTemperature.html">GetMonitorColorTemperature</a></li>
-      <li><a href="../win32/GetMonitorContrast.html">GetMonitorContrast</a></li>
-      <li><a href="../win32/GetMonitorDisplayAreaPosition.html">GetMonitorDisplayAreaPosition</a></li>
-      <li><a href="../win32/GetMonitorDisplayAreaSize.html">GetMonitorDisplayAreaSize</a></li>
       <li><a href="../win32/GetMonitorRedGreenOrBlueDrive.html">GetMonitorRedGreenOrBlueDrive</a></li>
+      <li><a href="../win32/DestroyPhysicalMonitors.html">DestroyPhysicalMonitors</a></li>
+      <li><a href="../win32/SetMonitorDisplayAreaPosition.html">SetMonitorDisplayAreaPosition</a></li>
+      <li><a href="../win32/GetMonitorDisplayAreaSize.html">GetMonitorDisplayAreaSize</a></li>
+      <li><a href="../win32/SetMonitorRedGreenOrBlueDrive.html">SetMonitorRedGreenOrBlueDrive</a></li>
       <li><a href="../win32/GetMonitorRedGreenOrBlueGain.html">GetMonitorRedGreenOrBlueGain</a></li>
+      <li><a href="../win32/SetMonitorColorTemperature.html">SetMonitorColorTemperature</a></li>
+      <li><a href="../win32/DestroyPhysicalMonitor.html">DestroyPhysicalMonitor</a></li>
+      <li><a href="../win32/SaveCurrentMonitorSettings.html">SaveCurrentMonitorSettings</a></li>
+      <li><a href="../win32/SetMonitorRedGreenOrBlueGain.html">SetMonitorRedGreenOrBlueGain</a></li>
+      <li><a href="../win32/GetPhysicalMonitorsFromHMONITOR.html">GetPhysicalMonitorsFromHMONITOR</a></li>
+      <li><a href="../win32/GetMonitorCapabilities.html">GetMonitorCapabilities</a></li>
+      <li><a href="../win32/GetMonitorContrast.html">GetMonitorContrast</a></li>
+      <li><a href="../win32/GetMonitorBrightness.html">GetMonitorBrightness</a></li>
+      <li><a href="../win32/SetMonitorBrightness.html">SetMonitorBrightness</a></li>
       <li><a href="../win32/GetMonitorTechnologyType.html">GetMonitorTechnologyType</a></li>
       <li><a href="../win32/GetNumberOfPhysicalMonitorsFromHMONITOR.html">GetNumberOfPhysicalMonitorsFromHMONITOR</a></li>
-      <li><a href="../win32/GetPhysicalMonitorsFromHMONITOR.html">GetPhysicalMonitorsFromHMONITOR</a></li>
-      <li><a href="../win32/SaveCurrentMonitorSettings.html">SaveCurrentMonitorSettings</a></li>
-      <li><a href="../win32/SetMonitorBrightness.html">SetMonitorBrightness</a></li>
-      <li><a href="../win32/SetMonitorColorTemperature.html">SetMonitorColorTemperature</a></li>
       <li><a href="../win32/SetMonitorContrast.html">SetMonitorContrast</a></li>
-      <li><a href="../win32/SetMonitorDisplayAreaPosition.html">SetMonitorDisplayAreaPosition</a></li>
+      <li><a href="../win32/GetMonitorColorTemperature.html">GetMonitorColorTemperature</a></li>
       <li><a href="../win32/SetMonitorDisplayAreaSize.html">SetMonitorDisplayAreaSize</a></li>
-      <li><a href="../win32/SetMonitorRedGreenOrBlueDrive.html">SetMonitorRedGreenOrBlueDrive</a></li>
-      <li><a href="../win32/SetMonitorRedGreenOrBlueGain.html">SetMonitorRedGreenOrBlueGain</a></li>
+      <li><a href="../win32/GetMonitorDisplayAreaPosition.html">GetMonitorDisplayAreaPosition</a></li>
     
     
     

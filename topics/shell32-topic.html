@@ -90,30 +90,9 @@ known paths, installed programs and the taskbar.</p>
         <h2>Functions</h2>
 
         <dl class="callables">
-            <dt id="FindExecutable" class="callable">
-              <span class="name"><a href="../win32/FindExecutable.html">FindExecutable</a></span><span class="signature">(<wbr><span class="parameter" id="FindExecutable-param-lpFile"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpFile</span>, </span><span class="parameter" id="FindExecutable-param-lpDirectory"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpDirectory</span>, </span><span class="parameter" id="FindExecutable-param-lpResult"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpResult</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
-              </dt>
-            <dd>
-              Retrieves the name of and handle to the executable (.exe) file
-associated with a specific document file. <a href="../win32/FindExecutable.html">[...]</a>
-                          
-</dd>
-            <dt id="SHCreateItemFromParsingName" class="callable">
-              <span class="name"><a href="../win32/SHCreateItemFromParsingName.html">SHCreateItemFromParsingName</a></span><span class="signature">(<wbr><span class="parameter" id="SHCreateItemFromParsingName-param-pszPath"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszPath</span>, </span><span class="parameter" id="SHCreateItemFromParsingName-param-pbc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pbc</span>, </span><span class="parameter" id="SHCreateItemFromParsingName-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="SHCreateItemFromParsingName-param-ppv"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ppv</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
-              </dt>
-            <dd>
-              Creates and initializes a Shell item object from a parsing name. <a href="../win32/SHCreateItemFromParsingName.html">[...]</a>
-                          
-</dd>
             <dt id="ShellAbout" class="callable">
-              <span class="name"><a href="../win32/ShellAbout.html">ShellAbout</a></span><span class="signature">(<wbr><span class="parameter" id="ShellAbout-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="ShellAbout-param-szApp"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">szApp</span>, </span><span class="parameter" id="ShellAbout-param-szOtherStuff"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">szOtherStuff</span>, </span><span class="parameter" id="ShellAbout-param-hIcon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hIcon</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/ShellAbout.html">ShellAbout</a></span><span class="signature">(<wbr><span class="parameter" id="ShellAbout-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="ShellAbout-param-szApp"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">szApp</span>, </span><span class="parameter" id="ShellAbout-param-szOtherStuff"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">szOtherStuff</span>, </span><span class="parameter" id="ShellAbout-param-hIcon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hIcon</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
               </dt>
@@ -121,69 +100,9 @@ associated with a specific document file. <a href="../win32/FindExecutable.html"
               Displays a ShellAbout dialog box. <a href="../win32/ShellAbout.html">[...]</a>
                           
 </dd>
-            <dt id="ShellExecute" class="callable">
-              <span class="name"><a href="../win32/ShellExecute.html">ShellExecute</a></span><span class="signature">(<wbr><span class="parameter" id="ShellExecute-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span>, </span><span class="parameter" id="ShellExecute-param-lpOperation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpOperation</span>, </span><span class="parameter" id="ShellExecute-param-lpFile"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpFile</span>, </span><span class="parameter" id="ShellExecute-param-lpParameters"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpParameters</span>, </span><span class="parameter" id="ShellExecute-param-lpDirectory"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpDirectory</span>, </span><span class="parameter" id="ShellExecute-param-nShowCmd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nShowCmd</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
-              </dt>
-            <dd>
-              Performs an operation on a specified file. <a href="../win32/ShellExecute.html">[...]</a>
-                          
-</dd>
-            <dt id="ShellExecuteEx" class="callable">
-              <span class="name"><a href="../win32/ShellExecuteEx.html">ShellExecuteEx</a></span><span class="signature">(<wbr><span class="parameter" id="ShellExecuteEx-param-pExecuteInfo"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SHELLEXECUTEINFO-class.html">SHELLEXECUTEINFO</a></span>&gt;</span></span> <span class="parameter-name">pExecuteInfo</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
-              </dt>
-            <dd>
-              Performs an operation on a specified file. <a href="../win32/ShellExecuteEx.html">[...]</a>
-                          
-</dd>
-            <dt id="SHEmptyRecycleBin" class="callable">
-              <span class="name"><a href="../win32/SHEmptyRecycleBin.html">SHEmptyRecycleBin</a></span><span class="signature">(<wbr><span class="parameter" id="SHEmptyRecycleBin-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span>, </span><span class="parameter" id="SHEmptyRecycleBin-param-pszRootPath"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszRootPath</span>, </span><span class="parameter" id="SHEmptyRecycleBin-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
-              </dt>
-            <dd>
-              Empties the Recycle Bin on the specified drive. <a href="../win32/SHEmptyRecycleBin.html">[...]</a>
-                          
-</dd>
-            <dt id="SHGetDiskFreeSpaceEx" class="callable">
-              <span class="name"><a href="../win32/SHGetDiskFreeSpaceEx.html">SHGetDiskFreeSpaceEx</a></span><span class="signature">(<wbr><span class="parameter" id="SHGetDiskFreeSpaceEx-param-pszDirectoryName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszDirectoryName</span>, </span><span class="parameter" id="SHGetDiskFreeSpaceEx-param-pulFreeBytesAvailableToCaller"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint64-class.html">Uint64</a></span>&gt;</span></span> <span class="parameter-name">pulFreeBytesAvailableToCaller</span>, </span><span class="parameter" id="SHGetDiskFreeSpaceEx-param-pulTotalNumberOfBytes"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint64-class.html">Uint64</a></span>&gt;</span></span> <span class="parameter-name">pulTotalNumberOfBytes</span>, </span><span class="parameter" id="SHGetDiskFreeSpaceEx-param-pulTotalNumberOfFreeBytes"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint64-class.html">Uint64</a></span>&gt;</span></span> <span class="parameter-name">pulTotalNumberOfFreeBytes</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
-              </dt>
-            <dd>
-              Retrieves disk space information for a disk volume. <a href="../win32/SHGetDiskFreeSpaceEx.html">[...]</a>
-                          
-</dd>
-            <dt id="SHGetDriveMedia" class="callable">
-              <span class="name"><a href="../win32/SHGetDriveMedia.html">SHGetDriveMedia</a></span><span class="signature">(<wbr><span class="parameter" id="SHGetDriveMedia-param-pszDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszDrive</span>, </span><span class="parameter" id="SHGetDriveMedia-param-pdwMediaContent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMediaContent</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
-              </dt>
-            <dd>
-              Returns the type of media that is in the given drive. <a href="../win32/SHGetDriveMedia.html">[...]</a>
-                          
-</dd>
-            <dt id="SHGetFolderPath" class="callable">
-              <span class="name"><a href="../win32/SHGetFolderPath.html">SHGetFolderPath</a></span><span class="signature">(<wbr><span class="parameter" id="SHGetFolderPath-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span>, </span><span class="parameter" id="SHGetFolderPath-param-csidl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">csidl</span>, </span><span class="parameter" id="SHGetFolderPath-param-hToken"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hToken</span>, </span><span class="parameter" id="SHGetFolderPath-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span>, </span><span class="parameter" id="SHGetFolderPath-param-pszPath"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszPath</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
-              </dt>
-            <dd>
-              Gets the path of a folder identified by a CSIDL value. <a href="../win32/SHGetFolderPath.html">[...]</a>
-                          
-</dd>
             <dt id="SHGetKnownFolderPath" class="callable">
-              <span class="name"><a href="../win32/SHGetKnownFolderPath.html">SHGetKnownFolderPath</a></span><span class="signature">(<wbr><span class="parameter" id="SHGetKnownFolderPath-param-rfid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rfid</span>, </span><span class="parameter" id="SHGetKnownFolderPath-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span>, </span><span class="parameter" id="SHGetKnownFolderPath-param-hToken"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hToken</span>, </span><span class="parameter" id="SHGetKnownFolderPath-param-ppszPath"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppszPath</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/SHGetKnownFolderPath.html">SHGetKnownFolderPath</a></span><span class="signature">(<wbr><span class="parameter" id="SHGetKnownFolderPath-param-rfid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rfid</span>, </span><span class="parameter" id="SHGetKnownFolderPath-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span>, </span><span class="parameter" id="SHGetKnownFolderPath-param-hToken"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hToken</span>, </span><span class="parameter" id="SHGetKnownFolderPath-param-ppszPath"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">ppszPath</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
               </dt>
@@ -192,15 +111,96 @@ associated with a specific document file. <a href="../win32/FindExecutable.html"
 KNOWNFOLDERID. <a href="../win32/SHGetKnownFolderPath.html">[...]</a>
                           
 </dd>
+            <dt id="SHCreateItemFromParsingName" class="callable">
+              <span class="name"><a href="../win32/SHCreateItemFromParsingName.html">SHCreateItemFromParsingName</a></span><span class="signature">(<wbr><span class="parameter" id="SHCreateItemFromParsingName-param-pszPath"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszPath</span>, </span><span class="parameter" id="SHCreateItemFromParsingName-param-pbc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pbc</span>, </span><span class="parameter" id="SHCreateItemFromParsingName-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="SHCreateItemFromParsingName-param-ppv"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ppv</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
+              </dt>
+            <dd>
+              Creates and initializes a Shell item object from a parsing name. <a href="../win32/SHCreateItemFromParsingName.html">[...]</a>
+                          
+</dd>
             <dt id="SHQueryRecycleBin" class="callable">
-              <span class="name"><a href="../win32/SHQueryRecycleBin.html">SHQueryRecycleBin</a></span><span class="signature">(<wbr><span class="parameter" id="SHQueryRecycleBin-param-pszRootPath"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszRootPath</span>, </span><span class="parameter" id="SHQueryRecycleBin-param-pSHQueryRBInfo"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SHQUERYRBINFO-class.html">SHQUERYRBINFO</a></span>&gt;</span></span> <span class="parameter-name">pSHQueryRBInfo</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/SHQueryRecycleBin.html">SHQueryRecycleBin</a></span><span class="signature">(<wbr><span class="parameter" id="SHQueryRecycleBin-param-pszRootPath"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszRootPath</span>, </span><span class="parameter" id="SHQueryRecycleBin-param-pSHQueryRBInfo"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SHQUERYRBINFO-class.html">SHQUERYRBINFO</a></span>&gt;</span></span> <span class="parameter-name">pSHQueryRBInfo</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
               </dt>
             <dd>
               Retrieves the size of the Recycle Bin and the number of items in it,
 for a specified drive. <a href="../win32/SHQueryRecycleBin.html">[...]</a>
+                          
+</dd>
+            <dt id="ShellExecuteEx" class="callable">
+              <span class="name"><a href="../win32/ShellExecuteEx.html">ShellExecuteEx</a></span><span class="signature">(<wbr><span class="parameter" id="ShellExecuteEx-param-pExecuteInfo"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SHELLEXECUTEINFO-class.html">SHELLEXECUTEINFO</a></span>&gt;</span></span> <span class="parameter-name">pExecuteInfo</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
+              </dt>
+            <dd>
+              Performs an operation on a specified file. <a href="../win32/ShellExecuteEx.html">[...]</a>
+                          
+</dd>
+            <dt id="ShellExecute" class="callable">
+              <span class="name"><a href="../win32/ShellExecute.html">ShellExecute</a></span><span class="signature">(<wbr><span class="parameter" id="ShellExecute-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span>, </span><span class="parameter" id="ShellExecute-param-lpOperation"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpOperation</span>, </span><span class="parameter" id="ShellExecute-param-lpFile"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpFile</span>, </span><span class="parameter" id="ShellExecute-param-lpParameters"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpParameters</span>, </span><span class="parameter" id="ShellExecute-param-lpDirectory"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpDirectory</span>, </span><span class="parameter" id="ShellExecute-param-nShowCmd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nShowCmd</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
+              </dt>
+            <dd>
+              Performs an operation on a specified file. <a href="../win32/ShellExecute.html">[...]</a>
+                          
+</dd>
+            <dt id="SHGetDiskFreeSpaceEx" class="callable">
+              <span class="name"><a href="../win32/SHGetDiskFreeSpaceEx.html">SHGetDiskFreeSpaceEx</a></span><span class="signature">(<wbr><span class="parameter" id="SHGetDiskFreeSpaceEx-param-pszDirectoryName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszDirectoryName</span>, </span><span class="parameter" id="SHGetDiskFreeSpaceEx-param-pulFreeBytesAvailableToCaller"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint64-class.html">Uint64</a></span>&gt;</span></span> <span class="parameter-name">pulFreeBytesAvailableToCaller</span>, </span><span class="parameter" id="SHGetDiskFreeSpaceEx-param-pulTotalNumberOfBytes"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint64-class.html">Uint64</a></span>&gt;</span></span> <span class="parameter-name">pulTotalNumberOfBytes</span>, </span><span class="parameter" id="SHGetDiskFreeSpaceEx-param-pulTotalNumberOfFreeBytes"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint64-class.html">Uint64</a></span>&gt;</span></span> <span class="parameter-name">pulTotalNumberOfFreeBytes</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
+              </dt>
+            <dd>
+              Retrieves disk space information for a disk volume. <a href="../win32/SHGetDiskFreeSpaceEx.html">[...]</a>
+                          
+</dd>
+            <dt id="FindExecutable" class="callable">
+              <span class="name"><a href="../win32/FindExecutable.html">FindExecutable</a></span><span class="signature">(<wbr><span class="parameter" id="FindExecutable-param-lpFile"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpFile</span>, </span><span class="parameter" id="FindExecutable-param-lpDirectory"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpDirectory</span>, </span><span class="parameter" id="FindExecutable-param-lpResult"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpResult</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
+              </dt>
+            <dd>
+              Retrieves the name of and handle to the executable (.exe) file
+associated with a specific document file. <a href="../win32/FindExecutable.html">[...]</a>
+                          
+</dd>
+            <dt id="SHEmptyRecycleBin" class="callable">
+              <span class="name"><a href="../win32/SHEmptyRecycleBin.html">SHEmptyRecycleBin</a></span><span class="signature">(<wbr><span class="parameter" id="SHEmptyRecycleBin-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span>, </span><span class="parameter" id="SHEmptyRecycleBin-param-pszRootPath"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszRootPath</span>, </span><span class="parameter" id="SHEmptyRecycleBin-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
+              </dt>
+            <dd>
+              Empties the Recycle Bin on the specified drive. <a href="../win32/SHEmptyRecycleBin.html">[...]</a>
+                          
+</dd>
+            <dt id="SHGetDriveMedia" class="callable">
+              <span class="name"><a href="../win32/SHGetDriveMedia.html">SHGetDriveMedia</a></span><span class="signature">(<wbr><span class="parameter" id="SHGetDriveMedia-param-pszDrive"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszDrive</span>, </span><span class="parameter" id="SHGetDriveMedia-param-pdwMediaContent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">pdwMediaContent</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
+              </dt>
+            <dd>
+              Returns the type of media that is in the given drive. <a href="../win32/SHGetDriveMedia.html">[...]</a>
+                          
+</dd>
+            <dt id="SHGetFolderPath" class="callable">
+              <span class="name"><a href="../win32/SHGetFolderPath.html">SHGetFolderPath</a></span><span class="signature">(<wbr><span class="parameter" id="SHGetFolderPath-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span>, </span><span class="parameter" id="SHGetFolderPath-param-csidl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">csidl</span>, </span><span class="parameter" id="SHGetFolderPath-param-hToken"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hToken</span>, </span><span class="parameter" id="SHGetFolderPath-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span>, </span><span class="parameter" id="SHGetFolderPath-param-pszPath"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pszPath</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category shell32 cp-3 linked" title="This is part of the shell32 Topic."><a href="../topics/shell32-topic.html">shell32</a></span>
+              </dt>
+            <dd>
+              Gets the path of a folder identified by a CSIDL value. <a href="../win32/SHGetFolderPath.html">[...]</a>
                           
 </dd>
         </dl>
@@ -219,17 +219,17 @@ for a specified drive. <a href="../win32/SHQueryRecycleBin.html">[...]</a>
     
     
       <li class="section-title"><a href="../topics/shell32-topic.html#functions">Functions</a></li>
-      <li><a href="../win32/FindExecutable.html">FindExecutable</a></li>
-      <li><a href="../win32/SHCreateItemFromParsingName.html">SHCreateItemFromParsingName</a></li>
       <li><a href="../win32/ShellAbout.html">ShellAbout</a></li>
-      <li><a href="../win32/ShellExecute.html">ShellExecute</a></li>
+      <li><a href="../win32/SHGetKnownFolderPath.html">SHGetKnownFolderPath</a></li>
+      <li><a href="../win32/SHCreateItemFromParsingName.html">SHCreateItemFromParsingName</a></li>
+      <li><a href="../win32/SHQueryRecycleBin.html">SHQueryRecycleBin</a></li>
       <li><a href="../win32/ShellExecuteEx.html">ShellExecuteEx</a></li>
-      <li><a href="../win32/SHEmptyRecycleBin.html">SHEmptyRecycleBin</a></li>
+      <li><a href="../win32/ShellExecute.html">ShellExecute</a></li>
       <li><a href="../win32/SHGetDiskFreeSpaceEx.html">SHGetDiskFreeSpaceEx</a></li>
+      <li><a href="../win32/FindExecutable.html">FindExecutable</a></li>
+      <li><a href="../win32/SHEmptyRecycleBin.html">SHEmptyRecycleBin</a></li>
       <li><a href="../win32/SHGetDriveMedia.html">SHGetDriveMedia</a></li>
       <li><a href="../win32/SHGetFolderPath.html">SHGetFolderPath</a></li>
-      <li><a href="../win32/SHGetKnownFolderPath.html">SHGetKnownFolderPath</a></li>
-      <li><a href="../win32/SHQueryRecycleBin.html">SHQueryRecycleBin</a></li>
     
     
     

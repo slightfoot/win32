@@ -90,21 +90,8 @@ accounts and applications.</p>
         <h2>Functions</h2>
 
         <dl class="callables">
-            <dt id="CredDelete" class="callable">
-              <span class="name"><a href="../win32/CredDelete.html">CredDelete</a></span><span class="signature">(<wbr><span class="parameter" id="CredDelete-param-TargetName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">TargetName</span>, </span><span class="parameter" id="CredDelete-param-Type"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Type</span>, </span><span class="parameter" id="CredDelete-param-Flags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Flags</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category advapi32 cp-11 linked" title="This is part of the advapi32 Topic."><a href="../topics/advapi32-topic.html">advapi32</a></span>
-              </dt>
-            <dd>
-              The CredDelete function deletes a credential from the user's credential
-set. The credential set used is the one associated with the logon
-session of the current token. The token must not have the user's SID
-disabled. <a href="../win32/CredDelete.html">[...]</a>
-                          
-</dd>
             <dt id="CredFree" class="callable">
-              <span class="name"><a href="../win32/CredFree.html">CredFree</a></span><span class="signature">(<wbr><span class="parameter" id="CredFree-param-Buffer"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">Buffer</span></span>)
+              <span class="name"><a href="../win32/CredFree.html">CredFree</a></span><span class="signature">(<wbr><span class="parameter" id="CredFree-param-Buffer"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">Buffer</span></span>)
                 <span class="returntype parameter">&#8594; void</span>
               </span>
                               <span class="category advapi32 cp-11 linked" title="This is part of the advapi32 Topic."><a href="../topics/advapi32-topic.html">advapi32</a></span>
@@ -114,9 +101,43 @@ disabled. <a href="../win32/CredDelete.html">[...]</a>
 management functions. <a href="../win32/CredFree.html">[...]</a>
                           
 </dd>
+            <dt id="RegCloseKey" class="callable">
+              <span class="name"><a href="../win32/RegCloseKey.html">RegCloseKey</a></span><span class="signature">(<wbr><span class="parameter" id="RegCloseKey-param-hKey"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hKey</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category advapi32 cp-11 linked" title="This is part of the advapi32 Topic."><a href="../topics/advapi32-topic.html">advapi32</a></span>
+              </dt>
+            <dd>
+              Closes a handle to the specified registry key. <a href="../win32/RegCloseKey.html">[...]</a>
+                          
+</dd>
+            <dt id="RegOpenKeyEx" class="callable">
+              <span class="name"><a href="../win32/RegOpenKeyEx.html">RegOpenKeyEx</a></span><span class="signature">(<wbr><span class="parameter" id="RegOpenKeyEx-param-hKey"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hKey</span>, </span><span class="parameter" id="RegOpenKeyEx-param-lpSubKey"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpSubKey</span>, </span><span class="parameter" id="RegOpenKeyEx-param-ulOptions"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">ulOptions</span>, </span><span class="parameter" id="RegOpenKeyEx-param-samDesired"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">samDesired</span>, </span><span class="parameter" id="RegOpenKeyEx-param-phkResult"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">phkResult</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category advapi32 cp-11 linked" title="This is part of the advapi32 Topic."><a href="../topics/advapi32-topic.html">advapi32</a></span>
+              </dt>
+            <dd>
+              Opens the specified registry key. Note that key names are not case
+sensitive. <a href="../win32/RegOpenKeyEx.html">[...]</a>
+                          
+</dd>
+            <dt id="RegQueryValueEx" class="callable">
+              <span class="name"><a href="../win32/RegQueryValueEx.html">RegQueryValueEx</a></span><span class="signature">(<wbr><span class="parameter" id="RegQueryValueEx-param-hKey"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hKey</span>, </span><span class="parameter" id="RegQueryValueEx-param-lpValueName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpValueName</span>, </span><span class="parameter" id="RegQueryValueEx-param-lpReserved"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">lpReserved</span>, </span><span class="parameter" id="RegQueryValueEx-param-lpType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">lpType</span>, </span><span class="parameter" id="RegQueryValueEx-param-lpData"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">lpData</span>, </span><span class="parameter" id="RegQueryValueEx-param-lpcbData"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">lpcbData</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category advapi32 cp-11 linked" title="This is part of the advapi32 Topic."><a href="../topics/advapi32-topic.html">advapi32</a></span>
+              </dt>
+            <dd>
+              Retrieves the type and data for the specified value name associated
+with an open registry key. To ensure that any string values (REG_SZ,
+REG_MULTI_SZ, and REG_EXPAND_SZ) returned are null-terminated, use the
+RegGetValue function. <a href="../win32/RegQueryValueEx.html">[...]</a>
+                          
+</dd>
             <dt id="CredRead" class="callable">
-              <span class="name"><a href="../win32/CredRead.html">CredRead</a></span><span class="signature">(<wbr><span class="parameter" id="CredRead-param-TargetName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">TargetName</span>, </span><span class="parameter" id="CredRead-param-Type"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Type</span>, </span><span class="parameter" id="CredRead-param-Flags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Flags</span>, </span><span class="parameter" id="CredRead-param-Credential"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/CREDENTIAL-class.html">CREDENTIAL</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">Credential</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/CredRead.html">CredRead</a></span><span class="signature">(<wbr><span class="parameter" id="CredRead-param-TargetName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">TargetName</span>, </span><span class="parameter" id="CredRead-param-Type"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Type</span>, </span><span class="parameter" id="CredRead-param-Flags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Flags</span>, </span><span class="parameter" id="CredRead-param-Credential"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/CREDENTIAL-class.html">CREDENTIAL</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">Credential</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category advapi32 cp-11 linked" title="This is part of the advapi32 Topic."><a href="../topics/advapi32-topic.html">advapi32</a></span>
               </dt>
@@ -128,8 +149,8 @@ disabled. <a href="../win32/CredRead.html">[...]</a>
                           
 </dd>
             <dt id="CredWrite" class="callable">
-              <span class="name"><a href="../win32/CredWrite.html">CredWrite</a></span><span class="signature">(<wbr><span class="parameter" id="CredWrite-param-Credential"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/CREDENTIAL-class.html">CREDENTIAL</a></span>&gt;</span></span> <span class="parameter-name">Credential</span>, </span><span class="parameter" id="CredWrite-param-Flags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Flags</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/CredWrite.html">CredWrite</a></span><span class="signature">(<wbr><span class="parameter" id="CredWrite-param-Credential"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/CREDENTIAL-class.html">CREDENTIAL</a></span>&gt;</span></span> <span class="parameter-name">Credential</span>, </span><span class="parameter" id="CredWrite-param-Flags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Flags</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category advapi32 cp-11 linked" title="This is part of the advapi32 Topic."><a href="../topics/advapi32-topic.html">advapi32</a></span>
               </dt>
@@ -140,38 +161,17 @@ associated with the logon session of the current token. The token must
 not have the user's security identifier (SID) disabled. <a href="../win32/CredWrite.html">[...]</a>
                           
 </dd>
-            <dt id="RegCloseKey" class="callable">
-              <span class="name"><a href="../win32/RegCloseKey.html">RegCloseKey</a></span><span class="signature">(<wbr><span class="parameter" id="RegCloseKey-param-hKey"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hKey</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
+            <dt id="CredDelete" class="callable">
+              <span class="name"><a href="../win32/CredDelete.html">CredDelete</a></span><span class="signature">(<wbr><span class="parameter" id="CredDelete-param-TargetName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">TargetName</span>, </span><span class="parameter" id="CredDelete-param-Type"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Type</span>, </span><span class="parameter" id="CredDelete-param-Flags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Flags</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category advapi32 cp-11 linked" title="This is part of the advapi32 Topic."><a href="../topics/advapi32-topic.html">advapi32</a></span>
               </dt>
             <dd>
-              Closes a handle to the specified registry key. <a href="../win32/RegCloseKey.html">[...]</a>
-                          
-</dd>
-            <dt id="RegOpenKeyEx" class="callable">
-              <span class="name"><a href="../win32/RegOpenKeyEx.html">RegOpenKeyEx</a></span><span class="signature">(<wbr><span class="parameter" id="RegOpenKeyEx-param-hKey"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hKey</span>, </span><span class="parameter" id="RegOpenKeyEx-param-lpSubKey"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpSubKey</span>, </span><span class="parameter" id="RegOpenKeyEx-param-ulOptions"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">ulOptions</span>, </span><span class="parameter" id="RegOpenKeyEx-param-samDesired"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">samDesired</span>, </span><span class="parameter" id="RegOpenKeyEx-param-phkResult"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">phkResult</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category advapi32 cp-11 linked" title="This is part of the advapi32 Topic."><a href="../topics/advapi32-topic.html">advapi32</a></span>
-              </dt>
-            <dd>
-              Opens the specified registry key. Note that key names are not case
-sensitive. <a href="../win32/RegOpenKeyEx.html">[...]</a>
-                          
-</dd>
-            <dt id="RegQueryValueEx" class="callable">
-              <span class="name"><a href="../win32/RegQueryValueEx.html">RegQueryValueEx</a></span><span class="signature">(<wbr><span class="parameter" id="RegQueryValueEx-param-hKey"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hKey</span>, </span><span class="parameter" id="RegQueryValueEx-param-lpValueName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpValueName</span>, </span><span class="parameter" id="RegQueryValueEx-param-lpReserved"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">lpReserved</span>, </span><span class="parameter" id="RegQueryValueEx-param-lpType"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">lpType</span>, </span><span class="parameter" id="RegQueryValueEx-param-lpData"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint8-class.html">Uint8</a></span>&gt;</span></span> <span class="parameter-name">lpData</span>, </span><span class="parameter" id="RegQueryValueEx-param-lpcbData"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-ffi/Uint32-class.html">Uint32</a></span>&gt;</span></span> <span class="parameter-name">lpcbData</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.11.0-161.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category advapi32 cp-11 linked" title="This is part of the advapi32 Topic."><a href="../topics/advapi32-topic.html">advapi32</a></span>
-              </dt>
-            <dd>
-              Retrieves the type and data for the specified value name associated
-with an open registry key. To ensure that any string values (REG_SZ,
-REG_MULTI_SZ, and REG_EXPAND_SZ) returned are null-terminated, use the
-RegGetValue function. <a href="../win32/RegQueryValueEx.html">[...]</a>
+              The CredDelete function deletes a credential from the user's credential
+set. The credential set used is the one associated with the logon
+session of the current token. The token must not have the user's SID
+disabled. <a href="../win32/CredDelete.html">[...]</a>
                           
 </dd>
         </dl>
@@ -190,13 +190,13 @@ RegGetValue function. <a href="../win32/RegQueryValueEx.html">[...]</a>
     
     
       <li class="section-title"><a href="../topics/advapi32-topic.html#functions">Functions</a></li>
-      <li><a href="../win32/CredDelete.html">CredDelete</a></li>
       <li><a href="../win32/CredFree.html">CredFree</a></li>
-      <li><a href="../win32/CredRead.html">CredRead</a></li>
-      <li><a href="../win32/CredWrite.html">CredWrite</a></li>
       <li><a href="../win32/RegCloseKey.html">RegCloseKey</a></li>
       <li><a href="../win32/RegOpenKeyEx.html">RegOpenKeyEx</a></li>
       <li><a href="../win32/RegQueryValueEx.html">RegQueryValueEx</a></li>
+      <li><a href="../win32/CredRead.html">CredRead</a></li>
+      <li><a href="../win32/CredWrite.html">CredWrite</a></li>
+      <li><a href="../win32/CredDelete.html">CredDelete</a></li>
     
     
     
