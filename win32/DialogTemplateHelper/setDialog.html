@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the setDialog method from the DialogTemplateHelper extension, for the Dart programming language.">
+  <title>setDialog method - DialogTemplateHelper extension - win32 library - Dart API</title>
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../static-assets/github.css">
+  <link rel="stylesheet" href="../../static-assets/styles.css">
+  <link rel="icon" href="../../static-assets/favicon.png">
+
+</head>
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">win32</a></li>
+    <li><a href="../../win32/win32-library.html">win32</a></li>
+    <li><a href="../../win32/DialogTemplateHelper.html">DialogTemplateHelper</a></li>
+    <li class="self-crumb">setDialog method</li>
+  </ol>
+  <div class="self-name">setDialog</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="../../index.html">win32</a></li>
+      <li><a href="../../win32/win32-library.html">win32</a></li>
+      <li><a href="../../win32/DialogTemplateHelper.html">DialogTemplateHelper</a></li>
+      <li class="self-crumb">setDialog method</li>
+    </ol>
+    
+    <h5>DialogTemplateHelper extension</h5>
+    <ol>
+    
+    
+    
+        <li class="section-title"><a href="../../win32/DialogTemplateHelper.html#instance-methods">Methods</a></li>
+        <li><a href="../../win32/DialogTemplateHelper/setDialog.html">setDialog</a></li>
+    
+    
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1><span class="kind-method">setDialog</span> method </h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+            <span class="name ">setDialog</span>
+(<wbr><ol class="parameter-list"><li><span class="parameter" id="setDialog-param-int">{<span class="type-annotation">dynamic</span> <span class="parameter-name">int</span>}</span></li>
+</ol>)
+      
+    </section>
+    <section class="desc markdown">
+      <p>Sets the memory at the pointer location to the dialog supplied.</p>
+<p>Returns the number of WORDs written.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">int setDialog(
+    {required int style,
+    int dwExtendedStyle = 0,
+    required int cdit,
+    int x = 0,
+    int y = 0,
+    required int cx,
+    required int cy,
+    int windowSystemClass = 0,
+    String windowClass = &#39;&#39;,
+    String title = &#39;&#39;,
+    String fontName = &#39;&#39;,
+    int fontSize = 0}) {
+  &#47;&#47;&#47; Size in 16-bit WORDs of the DLGTEMPLATE struct
+  const dlgTemplateSize = 9;
+
+  final ptr = cast&lt;Uint16&gt;();
+
+  var idx = 0; &#47;&#47; 16-bit index offset
+
+  &#47;&#47;&#47; Specifies the properties of the DLGTEMPLATE structure.
+  ptr.cast&lt;DLGTEMPLATE&gt;().ref
+    ..style = style
+    ..dwExtendedStyle = dwExtendedStyle
+    ..cdit = cdit
+    ..x = x
+    ..y = y
+    ..cx = cx
+    ..cy = cy;
+
+  idx += dlgTemplateSize;
+
+  &#47;&#47; Immediately following the DLGTEMPLATE structure is a menu array that
+  &#47;&#47; identifies a menu resource for the dialog box. If the first element of this
+  &#47;&#47; array is 0x0000, the dialog box has no menu and the array has no other
+  &#47;&#47; elements. Since Dart does not currently support embedding a resource file
+  &#47;&#47; in a Windows executable, the other settings are moot.
+  ptr[idx++] = 0x0000;
+
+  &#47;&#47; Following the menu array is a class array that identifies the window class
+  &#47;&#47; of the dialog box. If the first element of the array is 0x0000, the system
+  &#47;&#47; uses the predefined dialog box class for the dialog box and the array has
+  &#47;&#47; no other elements. If the first element is 0xFFFF, the array has one
+  &#47;&#47; additional element that specifies the ordinal value of a predefined system
+  &#47;&#47; window class. If the first element has any other value, the system treats
+  &#47;&#47; the array as a null-terminated Unicode string that specifies the name of a
+  &#47;&#47; registered window class.
+  if (windowClass.isNotEmpty) {
+    idx +=
+        (ptr.elementAt(idx).cast&lt;Utf16&gt;().setString(windowClass) &#47; 2).ceil();
+  } else {
+    if (windowSystemClass != 0) {
+      ptr[idx++] = 0xFFFF;
+      ptr[idx++] = windowSystemClass;
+    } else {
+      ptr[idx++] = 0x0000;
+    }
+  }
+
+  &#47;&#47;&#47; Following the class array is a title array that specifies a
+  &#47;&#47;&#47; null-terminated Unicode string that contains the title of the dialog box.
+  &#47;&#47;&#47; If the first element of this array is 0x0000, the dialog box has no title
+  &#47;&#47;&#47; and the array has no other elements.
+  if (title.isEmpty) {
+    ptr[idx++] = 0x0000;
+  } else {
+    idx += (ptr.elementAt(idx).cast&lt;Utf16&gt;().setString(title) &#47; 2).ceil();
+  }
+
+  &#47;&#47;&#47; Following the title array is a 16-bit point size value and the typeface
+  &#47;&#47;&#47; array, in that order, if the style member specifies the DS_SETFONT style.
+  &#47;&#47;&#47; These are set for the dialog box. The typeface array is a null-terminated
+  &#47;&#47;&#47; Unicode string.
+  if ((style &amp; DS_SETFONT == DS_SETFONT) &amp;&amp; (fontName.isNotEmpty)) {
+    ptr[idx++] = fontSize;
+    idx += (ptr.elementAt(idx).cast&lt;Utf16&gt;().setString(fontName) &#47; 2).ceil();
+  }
+
+  &#47;&#47; Each DLGITEMTEMPLATE structure in the template must be aligned on a DWORD
+  &#47;&#47; boundary. Move idx forward so that it aligns to the next DWORD boundary.
+  if ((ptr.address + idx) % 2 != 0) {
+    ptr[idx++] = 0x0000;
+  }
+  return idx;
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    win32
+      2.0.0-nullsafety.5
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../../static-assets/typeahead.bundle.min.js"></script>
+<script src="../../static-assets/highlight.pack.js"></script>
+<script src="../../static-assets/URI.js"></script>
+<script src="../../static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -140,27 +140,6 @@ the top-level parent window associated with the child window is
 activated. <a href="../win32/BringWindowToTop.html">[...]</a>
                           
 </dd>
-            <dt id="GetNextDlgGroupItem" class="callable">
-              <span class="name"><a href="../win32/GetNextDlgGroupItem.html">GetNextDlgGroupItem</a></span><span class="signature">(<wbr><span class="parameter" id="GetNextDlgGroupItem-param-hDlg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDlg</span>, </span><span class="parameter" id="GetNextDlgGroupItem-param-hCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hCtl</span>, </span><span class="parameter" id="GetNextDlgGroupItem-param-bPrevious"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">bPrevious</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Retrieves a handle to the first control in a group of controls that
-precedes (or follows) the specified control in a dialog box. <a href="../win32/GetNextDlgGroupItem.html">[...]</a>
-                          
-</dd>
-            <dt id="GetDlgItem" class="callable">
-              <span class="name"><a href="../win32/GetDlgItem.html">GetDlgItem</a></span><span class="signature">(<wbr><span class="parameter" id="GetDlgItem-param-hDlg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDlg</span>, </span><span class="parameter" id="GetDlgItem-param-nIDDlgItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIDDlgItem</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Retrieves a handle to a control in the specified dialog box. <a href="../win32/GetDlgItem.html">[...]</a>
-                          
-</dd>
             <dt id="CreateDialogIndirectParam" class="callable">
               <span class="name"><a href="../win32/CreateDialogIndirectParam.html">CreateDialogIndirectParam</a></span><span class="signature">(<wbr><span class="parameter" id="CreateDialogIndirectParam-param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><span class="parameter" id="CreateDialogIndirectParam-param-lpTemplate"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/DLGTEMPLATE-class.html">DLGTEMPLATE</a></span>&gt;</span></span> <span class="parameter-name">lpTemplate</span>, </span><span class="parameter" id="CreateDialogIndirectParam-param-hWndParent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndParent</span>, </span><span class="parameter" id="CreateDialogIndirectParam-param-lpDialogFunc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeFunction-class.html">NativeFunction</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/Function-class.html">Function</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">lpDialogFunc</span>, </span><span class="parameter" id="CreateDialogIndirectParam-param-dwInitParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwInitParam</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -196,20 +175,6 @@ indicates which button the user clicked. <a href="../win32/MessageBox.html">[...
               </dt>
             <dd>
               Draws an icon or cursor into the specified device context. <a href="../win32/DrawIcon.html">[...]</a>
-                          
-</dd>
-            <dt id="LoadIcon" class="callable">
-              <span class="name"><a href="../win32/LoadIcon.html">LoadIcon</a></span><span class="signature">(<wbr><span class="parameter" id="LoadIcon-param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><span class="parameter" id="LoadIcon-param-lpIconName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpIconName</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              <code class="language-c">HICON LoadIconW(
-  HINSTANCE hInstance,
-  LPCWSTR   lpIconName
-);
-</code> 
                           
 </dd>
             <dt id="MoveWindow" class="callable">
@@ -282,30 +247,6 @@ integer value. <a href="../win32/GetDlgItemInt.html">[...]</a>
 CreateWindow or CreateWindowEx function. <a href="../win32/RegisterClass.html">[...]</a>
                           
 </dd>
-            <dt id="ShowWindowAsync" class="callable">
-              <span class="name"><a href="../win32/ShowWindowAsync.html">ShowWindowAsync</a></span><span class="signature">(<wbr><span class="parameter" id="ShowWindowAsync-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="ShowWindowAsync-param-nCmdShow"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nCmdShow</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Sets the show state of a window without waiting for the operation to
-complete. <a href="../win32/ShowWindowAsync.html">[...]</a>
-                          
-</dd>
-            <dt id="GetSystemDpiForProcess" class="callable">
-              <span class="name"><a href="../win32/GetSystemDpiForProcess.html">GetSystemDpiForProcess</a></span><span class="signature">(<wbr><span class="parameter" id="GetSystemDpiForProcess-param-hProcess"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hProcess</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Retrieves the system DPI associated with a given process. This is
-useful for avoiding compatibility issues that arise from sharing
-DPI-sensitive information between multiple system-aware processes with
-different system DPI values. <a href="../win32/GetSystemDpiForProcess.html">[...]</a>
-                          
-</dd>
             <dt id="SetParent" class="callable">
               <span class="name"><a href="../win32/SetParent.html">SetParent</a></span><span class="signature">(<wbr><span class="parameter" id="SetParent-param-hWndChild"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndChild</span>, </span><span class="parameter" id="SetParent-param-hWndNewParent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndNewParent</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -352,16 +293,6 @@ GetSystemMetrics (SM_CMONITORS) counts only the display monitors. <a href="../wi
               </dt>
             <dd>
               Displays or hides the cursor. <a href="../win32/ShowCursor.html">[...]</a>
-                          
-</dd>
-            <dt id="GetCursorPos" class="callable">
-              <span class="name"><a href="../win32/GetCursorPos.html">GetCursorPos</a></span><span class="signature">(<wbr><span class="parameter" id="GetCursorPos-param-lpPoint"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/POINT-class.html">POINT</a></span>&gt;</span></span> <span class="parameter-name">lpPoint</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Retrieves the position of the mouse cursor, in screen coordinates. <a href="../win32/GetCursorPos.html">[...]</a>
                           
 </dd>
             <dt id="GetMonitorInfo" class="callable">
@@ -429,29 +360,6 @@ client area that must be redrawn. <a href="../win32/InvalidateRect.html">[...]</
 and, if it is, processes the message. <a href="../win32/IsDialogMessage.html">[...]</a>
                           
 </dd>
-            <dt id="GetScrollInfo" class="callable">
-              <span class="name"><a href="../win32/GetScrollInfo.html">GetScrollInfo</a></span><span class="signature">(<wbr><span class="parameter" id="GetScrollInfo-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span>, </span><span class="parameter" id="GetScrollInfo-param-nBar"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nBar</span>, </span><span class="parameter" id="GetScrollInfo-param-lpsi"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SCROLLINFO-class.html">SCROLLINFO</a></span>&gt;</span></span> <span class="parameter-name">lpsi</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              The GetScrollInfo function retrieves the parameters of a scroll bar,
-including the minimum and maximum scrolling positions, the page size,
-and the position of the scroll box (thumb). <a href="../win32/GetScrollInfo.html">[...]</a>
-                          
-</dd>
-            <dt id="MonitorFromPoint" class="callable">
-              <span class="name"><a href="../win32/MonitorFromPoint.html">MonitorFromPoint</a></span><span class="signature">(<wbr><span class="parameter" id="MonitorFromPoint-param-pt"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">pt</span>, </span><span class="parameter" id="MonitorFromPoint-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              The MonitorFromPoint function retrieves a handle to the display monitor
-that contains a specified point. <a href="../win32/MonitorFromPoint.html">[...]</a>
-                          
-</dd>
             <dt id="DestroyWindow" class="callable">
               <span class="name"><a href="../win32/DestroyWindow.html">DestroyWindow</a></span><span class="signature">(<wbr><span class="parameter" id="DestroyWindow-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -475,35 +383,6 @@ the top of the viewer chain). <a href="../win32/DestroyWindow.html">[...]</a>
               </dt>
             <dd>
               Sets information for a specified menu. <a href="../win32/SetMenuInfo.html">[...]</a>
-                          
-</dd>
-            <dt id="SetWindowText" class="callable">
-              <span class="name"><a href="../win32/SetWindowText.html">SetWindowText</a></span><span class="signature">(<wbr><span class="parameter" id="SetWindowText-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="SetWindowText-param-lpString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpString</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Changes the text of the specified window's title bar (if it has one).
-If the specified window is a control, the text of the control is
-changed. However, SetWindowText cannot change the text of a control in
-another application. <a href="../win32/SetWindowText.html">[...]</a>
-                          
-</dd>
-            <dt id="GetDialogBaseUnits" class="callable">
-              <span class="name"><a href="../win32/GetDialogBaseUnits.html">GetDialogBaseUnits</a></span><span class="signature">(<wbr>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Retrieves the system's dialog base units, which are the average width
-and height of characters in the system font. For dialog boxes that use
-the system font, you can use these values to convert between dialog
-template units, as specified in dialog box templates, and pixels. For
-dialog boxes that do not use the system font, the conversion from
-dialog template units to pixels depends on the font used by the dialog
-box. <a href="../win32/GetDialogBaseUnits.html">[...]</a>
                           
 </dd>
             <dt id="SendMessage" class="callable">
@@ -542,6 +421,362 @@ coordinates specify the upper-left and lower-right corners of the
 client area. Because client coordinates are relative to the upper-left
 corner of a window's client area, the coordinates of the upper-left
 corner are (0,0). <a href="../win32/GetClientRect.html">[...]</a>
+                          
+</dd>
+            <dt id="CopyIcon" class="callable">
+              <span class="name"><a href="../win32/CopyIcon.html">CopyIcon</a></span><span class="signature">(<wbr><span class="parameter" id="CopyIcon-param-hIcon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hIcon</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Copies the specified icon from another module to the current module. <a href="../win32/CopyIcon.html">[...]</a>
+                          
+</dd>
+            <dt id="LoadCursor" class="callable">
+              <span class="name"><a href="../win32/LoadCursor.html">LoadCursor</a></span><span class="signature">(<wbr><span class="parameter" id="LoadCursor-param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><span class="parameter" id="LoadCursor-param-lpCursorName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpCursorName</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Loads the specified cursor resource from the executable (.EXE) file
+associated with an application instance. Note: this function has been
+superseded by the LoadImage function. <a href="../win32/LoadCursor.html">[...]</a>
+                          
+</dd>
+            <dt id="GetMessage" class="callable">
+              <span class="name"><a href="../win32/GetMessage.html">GetMessage</a></span><span class="signature">(<wbr><span class="parameter" id="GetMessage-param-lpMsg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/MSG-class.html">MSG</a></span>&gt;</span></span> <span class="parameter-name">lpMsg</span>, </span><span class="parameter" id="GetMessage-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="GetMessage-param-wMsgFilterMin"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wMsgFilterMin</span>, </span><span class="parameter" id="GetMessage-param-wMsgFilterMax"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wMsgFilterMax</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves a message from the calling thread's message queue. The
+function dispatches incoming sent messages until a posted message is
+available for retrieval. <a href="../win32/GetMessage.html">[...]</a>
+                          
+</dd>
+            <dt id="GetCursor" class="callable">
+              <span class="name"><a href="../win32/GetCursor.html">GetCursor</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves a handle to the current cursor. <a href="../win32/GetCursor.html">[...]</a>
+                          
+</dd>
+            <dt id="SetDlgItemText" class="callable">
+              <span class="name"><a href="../win32/SetDlgItemText.html">SetDlgItemText</a></span><span class="signature">(<wbr><span class="parameter" id="SetDlgItemText-param-hDlg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDlg</span>, </span><span class="parameter" id="SetDlgItemText-param-nIDDlgItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIDDlgItem</span>, </span><span class="parameter" id="SetDlgItemText-param-lpString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpString</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Sets the title or text of a control in a dialog box. <a href="../win32/SetDlgItemText.html">[...]</a>
+                          
+</dd>
+            <dt id="IsWindowVisible" class="callable">
+              <span class="name"><a href="../win32/IsWindowVisible.html">IsWindowVisible</a></span><span class="signature">(<wbr><span class="parameter" id="IsWindowVisible-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Determines the visibility state of the specified window. <a href="../win32/IsWindowVisible.html">[...]</a>
+                          
+</dd>
+            <dt id="GetNextDlgTabItem" class="callable">
+              <span class="name"><a href="../win32/GetNextDlgTabItem.html">GetNextDlgTabItem</a></span><span class="signature">(<wbr><span class="parameter" id="GetNextDlgTabItem-param-hDlg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDlg</span>, </span><span class="parameter" id="GetNextDlgTabItem-param-hCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hCtl</span>, </span><span class="parameter" id="GetNextDlgTabItem-param-bPrevious"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">bPrevious</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves a handle to the first control that has the WS_TABSTOP style
+that precedes (or follows) the specified control. <a href="../win32/GetNextDlgTabItem.html">[...]</a>
+                          
+</dd>
+            <dt id="SetTimer" class="callable">
+              <span class="name"><a href="../win32/SetTimer.html">SetTimer</a></span><span class="signature">(<wbr><span class="parameter" id="SetTimer-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="SetTimer-param-nIDEvent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIDEvent</span>, </span><span class="parameter" id="SetTimer-param-uElapse"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">uElapse</span>, </span><span class="parameter" id="SetTimer-param-lpTimerFunc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeFunction-class.html">NativeFunction</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/Function-class.html">Function</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">lpTimerFunc</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Creates a timer with the specified time-out value. <a href="../win32/SetTimer.html">[...]</a>
+                          
+</dd>
+            <dt id="LoadImage" class="callable">
+              <span class="name"><a href="../win32/LoadImage.html">LoadImage</a></span><span class="signature">(<wbr><span class="parameter" id="LoadImage-param-hInst"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInst</span>, </span><span class="parameter" id="LoadImage-param-name"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">name</span>, </span><span class="parameter" id="LoadImage-param-type"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">type</span>, </span><span class="parameter" id="LoadImage-param-cx"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cx</span>, </span><span class="parameter" id="LoadImage-param-cy"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cy</span>, </span><span class="parameter" id="LoadImage-param-fuLoad"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">fuLoad</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Loads an icon, cursor, animated cursor, or bitmap. <a href="../win32/LoadImage.html">[...]</a>
+                          
+</dd>
+            <dt id="IsClipboardFormatAvailable" class="callable">
+              <span class="name"><a href="../win32/IsClipboardFormatAvailable.html">IsClipboardFormatAvailable</a></span><span class="signature">(<wbr><span class="parameter" id="IsClipboardFormatAvailable-param-format"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">format</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Determines whether the clipboard contains data in the specified format. <a href="../win32/IsClipboardFormatAvailable.html">[...]</a>
+                          
+</dd>
+            <dt id="GetWindowText" class="callable">
+              <span class="name"><a href="../win32/GetWindowText.html">GetWindowText</a></span><span class="signature">(<wbr><span class="parameter" id="GetWindowText-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="GetWindowText-param-lpString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpString</span>, </span><span class="parameter" id="GetWindowText-param-nMaxCount"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nMaxCount</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Copies the text of the specified window's title bar (if it has one)
+into a buffer. If the specified window is a control, the text of the
+control is copied. However, GetWindowText cannot retrieve the text of a
+control in another application. <a href="../win32/GetWindowText.html">[...]</a>
+                          
+</dd>
+            <dt id="CreateWindowEx" class="callable">
+              <span class="name"><a href="../win32/CreateWindowEx.html">CreateWindowEx</a></span><span class="signature">(<wbr><span class="parameter" id="CreateWindowEx-param-dwExStyle"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwExStyle</span>, </span><span class="parameter" id="CreateWindowEx-param-lpClassName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpClassName</span>, </span><span class="parameter" id="CreateWindowEx-param-lpWindowName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpWindowName</span>, </span><span class="parameter" id="CreateWindowEx-param-dwStyle"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwStyle</span>, </span><span class="parameter" id="CreateWindowEx-param-X"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">X</span>, </span><span class="parameter" id="CreateWindowEx-param-Y"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Y</span>, </span><span class="parameter" id="CreateWindowEx-param-nWidth"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nWidth</span>, </span><span class="parameter" id="CreateWindowEx-param-nHeight"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nHeight</span>, </span><span class="parameter" id="CreateWindowEx-param-hWndParent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndParent</span>, </span><span class="parameter" id="CreateWindowEx-param-hMenu"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMenu</span>, </span><span class="parameter" id="CreateWindowEx-param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><span class="parameter" id="CreateWindowEx-param-lpParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Void-class.html">Void</a></span>&gt;</span></span> <span class="parameter-name">lpParam</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Creates an overlapped, pop-up, or child window. It specifies the window
+class, window title, window style, and (optionally) the initial
+position and size of the window. The function also specifies the
+window's parent or owner, if any, and the window's menu. <a href="../win32/CreateWindowEx.html">[...]</a>
+                          
+</dd>
+            <dt id="MonitorFromWindow" class="callable">
+              <span class="name"><a href="../win32/MonitorFromWindow.html">MonitorFromWindow</a></span><span class="signature">(<wbr><span class="parameter" id="MonitorFromWindow-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span>, </span><span class="parameter" id="MonitorFromWindow-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              The MonitorFromWindow function retrieves a handle to the display
+monitor that has the largest area of intersection with the bounding
+rectangle of a specified window. <a href="../win32/MonitorFromWindow.html">[...]</a>
+                          
+</dd>
+            <dt id="ReleaseDC" class="callable">
+              <span class="name"><a href="../win32/ReleaseDC.html">ReleaseDC</a></span><span class="signature">(<wbr><span class="parameter" id="ReleaseDC-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="ReleaseDC-param-hDC"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDC</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              The ReleaseDC function releases a device context (DC), freeing it for
+use by other applications. The effect of the ReleaseDC function depends
+on the type of DC. It frees only common and window DCs. It has no
+effect on class or private DCs. <a href="../win32/ReleaseDC.html">[...]</a>
+                          
+</dd>
+            <dt id="SetWindowPos" class="callable">
+              <span class="name"><a href="../win32/SetWindowPos.html">SetWindowPos</a></span><span class="signature">(<wbr><span class="parameter" id="SetWindowPos-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="SetWindowPos-param-hWndInsertAfter"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndInsertAfter</span>, </span><span class="parameter" id="SetWindowPos-param-X"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">X</span>, </span><span class="parameter" id="SetWindowPos-param-Y"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Y</span>, </span><span class="parameter" id="SetWindowPos-param-cx"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cx</span>, </span><span class="parameter" id="SetWindowPos-param-cy"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cy</span>, </span><span class="parameter" id="SetWindowPos-param-uFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">uFlags</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Changes the size, position, and Z order of a child, pop-up, or
+top-level window. These windows are ordered according to their
+appearance on the screen. The topmost window receives the highest rank
+and is the first window in the Z order. <a href="../win32/SetWindowPos.html">[...]</a>
+                          
+</dd>
+            <dt id="DispatchMessage" class="callable">
+              <span class="name"><a href="../win32/DispatchMessage.html">DispatchMessage</a></span><span class="signature">(<wbr><span class="parameter" id="DispatchMessage-param-lpMsg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/MSG-class.html">MSG</a></span>&gt;</span></span> <span class="parameter-name">lpMsg</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Dispatches a message to a window procedure. It is typically used to
+dispatch a message retrieved by the GetMessage function. <a href="../win32/DispatchMessage.html">[...]</a>
+                          
+</dd>
+            <dt id="DefWindowProc" class="callable">
+              <span class="name"><a href="../win32/DefWindowProc.html">DefWindowProc</a></span><span class="signature">(<wbr><span class="parameter" id="DefWindowProc-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="DefWindowProc-param-Msg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Msg</span>, </span><span class="parameter" id="DefWindowProc-param-wParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wParam</span>, </span><span class="parameter" id="DefWindowProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">lParam</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Calls the default window procedure to provide default processing for
+any window messages that an application does not process. This function
+ensures that every message is processed. DefWindowProc is called with
+the same parameters received by the window procedure. <a href="../win32/DefWindowProc.html">[...]</a>
+                          
+</dd>
+            <dt id="GetDpiForSystem" class="callable">
+              <span class="name"><a href="../win32/GetDpiForSystem.html">GetDpiForSystem</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Returns the system DPI. <a href="../win32/GetDpiForSystem.html">[...]</a>
+                          
+</dd>
+            <dt id="LockWorkStation" class="callable">
+              <span class="name"><a href="../win32/LockWorkStation.html">LockWorkStation</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Locks the workstation's display. Locking a workstation protects it from
+unauthorized use. <a href="../win32/LockWorkStation.html">[...]</a>
+                          
+</dd>
+            <dt id="GetSystemMetrics" class="callable">
+              <span class="name"><a href="../win32/GetSystemMetrics.html">GetSystemMetrics</a></span><span class="signature">(<wbr><span class="parameter" id="GetSystemMetrics-param-nIndex"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIndex</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves the specified system metric or system configuration setting.
+Note that all dimensions retrieved by GetSystemMetrics are in pixels. <a href="../win32/GetSystemMetrics.html">[...]</a>
+                          
+</dd>
+            <dt id="WindowFromPoint" class="callable">
+              <span class="name"><a href="../win32/WindowFromPoint.html">WindowFromPoint</a></span><span class="signature">(<wbr><span class="parameter" id="WindowFromPoint-param-Point"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Point</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves a handle to the window that contains the specified point. <a href="../win32/WindowFromPoint.html">[...]</a>
+                          
+</dd>
+            <dt id="GetNextDlgGroupItem" class="callable">
+              <span class="name"><a href="../win32/GetNextDlgGroupItem.html">GetNextDlgGroupItem</a></span><span class="signature">(<wbr><span class="parameter" id="GetNextDlgGroupItem-param-hDlg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDlg</span>, </span><span class="parameter" id="GetNextDlgGroupItem-param-hCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hCtl</span>, </span><span class="parameter" id="GetNextDlgGroupItem-param-bPrevious"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">bPrevious</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves a handle to the first control in a group of controls that
+precedes (or follows) the specified control in a dialog box. <a href="../win32/GetNextDlgGroupItem.html">[...]</a>
+                          
+</dd>
+            <dt id="GetDlgItem" class="callable">
+              <span class="name"><a href="../win32/GetDlgItem.html">GetDlgItem</a></span><span class="signature">(<wbr><span class="parameter" id="GetDlgItem-param-hDlg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDlg</span>, </span><span class="parameter" id="GetDlgItem-param-nIDDlgItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIDDlgItem</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves a handle to a control in the specified dialog box. <a href="../win32/GetDlgItem.html">[...]</a>
+                          
+</dd>
+            <dt id="LoadIcon" class="callable">
+              <span class="name"><a href="../win32/LoadIcon.html">LoadIcon</a></span><span class="signature">(<wbr><span class="parameter" id="LoadIcon-param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><span class="parameter" id="LoadIcon-param-lpIconName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpIconName</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              <code class="language-c">HICON LoadIconW(
+  HINSTANCE hInstance,
+  LPCWSTR   lpIconName
+);
+</code> 
+                          
+</dd>
+            <dt id="ShowWindowAsync" class="callable">
+              <span class="name"><a href="../win32/ShowWindowAsync.html">ShowWindowAsync</a></span><span class="signature">(<wbr><span class="parameter" id="ShowWindowAsync-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="ShowWindowAsync-param-nCmdShow"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nCmdShow</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Sets the show state of a window without waiting for the operation to
+complete. <a href="../win32/ShowWindowAsync.html">[...]</a>
+                          
+</dd>
+            <dt id="GetSystemDpiForProcess" class="callable">
+              <span class="name"><a href="../win32/GetSystemDpiForProcess.html">GetSystemDpiForProcess</a></span><span class="signature">(<wbr><span class="parameter" id="GetSystemDpiForProcess-param-hProcess"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hProcess</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves the system DPI associated with a given process. This is
+useful for avoiding compatibility issues that arise from sharing
+DPI-sensitive information between multiple system-aware processes with
+different system DPI values. <a href="../win32/GetSystemDpiForProcess.html">[...]</a>
+                          
+</dd>
+            <dt id="GetCursorPos" class="callable">
+              <span class="name"><a href="../win32/GetCursorPos.html">GetCursorPos</a></span><span class="signature">(<wbr><span class="parameter" id="GetCursorPos-param-lpPoint"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/POINT-class.html">POINT</a></span>&gt;</span></span> <span class="parameter-name">lpPoint</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves the position of the mouse cursor, in screen coordinates. <a href="../win32/GetCursorPos.html">[...]</a>
+                          
+</dd>
+            <dt id="GetScrollInfo" class="callable">
+              <span class="name"><a href="../win32/GetScrollInfo.html">GetScrollInfo</a></span><span class="signature">(<wbr><span class="parameter" id="GetScrollInfo-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span>, </span><span class="parameter" id="GetScrollInfo-param-nBar"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nBar</span>, </span><span class="parameter" id="GetScrollInfo-param-lpsi"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SCROLLINFO-class.html">SCROLLINFO</a></span>&gt;</span></span> <span class="parameter-name">lpsi</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              The GetScrollInfo function retrieves the parameters of a scroll bar,
+including the minimum and maximum scrolling positions, the page size,
+and the position of the scroll box (thumb). <a href="../win32/GetScrollInfo.html">[...]</a>
+                          
+</dd>
+            <dt id="MonitorFromPoint" class="callable">
+              <span class="name"><a href="../win32/MonitorFromPoint.html">MonitorFromPoint</a></span><span class="signature">(<wbr><span class="parameter" id="MonitorFromPoint-param-pt"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">pt</span>, </span><span class="parameter" id="MonitorFromPoint-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              The MonitorFromPoint function retrieves a handle to the display monitor
+that contains a specified point. <a href="../win32/MonitorFromPoint.html">[...]</a>
+                          
+</dd>
+            <dt id="SetWindowText" class="callable">
+              <span class="name"><a href="../win32/SetWindowText.html">SetWindowText</a></span><span class="signature">(<wbr><span class="parameter" id="SetWindowText-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="SetWindowText-param-lpString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpString</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Changes the text of the specified window's title bar (if it has one).
+If the specified window is a control, the text of the control is
+changed. However, SetWindowText cannot change the text of a control in
+another application. <a href="../win32/SetWindowText.html">[...]</a>
+                          
+</dd>
+            <dt id="GetDialogBaseUnits" class="callable">
+              <span class="name"><a href="../win32/GetDialogBaseUnits.html">GetDialogBaseUnits</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves the system's dialog base units, which are the average width
+and height of characters in the system font. For dialog boxes that use
+the system font, you can use these values to convert between dialog
+template units, as specified in dialog box templates, and pixels. For
+dialog boxes that do not use the system font, the conversion from
+dialog template units to pixels depends on the font used by the dialog
+box. <a href="../win32/GetDialogBaseUnits.html">[...]</a>
                           
 </dd>
             <dt id="DialogBoxIndirectParam" class="callable">
@@ -659,16 +894,6 @@ a posted message, and retrieves the message (if any exist). <a href="../win32/Pe
 fills a PAINTSTRUCT structure with information about the painting. <a href="../win32/BeginPaint.html">[...]</a>
                           
 </dd>
-            <dt id="CopyIcon" class="callable">
-              <span class="name"><a href="../win32/CopyIcon.html">CopyIcon</a></span><span class="signature">(<wbr><span class="parameter" id="CopyIcon-param-hIcon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hIcon</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Copies the specified icon from another module to the current module. <a href="../win32/CopyIcon.html">[...]</a>
-                          
-</dd>
             <dt id="EnumWindows" class="callable">
               <span class="name"><a href="../win32/EnumWindows.html">EnumWindows</a></span><span class="signature">(<wbr><span class="parameter" id="EnumWindows-param-lpEnumFunc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeFunction-class.html">NativeFunction</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/Function-class.html">Function</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">lpEnumFunc</span>, </span><span class="parameter" id="EnumWindows-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">lParam</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -691,30 +916,6 @@ the callback function returns FALSE. <a href="../win32/EnumWindows.html">[...]</
             <dd>
               Retrieves or sets the value of one of the system-wide parameters. This
 function can also update the user profile while setting a parameter. <a href="../win32/SystemParametersInfo.html">[...]</a>
-                          
-</dd>
-            <dt id="LoadCursor" class="callable">
-              <span class="name"><a href="../win32/LoadCursor.html">LoadCursor</a></span><span class="signature">(<wbr><span class="parameter" id="LoadCursor-param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><span class="parameter" id="LoadCursor-param-lpCursorName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpCursorName</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Loads the specified cursor resource from the executable (.EXE) file
-associated with an application instance. Note: this function has been
-superseded by the LoadImage function. <a href="../win32/LoadCursor.html">[...]</a>
-                          
-</dd>
-            <dt id="GetMessage" class="callable">
-              <span class="name"><a href="../win32/GetMessage.html">GetMessage</a></span><span class="signature">(<wbr><span class="parameter" id="GetMessage-param-lpMsg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/MSG-class.html">MSG</a></span>&gt;</span></span> <span class="parameter-name">lpMsg</span>, </span><span class="parameter" id="GetMessage-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="GetMessage-param-wMsgFilterMin"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wMsgFilterMin</span>, </span><span class="parameter" id="GetMessage-param-wMsgFilterMax"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wMsgFilterMax</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Retrieves a message from the calling thread's message queue. The
-function dispatches incoming sent messages until a posted message is
-available for retrieval. <a href="../win32/GetMessage.html">[...]</a>
                           
 </dd>
             <dt id="SetDlgItemInt" class="callable">
@@ -751,47 +952,6 @@ and the position of the scroll box (thumb). The function also redraws
 the scroll bar, if requested. <a href="../win32/SetScrollInfo.html">[...]</a>
                           
 </dd>
-            <dt id="GetCursor" class="callable">
-              <span class="name"><a href="../win32/GetCursor.html">GetCursor</a></span><span class="signature">(<wbr>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Retrieves a handle to the current cursor. <a href="../win32/GetCursor.html">[...]</a>
-                          
-</dd>
-            <dt id="SetDlgItemText" class="callable">
-              <span class="name"><a href="../win32/SetDlgItemText.html">SetDlgItemText</a></span><span class="signature">(<wbr><span class="parameter" id="SetDlgItemText-param-hDlg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDlg</span>, </span><span class="parameter" id="SetDlgItemText-param-nIDDlgItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIDDlgItem</span>, </span><span class="parameter" id="SetDlgItemText-param-lpString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpString</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Sets the title or text of a control in a dialog box. <a href="../win32/SetDlgItemText.html">[...]</a>
-                          
-</dd>
-            <dt id="IsWindowVisible" class="callable">
-              <span class="name"><a href="../win32/IsWindowVisible.html">IsWindowVisible</a></span><span class="signature">(<wbr><span class="parameter" id="IsWindowVisible-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Determines the visibility state of the specified window. <a href="../win32/IsWindowVisible.html">[...]</a>
-                          
-</dd>
-            <dt id="GetNextDlgTabItem" class="callable">
-              <span class="name"><a href="../win32/GetNextDlgTabItem.html">GetNextDlgTabItem</a></span><span class="signature">(<wbr><span class="parameter" id="GetNextDlgTabItem-param-hDlg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDlg</span>, </span><span class="parameter" id="GetNextDlgTabItem-param-hCtl"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hCtl</span>, </span><span class="parameter" id="GetNextDlgTabItem-param-bPrevious"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">bPrevious</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Retrieves a handle to the first control that has the WS_TABSTOP style
-that precedes (or follows) the specified control. <a href="../win32/GetNextDlgTabItem.html">[...]</a>
-                          
-</dd>
             <dt id="AppendMenu" class="callable">
               <span class="name"><a href="../win32/AppendMenu.html">AppendMenu</a></span><span class="signature">(<wbr><span class="parameter" id="AppendMenu-param-hMenu"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMenu</span>, </span><span class="parameter" id="AppendMenu-param-uFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">uFlags</span>, </span><span class="parameter" id="AppendMenu-param-uIDNewItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">uIDNewItem</span>, </span><span class="parameter" id="AppendMenu-param-lpNewItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpNewItem</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -814,6 +974,18 @@ the content, appearance, and behavior of the menu item. <a href="../win32/Append
               The FillRect function fills a rectangle by using the specified brush.
 This function includes the left and top borders, but excludes the right
 and bottom borders of the rectangle. <a href="../win32/FillRect.html">[...]</a>
+                          
+</dd>
+            <dt id="DialogBoxIndirect" class="callable">
+              <span class="name"><a href="../win32/DialogBoxIndirect.html">DialogBoxIndirect</a></span><span class="signature">(<wbr><span class="parameter" id="DialogBoxIndirect-param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><span class="parameter" id="DialogBoxIndirect-param-lpTemplate"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/DLGTEMPLATE-class.html">DLGTEMPLATE</a></span>&gt;</span></span> <span class="parameter-name">lpTemplate</span>, </span><span class="parameter" id="DialogBoxIndirect-param-hWndParent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndParent</span>, </span><span class="parameter" id="DialogBoxIndirect-param-lpDialogFunc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeFunction-class.html">NativeFunction</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/Function-class.html">Function</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">lpDialogFunc</span></span>)
+                <span class="returntype parameter">&#8594; void</span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Creates a modal dialog box from a dialog box template in memory.
+DialogBoxIndirect does not return control until the specified callback
+function terminates the modal dialog box by calling the EndDialog function. <a href="../win32/DialogBoxIndirect.html">[...]</a>
                           
 </dd>
             <dt id="SetCursorPos" class="callable">
@@ -842,26 +1014,6 @@ priority to the thread that creates the foreground window than it does
 to other threads. <a href="../win32/GetForegroundWindow.html">[...]</a>
                           
 </dd>
-            <dt id="SetTimer" class="callable">
-              <span class="name"><a href="../win32/SetTimer.html">SetTimer</a></span><span class="signature">(<wbr><span class="parameter" id="SetTimer-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="SetTimer-param-nIDEvent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIDEvent</span>, </span><span class="parameter" id="SetTimer-param-uElapse"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">uElapse</span>, </span><span class="parameter" id="SetTimer-param-lpTimerFunc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeFunction-class.html">NativeFunction</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/Function-class.html">Function</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">lpTimerFunc</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Creates a timer with the specified time-out value. <a href="../win32/SetTimer.html">[...]</a>
-                          
-</dd>
-            <dt id="LoadImage" class="callable">
-              <span class="name"><a href="../win32/LoadImage.html">LoadImage</a></span><span class="signature">(<wbr><span class="parameter" id="LoadImage-param-hInst"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInst</span>, </span><span class="parameter" id="LoadImage-param-name"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">name</span>, </span><span class="parameter" id="LoadImage-param-type"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">type</span>, </span><span class="parameter" id="LoadImage-param-cx"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cx</span>, </span><span class="parameter" id="LoadImage-param-cy"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cy</span>, </span><span class="parameter" id="LoadImage-param-fuLoad"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">fuLoad</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Loads an icon, cursor, animated cursor, or bitmap. <a href="../win32/LoadImage.html">[...]</a>
-                          
-</dd>
             <dt id="ScrollWindow" class="callable">
               <span class="name"><a href="../win32/ScrollWindow.html">ScrollWindow</a></span><span class="signature">(<wbr><span class="parameter" id="ScrollWindow-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="ScrollWindow-param-XAmount"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">XAmount</span>, </span><span class="parameter" id="ScrollWindow-param-YAmount"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">YAmount</span>, </span><span class="parameter" id="ScrollWindow-param-lpRect"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/RECT-class.html">RECT</a></span>&gt;</span></span> <span class="parameter-name">lpRect</span>, </span><span class="parameter" id="ScrollWindow-param-lpClipRect"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/RECT-class.html">RECT</a></span>&gt;</span></span> <span class="parameter-name">lpClipRect</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -871,16 +1023,6 @@ to other threads. <a href="../win32/GetForegroundWindow.html">[...]</a>
             <dd>
               The ScrollWindow function scrolls the contents of the specified
 window's client area. <a href="../win32/ScrollWindow.html">[...]</a>
-                          
-</dd>
-            <dt id="IsClipboardFormatAvailable" class="callable">
-              <span class="name"><a href="../win32/IsClipboardFormatAvailable.html">IsClipboardFormatAvailable</a></span><span class="signature">(<wbr><span class="parameter" id="IsClipboardFormatAvailable-param-format"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">format</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Determines whether the clipboard contains data in the specified format. <a href="../win32/IsClipboardFormatAvailable.html">[...]</a>
                           
 </dd>
             <dt id="ClipCursor" class="callable">
@@ -923,19 +1065,6 @@ to the specified window procedure. TranslateAccelerator does not return
 until the window procedure has processed the message. <a href="../win32/TranslateAccelerator.html">[...]</a>
                           
 </dd>
-            <dt id="GetWindowText" class="callable">
-              <span class="name"><a href="../win32/GetWindowText.html">GetWindowText</a></span><span class="signature">(<wbr><span class="parameter" id="GetWindowText-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="GetWindowText-param-lpString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpString</span>, </span><span class="parameter" id="GetWindowText-param-nMaxCount"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nMaxCount</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Copies the text of the specified window's title bar (if it has one)
-into a buffer. If the specified window is a control, the text of the
-control is copied. However, GetWindowText cannot retrieve the text of a
-control in another application. <a href="../win32/GetWindowText.html">[...]</a>
-                          
-</dd>
             <dt id="DestroyIcon" class="callable">
               <span class="name"><a href="../win32/DestroyIcon.html">DestroyIcon</a></span><span class="signature">(<wbr><span class="parameter" id="DestroyIcon-param-hIcon"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hIcon</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -944,19 +1073,6 @@ control in another application. <a href="../win32/GetWindowText.html">[...]</a>
               </dt>
             <dd>
               Destroys an icon and frees any memory the icon occupied. <a href="../win32/DestroyIcon.html">[...]</a>
-                          
-</dd>
-            <dt id="CreateWindowEx" class="callable">
-              <span class="name"><a href="../win32/CreateWindowEx.html">CreateWindowEx</a></span><span class="signature">(<wbr><span class="parameter" id="CreateWindowEx-param-dwExStyle"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwExStyle</span>, </span><span class="parameter" id="CreateWindowEx-param-lpClassName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpClassName</span>, </span><span class="parameter" id="CreateWindowEx-param-lpWindowName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.1.3/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpWindowName</span>, </span><span class="parameter" id="CreateWindowEx-param-dwStyle"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwStyle</span>, </span><span class="parameter" id="CreateWindowEx-param-X"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">X</span>, </span><span class="parameter" id="CreateWindowEx-param-Y"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Y</span>, </span><span class="parameter" id="CreateWindowEx-param-nWidth"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nWidth</span>, </span><span class="parameter" id="CreateWindowEx-param-nHeight"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nHeight</span>, </span><span class="parameter" id="CreateWindowEx-param-hWndParent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndParent</span>, </span><span class="parameter" id="CreateWindowEx-param-hMenu"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hMenu</span>, </span><span class="parameter" id="CreateWindowEx-param-hInstance"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hInstance</span>, </span><span class="parameter" id="CreateWindowEx-param-lpParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Void-class.html">Void</a></span>&gt;</span></span> <span class="parameter-name">lpParam</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Creates an overlapped, pop-up, or child window. It specifies the window
-class, window title, window style, and (optionally) the initial
-position and size of the window. The function also specifies the
-window's parent or owner, if any, and the window's menu. <a href="../win32/CreateWindowEx.html">[...]</a>
                           
 </dd>
             <dt id="CreateMenu" class="callable">
@@ -969,18 +1085,6 @@ window's parent or owner, if any, and the window's menu. <a href="../win32/Creat
               Creates a menu. The menu is initially empty, but it can be filled with
 menu items by using the InsertMenuItem, AppendMenu, and InsertMenu
 functions. <a href="../win32/CreateMenu.html">[...]</a>
-                          
-</dd>
-            <dt id="MonitorFromWindow" class="callable">
-              <span class="name"><a href="../win32/MonitorFromWindow.html">MonitorFromWindow</a></span><span class="signature">(<wbr><span class="parameter" id="MonitorFromWindow-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span>, </span><span class="parameter" id="MonitorFromWindow-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              The MonitorFromWindow function retrieves a handle to the display
-monitor that has the largest area of intersection with the bounding
-rectangle of a specified window. <a href="../win32/MonitorFromWindow.html">[...]</a>
                           
 </dd>
             <dt id="MapDialogRect" class="callable">
@@ -1043,56 +1147,6 @@ control. However, GetWindowTextLength cannot retrieve the length of the
 text of an edit control in another application. <a href="../win32/GetWindowTextLength.html">[...]</a>
                           
 </dd>
-            <dt id="ReleaseDC" class="callable">
-              <span class="name"><a href="../win32/ReleaseDC.html">ReleaseDC</a></span><span class="signature">(<wbr><span class="parameter" id="ReleaseDC-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="ReleaseDC-param-hDC"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDC</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              The ReleaseDC function releases a device context (DC), freeing it for
-use by other applications. The effect of the ReleaseDC function depends
-on the type of DC. It frees only common and window DCs. It has no
-effect on class or private DCs. <a href="../win32/ReleaseDC.html">[...]</a>
-                          
-</dd>
-            <dt id="SetWindowPos" class="callable">
-              <span class="name"><a href="../win32/SetWindowPos.html">SetWindowPos</a></span><span class="signature">(<wbr><span class="parameter" id="SetWindowPos-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="SetWindowPos-param-hWndInsertAfter"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndInsertAfter</span>, </span><span class="parameter" id="SetWindowPos-param-X"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">X</span>, </span><span class="parameter" id="SetWindowPos-param-Y"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Y</span>, </span><span class="parameter" id="SetWindowPos-param-cx"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cx</span>, </span><span class="parameter" id="SetWindowPos-param-cy"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cy</span>, </span><span class="parameter" id="SetWindowPos-param-uFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">uFlags</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Changes the size, position, and Z order of a child, pop-up, or
-top-level window. These windows are ordered according to their
-appearance on the screen. The topmost window receives the highest rank
-and is the first window in the Z order. <a href="../win32/SetWindowPos.html">[...]</a>
-                          
-</dd>
-            <dt id="DispatchMessage" class="callable">
-              <span class="name"><a href="../win32/DispatchMessage.html">DispatchMessage</a></span><span class="signature">(<wbr><span class="parameter" id="DispatchMessage-param-lpMsg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/MSG-class.html">MSG</a></span>&gt;</span></span> <span class="parameter-name">lpMsg</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Dispatches a message to a window procedure. It is typically used to
-dispatch a message retrieved by the GetMessage function. <a href="../win32/DispatchMessage.html">[...]</a>
-                          
-</dd>
-            <dt id="DefWindowProc" class="callable">
-              <span class="name"><a href="../win32/DefWindowProc.html">DefWindowProc</a></span><span class="signature">(<wbr><span class="parameter" id="DefWindowProc-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="DefWindowProc-param-Msg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Msg</span>, </span><span class="parameter" id="DefWindowProc-param-wParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wParam</span>, </span><span class="parameter" id="DefWindowProc-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">lParam</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Calls the default window procedure to provide default processing for
-any window messages that an application does not process. This function
-ensures that every message is processed. DefWindowProc is called with
-the same parameters received by the window procedure. <a href="../win32/DefWindowProc.html">[...]</a>
-                          
-</dd>
             <dt id="SetFocus" class="callable">
               <span class="name"><a href="../win32/SetFocus.html">SetFocus</a></span><span class="signature">(<wbr><span class="parameter" id="SetFocus-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -1124,16 +1178,6 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
               Enables, disables, or grays the specified menu item. <a href="../win32/EnableMenuItem.html">[...]</a>
                           
 </dd>
-            <dt id="GetDpiForSystem" class="callable">
-              <span class="name"><a href="../win32/GetDpiForSystem.html">GetDpiForSystem</a></span><span class="signature">(<wbr>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Returns the system DPI. <a href="../win32/GetDpiForSystem.html">[...]</a>
-                          
-</dd>
             <dt id="SendDlgItemMessage" class="callable">
               <span class="name"><a href="../win32/SendDlgItemMessage.html">SendDlgItemMessage</a></span><span class="signature">(<wbr><span class="parameter" id="SendDlgItemMessage-param-hDlg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDlg</span>, </span><span class="parameter" id="SendDlgItemMessage-param-nIDDlgItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIDDlgItem</span>, </span><span class="parameter" id="SendDlgItemMessage-param-Msg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Msg</span>, </span><span class="parameter" id="SendDlgItemMessage-param-wParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wParam</span>, </span><span class="parameter" id="SendDlgItemMessage-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">lParam</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -1142,38 +1186,6 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
               </dt>
             <dd>
               Sends a message to the specified control in a dialog box. <a href="../win32/SendDlgItemMessage.html">[...]</a>
-                          
-</dd>
-            <dt id="LockWorkStation" class="callable">
-              <span class="name"><a href="../win32/LockWorkStation.html">LockWorkStation</a></span><span class="signature">(<wbr>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Locks the workstation's display. Locking a workstation protects it from
-unauthorized use. <a href="../win32/LockWorkStation.html">[...]</a>
-                          
-</dd>
-            <dt id="GetSystemMetrics" class="callable">
-              <span class="name"><a href="../win32/GetSystemMetrics.html">GetSystemMetrics</a></span><span class="signature">(<wbr><span class="parameter" id="GetSystemMetrics-param-nIndex"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIndex</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Retrieves the specified system metric or system configuration setting.
-Note that all dimensions retrieved by GetSystemMetrics are in pixels. <a href="../win32/GetSystemMetrics.html">[...]</a>
-                          
-</dd>
-            <dt id="WindowFromPoint" class="callable">
-              <span class="name"><a href="../win32/WindowFromPoint.html">WindowFromPoint</a></span><span class="signature">(<wbr><span class="parameter" id="WindowFromPoint-param-Point"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Point</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
-              </dt>
-            <dd>
-              Retrieves a handle to the window that contains the specified point. <a href="../win32/WindowFromPoint.html">[...]</a>
                           
 </dd>
         </dl>
@@ -1196,40 +1208,61 @@ Note that all dimensions retrieved by GetSystemMetrics are in pixels. <a href=".
       <li><a href="../win32/DrawText.html">DrawText</a></li>
       <li><a href="../win32/SendInput.html">SendInput</a></li>
       <li><a href="../win32/BringWindowToTop.html">BringWindowToTop</a></li>
-      <li><a href="../win32/GetNextDlgGroupItem.html">GetNextDlgGroupItem</a></li>
-      <li><a href="../win32/GetDlgItem.html">GetDlgItem</a></li>
       <li><a href="../win32/CreateDialogIndirectParam.html">CreateDialogIndirectParam</a></li>
       <li><a href="../win32/MessageBox.html">MessageBox</a></li>
       <li><a href="../win32/DrawIcon.html">DrawIcon</a></li>
-      <li><a href="../win32/LoadIcon.html">LoadIcon</a></li>
       <li><a href="../win32/MoveWindow.html">MoveWindow</a></li>
       <li><a href="../win32/UpdateWindow.html">UpdateWindow</a></li>
       <li><a href="../win32/PostQuitMessage.html">PostQuitMessage</a></li>
       <li><a href="../win32/GetDlgItemInt.html">GetDlgItemInt</a></li>
       <li><a href="../win32/CreateAcceleratorTable.html">CreateAcceleratorTable</a></li>
       <li><a href="../win32/RegisterClass.html">RegisterClass</a></li>
-      <li><a href="../win32/ShowWindowAsync.html">ShowWindowAsync</a></li>
-      <li><a href="../win32/GetSystemDpiForProcess.html">GetSystemDpiForProcess</a></li>
       <li><a href="../win32/SetParent.html">SetParent</a></li>
       <li><a href="../win32/TranslateMessage.html">TranslateMessage</a></li>
       <li><a href="../win32/EnumDisplayMonitors.html">EnumDisplayMonitors</a></li>
       <li><a href="../win32/ShowCursor.html">ShowCursor</a></li>
-      <li><a href="../win32/GetCursorPos.html">GetCursorPos</a></li>
       <li><a href="../win32/GetMonitorInfo.html">GetMonitorInfo</a></li>
       <li><a href="../win32/WindowFromPhysicalPoint.html">WindowFromPhysicalPoint</a></li>
       <li><a href="../win32/KillTimer.html">KillTimer</a></li>
       <li><a href="../win32/InvalidateRect.html">InvalidateRect</a></li>
       <li><a href="../win32/SetProcessDPIAware.html">SetProcessDPIAware</a></li>
       <li><a href="../win32/IsDialogMessage.html">IsDialogMessage</a></li>
-      <li><a href="../win32/GetScrollInfo.html">GetScrollInfo</a></li>
-      <li><a href="../win32/MonitorFromPoint.html">MonitorFromPoint</a></li>
       <li><a href="../win32/DestroyWindow.html">DestroyWindow</a></li>
       <li><a href="../win32/SetMenuInfo.html">SetMenuInfo</a></li>
-      <li><a href="../win32/SetWindowText.html">SetWindowText</a></li>
-      <li><a href="../win32/GetDialogBaseUnits.html">GetDialogBaseUnits</a></li>
       <li><a href="../win32/SendMessage.html">SendMessage</a></li>
       <li><a href="../win32/MsgWaitForMultipleObjects.html">MsgWaitForMultipleObjects</a></li>
       <li><a href="../win32/GetClientRect.html">GetClientRect</a></li>
+      <li><a href="../win32/CopyIcon.html">CopyIcon</a></li>
+      <li><a href="../win32/LoadCursor.html">LoadCursor</a></li>
+      <li><a href="../win32/GetMessage.html">GetMessage</a></li>
+      <li><a href="../win32/GetCursor.html">GetCursor</a></li>
+      <li><a href="../win32/SetDlgItemText.html">SetDlgItemText</a></li>
+      <li><a href="../win32/IsWindowVisible.html">IsWindowVisible</a></li>
+      <li><a href="../win32/GetNextDlgTabItem.html">GetNextDlgTabItem</a></li>
+      <li><a href="../win32/SetTimer.html">SetTimer</a></li>
+      <li><a href="../win32/LoadImage.html">LoadImage</a></li>
+      <li><a href="../win32/IsClipboardFormatAvailable.html">IsClipboardFormatAvailable</a></li>
+      <li><a href="../win32/GetWindowText.html">GetWindowText</a></li>
+      <li><a href="../win32/CreateWindowEx.html">CreateWindowEx</a></li>
+      <li><a href="../win32/MonitorFromWindow.html">MonitorFromWindow</a></li>
+      <li><a href="../win32/ReleaseDC.html">ReleaseDC</a></li>
+      <li><a href="../win32/SetWindowPos.html">SetWindowPos</a></li>
+      <li><a href="../win32/DispatchMessage.html">DispatchMessage</a></li>
+      <li><a href="../win32/DefWindowProc.html">DefWindowProc</a></li>
+      <li><a href="../win32/GetDpiForSystem.html">GetDpiForSystem</a></li>
+      <li><a href="../win32/LockWorkStation.html">LockWorkStation</a></li>
+      <li><a href="../win32/GetSystemMetrics.html">GetSystemMetrics</a></li>
+      <li><a href="../win32/WindowFromPoint.html">WindowFromPoint</a></li>
+      <li><a href="../win32/GetNextDlgGroupItem.html">GetNextDlgGroupItem</a></li>
+      <li><a href="../win32/GetDlgItem.html">GetDlgItem</a></li>
+      <li><a href="../win32/LoadIcon.html">LoadIcon</a></li>
+      <li><a href="../win32/ShowWindowAsync.html">ShowWindowAsync</a></li>
+      <li><a href="../win32/GetSystemDpiForProcess.html">GetSystemDpiForProcess</a></li>
+      <li><a href="../win32/GetCursorPos.html">GetCursorPos</a></li>
+      <li><a href="../win32/GetScrollInfo.html">GetScrollInfo</a></li>
+      <li><a href="../win32/MonitorFromPoint.html">MonitorFromPoint</a></li>
+      <li><a href="../win32/SetWindowText.html">SetWindowText</a></li>
+      <li><a href="../win32/GetDialogBaseUnits.html">GetDialogBaseUnits</a></li>
       <li><a href="../win32/DialogBoxIndirectParam.html">DialogBoxIndirectParam</a></li>
       <li><a href="../win32/RegisterWindowMessage.html">RegisterWindowMessage</a></li>
       <li><a href="../win32/GetDC.html">GetDC</a></li>
@@ -1240,51 +1273,31 @@ Note that all dimensions retrieved by GetSystemMetrics are in pixels. <a href=".
       <li><a href="../win32/PeekMessage.html">PeekMessage</a></li>
       <li><a href="../win32/GetDlgItemText.html">GetDlgItemText</a></li>
       <li><a href="../win32/BeginPaint.html">BeginPaint</a></li>
-      <li><a href="../win32/CopyIcon.html">CopyIcon</a></li>
       <li><a href="../win32/EnumWindows.html">EnumWindows</a></li>
       <li><a href="../win32/SystemParametersInfo.html">SystemParametersInfo</a></li>
-      <li><a href="../win32/LoadCursor.html">LoadCursor</a></li>
-      <li><a href="../win32/GetMessage.html">GetMessage</a></li>
       <li><a href="../win32/SetDlgItemInt.html">SetDlgItemInt</a></li>
       <li><a href="../win32/GetParent.html">GetParent</a></li>
       <li><a href="../win32/SetScrollInfo.html">SetScrollInfo</a></li>
-      <li><a href="../win32/GetCursor.html">GetCursor</a></li>
-      <li><a href="../win32/SetDlgItemText.html">SetDlgItemText</a></li>
-      <li><a href="../win32/IsWindowVisible.html">IsWindowVisible</a></li>
-      <li><a href="../win32/GetNextDlgTabItem.html">GetNextDlgTabItem</a></li>
       <li><a href="../win32/AppendMenu.html">AppendMenu</a></li>
       <li><a href="../win32/FillRect.html">FillRect</a></li>
+      <li><a href="../win32/DialogBoxIndirect.html">DialogBoxIndirect</a></li>
       <li><a href="../win32/SetCursorPos.html">SetCursorPos</a></li>
       <li><a href="../win32/GetForegroundWindow.html">GetForegroundWindow</a></li>
-      <li><a href="../win32/SetTimer.html">SetTimer</a></li>
-      <li><a href="../win32/LoadImage.html">LoadImage</a></li>
       <li><a href="../win32/ScrollWindow.html">ScrollWindow</a></li>
-      <li><a href="../win32/IsClipboardFormatAvailable.html">IsClipboardFormatAvailable</a></li>
       <li><a href="../win32/ClipCursor.html">ClipCursor</a></li>
       <li><a href="../win32/EndPaint.html">EndPaint</a></li>
       <li><a href="../win32/TranslateAccelerator.html">TranslateAccelerator</a></li>
-      <li><a href="../win32/GetWindowText.html">GetWindowText</a></li>
       <li><a href="../win32/DestroyIcon.html">DestroyIcon</a></li>
-      <li><a href="../win32/CreateWindowEx.html">CreateWindowEx</a></li>
       <li><a href="../win32/CreateMenu.html">CreateMenu</a></li>
-      <li><a href="../win32/MonitorFromWindow.html">MonitorFromWindow</a></li>
       <li><a href="../win32/MapDialogRect.html">MapDialogRect</a></li>
       <li><a href="../win32/EndDialog.html">EndDialog</a></li>
       <li><a href="../win32/GetSysColor.html">GetSysColor</a></li>
       <li><a href="../win32/ShowWindow.html">ShowWindow</a></li>
       <li><a href="../win32/GetWindowTextLength.html">GetWindowTextLength</a></li>
-      <li><a href="../win32/ReleaseDC.html">ReleaseDC</a></li>
-      <li><a href="../win32/SetWindowPos.html">SetWindowPos</a></li>
-      <li><a href="../win32/DispatchMessage.html">DispatchMessage</a></li>
-      <li><a href="../win32/DefWindowProc.html">DefWindowProc</a></li>
       <li><a href="../win32/SetFocus.html">SetFocus</a></li>
       <li><a href="../win32/SetMenuItemInfo.html">SetMenuItemInfo</a></li>
       <li><a href="../win32/EnableMenuItem.html">EnableMenuItem</a></li>
-      <li><a href="../win32/GetDpiForSystem.html">GetDpiForSystem</a></li>
       <li><a href="../win32/SendDlgItemMessage.html">SendDlgItemMessage</a></li>
-      <li><a href="../win32/LockWorkStation.html">LockWorkStation</a></li>
-      <li><a href="../win32/GetSystemMetrics.html">GetSystemMetrics</a></li>
-      <li><a href="../win32/WindowFromPoint.html">WindowFromPoint</a></li>
     
     
     
@@ -1295,7 +1308,7 @@ Note that all dimensions retrieved by GetSystemMetrics are in pixels. <a href=".
 <footer>
   <span class="no-break">
     win32
-      2.0.0-nullsafety.4
+      2.0.0-nullsafety.5
   </span>
 
 </footer>
