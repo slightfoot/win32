@@ -140,6 +140,25 @@ represent an important pattern.</p>
 is a hobby project, and should not be viewed as having the same level of
 quality assurance as an official package from the Dart team. I'm a product
 manager having fun on my weekends!</p>
+<h2 id="backwards-compatibility">Backwards compatibility</h2>
+<p>The library version uses a loose semver model, but you should not assume a
+strict guarantee of no breaking changes between minor versions. That guarantee
+is not possible to make, for several reasons:</p>
+<ul>
+<li>The underlying FFI library has not yet reached v1.0 and breaking changes at
+that level may be difficult to encapsulate.</li>
+<li>Several times, my fixing a bug in the fidelity of the Win32 API has tightened
+the constraints over a parameter (for example, <code>Pointer</code> becomes
+<code>Pointer&lt;INPUT&gt;</code>). These changes should be signalled in the log.</li>
+<li>Adding new features may itself cause a breaking change. For example, if you
+declare a missing Windows constant in your own code that is then added, Dart
+will complain about the duplicate definition.</li>
+</ul>
+<p>One solution is to pin to a specific version of Win32, or declare a more
+tightly-bounded version dependency (e.g. <code>'&gt;=1.7.0 &lt;1.8.0'</code> rather than merely
+<code>^1.7.0</code>). But the best approach is simply to test regularly with the latest
+version of this package, and continue to move your minimum forward. As the
+package matures, these issues should gradually fade into the distance.</p>
 <h2 id="acknowledgements">Acknowledgements</h2>
 <p>The Tetris example listed above is a fuller worked example of a reasonably
 complete program that uses the Dart Win32 package. It is a port of a C version
@@ -175,7 +194,7 @@ the <a href="https://github.com/MicrosoftDocs/win32/blob/7b49862e8d58cfad5d4e5e2
 <footer>
   <span class="no-break">
     win32
-      2.0.0-nullsafety.1
+      2.0.0-nullsafety.4
   </span>
 
 </footer>
