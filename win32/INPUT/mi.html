@@ -96,7 +96,8 @@
         
                         <section class="summary source-code" id="source">
           <h2><span>Implementation</span></h2>
-          <pre class="language-dart"><code class="language-dart">MOUSEINPUT get mi =&gt; MOUSEINPUT(addressOf.cast&lt;Uint8&gt;().elementAt(8).cast());</code></pre>
+          <pre class="language-dart"><code class="language-dart">MOUSEINPUT get mi =&gt;
+    MOUSEINPUT(addressOf.cast&lt;Uint8&gt;().elementAt(sizeOf&lt;IntPtr&gt;()).cast());</code></pre>
         </section>
 </section>
         

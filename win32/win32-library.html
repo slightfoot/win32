@@ -9844,6 +9844,16 @@ integer value. <a href="../win32/GetDlgItemInt.html">[...]</a>
           Returns the system DPI. <a href="../win32/GetDpiForSystem.html">[...]</a>
                   
 </dd>
+        <dt id="GetDpiForWindow" class="callable">
+          <span class="name"><a href="../win32/GetDpiForWindow.html">GetDpiForWindow</a></span><span class="signature">(<wbr><span class="parameter" id="GetDpiForWindow-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+          </span>
+                      <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+          </dt>
+        <dd>
+          Returns the dots per inch (dpi) value for the associated window. <a href="../win32/GetDpiForWindow.html">[...]</a>
+                  
+</dd>
         <dt id="GetFileVersionInfo" class="callable">
           <span class="name"><a href="../win32/GetFileVersionInfo.html">GetFileVersionInfo</a></span><span class="signature">(<wbr><span class="parameter" id="GetFileVersionInfo-param-lptstrFilename"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lptstrFilename</span>, </span><span class="parameter" id="GetFileVersionInfo-param-dwHandle"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwHandle</span>, </span><span class="parameter" id="GetFileVersionInfo-param-dwLen"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwLen</span>, </span><span class="parameter" id="GetFileVersionInfo-param-lpData"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">lpData</span></span>)
             <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -10364,6 +10374,17 @@ system menu or the control menu) for copying and modifying. <a href="../win32/Ge
 Note that all dimensions retrieved by GetSystemMetrics are in pixels. <a href="../win32/GetSystemMetrics.html">[...]</a>
                   
 </dd>
+        <dt id="GetSystemMetricsForDpi" class="callable">
+          <span class="name"><a href="../win32/GetSystemMetricsForDpi.html">GetSystemMetricsForDpi</a></span><span class="signature">(<wbr><span class="parameter" id="GetSystemMetricsForDpi-param-nIndex"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIndex</span>, </span><span class="parameter" id="GetSystemMetricsForDpi-param-dpi"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dpi</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+          </span>
+                      <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+          </dt>
+        <dd>
+          Retrieves the specified system metric or system configuration setting
+taking into account a provided DPI. <a href="../win32/GetSystemMetricsForDpi.html">[...]</a>
+                  
+</dd>
         <dt id="GetSystemPowerStatus" class="callable">
           <span class="name"><a href="../win32/GetSystemPowerStatus.html">GetSystemPowerStatus</a></span><span class="signature">(<wbr><span class="parameter" id="GetSystemPowerStatus-param-lpSystemPowerStatus"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SYSTEM_POWER_STATUS-class.html">SYSTEM_POWER_STATUS</a></span>&gt;</span></span> <span class="parameter-name">lpSystemPowerStatus</span></span>)
             <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -10435,6 +10456,18 @@ specified volume. <a href="../win32/GetVolumePathNamesForVolumeName.html">[...]<
         <dd>
           Retrieves a handle to a window that has the specified relationship
 (Z-Order or owner) to the specified window. <a href="../win32/GetWindow.html">[...]</a>
+                  
+</dd>
+        <dt id="GetWindowRect" class="callable">
+          <span class="name"><a href="../win32/GetWindowRect.html">GetWindowRect</a></span><span class="signature">(<wbr><span class="parameter" id="GetWindowRect-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="GetWindowRect-param-lpRect"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/RECT-class.html">RECT</a></span>&gt;</span></span> <span class="parameter-name">lpRect</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+          </span>
+                      <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+          </dt>
+        <dd>
+          Retrieves the dimensions of the bounding rectangle of the specified
+window. The dimensions are given in screen coordinates that are
+relative to the upper-left corner of the screen. <a href="../win32/GetWindowRect.html">[...]</a>
                   
 </dd>
         <dt id="GetWindowText" class="callable">
@@ -10608,6 +10641,16 @@ and, if it is, processes the message. <a href="../win32/IsDialogMessage.html">[.
           </dt>
         <dd>
           Determines the visibility state of the specified window. <a href="../win32/IsWindowVisible.html">[...]</a>
+                  
+</dd>
+        <dt id="IsZoomed" class="callable">
+          <span class="name"><a href="../win32/IsZoomed.html">IsZoomed</a></span><span class="signature">(<wbr><span class="parameter" id="IsZoomed-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+          </span>
+                      <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+          </dt>
+        <dd>
+          Determines whether a window is maximized. <a href="../win32/IsZoomed.html">[...]</a>
                   
 </dd>
         <dt id="KillTimer" class="callable">
@@ -10937,6 +10980,18 @@ resource, or system event. <a href="../win32/PlaySound.html">[...]</a>
           </dt>
         <dd>
           The PolyBezier function draws one or more Bézier curves. <a href="../win32/PolyBezier.html">[...]</a>
+                  
+</dd>
+        <dt id="PostMessage" class="callable">
+          <span class="name"><a href="../win32/PostMessage.html">PostMessage</a></span><span class="signature">(<wbr><span class="parameter" id="PostMessage-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="PostMessage-param-Msg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Msg</span>, </span><span class="parameter" id="PostMessage-param-wParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wParam</span>, </span><span class="parameter" id="PostMessage-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">lParam</span></span>)
+            <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+          </span>
+                      <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+          </dt>
+        <dd>
+          Places (posts) a message in the message queue associated with the
+thread that created the specified window and returns without waiting
+for the thread to process the message. <a href="../win32/PostMessage.html">[...]</a>
                   
 </dd>
         <dt id="PostQuitMessage" class="callable">
@@ -13116,6 +13171,7 @@ area to be written to must be accessible or the operation fails. <a href="../win
       <li><a href="../win32/GetDlgItemText.html">GetDlgItemText</a></li>
       <li><a href="../win32/GetDpiForMonitor.html">GetDpiForMonitor</a></li>
       <li><a href="../win32/GetDpiForSystem.html">GetDpiForSystem</a></li>
+      <li><a href="../win32/GetDpiForWindow.html">GetDpiForWindow</a></li>
       <li><a href="../win32/GetFileVersionInfo.html">GetFileVersionInfo</a></li>
       <li><a href="../win32/GetFileVersionInfoEx.html">GetFileVersionInfoEx</a></li>
       <li><a href="../win32/GetFileVersionInfoSize.html">GetFileVersionInfoSize</a></li>
@@ -13163,12 +13219,14 @@ area to be written to must be accessible or the operation fails. <a href="../win
       <li><a href="../win32/GetSystemInfo.html">GetSystemInfo</a></li>
       <li><a href="../win32/GetSystemMenu.html">GetSystemMenu</a></li>
       <li><a href="../win32/GetSystemMetrics.html">GetSystemMetrics</a></li>
+      <li><a href="../win32/GetSystemMetricsForDpi.html">GetSystemMetricsForDpi</a></li>
       <li><a href="../win32/GetSystemPowerStatus.html">GetSystemPowerStatus</a></li>
       <li><a href="../win32/GetTempPath.html">GetTempPath</a></li>
       <li><a href="../win32/GetTextMetrics.html">GetTextMetrics</a></li>
       <li><a href="../win32/GetVersionEx.html">GetVersionEx</a></li>
       <li><a href="../win32/GetVolumePathNamesForVolumeName.html">GetVolumePathNamesForVolumeName</a></li>
       <li><a href="../win32/GetWindow.html">GetWindow</a></li>
+      <li><a href="../win32/GetWindowRect.html">GetWindowRect</a></li>
       <li><a href="../win32/GetWindowText.html">GetWindowText</a></li>
       <li><a href="../win32/GetWindowTextLength.html">GetWindowTextLength</a></li>
       <li><a href="../win32/HeapAlloc.html">HeapAlloc</a></li>
@@ -13185,6 +13243,7 @@ area to be written to must be accessible or the operation fails. <a href="../win
       <li><a href="../win32/IsDialogMessage.html">IsDialogMessage</a></li>
       <li><a href="../win32/isWindowsRuntimeAvailable.html">isWindowsRuntimeAvailable</a></li>
       <li><a href="../win32/IsWindowVisible.html">IsWindowVisible</a></li>
+      <li><a href="../win32/IsZoomed.html">IsZoomed</a></li>
       <li><a href="../win32/KillTimer.html">KillTimer</a></li>
       <li><a href="../win32/LineTo.html">LineTo</a></li>
       <li><a href="../win32/LoadCursor.html">LoadCursor</a></li>
@@ -13215,6 +13274,7 @@ area to be written to must be accessible or the operation fails. <a href="../win
       <li><a href="../win32/PeekMessage.html">PeekMessage</a></li>
       <li><a href="../win32/PlaySound.html">PlaySound</a></li>
       <li><a href="../win32/PolyBezier.html">PolyBezier</a></li>
+      <li><a href="../win32/PostMessage.html">PostMessage</a></li>
       <li><a href="../win32/PostQuitMessage.html">PostQuitMessage</a></li>
       <li><a href="../win32/QueryDosDevice.html">QueryDosDevice</a></li>
       <li><a href="../win32/QueryPerformanceCounter.html">QueryPerformanceCounter</a></li>

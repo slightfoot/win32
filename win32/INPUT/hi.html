@@ -97,7 +97,7 @@
                         <section class="summary source-code" id="source">
           <h2><span>Implementation</span></h2>
           <pre class="language-dart"><code class="language-dart">HARDWAREINPUT get hi =&gt;
-    HARDWAREINPUT(addressOf.cast&lt;Uint8&gt;().elementAt(8).cast());</code></pre>
+    HARDWAREINPUT(addressOf.cast&lt;Uint8&gt;().elementAt(sizeOf&lt;IntPtr&gt;()).cast());</code></pre>
         </section>
 </section>
         

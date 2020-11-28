@@ -285,6 +285,18 @@ callback function once for each monitor that is enumerated. Note that
 GetSystemMetrics (SM_CMONITORS) counts only the display monitors. <a href="../win32/EnumDisplayMonitors.html">[...]</a>
                           
 </dd>
+            <dt id="PostMessage" class="callable">
+              <span class="name"><a href="../win32/PostMessage.html">PostMessage</a></span><span class="signature">(<wbr><span class="parameter" id="PostMessage-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="PostMessage-param-Msg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Msg</span>, </span><span class="parameter" id="PostMessage-param-wParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wParam</span>, </span><span class="parameter" id="PostMessage-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">lParam</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Places (posts) a message in the message queue associated with the
+thread that created the specified window and returns without waiting
+for the thread to process the message. <a href="../win32/PostMessage.html">[...]</a>
+                          
+</dd>
             <dt id="ShowCursor" class="callable">
               <span class="name"><a href="../win32/ShowCursor.html">ShowCursor</a></span><span class="signature">(<wbr><span class="parameter" id="ShowCursor-param-bShow"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">bShow</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -457,6 +469,18 @@ function dispatches incoming sent messages until a posted message is
 available for retrieval. <a href="../win32/GetMessage.html">[...]</a>
                           
 </dd>
+            <dt id="GetWindowRect" class="callable">
+              <span class="name"><a href="../win32/GetWindowRect.html">GetWindowRect</a></span><span class="signature">(<wbr><span class="parameter" id="GetWindowRect-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="GetWindowRect-param-lpRect"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/RECT-class.html">RECT</a></span>&gt;</span></span> <span class="parameter-name">lpRect</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves the dimensions of the bounding rectangle of the specified
+window. The dimensions are given in screen coordinates that are
+relative to the upper-left corner of the screen. <a href="../win32/GetWindowRect.html">[...]</a>
+                          
+</dd>
             <dt id="GetCursor" class="callable">
               <span class="name"><a href="../win32/GetCursor.html">GetCursor</a></span><span class="signature">(<wbr>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -496,6 +520,16 @@ available for retrieval. <a href="../win32/GetMessage.html">[...]</a>
             <dd>
               Retrieves a handle to the first control that has the WS_TABSTOP style
 that precedes (or follows) the specified control. <a href="../win32/GetNextDlgTabItem.html">[...]</a>
+                          
+</dd>
+            <dt id="GetDpiForWindow" class="callable">
+              <span class="name"><a href="../win32/GetDpiForWindow.html">GetDpiForWindow</a></span><span class="signature">(<wbr><span class="parameter" id="GetDpiForWindow-param-hwnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwnd</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Returns the dots per inch (dpi) value for the associated window. <a href="../win32/GetDpiForWindow.html">[...]</a>
                           
 </dd>
             <dt id="SetTimer" class="callable">
@@ -918,6 +952,17 @@ the callback function returns FALSE. <a href="../win32/EnumWindows.html">[...]</
 function can also update the user profile while setting a parameter. <a href="../win32/SystemParametersInfo.html">[...]</a>
                           
 </dd>
+            <dt id="GetSystemMetricsForDpi" class="callable">
+              <span class="name"><a href="../win32/GetSystemMetricsForDpi.html">GetSystemMetricsForDpi</a></span><span class="signature">(<wbr><span class="parameter" id="GetSystemMetricsForDpi-param-nIndex"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIndex</span>, </span><span class="parameter" id="GetSystemMetricsForDpi-param-dpi"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dpi</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves the specified system metric or system configuration setting
+taking into account a provided DPI. <a href="../win32/GetSystemMetricsForDpi.html">[...]</a>
+                          
+</dd>
             <dt id="SetDlgItemInt" class="callable">
               <span class="name"><a href="../win32/SetDlgItemInt.html">SetDlgItemInt</a></span><span class="signature">(<wbr><span class="parameter" id="SetDlgItemInt-param-hDlg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hDlg</span>, </span><span class="parameter" id="SetDlgItemInt-param-nIDDlgItem"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nIDDlgItem</span>, </span><span class="parameter" id="SetDlgItemInt-param-uValue"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">uValue</span>, </span><span class="parameter" id="SetDlgItemInt-param-bSigned"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">bSigned</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -927,6 +972,16 @@ function can also update the user profile while setting a parameter. <a href="..
             <dd>
               Sets the text of a control in a dialog box to the string representation
 of a specified integer value. <a href="../win32/SetDlgItemInt.html">[...]</a>
+                          
+</dd>
+            <dt id="IsZoomed" class="callable">
+              <span class="name"><a href="../win32/IsZoomed.html">IsZoomed</a></span><span class="signature">(<wbr><span class="parameter" id="IsZoomed-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Determines whether a window is maximized. <a href="../win32/IsZoomed.html">[...]</a>
                           
 </dd>
             <dt id="GetParent" class="callable">
@@ -1220,6 +1275,7 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
       <li><a href="../win32/SetParent.html">SetParent</a></li>
       <li><a href="../win32/TranslateMessage.html">TranslateMessage</a></li>
       <li><a href="../win32/EnumDisplayMonitors.html">EnumDisplayMonitors</a></li>
+      <li><a href="../win32/PostMessage.html">PostMessage</a></li>
       <li><a href="../win32/ShowCursor.html">ShowCursor</a></li>
       <li><a href="../win32/GetMonitorInfo.html">GetMonitorInfo</a></li>
       <li><a href="../win32/WindowFromPhysicalPoint.html">WindowFromPhysicalPoint</a></li>
@@ -1235,10 +1291,12 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
       <li><a href="../win32/CopyIcon.html">CopyIcon</a></li>
       <li><a href="../win32/LoadCursor.html">LoadCursor</a></li>
       <li><a href="../win32/GetMessage.html">GetMessage</a></li>
+      <li><a href="../win32/GetWindowRect.html">GetWindowRect</a></li>
       <li><a href="../win32/GetCursor.html">GetCursor</a></li>
       <li><a href="../win32/SetDlgItemText.html">SetDlgItemText</a></li>
       <li><a href="../win32/IsWindowVisible.html">IsWindowVisible</a></li>
       <li><a href="../win32/GetNextDlgTabItem.html">GetNextDlgTabItem</a></li>
+      <li><a href="../win32/GetDpiForWindow.html">GetDpiForWindow</a></li>
       <li><a href="../win32/SetTimer.html">SetTimer</a></li>
       <li><a href="../win32/LoadImage.html">LoadImage</a></li>
       <li><a href="../win32/IsClipboardFormatAvailable.html">IsClipboardFormatAvailable</a></li>
@@ -1275,7 +1333,9 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
       <li><a href="../win32/BeginPaint.html">BeginPaint</a></li>
       <li><a href="../win32/EnumWindows.html">EnumWindows</a></li>
       <li><a href="../win32/SystemParametersInfo.html">SystemParametersInfo</a></li>
+      <li><a href="../win32/GetSystemMetricsForDpi.html">GetSystemMetricsForDpi</a></li>
       <li><a href="../win32/SetDlgItemInt.html">SetDlgItemInt</a></li>
+      <li><a href="../win32/IsZoomed.html">IsZoomed</a></li>
       <li><a href="../win32/GetParent.html">GetParent</a></li>
       <li><a href="../win32/SetScrollInfo.html">SetScrollInfo</a></li>
       <li><a href="../win32/AppendMenu.html">AppendMenu</a></li>
