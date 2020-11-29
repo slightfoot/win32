@@ -204,6 +204,16 @@ directly to the window procedure of the specified window, bypassing the
 application queue. If the update region is empty, no message is sent. <a href="../win32/UpdateWindow.html">[...]</a>
                           
 </dd>
+            <dt id="GET_SC_WPARAM" class="callable">
+              <span class="name"><a href="../win32/GET_SC_WPARAM.html">GET_SC_WPARAM</a></span><span class="signature">(<wbr><span class="parameter" id="GET_SC_WPARAM-param-wParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wParam</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Retrieves the parameters to WM_SYSCOMMAND. 
+                          
+</dd>
             <dt id="PostQuitMessage" class="callable">
               <span class="name"><a href="../win32/PostQuitMessage.html">PostQuitMessage</a></span><span class="signature">(<wbr><span class="parameter" id="PostQuitMessage-param-nExitCode"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nExitCode</span></span>)
                 <span class="returntype parameter">&#8594; void</span>
@@ -327,6 +337,19 @@ monitor. <a href="../win32/GetMonitorInfo.html">[...]</a>
             <dd>
               Retrieves a handle to the window that contains the specified physical
 point. <a href="../win32/WindowFromPhysicalPoint.html">[...]</a>
+                          
+</dd>
+            <dt id="ChildWindowFromPointEx" class="callable">
+              <span class="name"><a href="../win32/ChildWindowFromPointEx.html">ChildWindowFromPointEx</a></span><span class="signature">(<wbr><span class="parameter" id="ChildWindowFromPointEx-param-hWndParent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndParent</span>, </span><span class="parameter" id="ChildWindowFromPointEx-param-Point"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Point</span>, </span><span class="parameter" id="ChildWindowFromPointEx-param-flags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">flags</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Determines which, if any, of the child windows belonging to the
+specified parent window contains the specified point. The function can
+ignore invisible, disabled, and transparent child windows.
+Grandchildren and deeper descendants are not searched. <a href="../win32/ChildWindowFromPointEx.html">[...]</a>
                           
 </dd>
             <dt id="KillTimer" class="callable">
@@ -562,6 +585,17 @@ that precedes (or follows) the specified control. <a href="../win32/GetNextDlgTa
               Determines whether the clipboard contains data in the specified format. <a href="../win32/IsClipboardFormatAvailable.html">[...]</a>
                           
 </dd>
+            <dt id="OpenIcon" class="callable">
+              <span class="name"><a href="../win32/OpenIcon.html">OpenIcon</a></span><span class="signature">(<wbr><span class="parameter" id="OpenIcon-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Restores a minimized (iconic) window to its previous size and position;
+it then activates the window. <a href="../win32/OpenIcon.html">[...]</a>
+                          
+</dd>
             <dt id="GetWindowText" class="callable">
               <span class="name"><a href="../win32/GetWindowText.html">GetWindowText</a></span><span class="signature">(<wbr><span class="parameter" id="GetWindowText-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="GetWindowText-param-lpString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpString</span>, </span><span class="parameter" id="GetWindowText-param-nMaxCount"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">nMaxCount</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -586,6 +620,17 @@ control in another application. <a href="../win32/GetWindowText.html">[...]</a>
 class, window title, window style, and (optionally) the initial
 position and size of the window. The function also specifies the
 window's parent or owner, if any, and the window's menu. <a href="../win32/CreateWindowEx.html">[...]</a>
+                          
+</dd>
+            <dt id="PostThreadMessage" class="callable">
+              <span class="name"><a href="../win32/PostThreadMessage.html">PostThreadMessage</a></span><span class="signature">(<wbr><span class="parameter" id="PostThreadMessage-param-idThread"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">idThread</span>, </span><span class="parameter" id="PostThreadMessage-param-Msg"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Msg</span>, </span><span class="parameter" id="PostThreadMessage-param-wParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">wParam</span>, </span><span class="parameter" id="PostThreadMessage-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">lParam</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Posts a message to the message queue of the specified thread. It
+returns without waiting for the thread to process the message. <a href="../win32/PostThreadMessage.html">[...]</a>
                           
 </dd>
             <dt id="MonitorFromWindow" class="callable">
@@ -751,6 +796,19 @@ DPI-sensitive information between multiple system-aware processes with
 different system DPI values. <a href="../win32/GetSystemDpiForProcess.html">[...]</a>
                           
 </dd>
+            <dt id="ChildWindowFromPoint" class="callable">
+              <span class="name"><a href="../win32/ChildWindowFromPoint.html">ChildWindowFromPoint</a></span><span class="signature">(<wbr><span class="parameter" id="ChildWindowFromPoint-param-hWndParent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndParent</span>, </span><span class="parameter" id="ChildWindowFromPoint-param-Point"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">Point</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Determines which, if any, of the child windows belonging to a parent
+window contains the specified point. The search is restricted to
+immediate child windows. Grandchildren, and deeper descendant windows
+are not searched. <a href="../win32/ChildWindowFromPoint.html">[...]</a>
+                          
+</dd>
             <dt id="GetCursorPos" class="callable">
               <span class="name"><a href="../win32/GetCursorPos.html">GetCursorPos</a></span><span class="signature">(<wbr><span class="parameter" id="GetCursorPos-param-lpPoint"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/POINT-class.html">POINT</a></span>&gt;</span></span> <span class="parameter-name">lpPoint</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -784,6 +842,31 @@ and the position of the scroll box (thumb). <a href="../win32/GetScrollInfo.html
 that contains a specified point. <a href="../win32/MonitorFromPoint.html">[...]</a>
                           
 </dd>
+            <dt id="SetForegroundWindow" class="callable">
+              <span class="name"><a href="../win32/SetForegroundWindow.html">SetForegroundWindow</a></span><span class="signature">(<wbr><span class="parameter" id="SetForegroundWindow-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Brings the thread that created the specified window into the foreground
+and activates the window. Keyboard input is directed to the window, and
+various visual cues are changed for the user. The system assigns a
+slightly higher priority to the thread that created the foreground
+window than it does to other threads. <a href="../win32/SetForegroundWindow.html">[...]</a>
+                          
+</dd>
+            <dt id="PhysicalToLogicalPoint" class="callable">
+              <span class="name"><a href="../win32/PhysicalToLogicalPoint.html">PhysicalToLogicalPoint</a></span><span class="signature">(<wbr><span class="parameter" id="PhysicalToLogicalPoint-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="PhysicalToLogicalPoint-param-lpPoint"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/POINT-class.html">POINT</a></span>&gt;</span></span> <span class="parameter-name">lpPoint</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Converts the physical coordinates of a point in a window to logical
+coordinates. <a href="../win32/PhysicalToLogicalPoint.html">[...]</a>
+                          
+</dd>
             <dt id="SetWindowText" class="callable">
               <span class="name"><a href="../win32/SetWindowText.html">SetWindowText</a></span><span class="signature">(<wbr><span class="parameter" id="SetWindowText-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="SetWindowText-param-lpString"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpString</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -811,6 +894,18 @@ template units, as specified in dialog box templates, and pixels. For
 dialog boxes that do not use the system font, the conversion from
 dialog template units to pixels depends on the font used by the dialog
 box. <a href="../win32/GetDialogBaseUnits.html">[...]</a>
+                          
+</dd>
+            <dt id="AnimateWindow" class="callable">
+              <span class="name"><a href="../win32/AnimateWindow.html">AnimateWindow</a></span><span class="signature">(<wbr><span class="parameter" id="AnimateWindow-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="AnimateWindow-param-dwTime"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwTime</span>, </span><span class="parameter" id="AnimateWindow-param-dwFlags"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwFlags</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Enables you to produce special effects when showing or hiding windows.
+There are four types of animation: roll, slide, collapse or expand, and
+alpha-blended fade. <a href="../win32/AnimateWindow.html">[...]</a>
                           
 </dd>
             <dt id="DialogBoxIndirectParam" class="callable">
@@ -928,6 +1023,17 @@ a posted message, and retrieves the message (if any exist). <a href="../win32/Pe
 fills a PAINTSTRUCT structure with information about the painting. <a href="../win32/BeginPaint.html">[...]</a>
                           
 </dd>
+            <dt id="ReplyMessage" class="callable">
+              <span class="name"><a href="../win32/ReplyMessage.html">ReplyMessage</a></span><span class="signature">(<wbr><span class="parameter" id="ReplyMessage-param-lResult"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">lResult</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Replies to a message sent from another thread by the SendMessage
+function. <a href="../win32/ReplyMessage.html">[...]</a>
+                          
+</dd>
             <dt id="EnumWindows" class="callable">
               <span class="name"><a href="../win32/EnumWindows.html">EnumWindows</a></span><span class="signature">(<wbr><span class="parameter" id="EnumWindows-param-lpEnumFunc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeFunction-class.html">NativeFunction</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/Function-class.html">Function</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">lpEnumFunc</span>, </span><span class="parameter" id="EnumWindows-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">lParam</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -939,6 +1045,17 @@ fills a PAINTSTRUCT structure with information about the painting. <a href="../w
 each window, in turn, to an application-defined callback function.
 EnumWindows continues until the last top-level window is enumerated or
 the callback function returns FALSE. <a href="../win32/EnumWindows.html">[...]</a>
+                          
+</dd>
+            <dt id="LogicalToPhysicalPoint" class="callable">
+              <span class="name"><a href="../win32/LogicalToPhysicalPoint.html">LogicalToPhysicalPoint</a></span><span class="signature">(<wbr><span class="parameter" id="LogicalToPhysicalPoint-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span>, </span><span class="parameter" id="LogicalToPhysicalPoint-param-lpPoint"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/POINT-class.html">POINT</a></span>&gt;</span></span> <span class="parameter-name">lpPoint</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Converts the logical coordinates of a point in a window to physical
+coordinates. <a href="../win32/LogicalToPhysicalPoint.html">[...]</a>
                           
 </dd>
             <dt id="SystemParametersInfo" class="callable">
@@ -1054,6 +1171,16 @@ function terminates the modal dialog box by calling the EndDialog function. <a h
 coordinates are not within the screen rectangle set by the most recent
 ClipCursor function call, the system automatically adjusts the
 coordinates so that the cursor stays within the rectangle. <a href="../win32/SetCursorPos.html">[...]</a>
+                          
+</dd>
+            <dt id="SoundSentry" class="callable">
+              <span class="name"><a href="../win32/SoundSentry.html">SoundSentry</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Triggers a visual signal to indicate that a sound is playing. <a href="../win32/SoundSentry.html">[...]</a>
                           
 </dd>
             <dt id="GetForegroundWindow" class="callable">
@@ -1202,6 +1329,33 @@ control. However, GetWindowTextLength cannot retrieve the length of the
 text of an edit control in another application. <a href="../win32/GetWindowTextLength.html">[...]</a>
                           
 </dd>
+            <dt id="WaitMessage" class="callable">
+              <span class="name"><a href="../win32/WaitMessage.html">WaitMessage</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Yields control to other threads when a thread has no other messages in
+its message queue. The WaitMessage function suspends the thread and
+does not return until a new message is placed in the thread's message
+queue. <a href="../win32/WaitMessage.html">[...]</a>
+                          
+</dd>
+            <dt id="EnumChildWindows" class="callable">
+              <span class="name"><a href="../win32/EnumChildWindows.html">EnumChildWindows</a></span><span class="signature">(<wbr><span class="parameter" id="EnumChildWindows-param-hWndParent"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWndParent</span>, </span><span class="parameter" id="EnumChildWindows-param-lpEnumFunc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-ffi/NativeFunction-class.html">NativeFunction</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/Function-class.html">Function</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">lpEnumFunc</span>, </span><span class="parameter" id="EnumChildWindows-param-lParam"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">lParam</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category user32 cp-1 linked" title="This is part of the user32 Topic."><a href="../topics/user32-topic.html">user32</a></span>
+              </dt>
+            <dd>
+              Enumerates the child windows that belong to the specified parent window
+by passing the handle to each child window, in turn, to an
+application-defined callback function. EnumChildWindows continues until
+the last child window is enumerated or the callback function returns
+FALSE. <a href="../win32/EnumChildWindows.html">[...]</a>
+                          
+</dd>
             <dt id="SetFocus" class="callable">
               <span class="name"><a href="../win32/SetFocus.html">SetFocus</a></span><span class="signature">(<wbr><span class="parameter" id="SetFocus-param-hWnd"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hWnd</span></span>)
                 <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-62.0.dev/dart-core/int-class.html">int</a></span>
@@ -1268,6 +1422,7 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
       <li><a href="../win32/DrawIcon.html">DrawIcon</a></li>
       <li><a href="../win32/MoveWindow.html">MoveWindow</a></li>
       <li><a href="../win32/UpdateWindow.html">UpdateWindow</a></li>
+      <li><a href="../win32/GET_SC_WPARAM.html">GET_SC_WPARAM</a></li>
       <li><a href="../win32/PostQuitMessage.html">PostQuitMessage</a></li>
       <li><a href="../win32/GetDlgItemInt.html">GetDlgItemInt</a></li>
       <li><a href="../win32/CreateAcceleratorTable.html">CreateAcceleratorTable</a></li>
@@ -1279,6 +1434,7 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
       <li><a href="../win32/ShowCursor.html">ShowCursor</a></li>
       <li><a href="../win32/GetMonitorInfo.html">GetMonitorInfo</a></li>
       <li><a href="../win32/WindowFromPhysicalPoint.html">WindowFromPhysicalPoint</a></li>
+      <li><a href="../win32/ChildWindowFromPointEx.html">ChildWindowFromPointEx</a></li>
       <li><a href="../win32/KillTimer.html">KillTimer</a></li>
       <li><a href="../win32/InvalidateRect.html">InvalidateRect</a></li>
       <li><a href="../win32/SetProcessDPIAware.html">SetProcessDPIAware</a></li>
@@ -1300,8 +1456,10 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
       <li><a href="../win32/SetTimer.html">SetTimer</a></li>
       <li><a href="../win32/LoadImage.html">LoadImage</a></li>
       <li><a href="../win32/IsClipboardFormatAvailable.html">IsClipboardFormatAvailable</a></li>
+      <li><a href="../win32/OpenIcon.html">OpenIcon</a></li>
       <li><a href="../win32/GetWindowText.html">GetWindowText</a></li>
       <li><a href="../win32/CreateWindowEx.html">CreateWindowEx</a></li>
+      <li><a href="../win32/PostThreadMessage.html">PostThreadMessage</a></li>
       <li><a href="../win32/MonitorFromWindow.html">MonitorFromWindow</a></li>
       <li><a href="../win32/ReleaseDC.html">ReleaseDC</a></li>
       <li><a href="../win32/SetWindowPos.html">SetWindowPos</a></li>
@@ -1316,11 +1474,15 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
       <li><a href="../win32/LoadIcon.html">LoadIcon</a></li>
       <li><a href="../win32/ShowWindowAsync.html">ShowWindowAsync</a></li>
       <li><a href="../win32/GetSystemDpiForProcess.html">GetSystemDpiForProcess</a></li>
+      <li><a href="../win32/ChildWindowFromPoint.html">ChildWindowFromPoint</a></li>
       <li><a href="../win32/GetCursorPos.html">GetCursorPos</a></li>
       <li><a href="../win32/GetScrollInfo.html">GetScrollInfo</a></li>
       <li><a href="../win32/MonitorFromPoint.html">MonitorFromPoint</a></li>
+      <li><a href="../win32/SetForegroundWindow.html">SetForegroundWindow</a></li>
+      <li><a href="../win32/PhysicalToLogicalPoint.html">PhysicalToLogicalPoint</a></li>
       <li><a href="../win32/SetWindowText.html">SetWindowText</a></li>
       <li><a href="../win32/GetDialogBaseUnits.html">GetDialogBaseUnits</a></li>
+      <li><a href="../win32/AnimateWindow.html">AnimateWindow</a></li>
       <li><a href="../win32/DialogBoxIndirectParam.html">DialogBoxIndirectParam</a></li>
       <li><a href="../win32/RegisterWindowMessage.html">RegisterWindowMessage</a></li>
       <li><a href="../win32/GetDC.html">GetDC</a></li>
@@ -1331,7 +1493,9 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
       <li><a href="../win32/PeekMessage.html">PeekMessage</a></li>
       <li><a href="../win32/GetDlgItemText.html">GetDlgItemText</a></li>
       <li><a href="../win32/BeginPaint.html">BeginPaint</a></li>
+      <li><a href="../win32/ReplyMessage.html">ReplyMessage</a></li>
       <li><a href="../win32/EnumWindows.html">EnumWindows</a></li>
+      <li><a href="../win32/LogicalToPhysicalPoint.html">LogicalToPhysicalPoint</a></li>
       <li><a href="../win32/SystemParametersInfo.html">SystemParametersInfo</a></li>
       <li><a href="../win32/GetSystemMetricsForDpi.html">GetSystemMetricsForDpi</a></li>
       <li><a href="../win32/SetDlgItemInt.html">SetDlgItemInt</a></li>
@@ -1342,6 +1506,7 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
       <li><a href="../win32/FillRect.html">FillRect</a></li>
       <li><a href="../win32/DialogBoxIndirect.html">DialogBoxIndirect</a></li>
       <li><a href="../win32/SetCursorPos.html">SetCursorPos</a></li>
+      <li><a href="../win32/SoundSentry.html">SoundSentry</a></li>
       <li><a href="../win32/GetForegroundWindow.html">GetForegroundWindow</a></li>
       <li><a href="../win32/ScrollWindow.html">ScrollWindow</a></li>
       <li><a href="../win32/ClipCursor.html">ClipCursor</a></li>
@@ -1354,6 +1519,8 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
       <li><a href="../win32/GetSysColor.html">GetSysColor</a></li>
       <li><a href="../win32/ShowWindow.html">ShowWindow</a></li>
       <li><a href="../win32/GetWindowTextLength.html">GetWindowTextLength</a></li>
+      <li><a href="../win32/WaitMessage.html">WaitMessage</a></li>
+      <li><a href="../win32/EnumChildWindows.html">EnumChildWindows</a></li>
       <li><a href="../win32/SetFocus.html">SetFocus</a></li>
       <li><a href="../win32/SetMenuItemInfo.html">SetMenuItemInfo</a></li>
       <li><a href="../win32/EnableMenuItem.html">EnableMenuItem</a></li>
@@ -1368,7 +1535,7 @@ attached to the calling thread's message queue. <a href="../win32/SetFocus.html"
 <footer>
   <span class="no-break">
     win32
-      2.0.0-nullsafety.5
+      2.0.0-nullsafety.7
   </span>
 
 </footer>
