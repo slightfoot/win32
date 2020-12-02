@@ -1,7 +1,12 @@
 import 'dart:io';
 
-final prototypes = <String, TypeDef>{};
+import 'package:json_annotation/json_annotation.dart';
 
+part 'shared.g.dart';
+
+Map<String, TypeDef> prototypes = <String, TypeDef>{};
+
+@JsonSerializable(nullable: false, explicitToJson: true)
 class TypeDef {
   late String neutralApiName;
   final List<String> prototype;
@@ -14,6 +19,11 @@ class TypeDef {
   late String comment;
 
   TypeDef(this.prototype);
+
+  factory TypeDef.fromJson(Map<String, dynamic> json) =>
+      _$TypeDefFromJson(json);
+
+  Map<String, dynamic> toJson() => _$TypeDefToJson(this);
 }
 
 void loadCsv(String filename) {
