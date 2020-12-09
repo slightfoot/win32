@@ -50,23 +50,23 @@
     <h5><span class="package-name">win32</span> <span class="package-kind">package</span></h5>
     <ol>
           <li class="section-title">Topics</li>
-            <li><a href="../topics/kernel32-topic.html">kernel32</a></li>
-            <li><a href="../topics/user32-topic.html">user32</a></li>
-            <li><a href="../topics/gdi32-topic.html">gdi32</a></li>
-            <li><a href="../topics/shell32-topic.html">shell32</a></li>
-            <li><a href="../topics/ole32-topic.html">ole32</a></li>
-            <li><a href="../topics/oleaut32-topic.html">oleaut32</a></li>
-            <li><a href="../topics/comctl32-topic.html">comctl32</a></li>
-            <li><a href="../topics/comdlg32-topic.html">comdlg32</a></li>
-            <li><a href="../topics/shcore-topic.html">shcore</a></li>
-            <li><a href="../topics/psapi-topic.html">psapi</a></li>
-            <li><a href="../topics/version-topic.html">version</a></li>
             <li><a href="../topics/advapi32-topic.html">advapi32</a></li>
             <li><a href="../topics/bthprops-topic.html">bthprops</a></li>
-            <li><a href="../topics/powrprof-topic.html">powrprof</a></li>
-            <li><a href="../topics/dxva2-topic.html">dxva2</a></li>
-            <li><a href="../topics/winmm-topic.html">winmm</a></li>
             <li><a href="../topics/com-topic.html">com</a></li>
+            <li><a href="../topics/comctl32-topic.html">comctl32</a></li>
+            <li><a href="../topics/comdlg32-topic.html">comdlg32</a></li>
+            <li><a href="../topics/dxva2-topic.html">dxva2</a></li>
+            <li><a href="../topics/gdi32-topic.html">gdi32</a></li>
+            <li><a href="../topics/kernel32-topic.html">kernel32</a></li>
+            <li><a href="../topics/ole32-topic.html">ole32</a></li>
+            <li><a href="../topics/oleaut32-topic.html">oleaut32</a></li>
+            <li><a href="../topics/powrprof-topic.html">powrprof</a></li>
+            <li><a href="../topics/psapi-topic.html">psapi</a></li>
+            <li><a href="../topics/shcore-topic.html">shcore</a></li>
+            <li><a href="../topics/shell32-topic.html">shell32</a></li>
+            <li><a href="../topics/user32-topic.html">user32</a></li>
+            <li><a href="../topics/version-topic.html">version</a></li>
+            <li><a href="../topics/winmm-topic.html">winmm</a></li>
             <li><a href="../topics/winrt-topic.html">winrt</a></li>
           <li class="section-title">Libraries</li>
           <li><a href="../win32/win32-library.html">win32</a></li>
@@ -92,52 +92,9 @@ collects user input.</p>
         <h2>Functions</h2>
 
         <dl class="callables">
-            <dt id="BluetoothUpdateDeviceRecord" class="callable">
-              <span class="name"><a href="../win32/BluetoothUpdateDeviceRecord.html">BluetoothUpdateDeviceRecord</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothUpdateDeviceRecord-param-pbtdi"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_DEVICE_INFO-class.html">BLUETOOTH_DEVICE_INFO</a></span>&gt;</span></span> <span class="parameter-name">pbtdi</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
-              </dt>
-            <dd>
-              The BluetoothUpdateDeviceRecord function updates the local computer
-cache about a Bluetooth device. <a href="../win32/BluetoothUpdateDeviceRecord.html">[...]</a>
-                          
-</dd>
-            <dt id="BluetoothIsConnectable" class="callable">
-              <span class="name"><a href="../win32/BluetoothIsConnectable.html">BluetoothIsConnectable</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothIsConnectable-param-hRadio"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hRadio</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
-              </dt>
-            <dd>
-              The BluetoothIsConnectable function determines whether a Bluetooth
-radio or radios is connectable. <a href="../win32/BluetoothIsConnectable.html">[...]</a>
-                          
-</dd>
-            <dt id="BluetoothFindNextRadio" class="callable">
-              <span class="name"><a href="../win32/BluetoothFindNextRadio.html">BluetoothFindNextRadio</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindNextRadio-param-hFind"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hFind</span>, </span><span class="parameter" id="BluetoothFindNextRadio-param-phRadio"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">phRadio</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
-              </dt>
-            <dd>
-              The BluetoothFindNextRadio function finds the next Bluetooth radio. <a href="../win32/BluetoothFindNextRadio.html">[...]</a>
-                          
-</dd>
-            <dt id="BluetoothFindFirstDevice" class="callable">
-              <span class="name"><a href="../win32/BluetoothFindFirstDevice.html">BluetoothFindFirstDevice</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindFirstDevice-param-pbtsp"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_DEVICE_SEARCH_PARAMS-class.html">BLUETOOTH_DEVICE_SEARCH_PARAMS</a></span>&gt;</span></span> <span class="parameter-name">pbtsp</span>, </span><span class="parameter" id="BluetoothFindFirstDevice-param-pbtdi"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_DEVICE_INFO-class.html">BLUETOOTH_DEVICE_INFO</a></span>&gt;</span></span> <span class="parameter-name">pbtdi</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span>
-              </span>
-                              <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
-              </dt>
-            <dd>
-              The BluetoothFindFirstDevice function begins the enumeration Bluetooth
-devices. <a href="../win32/BluetoothFindFirstDevice.html">[...]</a>
-                          
-</dd>
             <dt id="BluetoothAuthenticateDeviceEx" class="callable">
-              <span class="name"><a href="../win32/BluetoothAuthenticateDeviceEx.html">BluetoothAuthenticateDeviceEx</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothAuthenticateDeviceEx-param-hwndParentIn"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwndParentIn</span>, </span><span class="parameter" id="BluetoothAuthenticateDeviceEx-param-hRadioIn"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hRadioIn</span>, </span><span class="parameter" id="BluetoothAuthenticateDeviceEx-param-pbtdiInout"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_DEVICE_INFO-class.html">BLUETOOTH_DEVICE_INFO</a></span>&gt;</span></span> <span class="parameter-name">pbtdiInout</span>, </span><span class="parameter" id="BluetoothAuthenticateDeviceEx-param-pbtOobData"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">pbtOobData</span>, </span><span class="parameter" id="BluetoothAuthenticateDeviceEx-param-authenticationRequirement"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">authenticationRequirement</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/BluetoothAuthenticateDeviceEx.html">BluetoothAuthenticateDeviceEx</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothAuthenticateDeviceEx-param-hwndParentIn"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">hwndParentIn</span>, </span><span class="parameter" id="BluetoothAuthenticateDeviceEx-param-hRadioIn"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">hRadioIn</span>, </span><span class="parameter" id="BluetoothAuthenticateDeviceEx-param-pbtdiInout"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_DEVICE_INFO-class.html">BLUETOOTH_DEVICE_INFO</a></span>&gt;</span></span> <span class="parameter-name">pbtdiInout</span>, </span><span class="parameter" id="BluetoothAuthenticateDeviceEx-param-pbtOobData"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">pbtOobData</span>, </span><span class="parameter" id="BluetoothAuthenticateDeviceEx-param-authenticationRequirement"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">authenticationRequirement</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
               </dt>
@@ -148,31 +105,31 @@ allows for out-of-band data to be passed into the function call for the
 device being authenticated. <a href="../win32/BluetoothAuthenticateDeviceEx.html">[...]</a>
                           
 </dd>
-            <dt id="BluetoothIsDiscoverable" class="callable">
-              <span class="name"><a href="../win32/BluetoothIsDiscoverable.html">BluetoothIsDiscoverable</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothIsDiscoverable-param-hRadio"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hRadio</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span>
+            <dt id="BluetoothFindDeviceClose" class="callable">
+              <span class="name"><a href="../win32/BluetoothFindDeviceClose.html">BluetoothFindDeviceClose</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindDeviceClose-param-hFind"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">hFind</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
               </dt>
             <dd>
-              The BluetoothIsDiscoverable function determines whether a Bluetooth
-radio or radios is discoverable. <a href="../win32/BluetoothIsDiscoverable.html">[...]</a>
+              The BluetoothFindDeviceClose function closes an enumeration handle
+associated with a device query. <a href="../win32/BluetoothFindDeviceClose.html">[...]</a>
                           
 </dd>
-            <dt id="BluetoothFindRadioClose" class="callable">
-              <span class="name"><a href="../win32/BluetoothFindRadioClose.html">BluetoothFindRadioClose</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindRadioClose-param-hFind"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hFind</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span>
+            <dt id="BluetoothFindFirstDevice" class="callable">
+              <span class="name"><a href="../win32/BluetoothFindFirstDevice.html">BluetoothFindFirstDevice</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindFirstDevice-param-pbtsp"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_DEVICE_SEARCH_PARAMS-class.html">BLUETOOTH_DEVICE_SEARCH_PARAMS</a></span>&gt;</span></span> <span class="parameter-name">pbtsp</span>, </span><span class="parameter" id="BluetoothFindFirstDevice-param-pbtdi"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_DEVICE_INFO-class.html">BLUETOOTH_DEVICE_INFO</a></span>&gt;</span></span> <span class="parameter-name">pbtdi</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
               </dt>
             <dd>
-              The BluetoothFindRadioClose function closes the enumeration handle
-associated with finding Bluetooth radios. <a href="../win32/BluetoothFindRadioClose.html">[...]</a>
+              The BluetoothFindFirstDevice function begins the enumeration Bluetooth
+devices. <a href="../win32/BluetoothFindFirstDevice.html">[...]</a>
                           
 </dd>
             <dt id="BluetoothFindFirstRadio" class="callable">
-              <span class="name"><a href="../win32/BluetoothFindFirstRadio.html">BluetoothFindFirstRadio</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindFirstRadio-param-pbtfrp"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_FIND_RADIO_PARAMS-class.html">BLUETOOTH_FIND_RADIO_PARAMS</a></span>&gt;</span></span> <span class="parameter-name">pbtfrp</span>, </span><span class="parameter" id="BluetoothFindFirstRadio-param-phRadio"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">phRadio</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/BluetoothFindFirstRadio.html">BluetoothFindFirstRadio</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindFirstRadio-param-pbtfrp"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_FIND_RADIO_PARAMS-class.html">BLUETOOTH_FIND_RADIO_PARAMS</a></span>&gt;</span></span> <span class="parameter-name">pbtfrp</span>, </span><span class="parameter" id="BluetoothFindFirstRadio-param-phRadio"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">phRadio</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
               </dt>
@@ -182,8 +139,8 @@ Bluetooth radios. <a href="../win32/BluetoothFindFirstRadio.html">[...]</a>
                           
 </dd>
             <dt id="BluetoothFindNextDevice" class="callable">
-              <span class="name"><a href="../win32/BluetoothFindNextDevice.html">BluetoothFindNextDevice</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindNextDevice-param-hFind"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hFind</span>, </span><span class="parameter" id="BluetoothFindNextDevice-param-pbtdi"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_DEVICE_INFO-class.html">BLUETOOTH_DEVICE_INFO</a></span>&gt;</span></span> <span class="parameter-name">pbtdi</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/BluetoothFindNextDevice.html">BluetoothFindNextDevice</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindNextDevice-param-hFind"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">hFind</span>, </span><span class="parameter" id="BluetoothFindNextDevice-param-pbtdi"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_DEVICE_INFO-class.html">BLUETOOTH_DEVICE_INFO</a></span>&gt;</span></span> <span class="parameter-name">pbtdi</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
               </dt>
@@ -191,15 +148,58 @@ Bluetooth radios. <a href="../win32/BluetoothFindFirstRadio.html">[...]</a>
               The BluetoothFindNextDevice function finds the next Bluetooth device. <a href="../win32/BluetoothFindNextDevice.html">[...]</a>
                           
 </dd>
-            <dt id="BluetoothFindDeviceClose" class="callable">
-              <span class="name"><a href="../win32/BluetoothFindDeviceClose.html">BluetoothFindDeviceClose</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindDeviceClose-param-hFind"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">hFind</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-125.0.dev/dart-core/int-class.html">int</a></span>
+            <dt id="BluetoothFindNextRadio" class="callable">
+              <span class="name"><a href="../win32/BluetoothFindNextRadio.html">BluetoothFindNextRadio</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindNextRadio-param-hFind"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">hFind</span>, </span><span class="parameter" id="BluetoothFindNextRadio-param-phRadio"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">phRadio</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
               </dt>
             <dd>
-              The BluetoothFindDeviceClose function closes an enumeration handle
-associated with a device query. <a href="../win32/BluetoothFindDeviceClose.html">[...]</a>
+              The BluetoothFindNextRadio function finds the next Bluetooth radio. <a href="../win32/BluetoothFindNextRadio.html">[...]</a>
+                          
+</dd>
+            <dt id="BluetoothFindRadioClose" class="callable">
+              <span class="name"><a href="../win32/BluetoothFindRadioClose.html">BluetoothFindRadioClose</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothFindRadioClose-param-hFind"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">hFind</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
+              </dt>
+            <dd>
+              The BluetoothFindRadioClose function closes the enumeration handle
+associated with finding Bluetooth radios. <a href="../win32/BluetoothFindRadioClose.html">[...]</a>
+                          
+</dd>
+            <dt id="BluetoothIsConnectable" class="callable">
+              <span class="name"><a href="../win32/BluetoothIsConnectable.html">BluetoothIsConnectable</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothIsConnectable-param-hRadio"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">hRadio</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
+              </dt>
+            <dd>
+              The BluetoothIsConnectable function determines whether a Bluetooth
+radio or radios is connectable. <a href="../win32/BluetoothIsConnectable.html">[...]</a>
+                          
+</dd>
+            <dt id="BluetoothIsDiscoverable" class="callable">
+              <span class="name"><a href="../win32/BluetoothIsDiscoverable.html">BluetoothIsDiscoverable</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothIsDiscoverable-param-hRadio"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">hRadio</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
+              </dt>
+            <dd>
+              The BluetoothIsDiscoverable function determines whether a Bluetooth
+radio or radios is discoverable. <a href="../win32/BluetoothIsDiscoverable.html">[...]</a>
+                          
+</dd>
+            <dt id="BluetoothUpdateDeviceRecord" class="callable">
+              <span class="name"><a href="../win32/BluetoothUpdateDeviceRecord.html">BluetoothUpdateDeviceRecord</a></span><span class="signature">(<wbr><span class="parameter" id="BluetoothUpdateDeviceRecord-param-pbtdi"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/BLUETOOTH_DEVICE_INFO-class.html">BLUETOOTH_DEVICE_INFO</a></span>&gt;</span></span> <span class="parameter-name">pbtdi</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category bthprops cp-12 linked" title="This is part of the bthprops Topic."><a href="../topics/bthprops-topic.html">bthprops</a></span>
+              </dt>
+            <dd>
+              The BluetoothUpdateDeviceRecord function updates the local computer
+cache about a Bluetooth device. <a href="../win32/BluetoothUpdateDeviceRecord.html">[...]</a>
                           
 </dd>
         </dl>
@@ -218,16 +218,16 @@ associated with a device query. <a href="../win32/BluetoothFindDeviceClose.html"
     
     
       <li class="section-title"><a href="../topics/bthprops-topic.html#functions">Functions</a></li>
-      <li><a href="../win32/BluetoothUpdateDeviceRecord.html">BluetoothUpdateDeviceRecord</a></li>
-      <li><a href="../win32/BluetoothIsConnectable.html">BluetoothIsConnectable</a></li>
-      <li><a href="../win32/BluetoothFindNextRadio.html">BluetoothFindNextRadio</a></li>
-      <li><a href="../win32/BluetoothFindFirstDevice.html">BluetoothFindFirstDevice</a></li>
       <li><a href="../win32/BluetoothAuthenticateDeviceEx.html">BluetoothAuthenticateDeviceEx</a></li>
-      <li><a href="../win32/BluetoothIsDiscoverable.html">BluetoothIsDiscoverable</a></li>
-      <li><a href="../win32/BluetoothFindRadioClose.html">BluetoothFindRadioClose</a></li>
+      <li><a href="../win32/BluetoothFindDeviceClose.html">BluetoothFindDeviceClose</a></li>
+      <li><a href="../win32/BluetoothFindFirstDevice.html">BluetoothFindFirstDevice</a></li>
       <li><a href="../win32/BluetoothFindFirstRadio.html">BluetoothFindFirstRadio</a></li>
       <li><a href="../win32/BluetoothFindNextDevice.html">BluetoothFindNextDevice</a></li>
-      <li><a href="../win32/BluetoothFindDeviceClose.html">BluetoothFindDeviceClose</a></li>
+      <li><a href="../win32/BluetoothFindNextRadio.html">BluetoothFindNextRadio</a></li>
+      <li><a href="../win32/BluetoothFindRadioClose.html">BluetoothFindRadioClose</a></li>
+      <li><a href="../win32/BluetoothIsConnectable.html">BluetoothIsConnectable</a></li>
+      <li><a href="../win32/BluetoothIsDiscoverable.html">BluetoothIsDiscoverable</a></li>
+      <li><a href="../win32/BluetoothUpdateDeviceRecord.html">BluetoothUpdateDeviceRecord</a></li>
     
     
     
