@@ -8,7 +8,8 @@
   <title>ole32 Topic - Dart API</title>
 
   
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../static-assets/github.css">
   <link rel="stylesheet" href="../static-assets/styles.css">
@@ -35,7 +36,7 @@
 
 <main>
 
-  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
     <header id="header-search-sidebar" class="hidden-l">
       <form class="search-sidebar" role="search">
         <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
@@ -58,6 +59,7 @@
             <li><a href="../topics/dxva2-topic.html">dxva2</a></li>
             <li><a href="../topics/gdi32-topic.html">gdi32</a></li>
             <li><a href="../topics/kernel32-topic.html">kernel32</a></li>
+            <li><a href="../topics/kernelbase-topic.html">kernelbase</a></li>
             <li><a href="../topics/ole32-topic.html">ole32</a></li>
             <li><a href="../topics/oleaut32-topic.html">oleaut32</a></li>
             <li><a href="../topics/powrprof-topic.html">powrprof</a></li>
@@ -73,7 +75,7 @@
     </ol>
   </div>
 
-  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+  <div id="dartdoc-main-content" class="main-content">
       <h1><span class="kind-category">ole32</span> Topic</h1>
       <section class="desc markdown">
         <h2 id="olecom-apis">OLE/COM APIs</h2>
@@ -89,9 +91,29 @@
         <h2>Functions</h2>
 
         <dl class="callables">
+            <dt id="CLSIDFromProgID" class="callable">
+              <span class="name"><a href="../win32/CLSIDFromProgID.html">CLSIDFromProgID</a></span><span class="signature">(<wbr><span class="parameter" id="CLSIDFromProgID-param-lpszProgID"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpszProgID</span>, </span><span class="parameter" id="CLSIDFromProgID-param-lpclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">lpclsid</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
+              </dt>
+            <dd>
+              Looks up a CLSID in the registry, given a ProgID. <a href="../win32/CLSIDFromProgID.html">[...]</a>
+                          
+</dd>
+            <dt id="CLSIDFromProgIDEx" class="callable">
+              <span class="name"><a href="../win32/CLSIDFromProgIDEx.html">CLSIDFromProgIDEx</a></span><span class="signature">(<wbr><span class="parameter" id="CLSIDFromProgIDEx-param-lpszProgID"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpszProgID</span>, </span><span class="parameter" id="CLSIDFromProgIDEx-param-lpclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">lpclsid</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
+              </dt>
+            <dd>
+              Triggers automatic installation if the COMClassStore policy is enabled. <a href="../win32/CLSIDFromProgIDEx.html">[...]</a>
+                          
+</dd>
             <dt id="CLSIDFromString" class="callable">
-              <span class="name"><a href="../win32/CLSIDFromString.html">CLSIDFromString</a></span><span class="signature">(<wbr><span class="parameter" id="CLSIDFromString-param-lpsz"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpsz</span>, </span><span class="parameter" id="CLSIDFromString-param-pclsid"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">pclsid</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/CLSIDFromString.html">CLSIDFromString</a></span><span class="signature">(<wbr><span class="parameter" id="CLSIDFromString-param-lpsz"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpsz</span>, </span><span class="parameter" id="CLSIDFromString-param-pclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">pclsid</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
               </dt>
@@ -100,9 +122,19 @@
 the original CLSID. <a href="../win32/CLSIDFromString.html">[...]</a>
                           
 </dd>
+            <dt id="CoAddRefServerProcess" class="callable">
+              <span class="name"><a href="../win32/CoAddRefServerProcess.html">CoAddRefServerProcess</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
+              </dt>
+            <dd>
+              Increments a global per-process reference count. <a href="../win32/CoAddRefServerProcess.html">[...]</a>
+                          
+</dd>
             <dt id="CoCreateGuid" class="callable">
-              <span class="name"><a href="../win32/CoCreateGuid.html">CoCreateGuid</a></span><span class="signature">(<wbr><span class="parameter" id="CoCreateGuid-param-pguid"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">pguid</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/CoCreateGuid.html">CoCreateGuid</a></span><span class="signature">(<wbr><span class="parameter" id="CoCreateGuid-param-pguid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">pguid</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
               </dt>
@@ -112,8 +144,8 @@ identifiers. <a href="../win32/CoCreateGuid.html">[...]</a>
                           
 </dd>
             <dt id="CoCreateInstance" class="callable">
-              <span class="name"><a href="../win32/CoCreateInstance.html">CoCreateInstance</a></span><span class="signature">(<wbr><span class="parameter" id="CoCreateInstance-param-rclsid"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rclsid</span>, </span><span class="parameter" id="CoCreateInstance-param-pUnkOuter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">pUnkOuter</span>, </span><span class="parameter" id="CoCreateInstance-param-dwClsContext"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwClsContext</span>, </span><span class="parameter" id="CoCreateInstance-param-riid"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="CoCreateInstance-param-ppv"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ppv</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/CoCreateInstance.html">CoCreateInstance</a></span><span class="signature">(<wbr><span class="parameter" id="CoCreateInstance-param-rclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rclsid</span>, </span><span class="parameter" id="CoCreateInstance-param-pUnkOuter"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/IntPtr-class.html">IntPtr</a></span>&gt;</span></span> <span class="parameter-name">pUnkOuter</span>, </span><span class="parameter" id="CoCreateInstance-param-dwClsContext"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwClsContext</span>, </span><span class="parameter" id="CoCreateInstance-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="CoCreateInstance-param-ppv"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">ppv</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
               </dt>
@@ -126,8 +158,8 @@ objects based on a single CLSID, call the CoGetClassObject function. <a href="..
                           
 </dd>
             <dt id="CoGetClassObject" class="callable">
-              <span class="name"><a href="../win32/CoGetClassObject.html">CoGetClassObject</a></span><span class="signature">(<wbr><span class="parameter" id="CoGetClassObject-param-rclsid"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rclsid</span>, </span><span class="parameter" id="CoGetClassObject-param-dwClsContext"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwClsContext</span>, </span><span class="parameter" id="CoGetClassObject-param-pvReserved"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvReserved</span>, </span><span class="parameter" id="CoGetClassObject-param-riid"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="CoGetClassObject-param-ppv"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/COMObject-class.html">COMObject</a></span>&gt;</span></span> <span class="parameter-name">ppv</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/CoGetClassObject.html">CoGetClassObject</a></span><span class="signature">(<wbr><span class="parameter" id="CoGetClassObject-param-rclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rclsid</span>, </span><span class="parameter" id="CoGetClassObject-param-dwClsContext"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwClsContext</span>, </span><span class="parameter" id="CoGetClassObject-param-pvReserved"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvReserved</span>, </span><span class="parameter" id="CoGetClassObject-param-riid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">riid</span>, </span><span class="parameter" id="CoGetClassObject-param-ppv"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">ppv</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
               </dt>
@@ -137,9 +169,20 @@ specified CLSID. CoGetClassObject locates, and if necessary,
 dynamically loads the executable code required to do this. <a href="../win32/CoGetClassObject.html">[...]</a>
                           
 </dd>
+            <dt id="CoGetCurrentProcess" class="callable">
+              <span class="name"><a href="../win32/CoGetCurrentProcess.html">CoGetCurrentProcess</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
+              </dt>
+            <dd>
+              Returns a value that is unique to the current thread.
+CoGetCurrentProcess can be used to avoid thread ID reuse problems. <a href="../win32/CoGetCurrentProcess.html">[...]</a>
+                          
+</dd>
             <dt id="CoInitializeEx" class="callable">
-              <span class="name"><a href="../win32/CoInitializeEx.html">CoInitializeEx</a></span><span class="signature">(<wbr><span class="parameter" id="CoInitializeEx-param-pvReserved"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/Void-class.html">Void</a></span>&gt;</span></span> <span class="parameter-name">pvReserved</span>, </span><span class="parameter" id="CoInitializeEx-param-dwCoInit"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwCoInit</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/CoInitializeEx.html">CoInitializeEx</a></span><span class="signature">(<wbr><span class="parameter" id="CoInitializeEx-param-pvReserved"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvReserved</span>, </span><span class="parameter" id="CoInitializeEx-param-dwCoInit"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwCoInit</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
               </dt>
@@ -150,8 +193,8 @@ if one is required. <a href="../win32/CoInitializeEx.html">[...]</a>
                           
 </dd>
             <dt id="CoInitializeSecurity" class="callable">
-              <span class="name"><a href="../win32/CoInitializeSecurity.html">CoInitializeSecurity</a></span><span class="signature">(<wbr><span class="parameter" id="CoInitializeSecurity-param-pSecDesc"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SECURITY_DESCRIPTOR-class.html">SECURITY_DESCRIPTOR</a></span>&gt;</span></span> <span class="parameter-name">pSecDesc</span>, </span><span class="parameter" id="CoInitializeSecurity-param-cAuthSvc"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">cAuthSvc</span>, </span><span class="parameter" id="CoInitializeSecurity-param-asAuthSvc"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SOLE_AUTHENTICATION_SERVICE-class.html">SOLE_AUTHENTICATION_SERVICE</a></span>&gt;</span></span> <span class="parameter-name">asAuthSvc</span>, </span><span class="parameter" id="CoInitializeSecurity-param-pReserved1"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/Void-class.html">Void</a></span>&gt;</span></span> <span class="parameter-name">pReserved1</span>, </span><span class="parameter" id="CoInitializeSecurity-param-dwAuthnLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwAuthnLevel</span>, </span><span class="parameter" id="CoInitializeSecurity-param-dwImpLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwImpLevel</span>, </span><span class="parameter" id="CoInitializeSecurity-param-pAuthList"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/Void-class.html">Void</a></span>&gt;</span></span> <span class="parameter-name">pAuthList</span>, </span><span class="parameter" id="CoInitializeSecurity-param-dwCapabilities"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwCapabilities</span>, </span><span class="parameter" id="CoInitializeSecurity-param-pReserved3"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/Void-class.html">Void</a></span>&gt;</span></span> <span class="parameter-name">pReserved3</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/CoInitializeSecurity.html">CoInitializeSecurity</a></span><span class="signature">(<wbr><span class="parameter" id="CoInitializeSecurity-param-pSecDesc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SECURITY_DESCRIPTOR-class.html">SECURITY_DESCRIPTOR</a></span>&gt;</span></span> <span class="parameter-name">pSecDesc</span>, </span><span class="parameter" id="CoInitializeSecurity-param-cAuthSvc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cAuthSvc</span>, </span><span class="parameter" id="CoInitializeSecurity-param-asAuthSvc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/SOLE_AUTHENTICATION_SERVICE-class.html">SOLE_AUTHENTICATION_SERVICE</a></span>&gt;</span></span> <span class="parameter-name">asAuthSvc</span>, </span><span class="parameter" id="CoInitializeSecurity-param-pReserved1"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pReserved1</span>, </span><span class="parameter" id="CoInitializeSecurity-param-dwAuthnLevel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwAuthnLevel</span>, </span><span class="parameter" id="CoInitializeSecurity-param-dwImpLevel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwImpLevel</span>, </span><span class="parameter" id="CoInitializeSecurity-param-pAuthList"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pAuthList</span>, </span><span class="parameter" id="CoInitializeSecurity-param-dwCapabilities"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwCapabilities</span>, </span><span class="parameter" id="CoInitializeSecurity-param-pReserved3"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pReserved3</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
               </dt>
@@ -161,8 +204,8 @@ process. <a href="../win32/CoInitializeSecurity.html">[...]</a>
                           
 </dd>
             <dt id="CoSetProxyBlanket" class="callable">
-              <span class="name"><a href="../win32/CoSetProxyBlanket.html">CoSetProxyBlanket</a></span><span class="signature">(<wbr><span class="parameter" id="CoSetProxyBlanket-param-pProxy"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pProxy</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-dwAuthnSvc"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwAuthnSvc</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-dwAuthzSvc"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwAuthzSvc</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-pServerPrincName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pServerPrincName</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-dwAuthnLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwAuthnLevel</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-dwImpLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwImpLevel</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-pAuthInfo"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/Void-class.html">Void</a></span>&gt;</span></span> <span class="parameter-name">pAuthInfo</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-dwCapabilities"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwCapabilities</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/CoSetProxyBlanket.html">CoSetProxyBlanket</a></span><span class="signature">(<wbr><span class="parameter" id="CoSetProxyBlanket-param-pProxy"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pProxy</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-dwAuthnSvc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwAuthnSvc</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-dwAuthzSvc"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwAuthzSvc</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-pServerPrincName"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">pServerPrincName</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-dwAuthnLevel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwAuthnLevel</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-dwImpLevel"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwImpLevel</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-pAuthInfo"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pAuthInfo</span>, </span><span class="parameter" id="CoSetProxyBlanket-param-dwCapabilities"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">dwCapabilities</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
               </dt>
@@ -173,7 +216,7 @@ IClientSecurity::SetBlanket. <a href="../win32/CoSetProxyBlanket.html">[...]</a>
                           
 </dd>
             <dt id="CoTaskMemFree" class="callable">
-              <span class="name"><a href="../win32/CoTaskMemFree.html">CoTaskMemFree</a></span><span class="signature">(<wbr><span class="parameter" id="CoTaskMemFree-param-pv"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pv</span></span>)
+              <span class="name"><a href="../win32/CoTaskMemFree.html">CoTaskMemFree</a></span><span class="signature">(<wbr><span class="parameter" id="CoTaskMemFree-param-pv"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pv</span></span>)
                 <span class="returntype parameter">&#8594; void</span>
               </span>
                               <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
@@ -196,14 +239,81 @@ forces all RPC connections on the thread to close. <a href="../win32/CoUninitial
                           
 </dd>
             <dt id="IIDFromString" class="callable">
-              <span class="name"><a href="../win32/IIDFromString.html">IIDFromString</a></span><span class="signature">(<wbr><span class="parameter" id="IIDFromString-param-lpsz"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpsz</span>, </span><span class="parameter" id="IIDFromString-param-lpiid"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">lpiid</span></span>)
-                <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+              <span class="name"><a href="../win32/IIDFromString.html">IIDFromString</a></span><span class="signature">(<wbr><span class="parameter" id="IIDFromString-param-lpsz"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpsz</span>, </span><span class="parameter" id="IIDFromString-param-lpiid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">lpiid</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
               </span>
                               <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
               </dt>
             <dd>
               Converts a string generated by the StringFromIID function back into the
 original interface identifier (IID). <a href="../win32/IIDFromString.html">[...]</a>
+                          
+</dd>
+            <dt id="OleInitialize" class="callable">
+              <span class="name"><a href="../win32/OleInitialize.html">OleInitialize</a></span><span class="signature">(<wbr><span class="parameter" id="OleInitialize-param-pvReserved"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/NativeType-class.html">NativeType</a></span>&gt;</span></span> <span class="parameter-name">pvReserved</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
+              </dt>
+            <dd>
+              Initializes the COM library on the current apartment, and identifies
+the concurrency model as single-thread apartment (STA). Applications
+must initialize the COM library before they can call COM library
+functions other than CoGetMalloc and memory allocation functions. <a href="../win32/OleInitialize.html">[...]</a>
+                          
+</dd>
+            <dt id="OleUninitialize" class="callable">
+              <span class="name"><a href="../win32/OleUninitialize.html">OleUninitialize</a></span><span class="signature">(<wbr>)
+                <span class="returntype parameter">&#8594; void</span>
+              </span>
+                              <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
+              </dt>
+            <dd>
+              Closes the COM library on the apartment, releases any class factories,
+other COM objects, or servers held by the apartment, disables RPC on
+the apartment, and frees any resources the apartment maintains. <a href="../win32/OleUninitialize.html">[...]</a>
+                          
+</dd>
+            <dt id="ProgIDFromCLSID" class="callable">
+              <span class="name"><a href="../win32/ProgIDFromCLSID.html">ProgIDFromCLSID</a></span><span class="signature">(<wbr><span class="parameter" id="ProgIDFromCLSID-param-clsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">clsid</span>, </span><span class="parameter" id="ProgIDFromCLSID-param-lplpszProgID"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">lplpszProgID</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
+              </dt>
+            <dd>
+              Retrieves the ProgID for a given CLSID. <a href="../win32/ProgIDFromCLSID.html">[...]</a>
+                          
+</dd>
+            <dt id="StringFromCLSID" class="callable">
+              <span class="name"><a href="../win32/StringFromCLSID.html">StringFromCLSID</a></span><span class="signature">(<wbr><span class="parameter" id="StringFromCLSID-param-rclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rclsid</span>, </span><span class="parameter" id="StringFromCLSID-param-lplpsz"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">lplpsz</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
+              </dt>
+            <dd>
+              Converts a CLSID into a string of printable characters. Different
+CLSIDs always convert to different strings. <a href="../win32/StringFromCLSID.html">[...]</a>
+                          
+</dd>
+            <dt id="StringFromGUID2" class="callable">
+              <span class="name"><a href="../win32/StringFromGUID2.html">StringFromGUID2</a></span><span class="signature">(<wbr><span class="parameter" id="StringFromGUID2-param-rguid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rguid</span>, </span><span class="parameter" id="StringFromGUID2-param-lpsz"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span> <span class="parameter-name">lpsz</span>, </span><span class="parameter" id="StringFromGUID2-param-cchMax"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span> <span class="parameter-name">cchMax</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
+              </dt>
+            <dd>
+              Converts a globally unique identifier (GUID) into a string of printable
+characters. <a href="../win32/StringFromGUID2.html">[...]</a>
+                          
+</dd>
+            <dt id="StringFromIID" class="callable">
+              <span class="name"><a href="../win32/StringFromIID.html">StringFromIID</a></span><span class="signature">(<wbr><span class="parameter" id="StringFromIID-param-rclsid"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../win32/GUID-class.html">GUID</a></span>&gt;</span></span> <span class="parameter-name">rclsid</span>, </span><span class="parameter" id="StringFromIID-param-lplpsz"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-ffi/Pointer-class.html">Pointer</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/ffi/0.2.0-nullsafety.1/ffi/Utf16-class.html">Utf16</a></span>&gt;</span></span>&gt;</span></span> <span class="parameter-name">lplpsz</span></span>)
+                <span class="returntype parameter">&#8594; <a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/int-class.html">int</a></span>
+              </span>
+                              <span class="category ole32 cp-4 linked" title="This is part of the ole32 Topic."><a href="../topics/ole32-topic.html">ole32</a></span>
+              </dt>
+            <dd>
+              Converts an interface identifier into a string of printable characters. <a href="../win32/StringFromIID.html">[...]</a>
                           
 </dd>
         </dl>
@@ -213,7 +323,7 @@ original interface identifier (IID). <a href="../win32/IIDFromString.html">[...]
 
 
   </div> <!-- /.main-content -->
-  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
     <h5>ole32 Topic</h5>
     <ol>
     
@@ -222,16 +332,26 @@ original interface identifier (IID). <a href="../win32/IIDFromString.html">[...]
     
     
       <li class="section-title"><a href="../topics/ole32-topic.html#functions">Functions</a></li>
+      <li><a href="../win32/CLSIDFromProgID.html">CLSIDFromProgID</a></li>
+      <li><a href="../win32/CLSIDFromProgIDEx.html">CLSIDFromProgIDEx</a></li>
       <li><a href="../win32/CLSIDFromString.html">CLSIDFromString</a></li>
+      <li><a href="../win32/CoAddRefServerProcess.html">CoAddRefServerProcess</a></li>
       <li><a href="../win32/CoCreateGuid.html">CoCreateGuid</a></li>
       <li><a href="../win32/CoCreateInstance.html">CoCreateInstance</a></li>
       <li><a href="../win32/CoGetClassObject.html">CoGetClassObject</a></li>
+      <li><a href="../win32/CoGetCurrentProcess.html">CoGetCurrentProcess</a></li>
       <li><a href="../win32/CoInitializeEx.html">CoInitializeEx</a></li>
       <li><a href="../win32/CoInitializeSecurity.html">CoInitializeSecurity</a></li>
       <li><a href="../win32/CoSetProxyBlanket.html">CoSetProxyBlanket</a></li>
       <li><a href="../win32/CoTaskMemFree.html">CoTaskMemFree</a></li>
       <li><a href="../win32/CoUninitialize.html">CoUninitialize</a></li>
       <li><a href="../win32/IIDFromString.html">IIDFromString</a></li>
+      <li><a href="../win32/OleInitialize.html">OleInitialize</a></li>
+      <li><a href="../win32/OleUninitialize.html">OleUninitialize</a></li>
+      <li><a href="../win32/ProgIDFromCLSID.html">ProgIDFromCLSID</a></li>
+      <li><a href="../win32/StringFromCLSID.html">StringFromCLSID</a></li>
+      <li><a href="../win32/StringFromGUID2.html">StringFromGUID2</a></li>
+      <li><a href="../win32/StringFromIID.html">StringFromIID</a></li>
     
     
     
@@ -242,7 +362,7 @@ original interface identifier (IID). <a href="../win32/IIDFromString.html">[...]
 <footer>
   <span class="no-break">
     win32
-      2.0.0-nullsafety.7
+      2.0.0-nullsafety.8
   </span>
 
 </footer>
@@ -250,7 +370,6 @@ original interface identifier (IID). <a href="../win32/IIDFromString.html">[...]
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../static-assets/typeahead.bundle.min.js"></script>
 <script src="../static-assets/highlight.pack.js"></script>
-<script src="../static-assets/URI.js"></script>
 <script src="../static-assets/script.js"></script>
 
 

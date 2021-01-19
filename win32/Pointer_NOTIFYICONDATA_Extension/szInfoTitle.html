@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the szInfoTitle property from the Pointer_NOTIFYICONDATA_Extension extension, for the Dart programming language.">
+  <title>szInfoTitle property - Pointer_NOTIFYICONDATA_Extension extension - win32 library - Dart API</title>
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../static-assets/github.css">
+  <link rel="stylesheet" href="../../static-assets/styles.css">
+  <link rel="icon" href="../../static-assets/favicon.png">
+
+</head>
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">win32</a></li>
+    <li><a href="../../win32/win32-library.html">win32</a></li>
+    <li><a href="../../win32/Pointer_NOTIFYICONDATA_Extension.html">Pointer_NOTIFYICONDATA_Extension</a></li>
+    <li class="self-crumb">szInfoTitle property</li>
+  </ol>
+  <div class="self-name">szInfoTitle</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="../../index.html">win32</a></li>
+      <li><a href="../../win32/win32-library.html">win32</a></li>
+      <li><a href="../../win32/Pointer_NOTIFYICONDATA_Extension.html">Pointer_NOTIFYICONDATA_Extension</a></li>
+      <li class="self-crumb">szInfoTitle property</li>
+    </ol>
+    
+    <h5>Pointer_NOTIFYICONDATA_Extension extension</h5>
+    <ol>
+
+
+
+
+    <li class="section-title"> <a href="../../win32/Pointer_NOTIFYICONDATA_Extension.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../../win32/Pointer_NOTIFYICONDATA_Extension/szInfo.html">szInfo</a></li>
+    <li><a href="../../win32/Pointer_NOTIFYICONDATA_Extension/szInfoTitle.html">szInfoTitle</a></li>
+    <li><a href="../../win32/Pointer_NOTIFYICONDATA_Extension/szTip.html">szTip</a></li>
+
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div><h1><span class="kind-property">szInfoTitle</span> property     <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+
+        <section id="getter">
+        
+        <section class="multi-line-signature">
+          <span class="returntype"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/String-class.html">String</a></span>
+                  <span class="name ">szInfoTitle</span>
+          
+</section>
+        
+                        <section class="summary source-code" id="source">
+          <h2><span>Implementation</span></h2>
+          <pre class="language-dart"><code class="language-dart">String get szInfoTitle =&gt; _pszInfoTitle.unpackString(64);</code></pre>
+        </section>
+</section>
+        
+        <section id="setter">
+        
+        <section class="multi-line-signature">
+          <span class="returntype">void</span>
+                    <span class="name ">szInfoTitle=</span>
+<span class="signature">(<wbr><span class="parameter" id="szInfoTitle=-param-text63chars"><span class="type-annotation"><a href="https://api.dart.dev/dev/2.12.0-236.0.dev/dart-core/String-class.html">String</a></span> <span class="parameter-name">text63chars</span></span>)</span>
+                  
+</section>
+        
+                        <section class="summary source-code" id="source">
+          <h2><span>Implementation</span></h2>
+          <pre class="language-dart"><code class="language-dart">set szInfoTitle(String text63chars) {
+  if (text63chars.length &gt; 63) {
+    throw ArgumentError(&#39;Argument &quot;text63chars&quot; should be less 63 char&#39;);
+  }
+  _pszInfoTitle.setString(text63chars);
+}</code></pre>
+        </section>
+</section>
+          </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    win32
+      2.0.0-nullsafety.8
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../../static-assets/typeahead.bundle.min.js"></script>
+<script src="../../static-assets/highlight.pack.js"></script>
+<script src="../../static-assets/script.js"></script>
+
+
+</body>
+
+</html>
